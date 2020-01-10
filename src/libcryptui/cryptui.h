@@ -14,7 +14,9 @@
  * Lesser General Public License for more details.
  *  
  * You should have received a copy of the GNU Lesser General Public
- * License along with this program; if not, see <http://www.gnu.org/licenses/>.  
+ * License along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.  
  */
    
 #ifndef __CRYPTUI_H__
@@ -145,10 +147,6 @@ CryptUIEncType      cryptui_key_get_enctype (const gchar *key);
 void                cryptui_display_notification (const gchar *title, const gchar *body,
                                                   const gchar *icon, gboolean urgent);
 
-gchar**             cryptui_prompt_recipients_with_symmetric (CryptUIKeyset *keyset,
-                                                              const gchar *title,
-                                                              gchar **signer,
-                                                              gboolean *symmetric);
 gchar**             cryptui_prompt_recipients (CryptUIKeyset *keyset, 
                                                const gchar *title, gchar **signer);
 
@@ -163,8 +161,6 @@ gchar*              cryptui_prompt_signer (CryptUIKeyset *keyset, const gchar *t
  * quit: whether to run gtk_main_quit () after launching seahorse
  */
 void                cryptui_need_to_get_keys ();
-
-gboolean            cryptui_need_to_get_keys_or_symmetric (void);
 
 G_END_DECLS
 

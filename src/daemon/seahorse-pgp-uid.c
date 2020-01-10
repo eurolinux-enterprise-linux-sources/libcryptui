@@ -13,7 +13,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include "config.h"
@@ -65,6 +68,131 @@ convert_string (const gchar *str)
 
 	return g_strdup (str);
 }
+
+#ifndef HAVE_STRSEP
+/* code taken from glibc-2.2.1/sysdeps/generic/strsep.c */
+char *
+strsep (char **stringp, const char *delim)
+{
+    char *begin, *end;
+
+    begin = *stringp;
+    if (begin == NULL)
+        return NULL;
+
+      /* A frequent case is when the delimiter string contains only one
+         character.  Here we don't need to call the expensive `strpbrk'
+         function and instead work using `strchr'.  */
+      if (delim[0] == '\0' || delim[1] == '\0') {
+        char ch = delim[0];
+
+        if (ch == '\0')
+            end = NULL; 
+        else {
+            if (*begin == ch)
+                end = begin;
+            else if (*begin == '\0')
+                end = NULL;
+            else
+                end = strchr (begin + 1, ch);
+        }
+    } else
+        /* Find the end of the token.  */
+        end = strpbrk (begin, delim);
+
+    if (end) {
+      /* Terminate the token and set *STRINGP past NUL character.  */
+      *end++ = '\0';
+      *stringp = end;
+    } else
+        /* No more delimiters; this is the last token.  */
+        *stringp = NULL;
+
+    return begin;
+}
+#endif /*HAVE_STRSEP*/
+
+/* Copied from GPGME */
+static void
+parse_user_id (const gchar *uid, gchar **name, gchar **email, gchar **comment)
+{
+    gchar *src, *tail, *x;
+    int in_name = 0;
+    int in_email = 0;
+    int in_comment = 0;
+
+    x = tail = src = g_strdup (uid);
+    
+    while (*src) {
+        if (in_email) {
+	        if (*src == '<')
+	            /* Not legal but anyway.  */
+	            in_email++;
+	        else if (*src == '>') {
+	            if (!--in_email && !*email) {
+		            *email = tail;
+                    *src = 0;
+                    tail = src + 1;
+		        }
+	        }
+	    } else if (in_comment) {
+	        if (*src == '(')
+	            in_comment++;
+	        else if (*src == ')') {
+	            if (!--in_comment && !*comment) {
+		            *comment = tail;
+                    *src = 0;
+                    tail = src + 1;
+		        }
+	        }
+	    } else if (*src == '<') {
+	        if (in_name) {
+	            if (!*name) {
+		            *name = tail;
+                    *src = 0;
+                    tail = src + 1;
+		        }
+	            in_name = 0;
+	        } else
+	            tail = src + 1;
+	            
+	        in_email = 1;
+	    } else if (*src == '(') {
+	        if (in_name) {
+	            if (!*name) {
+		            *name = tail;
+                    *src = 0;
+                    tail = src + 1;
+		        }
+	            in_name = 0;
+	        }
+	        in_comment = 1;
+	    } else if (!in_name && *src != ' ' && *src != '\t') {
+	        in_name = 1;
+	    }    
+        src++;
+    }
+ 
+    if (in_name) {
+        if (!*name) {
+	        *name = tail;
+            *src = 0;
+            tail = src + 1;
+	    }
+    }
+ 
+    /* Let unused parts point to an EOS.  */
+    *name = g_strdup (*name ? *name : "");
+    *email = g_strdup (*email ? *email : "");
+    *comment = g_strdup (*comment ? *comment : "");
+    
+    g_strstrip (*name);
+    g_strstrip (*email);
+    g_strstrip (*comment);
+    
+    g_free (x);
+}
+
 
 /* -----------------------------------------------------------------------------
  * OBJECT 
@@ -212,6 +340,26 @@ seahorse_pgp_uid_class_init (SeahorsePgpUidClass *klass)
 /* -----------------------------------------------------------------------------
  * PUBLIC 
  */
+
+SeahorsePgpUid*
+seahorse_pgp_uid_new (const gchar *uid_string)
+{
+	SeahorsePgpUid *uid;
+	gchar *name = NULL;
+	gchar *email = NULL;
+	gchar *comment = NULL;
+	
+	if (uid_string)
+		parse_user_id (uid_string, &name, &email, &comment);
+	
+	uid = g_object_new (SEAHORSE_TYPE_PGP_UID, "name", name, "email", email, "comment", comment, NULL);
+	
+	g_free (name);
+	g_free (comment);
+	g_free (email);
+	
+	return uid;
+}
 
 GList*
 seahorse_pgp_uid_get_signatures (SeahorsePgpUid *self)

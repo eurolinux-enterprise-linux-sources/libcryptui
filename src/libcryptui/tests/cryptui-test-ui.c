@@ -14,7 +14,9 @@
  * Lesser General Public License for more details.
  *  
  * You should have received a copy of the GNU Lesser General Public
- * License along with this program; if not, see <http://www.gnu.org/licenses/>.  
+ * License along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.  
  */
 
 #include "config.h"
@@ -60,14 +62,12 @@ show_ui_dialog (CryptUIKeyset *keyset)
 }
 
 static void
-show_chooser_dialog (CryptUIKeyset *keyset, gboolean support_symmetric)
+show_chooser_dialog (CryptUIKeyset *keyset)
 {
     gchar **recipients, **k;
     gchar *signer;
-    gboolean symmetric;
     
-    recipients = cryptui_prompt_recipients_with_symmetric (keyset, "Choose Recipients", &signer,
-                                            support_symmetric ? &symmetric : NULL);
+    recipients = cryptui_prompt_recipients (keyset, "Choose Recipients", &signer);
     
     if (recipients) {
         for (k = recipients; *k; k++)
@@ -76,8 +76,6 @@ show_chooser_dialog (CryptUIKeyset *keyset, gboolean support_symmetric)
         g_print ("SIGNER: %s\n", signer);
         g_free (signer);
     }
-    if (support_symmetric)
-        g_print ("SYMMETRIC: %s\n", symmetric ? "true" : "false");
 }
 
 static void
@@ -126,9 +124,7 @@ main (int argc, char **argv)
     if (g_ascii_strcasecmp (arg, "plain") == 0) 
 	    show_ui_dialog (keyset);
     else if (g_ascii_strcasecmp (arg, "normal") == 0)
-	    show_chooser_dialog (keyset, FALSE);
-    else if (g_ascii_strcasecmp (arg, "symmetric") == 0)
-	    show_chooser_dialog (keyset, TRUE);
+	    show_chooser_dialog (keyset);
     else if (g_ascii_strcasecmp (arg, "keyset") == 0)
 	    print_keyset (keyset);
     else

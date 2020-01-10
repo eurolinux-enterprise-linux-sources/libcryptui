@@ -13,7 +13,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include "config.h"
@@ -239,7 +242,8 @@ int main(int argc, char* argv[])
     }
      	 
 	g_signal_connect (egg_sm_client_get (), "quit", G_CALLBACK (smclient_quit), NULL);
-
+    egg_set_desktop_file(AUTOSTARTDIR "/seahorse-daemon.desktop");
+    
     /*
      * All functions after this point have to print messages
      * nicely and not just called exit()

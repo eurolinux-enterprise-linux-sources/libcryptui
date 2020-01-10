@@ -5,7 +5,7 @@ AC_PREREQ(2.52)
 dnl ****************************************************************************
 dnl MAIN SEAHORSE VERSION (update after release)
 
-AC_INIT(libcryptui, 3.12.2)
+AC_INIT(libcryptui, 3.8.0)
 
 dnl ****************************************************************************
 dnl LIBCRYPTUI libtool versioning
@@ -250,6 +250,17 @@ if test "$enable_fatal_messages" = "yes" && test "$enable_debug" = "yes"; then
     AC_DEFINE_UNQUOTED(FATAL_MESSAGES, 1, [Fatal runtime messages])
     echo "enabling fatal runtime messages"
 fi
+
+# Build Tests
+AC_ARG_ENABLE(tests,
+        AC_HELP_STRING([--enable-tests],
+        [Compile Test Programs]))
+        
+if test "$enable_tests" != "yes"; then
+    enable_tests="no"
+fi
+
+AM_CONDITIONAL(WITH_TESTS, test "$enable_tests" = "yes")
 
 dnl ****************************************************************************
 dnl GNOME-KEYRING

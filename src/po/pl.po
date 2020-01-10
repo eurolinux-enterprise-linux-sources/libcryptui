@@ -8,14 +8,14 @@
 # Andrzej Polatyński <andrzej@datatel.net.pl>, 2007.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
 # Piotr Zaryk <pzaryk@aviary.pl>, 2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2013.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2013.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2012.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: libcryptui\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-20 23:46+0200\n"
-"PO-Revision-Date: 2013-08-20 23:47+0200\n"
+"POT-Creation-Date: 2012-09-04 18:24+0200\n"
+"PO-Revision-Date: 2012-09-04 18:25+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -302,124 +302,119 @@ msgid "Invalid or unrecognized key: %s"
 msgstr "Nieprawidłowy lub nierozpoznany klucz: %s"
 
 #. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
-#: ../daemon/seahorse-service-crypto.c:204
+#: ../daemon/seahorse-service-crypto.c:203
 #, c-format
 msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
 msgstr "Podpisany przez <i><key id='%s'/> <b>wygasł</b></i> dnia %s."
 
-#: ../daemon/seahorse-service-crypto.c:205
+#: ../daemon/seahorse-service-crypto.c:204
 msgid "Invalid Signature"
 msgstr "Nieprawidłowy podpis"
 
-#: ../daemon/seahorse-service-crypto.c:211
+#: ../daemon/seahorse-service-crypto.c:210
 #, c-format
 msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
 msgstr "Podpisany przez <i><key id='%s'/></i> dnia %s <b>Wygasł</b>."
 
-#: ../daemon/seahorse-service-crypto.c:212
+#: ../daemon/seahorse-service-crypto.c:211
 msgid "Expired Signature"
 msgstr "Wygasły podpis"
 
-#: ../daemon/seahorse-service-crypto.c:218
+#: ../daemon/seahorse-service-crypto.c:217
 #, c-format
 msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
 msgstr "Podpisany przez <i><key id='%s'/> <b>Unieważniony</b></i> dnia %s."
 
-#: ../daemon/seahorse-service-crypto.c:219
+#: ../daemon/seahorse-service-crypto.c:218
 msgid "Revoked Signature"
 msgstr "Podpis nieważny"
 
 #. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
-#: ../daemon/seahorse-service-crypto.c:225
+#: ../daemon/seahorse-service-crypto.c:224
 #, c-format
 msgid "Signed by <i><key id='%s'/></i> on %s."
 msgstr "Podpisany przez <i><key id='%s'/></i> dnia %s."
 
-#: ../daemon/seahorse-service-crypto.c:226
+#: ../daemon/seahorse-service-crypto.c:225
 msgid "Good Signature"
 msgstr "Podpis prawidłowy"
 
-#: ../daemon/seahorse-service-crypto.c:231
+#: ../daemon/seahorse-service-crypto.c:230
 msgid "Signing key not in keyring."
 msgstr "Klucz podpisujący nie jest w bazie kluczy."
 
-#: ../daemon/seahorse-service-crypto.c:232
+#: ../daemon/seahorse-service-crypto.c:231
 msgid "Unknown Signature"
 msgstr "Nieznany podpis"
 
-#: ../daemon/seahorse-service-crypto.c:236
+#: ../daemon/seahorse-service-crypto.c:235
 msgid "Bad or forged signature. The signed data was modified."
 msgstr ""
 "Nieprawidłowy lub podrobiony podpis. Podpisane dane zostały zmodyfikowane."
 
-#: ../daemon/seahorse-service-crypto.c:237
+#: ../daemon/seahorse-service-crypto.c:236
 msgid "Bad Signature"
 msgstr "Błędny podpis"
 
-#: ../daemon/seahorse-service-crypto.c:245
+#: ../daemon/seahorse-service-crypto.c:244
 msgid "Couldn't verify signature."
 msgstr "Nie można zweryfikować podpisu."
 
-#: ../daemon/seahorse-service-crypto.c:317
-#, c-format
-msgid "Recipients specified for symmetric encryption"
-msgstr "Określono odbiorców dla szyfrowania symetrycznego"
-
-#: ../daemon/seahorse-service-crypto.c:326
-#: ../daemon/seahorse-service-crypto.c:673
+#: ../daemon/seahorse-service-crypto.c:318
+#: ../daemon/seahorse-service-crypto.c:654
 #, c-format
 msgid "Invalid or unrecognized signer: %s"
 msgstr "Nieprawidłowa lub nierozpoznana osoba podpisująca: %s"
 
-#: ../daemon/seahorse-service-crypto.c:333
-#: ../daemon/seahorse-service-crypto.c:680
+#: ../daemon/seahorse-service-crypto.c:325
+#: ../daemon/seahorse-service-crypto.c:661
 #, c-format
 msgid "Key is not valid for signing: %s"
 msgstr "Klucz nie jest przeznaczony do podpisywania: %s"
 
-#: ../daemon/seahorse-service-crypto.c:346
+#: ../daemon/seahorse-service-crypto.c:336
 #, c-format
 msgid "Invalid or unrecognized recipient: %s"
 msgstr "Nieprawidłowy lub nierozpoznany odbiorca: %s"
 
-#: ../daemon/seahorse-service-crypto.c:354
+#: ../daemon/seahorse-service-crypto.c:344
 #, c-format
 msgid "Key is not a valid recipient for encryption: %s"
 msgstr "Klucz nie jest prawidłowym odbiorcą do szyfrowania: %s"
 
-#: ../daemon/seahorse-service-crypto.c:363
+#: ../daemon/seahorse-service-crypto.c:353
 #, c-format
 msgid "No recipients specified"
 msgstr "Nie określono odbiorców"
 
-#: ../daemon/seahorse-service-crypto.c:460
+#: ../daemon/seahorse-service-crypto.c:442
 #, c-format
 msgid "Invalid key type for decryption: %s"
 msgstr "Nieprawidłowy klucz deszyfrujący: %s"
 
-#: ../daemon/seahorse-service-crypto.c:575
-#: ../daemon/seahorse-service-crypto.c:773
+#: ../daemon/seahorse-service-crypto.c:556
+#: ../daemon/seahorse-service-crypto.c:754
 #, c-format
 msgid "Please set clearuri"
 msgstr "Proszę ustawić \"clearuri\""
 
-#: ../daemon/seahorse-service-crypto.c:581
-#: ../daemon/seahorse-service-crypto.c:779
+#: ../daemon/seahorse-service-crypto.c:562
+#: ../daemon/seahorse-service-crypto.c:760
 #, c-format
 msgid "Please set crypturi"
 msgstr "Proszę ustawić \"crypturi\""
 
-#: ../daemon/seahorse-service-crypto.c:591
+#: ../daemon/seahorse-service-crypto.c:572
 #, c-format
 msgid "Error opening clearuri"
 msgstr "Błąd podczas otwierania \"clearuri\""
 
-#: ../daemon/seahorse-service-crypto.c:668
+#: ../daemon/seahorse-service-crypto.c:649
 #, c-format
 msgid "No signer specified"
 msgstr "Nie określono osoby podpisującej"
 
-#: ../daemon/seahorse-service-crypto.c:857
+#: ../daemon/seahorse-service-crypto.c:838
 #, c-format
 msgid "Invalid key type for verifying: %s"
 msgstr "Nieprawidłowy klucz do weryfikowania: %s"
@@ -515,72 +510,44 @@ msgstr "Unieważniony"
 msgid "Could not display help: %s"
 msgstr "Nie można wyświetlić pomocy: %s"
 
-#: ../libcryptui/cryptui.c:307
+#: ../libcryptui/cryptui.c:271
 msgid ""
 "No encryption keys were found with which to perform the operation you "
 "requested.  The program <b>Passwords and Encryption Keys</b> will now be "
 "started so that you may either create a key or import one."
 msgstr ""
-"Nie odnaleziono kluczy szyfrujących do wykonania żądanego działania. Program "
+"Nie odnaleziono kluczy szyfrujących do wykonania żądanej operacji. Program "
 "<b>Hasła i klucze szyfrujące</b> zostanie teraz uruchomiony, aby można było "
 "utworzyć lub zaimportować klucz."
 
-#: ../libcryptui/cryptui.c:333
-msgid ""
-"No encryption keys were found. In order to perform public key encryption, "
-"the <b>Passwords and Encryption Keys</b> program can be started to create or "
-"import a public key. It is also possible to use a shared passphrase instead."
-msgstr ""
-"Nie odnaleziono kluczy szyfrujących. Aby wykonać szyfrowanie kluczem "
-"publicznym, można uruchomić program <b>Hasła i klucze szyfrujące</b> i "
-"utworzyć lub zaimportować klucz. Można także zamiast tego użyć hasła "
-"współdzielonego."
-
-#: ../libcryptui/cryptui.c:336
-msgid "Use a shared passphrase"
-msgstr "Użyj hasła współdzielonego"
-
-#: ../libcryptui/cryptui.c:337
-msgid "Create or import a key"
-msgstr "Utwórz lub zaimportuj klucz"
-
-#: ../libcryptui/cryptui-key-chooser.c:177
+#: ../libcryptui/cryptui-key-chooser.c:152
 msgid "All Keys"
 msgstr "Wszystkie klucze"
 
-#: ../libcryptui/cryptui-key-chooser.c:178
+#: ../libcryptui/cryptui-key-chooser.c:153
 msgid "Selected Recipients"
 msgstr "Zaznaczeni odbiorcy"
 
-#: ../libcryptui/cryptui-key-chooser.c:179
+#: ../libcryptui/cryptui-key-chooser.c:154
 msgid "Search Results"
 msgstr "Wyniki wyszukiwania"
 
 #. Filter Label
-#: ../libcryptui/cryptui-key-chooser.c:189
+#: ../libcryptui/cryptui-key-chooser.c:164
 msgid "Search _for:"
 msgstr "_Wyszukiwanie:"
 
-#. first of the group
-#: ../libcryptui/cryptui-key-chooser.c:235
-msgid "Use passphrase only"
-msgstr "Używanie tylko hasła"
-
-#: ../libcryptui/cryptui-key-chooser.c:244
-msgid "Choose a set of recipients:"
-msgstr "Proszę wybrać zestaw odbiorców:"
-
-#: ../libcryptui/cryptui-key-chooser.c:290
+#: ../libcryptui/cryptui-key-chooser.c:223
 msgid "None (Don't Sign)"
 msgstr "Brak (bez podpisywania)"
 
-#: ../libcryptui/cryptui-key-chooser.c:303
+#: ../libcryptui/cryptui-key-chooser.c:236
 #, c-format
 msgid "Sign this message as %s"
 msgstr "Podpisanie wiadomości jako %s"
 
 #. Sign Label
-#: ../libcryptui/cryptui-key-chooser.c:330
+#: ../libcryptui/cryptui-key-chooser.c:258
 msgid "_Sign message as:"
 msgstr "_Podpisywanie jako:"
 
@@ -817,25 +784,25 @@ msgstr "PM"
 #: ../libegg/egg-datetime.c:807
 #, c-format
 msgid "%02d:%02d:%02d %s"
-msgstr "%02d∶%02d∶%02d %s"
+msgstr "%02d:%02d:%02d %s"
 
 #. Translators: This is hh:mm AM/PM.
 #: ../libegg/egg-datetime.c:810
 #, c-format
 msgid "%02d:%02d %s"
-msgstr "%02d∶%02d %s"
+msgstr "%02d:%02d %s"
 
 #. Translators: This is hh:mm:ss.
 #: ../libegg/egg-datetime.c:814
 #, c-format
 msgid "%02d:%02d:%02d"
-msgstr "%02d∶%02d∶%02d"
+msgstr "%02d:%02d:%02d"
 
 #. Translators: This is hh:mm.
 #: ../libegg/egg-datetime.c:817
 #, c-format
 msgid "%02d:%02d"
-msgstr "%02d∶%02d"
+msgstr "%02d:%02d"
 
 #. TODO: should handle other display modes as well...
 #. Translators: This is YYYY-MM-DD
@@ -848,7 +815,7 @@ msgstr "%02d-%02d-%04d"
 #: ../libegg/egg-datetime.c:1238
 #, c-format
 msgid "%u:%u:%u"
-msgstr "%u∶%u∶%u"
+msgstr "%u:%u:%u"
 
 #: ../libegg/eggdesktopfile.c:165
 #, c-format

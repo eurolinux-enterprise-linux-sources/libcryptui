@@ -13,7 +13,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include "config.h"
@@ -35,7 +38,6 @@
 
 /* flags from seahorse-service-cyrpto.xml */
 #define FLAG_QUIET 0x01
-#define FLAG_SYMMETRIC 0x02
 
 G_DEFINE_TYPE (SeahorseServiceCrypto, seahorse_service_crypto, G_TYPE_OBJECT);
 
@@ -272,9 +274,8 @@ notify_signatures (const gchar* data, gpgme_verify_result_t status)
 /**
 * crypto: the crypto service (#SeahorseServiceCrypto)
 * recipients: A list of recipients (keyids "openpgp:B8098FB063E2C811")
-*             Must be empty when symmetric encryption is used.
 * signer: optional, the keyid of the signer
-* flags: FLAG_SYMMETRIC to perform symmetric encryption
+* flags: 0, not used
 * cleartext: the text to encrypt
 * clearlength: Length of the cleartext
 * crypttext: the encrypted text (out)
@@ -294,126 +295,110 @@ crypto_encrypt_generic (SeahorseServiceCrypto *crypto,
                         char **crypttext, gsize *cryptlength, gboolean textmode,
                         gboolean ascii_armor, GError **error)
 {
-	GList *recipkeys = NULL;
-	SeahorseGpgmeOperation *pop;
-	SeahorseObject *signkey = NULL;
-	SeahorseObject *skey;
-	gpgme_key_t *recips;
-	gboolean symmetric = FALSE;
-	gpgme_data_t plain, cipher;
-	gpgme_error_t gerr;
-	gboolean ret = TRUE;
-	GSettings *settings;
-	gchar *keyid;
+    GList *recipkeys = NULL;
+    SeahorseGpgmeOperation *pop; 
+    SeahorseObject *signkey = NULL;
+    SeahorseObject *skey;
+    gpgme_key_t *recips;
+    gpgme_data_t plain, cipher;
+    gpgme_error_t gerr;
+    gboolean ret = TRUE;
+    GSettings *settings;
+    gchar *keyid;
 
-	if ((flags & FLAG_SYMMETRIC) == FLAG_SYMMETRIC)
-		symmetric = TRUE;
+    /* 
+     * TODO: Once we support different kinds of keys that support encryption
+     * then all this logic will need to change. 
+     */
+    /* The signer */
+    if (signer && signer[0]) {
+        signkey = seahorse_context_object_from_dbus (SCTX_APP (), signer);
+        if (!signkey) {
+            g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID, 
+                         _("Invalid or unrecognized signer: %s"), signer);
+            return FALSE;
+        }
+        
+        if (!SEAHORSE_IS_GPGME_KEY (signkey) || 
+            !(seahorse_object_get_flags (signkey) & SEAHORSE_FLAG_CAN_SIGN)) {
+            g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
+                         _("Key is not valid for signing: %s"), signer);
+            return FALSE;
+        }
+    }
+    /* The recipients */
+    for( ; recipients[0]; recipients++)
+    {
+        skey = seahorse_context_object_from_dbus (SCTX_APP (), recipients[0]);
+        if (!skey) {
+            g_list_free (recipkeys);
+            g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID, 
+                         _("Invalid or unrecognized recipient: %s"), recipients[0]);
+            return FALSE;
+        }
+        
+        if (!SEAHORSE_IS_GPGME_KEY (skey) ||
+            !(seahorse_object_get_flags (skey) & SEAHORSE_FLAG_CAN_ENCRYPT)) {
+            g_list_free (recipkeys);
+            g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
+                         _("Key is not a valid recipient for encryption: %s"), recipients[0]);
+            return FALSE;
+        }
+        
+        recipkeys = g_list_prepend (recipkeys, SEAHORSE_PGP_KEY (skey));
+    }
+    
+    if (!recipkeys) {
+        g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
+                     _("No recipients specified"));
+        return FALSE;
+    }
+    pop = seahorse_gpgme_operation_new (NULL);
+    
+    /* new data form text */
+    gerr = gpgme_data_new_from_mem (&plain, cleartext, clearlength, FALSE);
+    g_return_val_if_fail (GPG_IS_OK (gerr), FALSE);
+    gerr = gpgme_data_new (&cipher);
+    g_return_val_if_fail (GPG_IS_OK (gerr), FALSE);
+   
+    /* encrypt with armor */
+    gpgme_set_textmode (pop->gctx, textmode);
+    gpgme_set_armor (pop->gctx, ascii_armor);
 
-	if (symmetric && recipients[0] != NULL) {
-		g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
-		             _("Recipients specified for symmetric encryption"));
-		return FALSE;
-	}
-
-	/* The signer */
-	if (signer && signer[0]) {
-		signkey = seahorse_context_object_from_dbus (SCTX_APP (), signer);
-		if (!signkey) {
-			g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
-			             _("Invalid or unrecognized signer: %s"), signer);
-			return FALSE;
+	/* Add the default key if set and necessary */
+	settings = g_settings_new ("org.gnome.crypto.pgp");
+	if (g_settings_get_boolean (settings, "encrypt-to-self")) {
+		keyid = g_settings_get_string (settings, "default-key");
+		if (keyid && keyid[0]) {
+			skey = seahorse_context_find_object (NULL, g_quark_from_string (keyid),
+			                                     SEAHORSE_LOCATION_LOCAL);
+			if (SEAHORSE_IS_PGP_KEY (skey))
+				recipkeys = g_list_append (recipkeys, skey);
 		}
-
-		if (!SEAHORSE_IS_GPGME_KEY (signkey) ||
-			!(seahorse_object_get_flags (signkey) & SEAHORSE_FLAG_CAN_SIGN)) {
-			g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
-			             _("Key is not valid for signing: %s"), signer);
-			return FALSE;
-		}
+		g_free (keyid);
 	}
+	g_object_unref (settings);
 
-	if (!symmetric) {
-		/* The recipients */
-		for( ; recipients[0]; recipients++)
-		{
-			skey = seahorse_context_object_from_dbus (SCTX_APP (), recipients[0]);
-			if (!skey) {
-				g_list_free (recipkeys);
-				g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
-					     _("Invalid or unrecognized recipient: %s"), recipients[0]);
-				return FALSE;
-			}
+    /* Make keys into the right format for GPGME */
+    recips = keylist_to_keys (recipkeys);
+    g_list_free (recipkeys);
+    
+    /* Do the encryption */
+    if (signkey) {
+        gpgme_signers_add (pop->gctx, seahorse_gpgme_key_get_private (SEAHORSE_GPGME_KEY (signkey)));
+        gerr = gpgme_op_encrypt_sign_start (pop->gctx, recips, GPGME_ENCRYPT_ALWAYS_TRUST, 
+                                            plain, cipher);
+    } else {
+        gerr = gpgme_op_encrypt_start (pop->gctx, recips, GPGME_ENCRYPT_ALWAYS_TRUST, 
+                                       plain, cipher);
+    }
+    free_keys (recips);
 
-			if (!SEAHORSE_IS_GPGME_KEY (skey) ||
-				!(seahorse_object_get_flags (skey) & SEAHORSE_FLAG_CAN_ENCRYPT)) {
-				g_list_free (recipkeys);
-				g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
-					     _("Key is not a valid recipient for encryption: %s"), recipients[0]);
-				return FALSE;
-			}
-
-			recipkeys = g_list_prepend (recipkeys, SEAHORSE_PGP_KEY (skey));
-		}
-
-		if (!recipkeys) {
-			g_set_error (error, SEAHORSE_DBUS_ERROR, SEAHORSE_DBUS_ERROR_INVALID,
-				     _("No recipients specified"));
-			return FALSE;
-		}
-	}
-
-	pop = seahorse_gpgme_operation_new (NULL);
-
-	/* new data form text */
-	gerr = gpgme_data_new_from_mem (&plain, cleartext, clearlength, FALSE);
-	g_return_val_if_fail (GPG_IS_OK (gerr), FALSE);
-	gerr = gpgme_data_new (&cipher);
-	g_return_val_if_fail (GPG_IS_OK (gerr), FALSE);
-
-	/* encrypt with armor */
-	gpgme_set_textmode (pop->gctx, textmode);
-	gpgme_set_armor (pop->gctx, ascii_armor);
-
-	if (symmetric) {
-		/* gpgme_op_encrypt{_sign,}_start() will perform symmetric encryption
-		 * when no recipients are specified. */
-		recips = NULL;
-	} else {
-		/* Add the default key if set and necessary */
-		settings = g_settings_new ("org.gnome.crypto.pgp");
-		if (g_settings_get_boolean (settings, "encrypt-to-self")) {
-			keyid = g_settings_get_string (settings, "default-key");
-			if (keyid && keyid[0]) {
-				skey = seahorse_context_find_object (NULL, g_quark_from_string (keyid),
-								     SEAHORSE_LOCATION_LOCAL);
-				if (SEAHORSE_IS_PGP_KEY (skey))
-					recipkeys = g_list_append (recipkeys, skey);
-			}
-			g_free (keyid);
-		}
-		g_object_unref (settings);
-
-		/* Make keys into the right format for GPGME */
-		recips = keylist_to_keys (recipkeys);
-		g_list_free (recipkeys);
-	}
-
-	/* Do the encryption */
-	if (signkey) {
-		gpgme_signers_add (pop->gctx, seahorse_gpgme_key_get_private (SEAHORSE_GPGME_KEY (signkey)));
-		gerr = gpgme_op_encrypt_sign_start (pop->gctx, recips, GPGME_ENCRYPT_ALWAYS_TRUST,
-		                                    plain, cipher);
-	} else {
-		gerr = gpgme_op_encrypt_start (pop->gctx, recips, GPGME_ENCRYPT_ALWAYS_TRUST,
-		                               plain, cipher);
-	}
-	free_keys (recips);
-
-	/* Frees cipher */
-	ret = process_crypto_result (pop, gerr, cipher, crypttext, cryptlength, error);
-	g_object_unref (pop);
-	gpgme_data_release (plain);
-	return ret;
+    /* Frees cipher */
+    ret = process_crypto_result (pop, gerr, cipher, crypttext, cryptlength, error);
+    g_object_unref (pop);
+    gpgme_data_release (plain);
+    return ret;
 }
 
 
@@ -509,10 +494,9 @@ crypto_decrypt_generic (SeahorseServiceCrypto *crypto,
 /**
  * seahorse_service_crypto_encrypt_text:
  * @crypto: the crypto service (#SeahorseServiceCrypto)
- * @recipients: A list of recipients (keyids "openpgp:B8098FB063E2C811").
- *              Must be empty when symmetric encryption is used.
+ * @recipients: A list of recipients (keyids "openpgp:B8098FB063E2C811")
  * @signer: optional, the keyid of the signer
- * @flags: FLAG_SYMMETRIC to perform symmetric encryption
+ * @flags: 0, not used
  * @cleartext: the text to encrypt
  * @crypttext: the encrypted text (out)
  * @error: an error (out)

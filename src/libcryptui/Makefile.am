@@ -1,4 +1,10 @@
-SUBDIRS = . tests
+if WITH_TESTS
+TESTS_DIR = tests
+else
+TESTS_DIR = 
+endif
+
+SUBDIRS = . $(TESTS_DIR)
 
 # -----------------------------------------------------------------
 # LIBRARY HEADERS
@@ -96,7 +102,6 @@ CryptUI-@LIBCRYPTUI_MAJOR@.gir: $(INTROSPECTION_SCANNER) libcryptui.la
 	--namespace CryptUI --nsversion=@LIBCRYPTUI_MAJOR@ \
 	$(INCLUDES) \
 	--include=Gtk-3.0 \
-	--libtool="$(LIBTOOL)" \
 	--library=libcryptui.la \
 	--pkg gtk+-3.0 \
 	--output $@ \

@@ -14,7 +14,9 @@
  * Lesser General Public License for more details.
  *  
  * You should have received a copy of the GNU Lesser General Public
- * License along with this program; if not, see <http://www.gnu.org/licenses/>.  
+ * License along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.  
  */
 
 #include "config.h"
@@ -144,35 +146,29 @@ cryptui_display_notification (const gchar *title, const gchar *body, const gchar
  * QUICK PROMPTS
  */
 
-static void
+static void 
 selection_changed (CryptUIKeyChooser *chooser, GtkWidget *dialog)
 {
-	gboolean sensitive;
-
-	sensitive = cryptui_key_chooser_have_recipients (chooser) ||
-	            cryptui_key_chooser_get_symmetric (chooser);
-	gtk_dialog_set_response_sensitive (GTK_DIALOG (dialog), GTK_RESPONSE_ACCEPT,
-	                                   sensitive);
+    gtk_dialog_set_response_sensitive (GTK_DIALOG (dialog), GTK_RESPONSE_ACCEPT, 
+                                       cryptui_key_chooser_have_recipients (chooser));
 }
 
 /**
- * cryptui_prompt_recipients_with_symmetric:
+ * cryptui_prompt_recipients:
  * @keyset: CryptUIKeyset to select keys to present to the user from
  * @title: Window title for presented GtkWindow
  * @signer: Variable in which to store the key of the signer if one is selected
- * @symmetric: Variable in which to store if symmetric encryption is requested.
- *             Set to NULL to disable symmetric encryption.
  *
  * This function prompts the user to select one or more keys from the keyset to
  * use to encrypt to.  It also allows the user to select a private key from the
  * keyset to sign with. 
  *
- * Returns: the selected key or NULL in case of symmetric encryption
+ * Returns: the selected key
  */
+ 
 gchar**
-cryptui_prompt_recipients_with_symmetric (CryptUIKeyset *keyset,
-                                          const gchar *title,
-                                          gchar **signer, gboolean *symmetric)
+cryptui_prompt_recipients (CryptUIKeyset *keyset, const gchar *title, 
+                           gchar **signer)
 {
     CryptUIKeyChooser *chooser;
     GtkWidget *dialog;
@@ -185,10 +181,6 @@ cryptui_prompt_recipients_with_symmetric (CryptUIKeyset *keyset,
     if (signer) {
         *signer = NULL;
         mode |= CRYPTUI_KEY_CHOOSER_SIGNER;
-    }
-    if (symmetric) {
-        *symmetric = FALSE;
-        mode |= CRYPTUI_KEY_CHOOSER_SUPPORT_SYMMETRIC;
     }
     
     dialog = gtk_dialog_new_with_buttons (title, NULL, GTK_DIALOG_MODAL, 
@@ -207,17 +199,12 @@ cryptui_prompt_recipients_with_symmetric (CryptUIKeyset *keyset,
     gtk_widget_show_all (dialog);
     
     if (gtk_dialog_run (GTK_DIALOG (dialog)) == GTK_RESPONSE_ACCEPT) {
-        if (symmetric != NULL) {
-            *symmetric = cryptui_key_chooser_get_symmetric (chooser);
-        }
         
-        if (symmetric != NULL && !*symmetric) {
-            recipients = cryptui_key_chooser_get_recipients (chooser);
-            keys = g_new0(gchar*, g_list_length (recipients) + 1);
-            for (l = recipients, i = 0; l; l = g_list_next (l), i++)
-                keys[i] = g_strdup (l->data);
-            g_list_free (recipients);
-        }
+        recipients = cryptui_key_chooser_get_recipients (chooser);
+        keys = g_new0(gchar*, g_list_length (recipients) + 1);
+        for (l = recipients, i = 0; l; l = g_list_next (l), i++)
+            keys[i] = g_strdup (l->data);
+        g_list_free (recipients);
         
         if (signer) {
             t = cryptui_key_chooser_get_signer (chooser);
@@ -228,27 +215,6 @@ cryptui_prompt_recipients_with_symmetric (CryptUIKeyset *keyset,
     gtk_widget_destroy (dialog);
     return keys;
 }
-
-/**
- * cryptui_prompt_recipients:
- * @keyset: CryptUIKeyset to select keys to present to the user from
- * @title: Window title for presented GtkWindow
- * @signer: Variable in which to store the key of the signer if one is selected
- *
- * This function prompts the user to select one or more keys from the keyset to
- * use to encrypt to.  It also allows the user to select a private key from the
- * keyset to sign with.
- *
- * Returns: the selected key
- */
-gchar**
-cryptui_prompt_recipients (CryptUIKeyset *keyset, const gchar *title,
-                           gchar **signer)
-{
-	return cryptui_prompt_recipients_with_symmetric (keyset, title,
-	                                                 signer, NULL);
-}
-
 
 /**
  * cryptui_prompt_signer:
@@ -309,40 +275,4 @@ cryptui_need_to_get_keys ()
         
         g_spawn_async (NULL, argv, NULL, G_SPAWN_SEARCH_PATH, NULL, NULL, NULL, NULL);
     }
-}
-
-/**
- * cryptui_need_to_get_keys_or_symmetric:
- *
- * This function is called when seahorse needs to be launched to generate a
- * key or keys or import a key or keys to perform the requested operation.
- *
- * It returns TRUE if symmetric encrypting should be used instead of public key
- * encryption.
- */
-gboolean
-cryptui_need_to_get_keys_or_symmetric (void)
-{
-    GtkWidget *dialog;
-    gchar *argv[2] = {"seahorse", NULL};
-    gint response;
-
-    dialog = gtk_message_dialog_new_with_markup (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_NONE,
-                                                 _("No encryption keys were found. In order to perform public key encryption, the <b>Passwords and Encryption Keys</b> program can be started to create or import a public key. It is also possible to use a shared passphrase instead."));
-    gtk_dialog_add_buttons (GTK_DIALOG(dialog),
-                            GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-                            _("Use a shared passphrase"), GTK_RESPONSE_REJECT,
-                            _("Create or import a key"), GTK_RESPONSE_ACCEPT,
-                            NULL);
-
-    response = gtk_dialog_run (GTK_DIALOG (dialog));
-    gtk_widget_destroy (dialog);
-    if (response == GTK_RESPONSE_ACCEPT) {
-        g_spawn_async (NULL, argv, NULL, G_SPAWN_SEARCH_PATH, NULL, NULL, NULL, NULL);
-        return FALSE;
-    }
-    if (response == GTK_RESPONSE_REJECT) {
-        return TRUE;
-    }
-    return FALSE;
 }

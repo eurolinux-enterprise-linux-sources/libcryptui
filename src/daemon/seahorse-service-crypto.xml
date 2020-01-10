@@ -6,7 +6,6 @@
      *
      * FLAGS for use in |flags| fields 
      *   FLAG_QUIET  =  0x01   (Don't display unnecessary UI)
-     *   FLAG_SYMMETRIC  =  0x02 (Perform symmetric encryption)
      *
     -->
 

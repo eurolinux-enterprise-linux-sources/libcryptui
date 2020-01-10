@@ -1,24 +1,23 @@
-Name:    libcryptui
-Version: 3.12.2
+Name: libcryptui
+Version: 3.8.0
 Release: 1%{?dist}
 Summary: Interface components for OpenPGP
 
-Group:   System Environment/Libraries
+Group: System Environment/Libraries
 License: LGPLv2+
-URL:     http://projects.gnome.org/seahorse/
-Source0: http://download.gnome.org/sources/libcryptui/3.12/%{name}-%{version}.tar.xz
+URL: http://projects.gnome.org/seahorse/
+Source0: http://download.gnome.org/sources/libcryptui/3.8/%{name}-%{version}.tar.xz
 
 BuildRequires: dbus-glib-devel
 BuildRequires: gnome-doc-utils
-BuildRequires: gnupg
+BuildRequires: libgnome-keyring-devel
 BuildRequires: gobject-introspection-devel
 BuildRequires: gpgme-devel
 BuildRequires: gtk3-devel
 BuildRequires: intltool
-BuildRequires: libgnome-keyring-devel
 BuildRequires: libnotify-devel
-BuildRequires: libSM-devel
 BuildRequires: libtool
+BuildRequires: libSM-devel
 
 %description
 libcryptui is a library used for prompting for PGP keys.
@@ -44,8 +43,8 @@ make %{?_smp_mflags}
 make install DESTDIR=$RPM_BUILD_ROOT
 %find_lang cryptui --with-gnome --all-name
 
-find ${RPM_BUILD_ROOT} -type f -name "*.a" -delete
-find ${RPM_BUILD_ROOT} -type f -name "*.la" -delete
+find ${RPM_BUILD_ROOT} -type f -name "*.a" -exec rm -f {} ';'
+find ${RPM_BUILD_ROOT} -type f -name "*.la" -exec rm -f {} ';'
 
 %post -p /sbin/ldconfig
 
@@ -59,8 +58,7 @@ fi
 glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 
 %files -f cryptui.lang
-%license COPYING-LIBCRYPTUI
-%doc AUTHORS NEWS README
+%doc AUTHORS COPYING-LIBCRYPTUI NEWS README
 %{_bindir}/*
 %{_mandir}/man1/*.gz
 %{_datadir}/cryptui
@@ -79,16 +77,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 %{_datadir}/gir-1.0/*
 
 %changelog
-* Fri Mar 10 2017 Kalev Lember <klember@redhat.com> - 3.12.2-1
-- Update to 3.12.2
-- Resolves: #1387000
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.0-3
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.0-2
-- Mass rebuild 2013-12-27
-
 * Tue Mar 26 2013 Kalev Lember <kalevlember@gmail.com> - 3.8.0-1
 - Update to 3.8.0
 

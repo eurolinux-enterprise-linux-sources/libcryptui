@@ -13,7 +13,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 #include "config.h"
 
@@ -163,7 +166,6 @@ realize_uids (SeahorseGpgmeKey *self)
 	SeahorseGpgmeUid *uid;
 	GList *results = NULL;
 	gboolean changed = FALSE;
-	SeahorseSource *source;
 	GList *uids;
 
 	uids = self->pv->uids;
@@ -187,12 +189,10 @@ realize_uids (SeahorseGpgmeKey *self)
 	}
 
 	/* Add new UIDs */
-	source = seahorse_object_get_source (SEAHORSE_OBJECT (self));
 	while (guid != NULL) {
 		uid = seahorse_gpgme_uid_new (self->pv->pubkey, guid);
 		changed = TRUE;
 		results = seahorse_object_list_append (results, uid);
-		g_object_set (uid, "source", source, NULL);
 		g_object_unref (uid);
 		guid = guid->next;
 	}
