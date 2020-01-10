@@ -1,0 +1,1363 @@
+# Uyghur translation for seahorse.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gheyret Kenji<gheyret@yahoo.com>,2010.
+# Sahran <sahran.ug@gmail.com>, 2010.
+# Zeper <zeper@msn.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: seahorse\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=libcryptui&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-12-03 23:22+0000\n"
+"PO-Revision-Date: 2011-11-09 16:10+0900\n"
+"Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../daemon/seahorse-daemon.c:53
+msgid "Do not run seahorse-daemon as a daemon"
+msgstr "seahorse-daemon نى مۇئەككەل سۈپىتىدە ئىجرا قىلمىسۇن"
+
+#: ../daemon/seahorse-daemon.c:83
+msgid "couldn't fork process"
+msgstr "ئىجرانى ئاچىلىغىلى بولمىدى"
+
+#: ../daemon/seahorse-daemon.c:89
+msgid "couldn't create new process group"
+msgstr "يېڭى ئىجرا گۇرۇپپىسى قۇرغىلى بولمىدى"
+
+#: ../daemon/seahorse-daemon.c:237
+msgid "Encryption Daemon (Seahorse)"
+msgstr "شىفىرلاش مۇئەككىلى(Seahorse)"
+
+#: ../daemon/seahorse-notification.c:576 ../daemon/seahorse-notification.c:604
+msgid "Key Imported"
+msgid_plural "Keys Imported"
+msgstr[0] "ئاچقۇچ(لار) ئىمپورت قىلىندى"
+
+#: ../daemon/seahorse-notification.c:580 ../daemon/seahorse-notification.c:603
+#, c-format
+msgid "Imported %i key"
+msgid_plural "Imported %i keys"
+msgstr[0] "%i دانە ئاچقۇچ ئىمپورت قىلىندى"
+
+#: ../daemon/seahorse-notification.c:582
+#, c-format
+msgid "Imported a key for"
+msgid_plural "Imported keys for"
+msgstr[0] "تۆۋەندىكى ئاچقۇچ(لار) ئىمپورت قىلىندى:"
+
+#: ../daemon/seahorse-gpgme.c:72
+msgid "Decryption failed. You probably do not have the decryption key."
+msgstr "شىفىرنى يېشىش مەغلۇپ بولدى (قارىغاندا يېشىش ئاچقۇچى يوقمۇ قانداق)"
+
+#: ../daemon/seahorse-gpgme-generate.c:62
+msgid "RSA"
+msgstr "RSA"
+
+#: ../daemon/seahorse-gpgme-generate.c:63
+msgid "DSA Elgamal"
+msgstr "DSA Elgamal"
+
+#: ../daemon/seahorse-gpgme-generate.c:64
+msgid "DSA (sign only)"
+msgstr "DSA (ئىمزالا)"
+
+#: ../daemon/seahorse-gpgme-generate.c:65
+msgid "RSA (sign only)"
+msgstr "RSA (ئىمزالا)"
+
+#: ../daemon/seahorse-gpgme-generate.c:81
+msgid "Couldn't generate PGP key"
+msgstr "PGP ئاچقۇچىنى ھاسىل قىلالمىدى"
+
+#: ../daemon/seahorse-gpgme-generate.c:141
+msgid "Passphrase for New PGP Key"
+msgstr "يېڭى PGP ئاچقۇچىنىڭ ئىمى"
+
+#: ../daemon/seahorse-gpgme-generate.c:142
+msgid "Enter the passphrase for your new key twice."
+msgstr "يېڭى ئاچقۇچنىڭ ئىمىنى ئىككى قېتىم كىرگۈزۈڭ."
+
+#: ../daemon/seahorse-gpgme-generate.c:151
+msgid "Couldn't generate key"
+msgstr "ئاچقۇچىنى ھاسىل قىلالمىدى"
+
+#: ../daemon/seahorse-gpgme-generate.c:153
+msgid "Generating key"
+msgstr "ئاچقۇچىنى ھاسىل قىلىۋاتىدۇ"
+
+#: ../daemon/seahorse-gpgme-source.c:98
+#, c-format
+msgid "Wrong passphrase."
+msgstr "خاتا ئىم."
+
+#: ../daemon/seahorse-gpgme-source.c:102
+#, c-format
+msgid "Enter new passphrase for '%s'"
+msgstr "‹%s› نىڭ يېڭى ئىمنى كىرگۈزۈڭ"
+
+#: ../daemon/seahorse-gpgme-source.c:104
+#, c-format
+msgid "Enter passphrase for '%s'"
+msgstr "‹%s› نىڭ ئىمنى كىرگۈزۈڭ"
+
+#: ../daemon/seahorse-gpgme-source.c:107
+msgid "Enter new passphrase"
+msgstr "يېڭى ئىم كىرگۈزۈڭ"
+
+#: ../daemon/seahorse-gpgme-source.c:109
+msgid "Enter passphrase"
+msgstr "ئىم كىرگۈزۈڭ"
+
+#. TODO: We can use the GPGME progress to make this more accurate
+#: ../daemon/seahorse-gpgme-source.c:712
+#, c-format
+msgid "Loaded %d key"
+msgid_plural "Loaded %d keys"
+msgstr[0] "%d ئاچقۇچ ئوقۇلدى"
+
+#: ../daemon/seahorse-gpgme-source.c:765
+msgid "Loading Keys..."
+msgstr "ئاچقۇچلارنى ئوقۇۋاتىدۇ…"
+
+#: ../daemon/seahorse-gpgme-source.c:808
+msgid ""
+"Invalid key data (missing UIDs). This may be due to a computer with a date "
+"set in the future or a missing self-signature."
+msgstr "ئاچقۇچ سانلىق-مەلۇماتلىرى ئىناۋەتسىز(كىملىك يوق). بۇ كومپيۇتېرنىڭ چېسلاسى خاتا(كەلگۈسىگە) تەڭشەلگەن ياكى ئوز ئىمزاسىنىڭ يوق بولۇشى سەۋەبىدىن بولىدۇ."
+
+#: ../daemon/seahorse-gpgme-source.c:898
+msgid "Importing Keys"
+msgstr "ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ"
+
+#: ../daemon/seahorse-gpgme-source.c:931
+msgid "Exporting Keys"
+msgstr "ئاچقۇچلارنى ئېكسپورت قىلىۋاتىدۇ"
+
+#: ../daemon/seahorse-gpgme-subkey.c:197 ../daemon/seahorse-validity.c:40
+msgid "Unknown"
+msgstr "نامەلۇم"
+
+#: ../daemon/seahorse-gpgme-subkey.c:199
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: ../daemon/seahorse-notify.xml.h:1
+msgid "Notification Messages"
+msgstr "ئۇقتۇرۇش ئۇچۇرلىرى"
+
+#: ../daemon/seahorse-object.c:317
+msgid "Symmetric Key"
+msgstr "سىممېترىك ئاچقۇچ"
+
+#: ../daemon/seahorse-object.c:320
+msgid "Public Key"
+msgstr "ئاممىۋى شىفىرلىق ئاچقۇچ"
+
+#: ../daemon/seahorse-object.c:323
+msgid "Private Key"
+msgstr "مەخپىي ئاچقۇچ"
+
+#: ../daemon/seahorse-object.c:326
+msgid "Credentials"
+msgstr "گۇۋاھنامىلەر"
+
+#.
+#. * Translators: "This object is a means of storing items such as
+#. * name, email address, etc. that make up one's digital identity.
+#.
+#: ../daemon/seahorse-object.c:333
+msgid "Identity"
+msgstr "سالاھىيەت"
+
+#: ../daemon/seahorse-passphrase.c:196
+msgid "Passphrase"
+msgstr "ئىم جۈملىسى"
+
+#: ../daemon/seahorse-passphrase.c:199
+msgid "Password:"
+msgstr "ئىم:"
+
+#. The second and main entry
+#: ../daemon/seahorse-passphrase.c:263
+msgid "Confirm:"
+msgstr "جەزملەش:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:1
+msgid "Algorithms here"
+msgstr "ئالگورىزىملار بۇ يەردە"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:2
+msgid "New PGP Key"
+msgstr "يېڭى PGP ئاچقۇچى"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:3
+msgid "A PGP key allows you to encrypt email or files to other people."
+msgstr "PGP ئاچقۇچى ئىشلىتىلسە باشقىلارغا ئەۋەتىدىغان ھۆججەت ياكى ئېلخەتلەرنى شىفىرلاشقا بولىدۇ"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:4
+msgid "Full _Name:"
+msgstr "تولۇق ئاتى(_N):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:5
+msgid "_Email Address:"
+msgstr "ئېلخەت ئادرېسى(_E):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:6
+msgid "_Comment:"
+msgstr "ئىزاھات(_C):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:7
+msgid "Ne_ver Expires"
+msgstr "زادىلا ئىناۋەتسىز بولمايدۇ(_V)"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:8
+msgid "Encryption _Type:"
+msgstr "شىفىرلاش تىپى(_T):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:9
+msgid "Key _Strength (bits):"
+msgstr "ئاچقۇچنىڭ كۈچلۈكلۈكى(بىت سانى)(_S):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:10
+msgid "E_xpiration Date:"
+msgstr "ئىناۋەتلىك چېسلاسى(_X):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:11
+msgid "<b>_Advanced key options</b>"
+msgstr "b>ئالىي ئاچقۇچ تاللانمىلىرى(_A)</b>"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:12
+msgid "Generate a new key"
+msgstr "يېڭى ئاچقۇچلارنى ھاسىل قىلىدۇ"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:13
+msgid "C_reate"
+msgstr "قۇر(_R)"
+
+#: ../daemon/seahorse-pgp-key.c:179
+msgid "Private PGP Key"
+msgstr "خۇسۇسىي PGP ئاچقۇچى"
+
+#: ../daemon/seahorse-pgp-key.c:182
+msgid "Public PGP Key"
+msgstr "ئاممىۋى PGP ئاچقۇچى"
+
+#: ../daemon/seahorse-pgp-key.c:527
+msgid "Expired"
+msgstr "ۋاقتى ئوتكەن"
+
+#: ../daemon/seahorse-pgp-subkey.c:366
+msgid "Key"
+msgstr "ئاچقۇچ"
+
+#: ../daemon/seahorse-pgp-subkey.c:371
+#, c-format
+msgid "Subkey %d of %s"
+msgstr "تارماق ئاچقۇچ %d / %s"
+
+#: ../daemon/seahorse-progress.xml.h:1
+msgid "Progress Title"
+msgstr "سۈرئەت ماۋزۇسى"
+
+#: ../daemon/seahorse-service.c:161 ../daemon/seahorse-service.c:267
+#, c-format
+msgid "Invalid or unrecognized key type: %s"
+msgstr "ئىناۋەتسىز ياكى چۈشىنىكسىز ئاچقۇچ تىپى: %s"
+
+#: ../daemon/seahorse-service.c:229
+#, c-format
+msgid "This keytype is not supported: %s"
+msgstr "بۇ ئاچقۇچ تىپىنى قوللىمايدۇ: %s"
+
+#: ../daemon/seahorse-service.c:331 ../daemon/seahorse-service-keyset.c:180
+#: ../daemon/seahorse-service-keyset.c:223
+#, c-format
+msgid "Invalid or unrecognized key: %s"
+msgstr "ئىناۋەتسىز ياكى چۈشىنىكسىز ئاچقۇچ: %s"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:203
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
+msgstr "%2$s دىكى<b>ۋاقتى ئوتكەن </b>の<i><key id='%1$s'/></i>بىلەن ئىمزا قويۇلغان"
+
+#: ../daemon/seahorse-service-crypto.c:204
+msgid "Invalid Signature"
+msgstr "ئىناۋەتسىز ئىمزا"
+
+#: ../daemon/seahorse-service-crypto.c:210
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
+msgstr "%2$s دىكى<b>ۋاقتى ئوتكەن </b>の<i><key id='%1$s'/></i>بىلەن ئىمزا قويۇلغان"
+
+#: ../daemon/seahorse-service-crypto.c:211
+msgid "Expired Signature"
+msgstr "ۋاقتى ئوتكەن ئىمزا"
+
+#: ../daemon/seahorse-service-crypto.c:217
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
+msgstr "%2$s دىكى<b>مەغلۇپ بولغان</b><i><key id='%1$s'/> بىلەن ئىمزا قويۇلغان"
+
+#: ../daemon/seahorse-service-crypto.c:218
+msgid "Revoked Signature"
+msgstr "ئىناۋەتسىز قىلىنغان ئىمزا"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:224
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s."
+msgstr "%2$s دىكى <i><key id='%1$s'/></i>بىلەن ئىمزا قويۇلغان"
+
+#: ../daemon/seahorse-service-crypto.c:225
+msgid "Good Signature"
+msgstr "ئېسىل ئىمزا"
+
+#: ../daemon/seahorse-service-crypto.c:230
+msgid "Signing key not in keyring."
+msgstr "ئىمزا ئاچقۇچى ئاچقۇچ ھالقىسى(keyring)دا يوق."
+
+#: ../daemon/seahorse-service-crypto.c:231
+msgid "Unknown Signature"
+msgstr "نامەلۇم ئىمزا"
+
+#: ../daemon/seahorse-service-crypto.c:235
+msgid "Bad or forged signature. The signed data was modified."
+msgstr "توغرا بولمىغان ياكى ساختا ئىمزا (ئىمزا سانلىق-مەلۇماتى ئۆزگەرتىلىپتۇ)"
+
+#: ../daemon/seahorse-service-crypto.c:236
+msgid "Bad Signature"
+msgstr "توغرا بولمىغان ئىمزا"
+
+#: ../daemon/seahorse-service-crypto.c:244
+msgid "Couldn't verify signature."
+msgstr "ئىمزانى دەلىللىگىلى بولمىدى"
+
+#: ../daemon/seahorse-service-crypto.c:318
+#: ../daemon/seahorse-service-crypto.c:654
+#, c-format
+msgid "Invalid or unrecognized signer: %s"
+msgstr "ئىناۋەتسىز ياكى چۈشىنىكسىز ئىمزاچى: %s"
+
+#: ../daemon/seahorse-service-crypto.c:325
+#: ../daemon/seahorse-service-crypto.c:661
+#, c-format
+msgid "Key is not valid for signing: %s"
+msgstr "ئىمزانىڭ ئاچقۇچى ئىناۋەتسىز: %s"
+
+#: ../daemon/seahorse-service-crypto.c:336
+#, c-format
+msgid "Invalid or unrecognized recipient: %s"
+msgstr "ئىناۋەتسىز ياكى چۈشىنىكسىز تاپشۇرۇۋالغۇچى: %s"
+
+#: ../daemon/seahorse-service-crypto.c:344
+#, c-format
+msgid "Key is not a valid recipient for encryption: %s"
+msgstr ""
+
+#: ../daemon/seahorse-service-crypto.c:353
+#, c-format
+msgid "No recipients specified"
+msgstr "تاپشۇرۇۋالغۇچى كۆرسىتىلمىدى"
+
+#: ../daemon/seahorse-service-crypto.c:442
+#, c-format
+msgid "Invalid key type for decryption: %s"
+msgstr "شىفىرسىزلاشنىڭ ئاچقۇچ تىپى ئىناۋەتسىز: %s"
+
+#: ../daemon/seahorse-service-crypto.c:556
+#: ../daemon/seahorse-service-crypto.c:754
+#, c-format
+msgid "Please set clearuri"
+msgstr "clearuri نى بەلگىلەڭ"
+
+#: ../daemon/seahorse-service-crypto.c:562
+#: ../daemon/seahorse-service-crypto.c:760
+#, c-format
+msgid "Please set crypturi"
+msgstr "crypturi نى بەلگىلەڭ"
+
+#: ../daemon/seahorse-service-crypto.c:572
+#, c-format
+msgid "Error opening clearuri"
+msgstr "clearuri ئېچىشتا خاتالىق كۆرۈلدى"
+
+#: ../daemon/seahorse-service-crypto.c:649
+#, c-format
+msgid "No signer specified"
+msgstr "ئىمزاچى كۆرسىتىلمىگەن"
+
+#: ../daemon/seahorse-service-crypto.c:838
+#, c-format
+msgid "Invalid key type for verifying: %s"
+msgstr "تەكشۈرۈشنىڭ ئاچقۇچ تىپى ئىناۋەتسىز: %s"
+
+#: ../daemon/seahorse-service-keyset.c:273
+#, c-format
+msgid "Invalid key id: %s"
+msgstr "ئاچقۇچ id سى ئىناۋەتسىز: %s"
+
+#: ../daemon/seahorse-unknown.c:58
+msgid "Unavailable"
+msgstr "ئىشلەتكىلى بولمايدۇ"
+
+#: ../daemon/seahorse-util.c:231
+msgid "%Y-%m-%d"
+msgstr "%Y-%m-%d"
+
+#: ../daemon/seahorse-util.c:510
+msgid "Key Data"
+msgstr "ئاچقۇچ سانلىق-مەلۇماتى"
+
+#: ../daemon/seahorse-util.c:512
+msgid "Multiple Keys"
+msgstr "بىرنەچچە كۇنۇپكىلار"
+
+#: ../daemon/seahorse-util.c:768
+msgid "Couldn't run file-roller"
+msgstr "'file-roller' نى ئىجرا قىلغىلى بولمىدى"
+
+#: ../daemon/seahorse-util.c:774
+msgid "Couldn't package files"
+msgstr "ھۆججەتلەرنى بوغچىلىغىلى بولمىدى"
+
+#: ../daemon/seahorse-util.c:775
+msgid "The file-roller process did not complete successfully"
+msgstr "'file-roller' مۇۋەپپەقىيەتلىك قوزغىلالمىدى"
+
+#. Filter for PGP keys. We also include *.asc, as in many
+#. cases that extension is associated with text/plain
+#: ../daemon/seahorse-util.c:944
+msgid "All key files"
+msgstr "بارلىق ئاچقۇچ ھۆججەتلىرى"
+
+#: ../daemon/seahorse-util.c:951 ../daemon/seahorse-util.c:999
+msgid "All files"
+msgstr "ھەممە ھۆججەتلەر"
+
+#: ../daemon/seahorse-util.c:992
+msgid "Archive files"
+msgstr "ئارخىپ ھۆججەتلەر"
+
+#: ../daemon/seahorse-util.c:1062
+msgid ""
+"<b>A file already exists with this name.</b>\n"
+"\n"
+"Do you want to replace it with a new file?"
+msgstr "<b>ئوخشاش ئاتتىكى ھۆججەت مەۋجۇت.</b>\n"
+"\n"
+"ئۇنى يېڭى ھۆججەتتە قاپلىۋېتەمسىز؟"
+
+#: ../daemon/seahorse-util.c:1065
+msgid "_Replace"
+msgstr "ئالماشتۇر(_R)"
+
+#: ../daemon/seahorse-validity.c:42
+msgctxt "Validity"
+msgid "Never"
+msgstr "ھەرگىز"
+
+#: ../daemon/seahorse-validity.c:44
+msgid "Marginal"
+msgstr "قىسمەن"
+
+#: ../daemon/seahorse-validity.c:46
+msgid "Full"
+msgstr "تامامەن"
+
+#: ../daemon/seahorse-validity.c:48
+msgid "Ultimate"
+msgstr "مۇتلەق"
+
+#: ../daemon/seahorse-validity.c:50
+msgid "Disabled"
+msgstr "ئىناۋەتسىز قىلىنغان"
+
+#: ../daemon/seahorse-validity.c:52
+msgid "Revoked"
+msgstr "بىكار قىلىنغان"
+
+#: ../daemon/seahorse-widget.c:433
+#, c-format
+msgid "Could not display help: %s"
+msgstr "ياردەمنى كۆرسىتەلمەيدۇ: %s"
+
+#: ../libcryptui/cryptui.c:271
+msgid ""
+"No encryption keys were found with which to perform the operation you "
+"requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+"started so that you may either create a key or import one."
+msgstr ""
+
+#: ../libcryptui/cryptui-key-chooser.c:152
+msgid "All Keys"
+msgstr "بارلىق ئاچقۇچلار"
+
+#: ../libcryptui/cryptui-key-chooser.c:153
+msgid "Selected Recipients"
+msgstr "تاللانغان تاپشۇرۇۋالغۇچىلار"
+
+#: ../libcryptui/cryptui-key-chooser.c:154
+msgid "Search Results"
+msgstr "ئىزدەش نەتىجىسى"
+
+#. Filter Label
+#: ../libcryptui/cryptui-key-chooser.c:164
+msgid "Search _for:"
+msgstr "ئىزدە(_F):"
+
+#: ../libcryptui/cryptui-key-chooser.c:223
+msgid "None (Don't Sign)"
+msgstr "يوق(ئىمزا قويما)"
+
+#: ../libcryptui/cryptui-key-chooser.c:236
+#, c-format
+msgid "Sign this message as %s"
+msgstr "ئۇچۇرغا %s سۈپىتىدە ئىمزا قوي"
+
+#. Sign Label
+#: ../libcryptui/cryptui-key-chooser.c:258
+msgid "_Sign message as:"
+msgstr "ئۇچۇرغا تۆۋەندىكىدەك ئىمزا قوي(_S):"
+
+#. TODO: Icons
+#. The name column
+#: ../libcryptui/cryptui-key-list.c:140
+msgid "Name"
+msgstr "ئاتى"
+
+#. The keyid column
+#: ../libcryptui/cryptui-key-list.c:145
+msgid "Key ID"
+msgstr "ئاچقۇچ كىملىكى"
+
+#: ../libegg/egg-datetime.c:317
+msgid "Display flags"
+msgstr "بەلگىلەرنى كۆرسەت"
+
+#: ../libegg/egg-datetime.c:318
+msgid "Displayed date and/or time properties"
+msgstr "كۆرسىتىلگەن چېسلا ۋە ياكى ۋاقىت خاسلىقلىرى"
+
+#: ../libegg/egg-datetime.c:323
+msgid "Lazy mode"
+msgstr "ھۇرۇن ھالەت"
+
+#: ../libegg/egg-datetime.c:324
+msgid "Lazy mode doesn't normalize entered date and time values"
+msgstr "ھۇرۇن ھالەتتە كىرگۈزۈلگەن چېسلا ۋە ۋاقىت قىممەتلىرى نورماللاشتۇرۇلمايدۇ"
+
+#: ../libegg/egg-datetime.c:329
+msgid "Year"
+msgstr "يىل"
+
+#: ../libegg/egg-datetime.c:330
+msgid "Displayed year"
+msgstr "كۆرسىتىلگەن يىل"
+
+#: ../libegg/egg-datetime.c:335
+msgid "Month"
+msgstr "ئاي"
+
+#: ../libegg/egg-datetime.c:336
+msgid "Displayed month"
+msgstr "كۆرسىتىلگەن ئاي"
+
+#: ../libegg/egg-datetime.c:341
+msgid "Day"
+msgstr "كۈن"
+
+#: ../libegg/egg-datetime.c:342
+msgid "Displayed day of month"
+msgstr "كۆرسىتىلگەن كۈن"
+
+#: ../libegg/egg-datetime.c:347
+msgid "Hour"
+msgstr "سائەت"
+
+#: ../libegg/egg-datetime.c:348
+msgid "Displayed hour"
+msgstr "كۆرسىتىلگەن سائەت"
+
+#: ../libegg/egg-datetime.c:353
+msgid "Minute"
+msgstr "مىنۇت"
+
+#: ../libegg/egg-datetime.c:354
+msgid "Displayed minute"
+msgstr "كۆرسىتىلگەن ۋاقىت"
+
+#: ../libegg/egg-datetime.c:359
+msgid "Second"
+msgstr "سېكۇنت"
+
+#: ../libegg/egg-datetime.c:360
+msgid "Displayed second"
+msgstr "كۆرسىتىلگەن سېكۇنت"
+
+#: ../libegg/egg-datetime.c:365
+msgid "Lower limit year"
+msgstr "توۋەن يىل چېكى"
+
+#: ../libegg/egg-datetime.c:366
+msgid "Year part of the lower date limit"
+msgstr "چېسلانىڭ توۋەن چېكىنىڭ يىل بۆلىكى"
+
+#: ../libegg/egg-datetime.c:371
+msgid "Upper limit year"
+msgstr "يۇقىرى يىل چېكى"
+
+#: ../libegg/egg-datetime.c:372
+msgid "Year part of the upper date limit"
+msgstr "چېسلانىڭ يۇقىرى چېكىنىڭ يىل بۆلىكى"
+
+#: ../libegg/egg-datetime.c:377
+msgid "Lower limit month"
+msgstr "توۋەن ئاي چېكى"
+
+#: ../libegg/egg-datetime.c:378
+msgid "Month part of the lower date limit"
+msgstr "چېسلانىڭ توۋەن چېكىنىڭ ئاي بۆلىكى"
+
+#: ../libegg/egg-datetime.c:383
+msgid "Upper limit month"
+msgstr "يۇقىرى ئاي چېكى"
+
+#: ../libegg/egg-datetime.c:384
+msgid "Month part of the upper date limit"
+msgstr "چېسلانىڭ يۇقىرى چېكىنىڭ ئاي بۆلىكى"
+
+#: ../libegg/egg-datetime.c:389
+msgid "Lower limit day"
+msgstr "توۋەن كۈن چېكى"
+
+#: ../libegg/egg-datetime.c:390
+msgid "Day of month part of the lower date limit"
+msgstr "چېسلانىڭ توۋەن چېكىنىڭ كۈن بۆلىكى"
+
+#: ../libegg/egg-datetime.c:395
+msgid "Upper limit day"
+msgstr "يۇقىرى كۈن چېكى"
+
+#: ../libegg/egg-datetime.c:396
+msgid "Day of month part of the upper date limit"
+msgstr "چېسلانىڭ يۇقىرى چېكىنىڭ كۈن بۆلىكى"
+
+#: ../libegg/egg-datetime.c:401
+msgid "Lower limit hour"
+msgstr "توۋەن سائەت چېكى"
+
+#: ../libegg/egg-datetime.c:402
+msgid "Hour part of the lower time limit"
+msgstr "ۋاقىتنىڭ توۋەن چېكىنىڭ سائەت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:407
+msgid "Upper limit hour"
+msgstr "يۇقىرى سائەت چېكى"
+
+#: ../libegg/egg-datetime.c:408
+msgid "Hour part of the upper time limit"
+msgstr "ۋاقىتنىڭ يۇقىرى چېكىنىڭ سائەت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:413
+msgid "Lower limit minute"
+msgstr "توۋەن مىنۇت چېكى"
+
+#: ../libegg/egg-datetime.c:414
+msgid "Minute part of the lower time limit"
+msgstr "ۋاقىتنىڭ توۋەن چېكىنىڭ مىنۇت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:419
+msgid "Upper limit minute"
+msgstr "يۇقىرى مىنۇت چېكى"
+
+#: ../libegg/egg-datetime.c:420
+msgid "Minute part of the upper time limit"
+msgstr "ۋاقىتنىڭ يۇقىرى چېكىنىڭ مىنۇت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:425
+msgid "Lower limit second"
+msgstr "توۋەن سېكۇنت چېكى"
+
+#: ../libegg/egg-datetime.c:426
+msgid "Second part of the lower time limit"
+msgstr "ۋاقىتنىڭ توۋەن چېكىنىڭ سېكۇنت بۆلىكى"
+
+#: ../libegg/egg-datetime.c:431
+msgid "Upper limit second"
+msgstr "يۇقىرى سېكۇنت چېكى"
+
+#: ../libegg/egg-datetime.c:432
+msgid "Second part of the upper time limit"
+msgstr "ۋاقىتنىڭ يۇقىرى چېكىنىڭ سېكۇنت بۆلىكى"
+
+#. Translate to calendar:week_start:1 if you want Monday to be the
+#. * first day of the week; otherwise translate to calendar:week_start:0.
+#. * Do *not* translate it to anything else, if it isn't calendar:week_start:1
+#. * or calendar:week_start:0 it will not work.
+#.
+#: ../libegg/egg-datetime.c:474
+msgid "calendar:week_start:0"
+msgstr "يىلنامە:week_start:0"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Date"
+msgstr "چېسلا"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Enter the date directly"
+msgstr "چېسلانى بىۋاسىتە كىرگۈزۈڭ"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select Date"
+msgstr "چېسلا تاللا"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select the date from a calendar"
+msgstr "يىلنامىدىن چېسلا تاللا"
+
+#: ../libegg/egg-datetime.c:521 ../libegg/egg-datetime.c:2196
+msgid "Time"
+msgstr "ۋاقىت"
+
+#: ../libegg/egg-datetime.c:521
+msgid "Enter the time directly"
+msgstr "ۋاقىتنى بىۋاسىتە كىرگۈزىدۇ"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select Time"
+msgstr "ۋاقىت تاللا"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select the time from a list"
+msgstr "تىزىملىكتىن ۋاقىت تاللا"
+
+#. Translators: set this to anything else if you want to use a
+#. * 24 hour clock.
+#.
+#: ../libegg/egg-datetime.c:793
+msgid "24hr: no"
+msgstr "24 سائەت: ياق"
+
+#: ../libegg/egg-datetime.c:797 ../libegg/egg-datetime.c:1257
+#: ../libegg/egg-datetime.c:1261
+msgid "AM"
+msgstr "چ ب"
+
+#: ../libegg/egg-datetime.c:799 ../libegg/egg-datetime.c:1258
+#: ../libegg/egg-datetime.c:1265
+msgid "PM"
+msgstr "چ ك"
+
+#. Translators: This is hh:mm:ss AM/PM.
+#: ../libegg/egg-datetime.c:807
+#, c-format
+msgid "%02d:%02d:%02d %s"
+msgstr "%02d:%02d:%02d %s"
+
+#. Translators: This is hh:mm AM/PM.
+#: ../libegg/egg-datetime.c:810
+#, c-format
+msgid "%02d:%02d %s"
+msgstr "%02d:%02d %s"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:814
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#. Translators: This is hh:mm.
+#: ../libegg/egg-datetime.c:817
+#, c-format
+msgid "%02d:%02d"
+msgstr "%02d:%02d"
+
+#. TODO: should handle other display modes as well...
+#. Translators: This is YYYY-MM-DD
+#: ../libegg/egg-datetime.c:1173
+#, c-format
+msgid "%04d-%02d-%02d"
+msgstr "%04d-%02d-%02d"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:1238
+#, c-format
+msgid "%u:%u:%u"
+msgstr "%u:%u:%u"
+
+#: ../libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "ھۆججەت ئىناۋەتلىك .desktop ھۆججىتى ئەمەس."
+
+#: ../libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "تونۇيالمىغان ئۈستەلئۈستى ھۆججەت نەشرى ‹%s›"
+
+#: ../libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "%s قوزغىلىۋاتىدۇ"
+
+#: ../libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "پروگرامما بۇيرۇق قۇرىدا پۈتۈكنى قوبۇل قىلالمايدۇ"
+
+#: ../libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "تونۇمايدىغان ئىجرا تاللانمىسى: %d"
+
+#: ../libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "URI پۈتۈكنى 'Type=Link' ئۈستەلئۈستى تۈرىگە يوللىيالمىدى."
+
+#: ../libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "ئىجراچان تۈر ئەمەس"
+
+#: ../libegg/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "ئەڭگىمە باشقۇرغۇچقا باغلىنىشنى چەكلە"
+
+#: ../libegg/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "سەپلىمە ساقلانغان ھۆججەتنى بەلگىلە"
+
+#: ../libegg/eggsmclient.c:228
+msgid "FILE"
+msgstr "FILE"
+
+#: ../libegg/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "ئەڭگىمە باشقۇرغۇ ID سېنى بەلگىلە"
+
+#: ../libegg/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../libegg/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "ئەڭگىمە باشقۇرغۇ تاللانمىلىرى:"
+
+#: ../libegg/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "ئەڭگىمە باشقۇرغۇ تاللانمىلىرى كۆرسەت"
+
+#~ msgid "Enable DNS-SD sharing"
+#~ msgstr "DNS-SD ھەمبەھىرىنى قوزغات"
+
+#~ msgid "ID of the default key"
+#~ msgstr "كۆڭۈلدىكى كۇنۇپكىنىڭ ID سى"
+
+#~ msgid "Last key used to sign a message."
+#~ msgstr "ئۇچۇرغا ئىمزا قويغاندا ئىشلەتكەن ئەڭ ئاخىرقى ئاچقۇچ."
+
+#~ msgid "PGP Key servers"
+#~ msgstr "PGP ئاچقۇچ مۇلازىمېتىرى"
+
+#~ msgid "The ID of the last secret key used to sign a message."
+#~ msgstr ""
+#~ "ئۇچۇرغا ئىمزا قويغاندا ئىشلەتكەن ئەڭ ئاخىرقى مەخپىي ئاچقۇچنىڭ ID سى."
+
+#~ msgid "Whether to use ASCII Armor"
+#~ msgstr "ASCII"
+
+#~ msgid "Couldn't add keyring"
+#~ msgstr "keyring نى قوشالمىدى"
+
+#~ msgid "Add Password"
+#~ msgstr "ئىم قوش"
+
+#~ msgid "_Description:"
+#~ msgstr "چۈشەندۈرۈش(_D):"
+
+#~ msgid "_Password:"
+#~ msgstr "ئىم(_P):"
+
+#~ msgid "Network Password"
+#~ msgstr "تور ئىمى"
+
+#~ msgid "Password"
+#~ msgstr "ئىم"
+
+#~ msgid "Are you sure you want to delete the password '%s'?"
+#~ msgstr "ئىم «%s» نى راستلا ئۆچۈرەمسىز؟"
+
+#~ msgid "Access a network share or resource"
+#~ msgstr "تور ھەمبەھىرى ياكى بايلىقىنى زىيارەت قىلىش"
+
+#~ msgid "Access a website"
+#~ msgstr "تورتۇرانى زىيارەت قىلىش"
+
+#~ msgid "Couldn't change password."
+#~ msgstr "ئىمنى ئۆزگەرتەلمىدى."
+
+#~ msgid "<b>Password:</b>"
+#~ msgstr "<b>ئىم:</b>"
+
+#~ msgid "<b>Path:</b>"
+#~ msgstr "<b>يول:</b>"
+
+#~ msgid "<b>Permissions:</b>"
+#~ msgstr "<b>ھوقۇقلار:</b>"
+
+#~ msgid "<b>Technical Details:</b>"
+#~ msgstr "<b>تېخنىكىلىق تەپسىلاتلار:</b>"
+
+#~ msgid "Applications"
+#~ msgstr "پروگراممىلار"
+
+#~ msgid "Details"
+#~ msgstr "تەپسىلاتى"
+
+#~ msgid "Login:"
+#~ msgstr "تىزىمغا كىر:"
+
+#~ msgid "Server:"
+#~ msgstr "مۇلازىمېتىر:"
+
+#~ msgid "Type:"
+#~ msgstr "تىپى:"
+
+#~ msgid "_Read"
+#~ msgstr "ئوقۇ(_R)"
+
+#~ msgid "_Write"
+#~ msgstr "ياز(_W)"
+
+#~| msgid "_Delete"
+#~ msgctxt "infinitive"
+#~ msgid "_Delete"
+#~ msgstr "ئۆچۈر(_D)"
+
+#~ msgid "<b>Passwords:</b> %s"
+#~ msgstr "<b>ئىملار:</b>%s"
+
+#~ msgid "Couldn't unlock keyring"
+#~ msgstr "keyring نىڭ قۇلۇپىنى ئاچالمىدى"
+
+#~ msgid "Couldn't lock keyring"
+#~ msgstr "keyring نى قۇلۇپلىيالمىدى"
+
+#~ msgid "Couldn't set default keyring"
+#~ msgstr "كۆڭۈلدىكى keyring نى تەڭشىيەلمىدى"
+
+#~ msgid "Couldn't change keyring password"
+#~ msgstr "keyring ئىمىنى ئۆزگەرتەلمىدى"
+
+#~ msgid "_Unlock"
+#~ msgstr "قۇلۇپ ئاچ(_U)"
+
+#~ msgid "Created:"
+#~ msgstr "قۇرۇلغان:"
+
+#~ msgid "_Name:"
+#~ msgstr "ئاتى(_N):"
+
+#~ msgid "Couldn't communicate with key ring daemon"
+#~ msgstr "key ring daemon بىلەن ئالاقىلىشەلمىدى"
+
+#~ msgid "Deleting item..."
+#~ msgstr "تۈرلەرنى ئۆچۈرۈۋاتىدۇ..."
+
+#~ msgid "Deleting keyring..."
+#~ msgstr "keyring ئۆچۈرۈۋاتىدۇ..."
+
+#~ msgid ":"
+#~ msgstr ":"
+
+#~ msgid "Host:"
+#~ msgstr "كومپيۇتېر:"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Custom"
+#~ msgstr "ئىختىيارى"
+
+#~ msgid "Preferences"
+#~ msgstr "مايىللىق"
+
+#~ msgid "Add User ID"
+#~ msgstr "ئىشلەتكۈچى ID قوشۇش"
+
+#~ msgid "Create the new user ID"
+#~ msgstr "يېڭى ئىشلەتكۈچى ID سىنى قۇرىدۇ"
+
+#~ msgid "Must be at least 5 characters long"
+#~ msgstr "ئەڭ ئاز دېگەندە 5 ھەرپ بولۇشى كېرەك"
+
+#~ msgid "C_hange"
+#~ msgstr "ئۆزگەرت(_H)"
+
+#~ msgid "Couldn't add subkey"
+#~ msgstr "subkey نى قوشالمىدى"
+
+#~ msgid "RSA (encrypt only)"
+#~ msgstr "RSA(شىفىرلاشلا)"
+
+#~ msgid "Couldn't add user id"
+#~ msgstr "ئىشلەتكۈچى id  سىنى قوشالمىدى"
+
+#~ msgid "Add user ID to %s"
+#~ msgstr "ئىشلەتكۈچى ID نى %s غا قوشىدۇ"
+
+#~ msgid "Wrong password"
+#~ msgstr "ئىم خاتا"
+
+#~ msgid "_Resize"
+#~ msgstr "چوڭلۇقىنى ئۆزگەرت(_R)"
+
+#~ msgid "All image files"
+#~ msgstr "بارلىق رەسىم ھۆججەتلىرى"
+
+#~ msgid "All JPEG files"
+#~ msgstr "بارلىق JPEG ھۆججەتلىرى"
+
+#~ msgid "Couldn't add photo"
+#~ msgstr "سۈرەتنى قوشالمىدى"
+
+#~ msgid "Couldn't delete photo"
+#~ msgstr "سۈرەتنى ئۆچۈرەلمىدى"
+
+#~ msgid "No reason"
+#~ msgstr "سەۋەبسىز"
+
+#~ msgid "Superseded"
+#~ msgstr "بىكار قىلىندى"
+
+#~ msgid "Not Used"
+#~ msgstr "ئىشلىتىلمىگەن"
+
+#~ msgid "Couldn't add revoker"
+#~ msgstr "revoker نى قوشالمىدى"
+
+#~ msgid "Couldn't communicate with server '%s': %s"
+#~ msgstr "مۇلازىمېتىر «%s» بىلەن ئالاقىلىشەلمىدى: %s"
+
+#~ msgid "HTTP Key Server"
+#~ msgstr "HTTP ئاچقۇچ مۇلازىمېتىرى"
+
+#~ msgid "Couldn't communicate with '%s': %s"
+#~ msgstr "«%s» بىلەن ئالاقىلىشەلمىدى: %s"
+
+#~ msgid "LDAP Key Server"
+#~ msgstr "LDAP ئاچقۇچ مۇلازىمېتىرى"
+
+#~ msgid "Are you sure you want to permanently delete %s?"
+#~ msgstr "%s نى راستلا مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#~ msgid "Are you sure you want to permanently delete %d keys?"
+#~ msgstr "%d ئاچقۇچنى راستلا مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#~ msgid "Are you sure you want to permanently delete the '%s' user ID?"
+#~ msgstr "'%s' دېگەن ئىشلەتكۈچى ID نى راستلا مەڭگۈلۈككە ئۆچۈرەمسىز؟"
+
+#~ msgid "Couldn't delete user ID"
+#~ msgstr "ئىشلەتكۈچى ID سىنى ئۆچۈرەلمىدى"
+
+#~ msgid "Name/Email"
+#~ msgstr "ئات/ئېلخەت"
+
+#~ msgid "(unknown)"
+#~ msgstr "(ناتونۇش)"
+
+#~ msgid "Couldn't delete subkey"
+#~ msgstr "subkey نى ئۆچۈرەلمىدى"
+
+#~ msgid "Couldn't export key to \"%s\""
+#~ msgstr "ئاچقۇچنى «%s» غا ئېكسپورت قىلالمىدى"
+
+#~ msgid "Couldn't export key."
+#~ msgstr "ئاچقۇچنى ئېكسپورت قىلالمىدى"
+
+#~ msgctxt "Expires"
+#~ msgid "Never"
+#~ msgstr "ھەرگىز"
+
+#~ msgid "Type"
+#~ msgstr "تىپى"
+
+#~ msgid "Created"
+#~ msgstr "قۇرغان"
+
+#~ msgid "Expires"
+#~ msgstr "ۋاقتى ئۆتتى"
+
+#~ msgid "Status"
+#~ msgstr "ھالەت"
+
+#~ msgid "Strength"
+#~ msgstr "كۈچلۈكلۈك"
+
+#~ msgid "Good"
+#~ msgstr "ياخشى"
+
+#~ msgid "<b>Actions</b>"
+#~ msgstr "<b>مەشغۇلات</b>"
+
+#~ msgid "<b>Comment:</b>"
+#~ msgstr "<b>ئىزاھات:</b>"
+
+#~ msgid "<b>Dates</b>"
+#~ msgstr "<b>چېسلا</b>"
+
+#~ msgid "<b>Email:</b>"
+#~ msgstr "<b>ئېلخەت:</b>"
+
+#~ msgid "<b>Photo </b>"
+#~ msgstr "<b>سۈرەت</b>"
+
+#~ msgid "<b>Technical Details</b>"
+#~ msgstr "<b>تېخنىكىلىق تەپسىلاتلار</b>"
+
+#~ msgid "<b>This key has expired</b>"
+#~ msgstr "<b>بۇ ئاچقۇچنىڭ ۋاقتى ئوتكەن</b>"
+
+#~ msgid "<b>Type:</b>"
+#~ msgstr "<b>تۈرى:</b>"
+
+#~ msgid "Add"
+#~ msgstr "قوش"
+
+#~ msgid "Change _Passphrase"
+#~ msgstr "Passphrase نى ئۆزگەرت(_P)"
+
+#~ msgid "Decrypt files and email sent to you."
+#~ msgstr "شىفىرسىزلاپ سىزگە يوللايدۇ."
+
+#~ msgid "Delete"
+#~ msgstr "ئۆچۈر"
+
+#~ msgid "Expires:"
+#~ msgstr "قەرەلى:"
+
+#~ msgid "Export"
+#~ msgstr "چىقار"
+
+#~ msgid "Names and Signatures"
+#~ msgstr "ئات ۋە ئىمزالار"
+
+#~ msgid "Never"
+#~ msgstr "ھەرگىز"
+
+#~ msgid "Owner"
+#~ msgstr "ئىگىدار"
+
+#~ msgid "Primary"
+#~ msgstr "ئاساسىي"
+
+#~ msgid "Sign"
+#~ msgstr "ئىمزا"
+
+#~| msgid "<b>Name:</b>"
+#~ msgctxt "name-of-key"
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>ئاتى:</b>"
+
+#~ msgid "<b>Dates:</b>"
+#~ msgstr "<b>چېسلا:</b>"
+
+#~ msgid "<b>_Other Names:</b>"
+#~ msgstr "<b>باشقا ئاتلار(_O):</b>"
+
+#~ msgid "Encrypt files and email to the key's owner "
+#~ msgstr "ھۆججەتنى شىفىرلاپ ئۇنى ئاچقۇچ ئىگىسىگە يوللايدۇ "
+
+#~ msgid "_Sign"
+#~ msgstr "ئىمزا(_S)"
+
+#~ msgid "Certificate"
+#~ msgstr "گۇۋاھنامە"
+
+#~ msgid "C_ontinue"
+#~ msgstr "داۋاملاشتۇر(_O)"
+
+#~ msgid "Create New ..."
+#~ msgstr "يېڭىدىن قۇرۇش..."
+
+#~ msgid "Couldn't import keys"
+#~ msgstr "ئاچقۇچلارنى ئىمپورت قىلغىلى بولمىدى"
+
+#~ msgid "Imported keys"
+#~ msgstr "ئىمپورت قىلىنغان ئاچقۇچلار"
+
+#~ msgid "Importing keys"
+#~ msgstr "ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ"
+
+#~ msgid "Import Key"
+#~ msgstr "ئاچقۇچ ئىمپورت قىلىش"
+
+#~ msgid "_New..."
+#~ msgstr "يېڭى(_N)..."
+
+#~ msgid "Create a new key or item"
+#~ msgstr "يېڭى ئاچقۇچ ياكى تۈر قۇرىدۇ"
+
+#~ msgid "Import from a file"
+#~ msgstr "ھۆججەتتىن ئەكىر"
+
+#~ msgid "Import from the clipboard"
+#~ msgstr "چاپلاش تاختىسىدىن ئىمپورت قىل"
+
+#~ msgid "Filter:"
+#~ msgstr "سۈزگۈچ:"
+
+#~ msgid "Import existing keys from a file:"
+#~ msgstr "ھۆججەتتىن بار بولغان ئاچقۇچنى ئىمپورت قىلىش:"
+
+#~ msgid "_Import"
+#~ msgstr "ئىمپورت قىل(_I)"
+
+#~ msgid "Couldn't export keys"
+#~ msgstr "ئاچقۇچنى ئېكسپورت قىلالمىدى"
+
+#~ msgid "Validity"
+#~ msgstr "ئۈنۈملۈكلۈكى"
+
+#~ msgid "Expiration Date"
+#~ msgstr "ئاخىرلىشىدىغان چېسلا"
+
+#~ msgid "Close this window"
+#~ msgstr "بۇ كۆزنەكنى ياپىدۇ"
+
+#~ msgid "_Expand All"
+#~ msgstr "ھەممىنى ياي(_E)"
+
+#~ msgid "Expand all listings"
+#~ msgstr "ھەممىنى ياي"
+
+#~ msgid "_Collapse All"
+#~ msgstr "ھەممىنى قاتلا(_C)"
+
+#~ msgid "Find Remote Keys"
+#~ msgstr "يىراقتىكى ئاچقۇچنى ئىزدە"
+
+#~ msgid "_Search"
+#~ msgstr "ئىزدە(_S)"
+
+#~ msgid "Couldn't publish keys to server"
+#~ msgstr "ئاچقۇچىنى مۇلازىمېتىرغا تارقىتالمىدى"
+
+#~ msgid "Version of this application"
+#~ msgstr "بۇ پروگراممىنىڭ نەشرى"
+
+#~ msgid "Encryption Key Manager"
+#~ msgstr "شىفىرلاش ئاچقۇچىنى باشقۇرغۇ"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Gheyret Kenji <gheyret@gmail.com>\n"
+#~ "Sahran<sahran@live.com>\n"
+#~ "Muhemmed Erdem <misran_erdem@hotmail.com>"
+
+#~ msgid "Seahorse Project Homepage"
+#~ msgstr "Seahorse قۇرۇلۇشى تورتۇراسى"
+
+#~ msgid "_File"
+#~ msgstr "ھۆججەت(_F)"
+
+#~ msgid "_Edit"
+#~ msgstr "تەھرىر(_E)"
+
+#~ msgid "_View"
+#~ msgstr "كۆرۈنۈش(_V)"
+
+#~ msgid "_Help"
+#~ msgstr "ياردەم(_H)"
+
+#~ msgid "Prefere_nces"
+#~ msgstr "مايىللىق(_N)"
+
+#~ msgid "About this program"
+#~ msgstr "بۇ پروگرامما ھەققىدە"
+
+#~ msgid "_Contents"
+#~ msgstr "مەزمۇنلار(_C)"
+
+#~ msgid "Export public key"
+#~ msgstr "ئاممىۋى ئاچقۇچنى ئېكسپورت قىل"
+
+#~ msgid "Couldn't delete."
+#~ msgstr "ئۆچۈرەلمىدى."
+
+#~ msgid "Deleting..."
+#~ msgstr "ئۆچۈرۈۋاتىدۇ…"
+
+#~ msgid "%s is a private key. Are you sure you want to proceed?"
+#~ msgstr "%s خۇسۇسىي ئاچقۇچ. راستلا بىر تەرەپ قىلىۋېرەمسىز؟"
+
+#~ msgid "Importing keys from key servers"
+#~ msgstr "ئاچقۇچ مۇلازىمېتىرىدىن ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ"
+
+#~ msgctxt ""
+#~ "This text refers to deleting an item from its type's backing store."
+#~ msgid "_Delete"
+#~ msgstr "ئۆچۈر(_D)"
+
+#~ msgid "Delete selected items"
+#~ msgstr "تاللانغان تۈرلەرنى ئۆچۈر"
+
+#~ msgid "E_xport..."
+#~ msgstr "ئېكسپورت قىل(_X)..."
+
+#~ msgid "Export to a file"
+#~ msgstr "ھۆججەتكە چىقار"
+
+#~ msgid "Are you sure you want to delete the secure shell key '%s'?"
+#~ msgstr "مەخپىي shell ئاچقۇچى «%s» نى راستلا ئۆچۈرەمسىز؟"
+
+#~ msgid "Are you sure you want to delete %d secure shell keys?"
+#~ msgstr "%d مەخپىي shell ئاچقۇچلىرىنى راستلا ئۆچۈرەمسىز؟"
+
+#~ msgid "Couldn't generate Secure Shell key"
+#~ msgstr "Secure Shell ئاچقۇچىنى ھاسىل قىلالمىدى"
+
+#~ msgid "Creating Secure Shell Key"
+#~ msgstr "Secure Shell ئاچقۇچىنى قۇرۇۋاتىدۇ"
+
+#~ msgid "DSA"
+#~ msgstr "DSA"
+
+#~ msgid "(Unreadable Secure Shell Key)"
+#~ msgstr "(ئوقۇغىلى بولمايدىغان Secure Shell ئاچقۇچى)"
+
+#~ msgid "Invalid"
+#~ msgstr "ئىناۋەتسىز"
+
+#~ msgid "Couldn't rename key."
+#~ msgstr "ئاچقۇچ ئاتىنى ئۆزگەرتەلمىدى."
+
+#~ msgid "<b>Algorithm:</b>"
+#~ msgstr "<b>ئالگورىزىم:</b>"
+
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>ئاتى:</b>"
+
+#~ msgid "Passphrase:"
+#~ msgstr "ئىم جۈملىسى:"
+
+#~ msgid "Importing key: %s"
+#~ msgstr "ئاچقۇچ ئىمپورت قىلىۋاتىدۇ: %s"
+
+#~ msgid "Importing key. Enter passphrase"
+#~ msgstr "ئاچقۇچلارنى ئىمپورت قىلىۋاتىدۇ. passphrase كىرگۈزۈڭ"
+
+#~ msgid "Couldn't configure Secure Shell keys on remote computer."
+#~ msgstr "يىراقتىكى كومپيۇتېردىكى Secure Shell ئاچقۇچىنى سەپلىيەلمىدى."
+
+#~ msgid "<i>eg: fileserver.example.com:port</i>"
+#~ msgstr "<i>eg: fileserver.example.com:port</i>"

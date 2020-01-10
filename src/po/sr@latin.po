@@ -1,0 +1,921 @@
+# Serbian translation of seahorse
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003 - 2009.
+# This file is distributed under the same license as the seahorse package.
+# Maintainer: Dušan Živojnov <calvin@verat.net>
+# Translated on 2009-05-09 by: Branko Kokanović <branko.kokanovic@gmail.com>
+# Miloš Popović <gpopac@gmail.com>, 2010.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: seahorse\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=libcry"
+"ptui&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-07-24 15:50+0000\n"
+"PO-Revision-Date: 2013-10-15 22:10+0200\n"
+"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: Serbian (sr)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../daemon/seahorse-daemon.c:53
+msgid "Do not run seahorse-daemon as a daemon"
+msgstr "Ne pokreći Morskog konjića kao uslužni program"
+
+#: ../daemon/seahorse-daemon.c:83
+msgid "couldn't fork process"
+msgstr "ne mogu da razdelim proces"
+
+#: ../daemon/seahorse-daemon.c:89
+msgid "couldn't create new process group"
+msgstr "ne mogu da napravim novu grupu procesa"
+
+#: ../daemon/seahorse-daemon.c:237
+msgid "Encryption Daemon (Seahorse)"
+msgstr "Uslužni program za šifrovanje (Morski konjić)"
+
+#: ../daemon/seahorse-notification.c:576 ../daemon/seahorse-notification.c:604
+msgid "Key Imported"
+msgid_plural "Keys Imported"
+msgstr[0] "Ključ je uvežen"
+msgstr[1] "Ključ je uvežen"
+msgstr[2] "Ključevi su uveženi"
+msgstr[3] "Ključ je uvežen"
+
+#: ../daemon/seahorse-notification.c:580 ../daemon/seahorse-notification.c:603
+#, c-format
+msgid "Imported %i key"
+msgid_plural "Imported %i keys"
+msgstr[0] "Uvezen %i ključ"
+msgstr[1] "Uvezen %i ključ"
+msgstr[2] "Uvezeno %i ključeva"
+msgstr[3] "Uvezen %i ključ"
+
+#: ../daemon/seahorse-notification.c:582
+#, c-format
+msgid "Imported a key for"
+msgid_plural "Imported keys for"
+msgstr[0] "Uvežen ključ za"
+msgstr[1] "Uvežen ključ za"
+msgstr[2] "Uveženi ključevi za"
+msgstr[3] "Uvežen ključ za"
+
+#: ../daemon/seahorse-gpgme.c:72
+msgid "Decryption failed. You probably do not have the decryption key."
+msgstr "Dešifrovanje nije uspelo. Verovatno nemate ključ za dešifrovanje."
+
+#: ../daemon/seahorse-gpgme-generate.c:62
+msgid "RSA"
+msgstr "RSA"
+
+#: ../daemon/seahorse-gpgme-generate.c:63
+msgid "DSA Elgamal"
+msgstr "DSA Elgamal"
+
+#: ../daemon/seahorse-gpgme-generate.c:64
+msgid "DSA (sign only)"
+msgstr "DSA (samo potpis)"
+
+#: ../daemon/seahorse-gpgme-generate.c:65
+msgid "RSA (sign only)"
+msgstr "RSA (samo potpis)"
+
+#: ../daemon/seahorse-gpgme-generate.c:81
+msgid "Couldn't generate PGP key"
+msgstr "Ne mogu da generišem PGP ključ"
+
+#: ../daemon/seahorse-gpgme-generate.c:141
+msgid "Passphrase for New PGP Key"
+msgstr "Lozinka za novi PGP ključ"
+
+#: ../daemon/seahorse-gpgme-generate.c:142
+msgid "Enter the passphrase for your new key twice."
+msgstr "Dvaput unesite lozinku za novi ključ."
+
+#: ../daemon/seahorse-gpgme-generate.c:151
+msgid "Couldn't generate key"
+msgstr "Ne mogu da napravim ključ"
+
+#: ../daemon/seahorse-gpgme-generate.c:153
+msgid "Generating key"
+msgstr "Stvaranje ključa"
+
+#: ../daemon/seahorse-gpgme-source.c:98
+#, c-format
+msgid "Wrong passphrase."
+msgstr "Pogrešna lozinka."
+
+#: ../daemon/seahorse-gpgme-source.c:102
+#, c-format
+msgid "Enter new passphrase for '%s'"
+msgstr "Unesite novu lozinku za „%s“"
+
+#: ../daemon/seahorse-gpgme-source.c:104
+#, c-format
+msgid "Enter passphrase for '%s'"
+msgstr "Unesite lozinku za „%s“"
+
+#: ../daemon/seahorse-gpgme-source.c:107
+msgid "Enter new passphrase"
+msgstr "Unesite novu lozinku"
+
+#: ../daemon/seahorse-gpgme-source.c:109
+msgid "Enter passphrase"
+msgstr "Unesite propusnu frazu"
+
+#. TODO: We can use the GPGME progress to make this more accurate
+#: ../daemon/seahorse-gpgme-source.c:712
+#, c-format
+msgid "Loaded %d key"
+msgid_plural "Loaded %d keys"
+msgstr[0] "Učitao sam %d ključ"
+msgstr[1] "Učitao sam %d ključa"
+msgstr[2] "Učitao sam %d ključeva"
+msgstr[3] "Učitao sam ključ"
+
+#: ../daemon/seahorse-gpgme-source.c:765
+msgid "Loading Keys..."
+msgstr "Učitavam ključeve..."
+
+#: ../daemon/seahorse-gpgme-source.c:808
+msgid ""
+"Invalid key data (missing UIDs). This may be due to a computer with a date "
+"set in the future or a missing self-signature."
+msgstr ""
+"Nevažeći podaci ključa (nedostaju UID-i). Ovo se može desiti ako je datum na "
+"računaru podešen unapred ili ako nedostaje samopotpis."
+
+#: ../daemon/seahorse-gpgme-source.c:898
+msgid "Importing Keys"
+msgstr "Uvoženje ključeva"
+
+#: ../daemon/seahorse-gpgme-source.c:931
+msgid "Exporting Keys"
+msgstr "Izvoženje ključeva"
+
+#: ../daemon/seahorse-gpgme-subkey.c:197 ../daemon/seahorse-validity.c:40
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: ../daemon/seahorse-gpgme-subkey.c:199
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: ../daemon/seahorse-notify.xml.h:1
+msgid "Notification Messages"
+msgstr "Obaveštajne poruke"
+
+#: ../daemon/seahorse-object.c:317
+msgid "Symmetric Key"
+msgstr "Simetrični ključ"
+
+#: ../daemon/seahorse-object.c:320
+msgid "Public Key"
+msgstr "Javni ključ"
+
+#: ../daemon/seahorse-object.c:323
+msgid "Private Key"
+msgstr "Privatni ključ"
+
+#: ../daemon/seahorse-object.c:326
+msgid "Credentials"
+msgstr "Akreditivi"
+
+#.
+#. * Translators: "This object is a means of storing items such as
+#. * name, email address, etc. that make up one's digital identity.
+#.
+#: ../daemon/seahorse-object.c:333
+msgid "Identity"
+msgstr "Identitet"
+
+#: ../daemon/seahorse-passphrase.c:196
+msgid "Passphrase"
+msgstr "Lozinka"
+
+#: ../daemon/seahorse-passphrase.c:199
+msgid "Password:"
+msgstr "Lozinka:"
+
+#. The second and main entry
+#: ../daemon/seahorse-passphrase.c:263
+msgid "Confirm:"
+msgstr "Potvrdi:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:1
+msgid "Algorithms here"
+msgstr "Ovde staviti algoritme"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:2
+msgid "New PGP Key"
+msgstr "Novi PGP ključ"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:3
+msgid "A PGP key allows you to encrypt email or files to other people."
+msgstr ""
+"PGP ključ vam omogućava da šifrujete e-poštu ili datoteke koje šaljete drugim "
+"ljudima."
+
+#: ../daemon/seahorse-pgp-generate.xml.h:4
+msgid "Full _Name:"
+msgstr "Ime i _prezime:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:5
+msgid "_Email Address:"
+msgstr "Adresa _e-pošte:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:6
+msgid "_Comment:"
+msgstr "_Komentar:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:7
+msgid "Ne_ver Expires"
+msgstr "Nika_da ne ističe"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:8
+msgid "Encryption _Type:"
+msgstr "_Tip šifrovanja"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:9
+msgid "Key _Strength (bits):"
+msgstr "_Jačina ključa (bitova):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:10
+msgid "E_xpiration Date:"
+msgstr "Datum i_steka:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:11
+msgid "<b>_Advanced key options</b>"
+msgstr "<b>_Napredne opcije ključa</b>"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:12
+msgid "Generate a new key"
+msgstr "Napravi novi ključ"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:13
+msgid "C_reate"
+msgstr "Nap_ravi"
+
+#: ../daemon/seahorse-pgp-key.c:179
+msgid "Private PGP Key"
+msgstr "Privatni PGP ključ"
+
+#: ../daemon/seahorse-pgp-key.c:182
+msgid "Public PGP Key"
+msgstr "Javni PGP ključ"
+
+#: ../daemon/seahorse-pgp-key.c:527
+msgid "Expired"
+msgstr "Istekao"
+
+#: ../daemon/seahorse-pgp-subkey.c:366
+msgid "Key"
+msgstr "Ključevi"
+
+#: ../daemon/seahorse-pgp-subkey.c:371
+#, c-format
+msgid "Subkey %d of %s"
+msgstr "Podključ %d od %s"
+
+#: ../daemon/seahorse-progress.xml.h:1
+msgid "Progress Title"
+msgstr "Naslov napredovanja"
+
+#: ../daemon/seahorse-service.c:161 ../daemon/seahorse-service.c:267
+#, c-format
+msgid "Invalid or unrecognized key type: %s"
+msgstr "Nevažeći ili neprepoznat tip ključa: %s"
+
+#: ../daemon/seahorse-service.c:229
+#, c-format
+msgid "This keytype is not supported: %s"
+msgstr "Tip ovog ključa nije podržan: %s"
+
+#: ../daemon/seahorse-service.c:331 ../daemon/seahorse-service-keyset.c:180
+#: ../daemon/seahorse-service-keyset.c:223
+#, c-format
+msgid "Invalid or unrecognized key: %s"
+msgstr "Nevažeći ili neprepoznat ključ: %s"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:204
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
+msgstr "Potpisan od strane <i><key id='%s'/> <b>ističe</b></i> na %s."
+
+#: ../daemon/seahorse-service-crypto.c:205
+msgid "Invalid Signature"
+msgstr "Nevažeći potpis"
+
+#: ../daemon/seahorse-service-crypto.c:211
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
+msgstr "Potpisan od strane <i><key id='%s'/></i> <b>ističe</b> dana %s ."
+
+#: ../daemon/seahorse-service-crypto.c:212
+msgid "Expired Signature"
+msgstr "Istekao potpis"
+
+#: ../daemon/seahorse-service-crypto.c:218
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
+msgstr "Potpisan od strane <i><key id='%s'/> <b>Opozvan</b></i> dana %s."
+
+#: ../daemon/seahorse-service-crypto.c:219
+msgid "Revoked Signature"
+msgstr "Opozvan potpis"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:225
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s."
+msgstr "Potpisan od strane <i><key id='%s'/></i> dana %s."
+
+#: ../daemon/seahorse-service-crypto.c:226
+msgid "Good Signature"
+msgstr "Dobar potpis"
+
+#: ../daemon/seahorse-service-crypto.c:231
+msgid "Signing key not in keyring."
+msgstr "Ključ koji treba potpisati nije u privesku."
+
+#: ../daemon/seahorse-service-crypto.c:232
+msgid "Unknown Signature"
+msgstr "Nepoznat potpis"
+
+#: ../daemon/seahorse-service-crypto.c:236
+msgid "Bad or forged signature. The signed data was modified."
+msgstr "Loš ili falsifikovan potpis. Potpisani podaci su modifikovani."
+
+#: ../daemon/seahorse-service-crypto.c:237
+msgid "Bad Signature"
+msgstr "Loš potpis"
+
+#: ../daemon/seahorse-service-crypto.c:245
+msgid "Couldn't verify signature."
+msgstr "Ne mogu da potvrdim potpis."
+
+#: ../daemon/seahorse-service-crypto.c:317
+#, c-format
+msgid "Recipients specified for symmetric encryption"
+msgstr "Navedeni primaoci za simetričko šifrovanje"
+
+#: ../daemon/seahorse-service-crypto.c:326
+#: ../daemon/seahorse-service-crypto.c:673
+#, c-format
+msgid "Invalid or unrecognized signer: %s"
+msgstr "Nevažeći ili nepoznat potpisnik: %s"
+
+#: ../daemon/seahorse-service-crypto.c:333
+#: ../daemon/seahorse-service-crypto.c:680
+#, c-format
+msgid "Key is not valid for signing: %s"
+msgstr "Ključ nije važeći za potpisivanje: %s"
+
+#: ../daemon/seahorse-service-crypto.c:346
+#, c-format
+msgid "Invalid or unrecognized recipient: %s"
+msgstr "Nevažeći ili nepoznat primalac: %s"
+
+#: ../daemon/seahorse-service-crypto.c:354
+#, c-format
+msgid "Key is not a valid recipient for encryption: %s"
+msgstr "Ključ nije važeći primalac za  šifrovanje: %s"
+
+#: ../daemon/seahorse-service-crypto.c:363
+#, c-format
+msgid "No recipients specified"
+msgstr "Nema navedenih primaoca"
+
+#: ../daemon/seahorse-service-crypto.c:460
+#, c-format
+msgid "Invalid key type for decryption: %s"
+msgstr "Nevažeći tip ključa za dešifrovanje: %s"
+
+#: ../daemon/seahorse-service-crypto.c:575
+#: ../daemon/seahorse-service-crypto.c:773
+#, c-format
+msgid "Please set clearuri"
+msgstr "Postavite clearuri"
+
+#: ../daemon/seahorse-service-crypto.c:581
+#: ../daemon/seahorse-service-crypto.c:779
+#, c-format
+msgid "Please set crypturi"
+msgstr "Postavite crypturi"
+
+#: ../daemon/seahorse-service-crypto.c:591
+#, c-format
+msgid "Error opening clearuri"
+msgstr "clearuri ne može da se otvori"
+
+#: ../daemon/seahorse-service-crypto.c:668
+#, c-format
+msgid "No signer specified"
+msgstr "Potpisnik nije naveden"
+
+#: ../daemon/seahorse-service-crypto.c:857
+#, c-format
+msgid "Invalid key type for verifying: %s"
+msgstr "Nevažeći tip ključa za verifikovanje: %s"
+
+#: ../daemon/seahorse-service-keyset.c:273
+#, c-format
+msgid "Invalid key id: %s"
+msgstr "Nevažeći IB ključa: %s"
+
+#: ../daemon/seahorse-unknown.c:58
+msgid "Unavailable"
+msgstr "Nedostupno"
+
+#: ../daemon/seahorse-util.c:231
+msgid "%Y-%m-%d"
+msgstr "%d.%m.%Y"
+
+#: ../daemon/seahorse-util.c:510
+msgid "Key Data"
+msgstr "Podaci ključa"
+
+#: ../daemon/seahorse-util.c:512
+msgid "Multiple Keys"
+msgstr "Višestruki ključevi"
+
+#: ../daemon/seahorse-util.c:768
+msgid "Couldn't run file-roller"
+msgstr "Ne mogu da pokrenem „file-roller“"
+
+#: ../daemon/seahorse-util.c:774
+msgid "Couldn't package files"
+msgstr "Ne mogu da upakujem datoteke"
+
+#: ../daemon/seahorse-util.c:775
+msgid "The file-roller process did not complete successfully"
+msgstr "Upravljač arhivom nije ispravno okončan"
+
+#. Filter for PGP keys. We also include *.asc, as in many
+#. cases that extension is associated with text/plain
+#: ../daemon/seahorse-util.c:944
+msgid "All key files"
+msgstr "Sve datoteke ključeva"
+
+#: ../daemon/seahorse-util.c:951 ../daemon/seahorse-util.c:999
+msgid "All files"
+msgstr "Sve datoteke"
+
+#: ../daemon/seahorse-util.c:992
+msgid "Archive files"
+msgstr "Arhive"
+
+#: ../daemon/seahorse-util.c:1062
+msgid ""
+"<b>A file already exists with this name.</b>\n"
+"\n"
+"Do you want to replace it with a new file?"
+msgstr ""
+"<b>Datoteka već postoji.</b>\n"
+"\n"
+"Želite li da je prepišete novom?"
+
+#: ../daemon/seahorse-util.c:1065
+msgid "_Replace"
+msgstr "Prepiši"
+
+#: ../daemon/seahorse-validity.c:42
+msgctxt "Validity"
+msgid "Never"
+msgstr "Nikad"
+
+#: ../daemon/seahorse-validity.c:44
+msgid "Marginal"
+msgstr "Površno"
+
+#: ../daemon/seahorse-validity.c:46
+msgid "Full"
+msgstr "Potpuno"
+
+#: ../daemon/seahorse-validity.c:48
+msgid "Ultimate"
+msgstr "Najveće"
+
+#: ../daemon/seahorse-validity.c:50
+msgid "Disabled"
+msgstr "Onemogućeno"
+
+#: ../daemon/seahorse-validity.c:52
+msgid "Revoked"
+msgstr "Povučen"
+
+#: ../daemon/seahorse-widget.c:433
+#, c-format
+msgid "Could not display help: %s"
+msgstr "Ne mogu da prikažem pomoć: %s"
+
+#: ../libcryptui/cryptui.c:307
+msgid ""
+"No encryption keys were found with which to perform the operation you "
+"requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+"started so that you may either create a key or import one."
+msgstr ""
+"Nijedan ključ za šifrovanje nije nađen sa kojim bi se obavila zahtevana "
+"operacija.  Program <b>Lozinke i ključevi šifrovanja</b> će sada biti pokrenut "
+"da biste mogli da ili napravite ključ ili uvezete postojeći."
+
+#: ../libcryptui/cryptui.c:333
+#| msgid ""
+#| "No encryption keys were found with which to perform the operation you "
+#| "requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+#| "started so that you may either create a key or import one."
+msgid ""
+"No encryption keys were found. In order to perform public key encryption, "
+"the <b>Passwords and Encryption Keys</b> program can be started to create or "
+"import a public key. It is also possible to use a shared passphrase instead."
+msgstr ""
+"Nisam pronašao ni jedan ključ za šifrovanje. Da bi se obavilo šifrovanje javnog "
+"ključa, program <b>Lozinke i ključevi šifrovanja</b> može biti pokrenut da "
+"napravi ili da uveze javni ključ. Takođe je moguće koristiti deljenu propusnu "
+"reč."
+
+#: ../libcryptui/cryptui.c:336
+#| msgid "Enter passphrase"
+msgid "Use a shared passphrase"
+msgstr "Koristi deljenu propusnu reč"
+
+#: ../libcryptui/cryptui.c:337
+#| msgid "Couldn't import keys"
+msgid "Create or import a key"
+msgstr "Napravi ili uvezi ključ"
+
+#: ../libcryptui/cryptui-key-chooser.c:177
+msgid "All Keys"
+msgstr "Svi ključevi"
+
+#: ../libcryptui/cryptui-key-chooser.c:178
+msgid "Selected Recipients"
+msgstr "Izabrani primaoci"
+
+#: ../libcryptui/cryptui-key-chooser.c:179
+msgid "Search Results"
+msgstr "Rezultati pretrage"
+
+#. Filter Label
+#: ../libcryptui/cryptui-key-chooser.c:189
+msgid "Search _for:"
+msgstr "Pretraga za:"
+
+#. first of the group
+#: ../libcryptui/cryptui-key-chooser.c:235
+#| msgid "Enter passphrase"
+msgid "Use passphrase only"
+msgstr "Koristi samo propusnu reč"
+
+#: ../libcryptui/cryptui-key-chooser.c:244
+msgid "Choose a set of recipients:"
+msgstr "Izaberite skup primalaca:"
+
+#: ../libcryptui/cryptui-key-chooser.c:290
+msgid "None (Don't Sign)"
+msgstr "Nijedan (ne potpisivati)"
+
+#: ../libcryptui/cryptui-key-chooser.c:303
+#, c-format
+msgid "Sign this message as %s"
+msgstr "Potpisati poruku kao %s"
+
+#. Sign Label
+#: ../libcryptui/cryptui-key-chooser.c:330
+msgid "_Sign message as:"
+msgstr "Potpi_sati poruku kao:"
+
+#. TODO: Icons
+#. The name column
+#: ../libcryptui/cryptui-key-list.c:140
+msgid "Name"
+msgstr "Ime"
+
+#. The keyid column
+#: ../libcryptui/cryptui-key-list.c:145
+msgid "Key ID"
+msgstr "IB ključa"
+
+#: ../libegg/egg-datetime.c:317
+msgid "Display flags"
+msgstr "Oznake za prikazivanje"
+
+#: ../libegg/egg-datetime.c:318
+msgid "Displayed date and/or time properties"
+msgstr "Prikazane osobine datuma i/ili vremena"
+
+#: ../libegg/egg-datetime.c:323
+msgid "Lazy mode"
+msgstr "Lenji režim"
+
+#: ../libegg/egg-datetime.c:324
+msgid "Lazy mode doesn't normalize entered date and time values"
+msgstr "Lenji režim ne normalizuje unesene vrednosti za datum i vreme"
+
+#: ../libegg/egg-datetime.c:329
+msgid "Year"
+msgstr "Godina"
+
+#: ../libegg/egg-datetime.c:330
+msgid "Displayed year"
+msgstr "Prikazana godina"
+
+#: ../libegg/egg-datetime.c:335
+msgid "Month"
+msgstr "Mesec"
+
+#: ../libegg/egg-datetime.c:336
+msgid "Displayed month"
+msgstr "Prikazani mesec"
+
+#: ../libegg/egg-datetime.c:341
+msgid "Day"
+msgstr "Dan"
+
+#: ../libegg/egg-datetime.c:342
+msgid "Displayed day of month"
+msgstr "Prikazani dan u mesecu"
+
+#: ../libegg/egg-datetime.c:347
+msgid "Hour"
+msgstr "Sat"
+
+#: ../libegg/egg-datetime.c:348
+msgid "Displayed hour"
+msgstr "Prikazani sat"
+
+#: ../libegg/egg-datetime.c:353
+msgid "Minute"
+msgstr "Minut"
+
+#: ../libegg/egg-datetime.c:354
+msgid "Displayed minute"
+msgstr "Prikazani minut"
+
+#: ../libegg/egg-datetime.c:359
+msgid "Second"
+msgstr "Sekunda"
+
+#: ../libegg/egg-datetime.c:360
+msgid "Displayed second"
+msgstr "Prikazana sekunda"
+
+#: ../libegg/egg-datetime.c:365
+msgid "Lower limit year"
+msgstr "Donja granica godine"
+
+#: ../libegg/egg-datetime.c:366
+msgid "Year part of the lower date limit"
+msgstr "Deo za godine donje granice datuma"
+
+#: ../libegg/egg-datetime.c:371
+msgid "Upper limit year"
+msgstr "Gornja granica godine"
+
+#: ../libegg/egg-datetime.c:372
+msgid "Year part of the upper date limit"
+msgstr "Deo za godine gornje granice datuma"
+
+#: ../libegg/egg-datetime.c:377
+msgid "Lower limit month"
+msgstr "Donja granica meseca"
+
+#: ../libegg/egg-datetime.c:378
+msgid "Month part of the lower date limit"
+msgstr "Deo za mesece donje granice datuma"
+
+#: ../libegg/egg-datetime.c:383
+msgid "Upper limit month"
+msgstr "Gornja granica meseca"
+
+#: ../libegg/egg-datetime.c:384
+msgid "Month part of the upper date limit"
+msgstr "Deo za mesece gornje granice datuma"
+
+#: ../libegg/egg-datetime.c:389
+msgid "Lower limit day"
+msgstr "Donja granica dana"
+
+#: ../libegg/egg-datetime.c:390
+msgid "Day of month part of the lower date limit"
+msgstr "Deo za dan u mesecu donje granice datuma"
+
+#: ../libegg/egg-datetime.c:395
+msgid "Upper limit day"
+msgstr "Gornja granica dana"
+
+#: ../libegg/egg-datetime.c:396
+msgid "Day of month part of the upper date limit"
+msgstr "Deo za dan u mesecu gornje granice datuma"
+
+#: ../libegg/egg-datetime.c:401
+msgid "Lower limit hour"
+msgstr "Donja granica sata"
+
+#: ../libegg/egg-datetime.c:402
+msgid "Hour part of the lower time limit"
+msgstr "Deo za sate donje granice vremena"
+
+#: ../libegg/egg-datetime.c:407
+msgid "Upper limit hour"
+msgstr "Gornja granica sata"
+
+#: ../libegg/egg-datetime.c:408
+msgid "Hour part of the upper time limit"
+msgstr "Deo za sate gornje granice vremena"
+
+#: ../libegg/egg-datetime.c:413
+msgid "Lower limit minute"
+msgstr "Donja granica minuta"
+
+#: ../libegg/egg-datetime.c:414
+msgid "Minute part of the lower time limit"
+msgstr "Deo za minute donje granice vremena"
+
+#: ../libegg/egg-datetime.c:419
+msgid "Upper limit minute"
+msgstr "Gornja granica minuta"
+
+#: ../libegg/egg-datetime.c:420
+msgid "Minute part of the upper time limit"
+msgstr "Deo za minute gornje granice vremena"
+
+#: ../libegg/egg-datetime.c:425
+msgid "Lower limit second"
+msgstr "Donja granica sekundi"
+
+#: ../libegg/egg-datetime.c:426
+msgid "Second part of the lower time limit"
+msgstr "Deo za sekunde donje granice vremena"
+
+#: ../libegg/egg-datetime.c:431
+msgid "Upper limit second"
+msgstr "Gornja granica sekundi"
+
+#: ../libegg/egg-datetime.c:432
+msgid "Second part of the upper time limit"
+msgstr "Deo za sekunde gornje granice vremena"
+
+#. Translate to calendar:week_start:1 if you want Monday to be the
+#. * first day of the week; otherwise translate to calendar:week_start:0.
+#. * Do *not* translate it to anything else, if it isn't calendar:week_start:1
+#. * or calendar:week_start:0 it will not work.
+#.
+#: ../libegg/egg-datetime.c:474
+msgid "calendar:week_start:0"
+msgstr "calendar:week_start:1"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Date"
+msgstr "Datum"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Enter the date directly"
+msgstr "Unesite datum direktno"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select Date"
+msgstr "Odaberi datum"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select the date from a calendar"
+msgstr "Odaberite datum iz kalendara"
+
+#: ../libegg/egg-datetime.c:521 ../libegg/egg-datetime.c:2196
+msgid "Time"
+msgstr "Vreme"
+
+#: ../libegg/egg-datetime.c:521
+msgid "Enter the time directly"
+msgstr "Unesite vreme direktno"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select Time"
+msgstr "Odaberi vreme"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select the time from a list"
+msgstr "Odaberite vreme iz liste"
+
+#. Translators: set this to anything else if you want to use a
+#. * 24 hour clock.
+#.
+#: ../libegg/egg-datetime.c:793
+msgid "24hr: no"
+msgstr "24hr: ne"
+
+#: ../libegg/egg-datetime.c:797 ../libegg/egg-datetime.c:1257
+#: ../libegg/egg-datetime.c:1261
+msgid "AM"
+msgstr "prepodne"
+
+#: ../libegg/egg-datetime.c:799 ../libegg/egg-datetime.c:1258
+#: ../libegg/egg-datetime.c:1265
+msgid "PM"
+msgstr "popodne"
+
+#. Translators: This is hh:mm:ss AM/PM.
+#: ../libegg/egg-datetime.c:807
+#, c-format
+msgid "%02d:%02d:%02d %s"
+msgstr "%02d:%02d:%02d %s"
+
+#. Translators: This is hh:mm AM/PM.
+#: ../libegg/egg-datetime.c:810
+#, c-format
+msgid "%02d:%02d %s"
+msgstr "%02d:%02d %s"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:814
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#. Translators: This is hh:mm.
+#: ../libegg/egg-datetime.c:817
+#, c-format
+msgid "%02d:%02d"
+msgstr "%02d:%02d"
+
+#. TODO: should handle other display modes as well...
+#. Translators: This is YYYY-MM-DD
+#: ../libegg/egg-datetime.c:1173
+#, c-format
+msgid "%04d-%02d-%02d"
+msgstr "%04d-%02d-%02d"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:1238
+#, c-format
+msgid "%u:%u:%u"
+msgstr "%u:%u:%u"
+
+#: ../libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Ovo nije ispravna .desktop datoteka"
+
+#: ../libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Nije poznato izdanje „%s“ desktop datoteke"
+
+#: ../libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Pokrećem %s"
+
+#: ../libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Program ne prihvata dokumente iz komandne linije"
+
+#: ../libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Nepoznata opcija pri pokretanju: %d"
+
+#: ../libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Ne mogu da prosledim adresu dokumenta u „Type=Link“ unos desktop datoteke"
+
+#: ../libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "Ne možete da pokrenete ovu stavku"
+
+#: ../libegg/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Onemogući vezu sa upravnikom sesije"
+
+#: ../libegg/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Odaberite datoteku koja sadrži sačuvana podešavanja"
+
+#: ../libegg/eggsmclient.c:228
+msgid "FILE"
+msgstr "DATOTEKA"
+
+#: ../libegg/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Odaberite IB upravnika sesije"
+
+#: ../libegg/eggsmclient.c:231
+msgid "ID"
+msgstr "IB"
+
+#: ../libegg/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Mogućnosti upravnika sesije:"
+
+#: ../libegg/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Prikaži mogućnosti upravnika sesije"

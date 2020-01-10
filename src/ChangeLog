@@ -1,0 +1,1348 @@
+# Generated automatically. Do not edit.
+
+commit 5787b929c026573ba7df40fd5e08f6dd6a82f831
+Author: Stef Walter <stefw@gnome.org>
+Date:   2014-05-13
+
+    Release version 3.12.2
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 5670703c80abb9d35539c07ecf0fbc078da52231
+Author: Ting-Wei Lan <lantw44@gmail.com>
+Date:   2014-03-28
+
+    Add --libtool option to g-ir-scanner
+    
+    Not using libtool causes strange build problem on FreeBSD. We may add
+    the -- libtool option or use INTROSPECTION_MAKEFILE.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=727196
+
+ libcryptui/Makefile.am | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit f351daab1c644e4dcf344a0f65a6d97daae3005b
+Author: Andika Triwidada <andika@gmail.com>
+Date:   2014-03-30
+
+    Updated Indonesian translation
+
+ po/id.po | 3019 +++++++++-----------------------------------------------------
+ 1 file changed, 438 insertions(+), 2581 deletions(-)
+
+commit a909b453846c92a28f6af68d4d3db383fcb17794
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   2014-01-23
+
+    Updated FSF's address
+
+ daemon/seahorse-context.c            | 5 +----
+ daemon/seahorse-context.h            | 5 +----
+ daemon/seahorse-daemon.c             | 5 +----
+ daemon/seahorse-daemon.h             | 5 +----
+ daemon/seahorse-dbus-server.c        | 5 +----
+ daemon/seahorse-gpg-op.c             | 5 +----
+ daemon/seahorse-gpg-op.h             | 5 +----
+ daemon/seahorse-gpg-options.c        | 5 +----
+ daemon/seahorse-gpg-options.h        | 5 +----
+ daemon/seahorse-gpgme-data.c         | 5 +----
+ daemon/seahorse-gpgme-data.h         | 4 +---
+ daemon/seahorse-gpgme-generate.c     | 5 +----
+ daemon/seahorse-gpgme-generate.h     | 5 +----
+ daemon/seahorse-gpgme-key-op.c       | 5 +----
+ daemon/seahorse-gpgme-key-op.h       | 5 +----
+ daemon/seahorse-gpgme-key.c          | 5 +----
+ daemon/seahorse-gpgme-key.h          | 5 +----
+ daemon/seahorse-gpgme-operation.c    | 5 +----
+ daemon/seahorse-gpgme-operation.h    | 5 +----
+ daemon/seahorse-gpgme-source.c       | 5 +----
+ daemon/seahorse-gpgme-source.h       | 5 +----
+ daemon/seahorse-gpgme-subkey.c       | 5 +----
+ daemon/seahorse-gpgme-subkey.h       | 5 +----
+ daemon/seahorse-gpgme-uid.c          | 5 +----
+ daemon/seahorse-gpgme-uid.h          | 5 +----
+ daemon/seahorse-gpgme.c              | 4 +---
+ daemon/seahorse-gpgme.h              | 4 +---
+ daemon/seahorse-libdialogs.h         | 5 +----
+ daemon/seahorse-notification.c       | 5 +----
+ daemon/seahorse-object-list.c        | 4 +---
+ daemon/seahorse-object-list.h        | 4 +---
+ daemon/seahorse-object.c             | 4 +---
+ daemon/seahorse-object.h             | 4 +---
+ daemon/seahorse-operation.c          | 5 +----
+ daemon/seahorse-operation.h          | 5 +----
+ daemon/seahorse-passphrase.c         | 5 +----
+ daemon/seahorse-passphrase.h         | 5 +----
+ daemon/seahorse-pgp-key.c            | 5 +----
+ daemon/seahorse-pgp-key.h            | 5 +----
+ daemon/seahorse-pgp-module.c         | 4 +---
+ daemon/seahorse-pgp-module.h         | 4 +---
+ daemon/seahorse-pgp-signature.c      | 5 +----
+ daemon/seahorse-pgp-signature.h      | 5 +----
+ daemon/seahorse-pgp-subkey.c         | 5 +----
+ daemon/seahorse-pgp-subkey.h         | 5 +----
+ daemon/seahorse-pgp-uid.c            | 5 +----
+ daemon/seahorse-pgp-uid.h            | 5 +----
+ daemon/seahorse-pgp.c                | 4 +---
+ daemon/seahorse-pgp.h                | 4 +---
+ daemon/seahorse-progress.c           | 5 +----
+ daemon/seahorse-progress.h           | 5 +----
+ daemon/seahorse-secure-buffer.c      | 4 +---
+ daemon/seahorse-secure-buffer.h      | 4 +---
+ daemon/seahorse-secure-memory.c      | 5 +----
+ daemon/seahorse-service-crypto.c     | 5 +----
+ daemon/seahorse-service-keyset.c     | 5 +----
+ daemon/seahorse-service.c            | 5 +----
+ daemon/seahorse-service.h            | 5 +----
+ daemon/seahorse-set.c                | 5 +----
+ daemon/seahorse-set.h                | 5 +----
+ daemon/seahorse-source.c             | 5 +----
+ daemon/seahorse-source.h             | 5 +----
+ daemon/seahorse-transfer-operation.c | 5 +----
+ daemon/seahorse-transfer-operation.h | 5 +----
+ daemon/seahorse-types.c              | 5 +----
+ daemon/seahorse-types.h              | 5 +----
+ daemon/seahorse-unix-signal.c        | 5 +----
+ daemon/seahorse-unix-signal.h        | 5 +----
+ daemon/seahorse-unknown-source.c     | 5 +----
+ daemon/seahorse-unknown-source.h     | 5 +----
+ daemon/seahorse-unknown.c            | 5 +----
+ daemon/seahorse-unknown.h            | 5 +----
+ daemon/seahorse-util.c               | 5 +----
+ daemon/seahorse-util.h               | 5 +----
+ daemon/seahorse-validity.c           | 5 +----
+ daemon/seahorse-validity.h           | 5 +----
+ daemon/seahorse-widget.c             | 5 +----
+ daemon/seahorse-widget.h             | 5 +----
+ libcryptui/cryptui-defines.h         | 4 +---
+ libcryptui/cryptui-key-chooser.c     | 4 +---
+ libcryptui/cryptui-key-chooser.h     | 4 +---
+ libcryptui/cryptui-key-combo.c       | 4 +---
+ libcryptui/cryptui-key-combo.h       | 4 +---
+ libcryptui/cryptui-key-list.c        | 4 +---
+ libcryptui/cryptui-key-list.h        | 4 +---
+ libcryptui/cryptui-key-store.c       | 4 +---
+ libcryptui/cryptui-key-store.h       | 4 +---
+ libcryptui/cryptui-keyset.c          | 4 +---
+ libcryptui/cryptui-keyset.h          | 4 +---
+ libcryptui/cryptui-priv.h            | 4 +---
+ libcryptui/cryptui.c                 | 4 +---
+ libcryptui/cryptui.h                 | 4 +---
+ libcryptui/tests/cryptui-test-ui.c   | 4 +---
+ libegg/egg-datetime.c                | 4 +---
+ libegg/egg-datetime.h                | 4 +---
+ libegg/eggdesktopfile.c              | 3 +--
+ libegg/eggdesktopfile.h              | 3 +--
+ libegg/eggsmclient-private.h         | 4 +---
+ libegg/eggsmclient-xsmp.c            | 4 +---
+ libegg/eggsmclient.c                 | 4 +---
+ libegg/eggsmclient.h                 | 4 +---
+ 101 files changed, 101 insertions(+), 366 deletions(-)
+
+commit 6dc7d1f78bbb489a2d9761b88dfb285e840f15ce
+Author: YunQiang Su <wzssyqa@gmail.com>
+Date:   2014-01-25
+
+    Update Chinese simplified translation
+
+ po/zh_CN.po | 3691 +++++++++++++++++++++++++----------------------------------
+ 1 file changed, 1560 insertions(+), 2131 deletions(-)
+
+commit 40d7edf65e71078ea72d573f0fbe471273dfe437
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-10-17
+
+    Release version 3.10.1
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 69b7df4fa38f3e8a4272f4e3a9bc5493a8b991e8
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:   2013-10-15
+
+    Updated Serbian translation
+
+ po/sr.po       | 3099 +++++++++-----------------------------------------------
+ po/sr@latin.po | 3099 +++++++++-----------------------------------------------
+ 2 files changed, 904 insertions(+), 5294 deletions(-)
+
+commit d18f167ea209440d593bd379ffc8122703bab919
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:   2013-10-05
+
+    Updated Latvian translation
+
+ po/lv.po | 3914 +++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 1678 insertions(+), 2236 deletions(-)
+
+commit 37d998fe35400dd48054d7298ec46478bdd5a031
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-09-23
+
+    Release version 3.10.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 7d05922758ed3b2150ac48f0f818e2f50b574b75
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   2013-09-23
+
+    Updated Galician translations
+
+ po/gl.po | 3953 +++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 1695 insertions(+), 2258 deletions(-)
+
+commit 7165ca8c49304a8e2a9c62fe4c5888feae4f5cee
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   2013-09-02
+
+    Updated Slovenian translation
+
+ po/sl.po | 61 +++++++++++++++++++++++++++++++++++++++++++------------------
+ 1 file changed, 43 insertions(+), 18 deletions(-)
+
+commit 74611e260f88d4401ecca8bc4e39d74336aef079
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-08-26
+
+    Add upload-release make target
+
+ Makefile.am | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit a7f47ed6f1218423698a627e09be6a4bf1d18feb
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-08-26
+
+    Release version 3.9.90
+
+ NEWS | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit 5cf466ddc004d6d005c1143ef1b6f5f9465154a8
+Author: Milo Casagrande <milo@ubuntu.com>
+Date:   2013-08-26
+
+    [l10n] Updated Italian translation.
+
+ po/it.po | 48 ++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 38 insertions(+), 10 deletions(-)
+
+commit 578c5888af148a5effefec7c4c2859e54535c543
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2013-08-20
+
+    Updated Polish translation
+
+ po/pl.po | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 29a182624c255a3553e9074f35ba550d84c0f604
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-08-16
+
+    Include the correct project version in pkg-config file
+
+ libcryptui/cryptui.pc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 28c88e5a63c325c0a246c986497b83394dfb2f72
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-08-16
+
+    Bump version number
+
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit eb1c3495d977197ae3014d302af11feebc35dbd2
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:   2013-08-15
+
+    Updated Lithuanian translation
+
+ po/lt.po | 3879 ++++++++------------------------------------------------------
+ 1 file changed, 448 insertions(+), 3431 deletions(-)
+
+commit d8ff32e846b74fe1b97822d212eb6711d90c2a2c
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2013-08-11
+
+    Updated Polish translation
+
+ po/pl.po | 115 ++++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 74 insertions(+), 41 deletions(-)
+
+commit 5b125b10cb709460412e87dfaed1e946f2c46a61
+Author: Enrico Nicoletto <liverig@gmail.com>
+Date:   2013-07-29
+
+    Updated Brazilian Portuguese translation
+
+ po/pt_BR.po | 3912 ++++++++++++++---------------------------------------------
+ 1 file changed, 908 insertions(+), 3004 deletions(-)
+
+commit 0fd5f0b8db23924df1c13d14e3289d8d1e9100c5
+Author: Russ Adams <russa@arcatechsystems.com>
+Date:   2013-02-23
+
+    Updating Python test scripts for Python 3 migration.
+
+ tests/dbus-crypto-test.py               | 16 ++++++++--------
+ tests/dbus-discover-test.py             | 10 +++++-----
+ tests/dbus-display-notification-test.py |  4 ++--
+ tests/dbus-import.py                    | 12 ++++++------
+ tests/dbus-listen-keyset.py             | 10 +++++-----
+ tests/dbus-match-test.py                | 12 ++++++------
+ tests/dbus-test.py                      | 24 ++++++++++++------------
+ 7 files changed, 44 insertions(+), 44 deletions(-)
+
+commit 6a996f137139ab46823aec041155d65c791783e3
+Author: Marek Černocký <marek@manet.cz>
+Date:   2013-07-09
+
+    Updated Czech translation
+
+ po/cs.po | 50 +++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 39 insertions(+), 11 deletions(-)
+
+commit 4c4b3b0adf287ba7327809f9847a95a61c769a73
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   2013-07-09
+
+    Updated Spanish translation
+
+ po/es.po | 58 +++++++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 45 insertions(+), 13 deletions(-)
+
+commit aff4f36a112b4243eae0ef1fd581914c879f0940
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-07-09
+
+    Remove the --enable-tests configure arg, and always build tests
+
+ configure.ac           | 11 -----------
+ libcryptui/Makefile.am |  8 +-------
+ 2 files changed, 1 insertion(+), 18 deletions(-)
+
+commit cd74aa6bf810a5ce0935d2ec89d6db64dbbde24d
+Author: Jérémy Bobbio <lunar@debian.org>
+Date:   2013-05-02
+
+    Add symmetric encryption as a choice in "choose recipients" dialog
+    
+    This extends the current "choose recipients" dialog to offer symmetric
+    encryption instead of public key recipients.
+    
+    Callers need to use the new cryptui_prompt_recipients_with_symmetric()
+    function to offer symmetric encryption. cryptui_prompt_recipients()
+    behaviour is unchanged.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=325803
+
+ libcryptui/cryptui-key-chooser.c   | 131 +++++++++++++++++++++++++++++++++++--
+ libcryptui/cryptui-key-chooser.h   |  12 +++-
+ libcryptui/cryptui.c               |  62 ++++++++++++++----
+ libcryptui/cryptui.h               |   4 ++
+ libcryptui/tests/cryptui-test-ui.c |  12 +++-
+ 5 files changed, 196 insertions(+), 25 deletions(-)
+
+commit c744886a9c4c723589b8c8d6b3fb6a225c54dd21
+Author: Jérémy Bobbio <lunar@debian.org>
+Date:   2013-06-11
+
+    Add cryptui_need_to_get_keys_or_symmetric()
+    
+    When encryption is requested but no public keys are available, it is a viable
+    option to perform symmetric instead of public key encryption. This new
+    function is similar to cryptui_need_to_get_keys() but adds the possibility to
+    opt for symmetric encryption.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=325803
+
+ libcryptui/cryptui.c | 36 ++++++++++++++++++++++++++++++++++++
+ libcryptui/cryptui.h |  2 ++
+ 2 files changed, 38 insertions(+)
+
+commit 884f61bf72a1d7cc939510aadbb4889e07cb01b2
+Author: Milo Casagrande <milo@ubuntu.com>
+Date:   2013-06-19
+
+    [l10n] Updated Italian translation.
+
+ po/it.po | 3030 +++++++++-----------------------------------------------------
+ 1 file changed, 415 insertions(+), 2615 deletions(-)
+
+commit f110e1c8a2efa46c106b910b765a4a8728021dce
+Author: Jérémy Bobbio <lunar@debian.org>
+Date:   2013-05-16
+
+    Avoid repeating the self encryption key in cryptui_key_chooser_get_recipients()
+    
+    When using self encryption, cryptui_key_chooser_get_recipients() would
+    previously always prepend the key to the recipient list. This is uneeded
+    if the key is already in there.
+    
+    This change makes prompt_recipients() in seahorse-tool.c happier when
+    selecting the key using for signing in the recipient list.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=701987
+
+ libcryptui/cryptui-key-chooser.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+commit 11287e83276e52f8df7168c1dc98f2729b79da88
+Author: Marek Černocký <marek@manet.cz>
+Date:   2013-06-08
+
+    Updated Czech translation
+
+ po/cs.po | 3009 +++++++++-----------------------------------------------------
+ 1 file changed, 416 insertions(+), 2593 deletions(-)
+
+commit d9ab48f438b8eb169b7dc97e6a6a0da5e4b7037f
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   2013-05-29
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 2994 +++++++++-----------------------------------------------------
+ 1 file changed, 413 insertions(+), 2581 deletions(-)
+
+commit 094625ca0d2aad04a01de1e64aab5976af748c38
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   2013-05-25
+
+    Added Slovenian translation
+
+ po/sl.po | 3915 +++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 1713 insertions(+), 2202 deletions(-)
+
+commit 7fc9298a90fe0236cb24c55b6118157265afdd46
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   2013-05-24
+
+    Updated Spanish translation
+
+ po/es.po | 83 ++++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 44 insertions(+), 39 deletions(-)
+
+commit a35642937469e501012d5c1d0cac83e10dee14cf
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   2013-05-24
+
+    Updated Hebrew translation.
+
+ po/he.po | 3856 ++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 1599 insertions(+), 2257 deletions(-)
+
+commit 1a7c9d7e75a3be0a3fbf3398575d6296528b079e
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-05-23
+
+    Set the source on UID objects
+    
+    This allows them to be used for selecting encryption recipients
+
+ daemon/seahorse-gpgme-key.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit fe681ef53a050eda6be5308151202c86cd123301
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-05-23
+
+    Remove some unused code
+
+ daemon/seahorse-pgp-uid.c | 145 ----------------------------------------------
+ daemon/seahorse-pgp-uid.h |   2 -
+ 2 files changed, 147 deletions(-)
+
+commit 86bcf96fc5926e07f0a77db3745304b1236fa896
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-05-23
+
+    Fix warning on startup about missing seahorse-daemon.desktop file
+
+ daemon/seahorse-daemon.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit c062d0fea72244bddbb1ef42f03057fd6dad5794
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-05-23
+
+    Ignore files created when doing code coverage
+
+ .gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 6012bfe8e9db61902d8db439be488b0fb118bf50
+Author: Jérémy Bobbio <lunar@debian.org>
+Date:   2013-04-10
+
+    Add support for symmetric encryption
+    
+    A new flag, FLAG_SYMMETRIC is added for the EncryptText and EncryptFile
+    services. When specified, both will perform symmetric encryption instead of
+    using public keys.
+    
+    To prevent programming mistakes, we error out if there is anything in the list
+    of recipients as it will not be used when performing symmetric encryption.
+    
+    The default passphrase callback - seahorse-gpgme-source.c:passphrase_get() -
+    will be used to prompt users to enter the passphrase used for symmetric
+    encryption, like we already do for symmetric decryption.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=699161
+
+ daemon/seahorse-service-crypto.c   | 221 ++++++++++++++++++++-----------------
+ daemon/seahorse-service-crypto.xml |   1 +
+ tests/dbus-crypto-test.py          |   8 ++
+ tests/dbus-test.py                 |   4 +-
+ 4 files changed, 131 insertions(+), 103 deletions(-)
+
+commit 7081f311b822be618e03d5e387f5a7bf6ce0fe62
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-03-25
+
+    Release version 3.8.0
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 7742974d506e72e9e184a0ffe797db1ad2e2e743
+Author: Stef Walter <stefw@gnome.org>
+Date:   2013-02-04
+
+    Release version 3.7.5
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 17d0661666ffc7a196294b2f126ac54e4c951ea7
+Author: Gheyret Kenji <gheyret@gmail.com>
+Date:   2013-01-05
+
+    Updated Uyghur translation
+    
+    Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+ po/ug.po | 3407 +++++++++++++++++---------------------------------------------
+ 1 file changed, 909 insertions(+), 2498 deletions(-)
+
+commit 9b3cfaf1f1a30c6cb11084831355b5466e3875ff
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   2012-12-31
+
+    Updated Spanish translation
+
+ po/es.po | 3931 ++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 1667 insertions(+), 2264 deletions(-)
+
+commit 3e7117fd9dcf0cf82e1b42c95e4492014e07554d
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-09-25
+
+    Release version 3.6.0
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 76cb24c6d6925b9a0d4cded286fc727ff3c5500b
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-09-18
+
+    Release 3.5.92
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit c534fb5890985d7d6d20ea6efe51a138b4eeeb7d
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2012-09-04
+
+    Updated Polish translation
+
+ po/pl.po | 70 +++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 38 insertions(+), 32 deletions(-)
+
+commit 61df1b33ae4466df4f65d4196ec67b0d06417ff3
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-07-16
+
+    Release version 3.5.4
+
+ NEWS | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 52c56de97868cde5a16507df028457fb1e71e50f
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-07-09
+
+    Documentation fix
+
+ libcryptui/cryptui.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 77e5e66d32cbb5bea1d0f24c66a0671cce8955a0
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-07-09
+
+    Remove unnessary size request for key list
+    
+     * The scrolled window should have a size request
+
+ libcryptui/cryptui-key-list.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 5e15de8fff97e0576477f5d58587d3a9c4464a35
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-07-09
+
+    Bump dependency versions, and fix for some deprecations
+
+ configure.ac                     | 5 +++--
+ daemon/seahorse-daemon.c         | 2 --
+ libcryptui/cryptui-key-chooser.c | 8 ++++----
+ 3 files changed, 7 insertions(+), 8 deletions(-)
+
+commit c103166ba9199fc540df60a390c3955836c7262a
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-06-29
+
+    Bump version number
+
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 3bc59ae5eb1755fbf0b8583f15b6c31b4d63956b
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-06-29
+
+    Make the default key chooser window size bigger
+
+ libcryptui/cryptui-key-chooser.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit dd91525fd97da56fe389918ace21d8ef9237b5bf
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-06-28
+
+    Remove gconf from the pkg-config Requires line
+
+ libcryptui/cryptui.pc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 59b8bb1437de5babc6f0500db353077217125881
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-04-16
+
+    Release 3.4.1
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 6ba7510ab1d2390bb4f7d5bfca41394bfdbc5a2a
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-03-30
+
+    Better build of .service files
+
+ Makefile.decl      | 29 +++++++++++++++++++++++++++++
+ daemon/Makefile.am |  5 +----
+ 2 files changed, 30 insertions(+), 4 deletions(-)
+
+commit d234c5ee908122111fc2fd952d1afd7276500241
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-03-26
+
+    Release 3.4.0
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit f97d48e2e2cc88d147507c0c746a64c775e5e549
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-03-09
+
+    Release 3.3.91
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit b56f902a3017177a035f20860e7a9d1e9aa308e1
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-02-29
+
+    Add configure dependency on libSM and libICE
+    
+     * Needed for the XSMP client
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=670427
+
+ configure.ac       | 2 ++
+ libegg/Makefile.am | 6 +++---
+ 2 files changed, 5 insertions(+), 3 deletions(-)
+
+commit 0491b3e859b1dad91df9c2cee8bea58c9c37aabe
+Author: Stef Walter <stefw@gnome.org>
+Date:   2012-02-04
+
+    Release 3.3.5
+
+ NEWS                      |   3 +
+ configure.ac              |   2 +-
+ daemon/.gitignore         |   2 +
+ daemon/seahorse-marshal.c | 239 ----------------------------------------------
+ daemon/seahorse-marshal.h |  52 ----------
+ 5 files changed, 6 insertions(+), 292 deletions(-)
+
+commit 43b51addb8743daaf57799501783cce78ba332a0
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2011-11-28
+
+    Convert Malay translation to UTF-8
+
+ po/ms.po | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fd773a6a73a7a9773b622945e3c2713ecb8f9906
+Merge: 1e8f407 996f7d3
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-11-21
+
+    Merge branch 'gnome-3-2'
+
+commit 996f7d376107ffd0852b8ba97dbb53148e580944
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-11-14
+
+    Release version 3.2.2
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit d70843d1f51d827acebac94db0e944a941620a9c
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-11-14
+
+    Don't try and do GSettings migration for nonexistant keys
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=661472
+
+ data/org.gnome.seahorse.recipients.convert | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+commit 89b696146def9f628483733956c391e0013713a8
+Author: Mario Blättermann <mariobl@gnome.org>
+Date:   2011-10-17
+
+    [l10n] Updated German translation
+
+ po/de.po | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+commit 1e8f407ee6f9972dfc41df1f1d9598b8ce6a9ad0
+Author: Mario Blättermann <mariobl@gnome.org>
+Date:   2011-10-17
+
+    [l10n] Updated German translation
+
+ po/de.po | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+commit bd53dc200c158ff1359a69004925d133efe356b5
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-09-18
+
+    Release 3.2.0
+
+ NEWS         | 3 +++
+ configure.ac | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit a1149e0a55acf032b354fb54c2c82223eb3882b7
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2011-09-05
+
+    Updated Polish translation
+
+ po/pl.po | 3018 +++++++++-----------------------------------------------------
+ 1 file changed, 414 insertions(+), 2604 deletions(-)
+
+commit f954dbf3d9dd44e22d15bb516c4882554fed812b
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-09-05
+
+    Release version 3.1.91
+
+ NEWS           | 4 ++++
+ configure.ac   | 2 +-
+ po/POTFILES.in | 1 -
+ 3 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 11b1b7f50b4d34752cf92a1ee1aaad7150254810
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-08-02
+
+    Remove GNOME_DOC_INIT from configure.ac
+    
+     * No longer needed
+
+ configure.ac | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 8b0b1a3a0449c541077b3f61390161706517e0fc
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-07-28
+
+    Port to Glib GSettings
+    
+     * Remove some unused code in the process, and cleanup some
+       related code.
+
+ .gitignore                                     |   1 +
+ configure.ac                                   |   7 +-
+ daemon/Makefile.am                             |   2 -
+ daemon/seahorse-context.c                      | 113 -------
+ daemon/seahorse-daemon.c                       |   5 -
+ daemon/seahorse-gconf.c                        | 439 -------------------------
+ daemon/seahorse-gconf.h                        |  80 -----
+ daemon/seahorse-pgp-keysets.c                  |  79 -----
+ daemon/seahorse-pgp-keysets.h                  |  33 --
+ daemon/seahorse-service-crypto.c               |  24 +-
+ daemon/seahorse-set.c                          |   1 -
+ daemon/seahorse-util.c                         |   1 -
+ daemon/seahorse-widget.c                       |  70 ----
+ data/Makefile.am                               |  29 +-
+ data/cryptui.schemas.in                        | 211 ------------
+ data/org.gnome.seahorse.recipients.convert     |   6 +
+ data/org.gnome.seahorse.recipients.gschema.xml |   9 +
+ libcryptui/cryptui-key-chooser.c               | 130 ++++----
+ libcryptui/cryptui-key-store.c                 |  15 +-
+ libcryptui/cryptui-priv.h                      |  23 --
+ libcryptui/cryptui.c                           | 199 -----------
+ reference/Makefile.am                          |   2 +-
+ 22 files changed, 116 insertions(+), 1363 deletions(-)
+
+commit af96725589fabe41b348c6f5473122b7b0771184
+Author: Alexandre Rostovtsev <tetromino@gmail.com>
+Date:   2011-07-25
+
+    Prevent file collisions between libcryptui and seahorse (#655291)
+    
+    To prevent file collisions between seahorse and libcryptui:
+    * install pixmaps in /usr/share/pixmaps/cryptui (and set pixmapsdir
+      to the correct value, so daemon/seahorse-gtkstock.c can actually
+      load them);
+    * install ui files in /usr/share/cryptui/ui;
+    * rename seahorse.schemas to cryptui.schemas;
+    * use "cryptui" as the gettext translation domain.
+    
+    Addresses Gnome bug #655291.
+
+ configure.ac                 |   2 +-
+ daemon/Makefile.am           |   4 +-
+ data/.gitignore              |   2 +-
+ data/Makefile.am             |   2 +-
+ data/cryptui.schemas.in      | 211 +++++++++++++++++++++++++++++++++++++++++++
+ data/seahorse.schemas.in     | 211 -------------------------------------------
+ pixmaps/22x22/Makefile.am    |   2 +-
+ pixmaps/48x48/Makefile.am    |   2 +-
+ pixmaps/scalable/Makefile.am |   2 +-
+ po/POTFILES.in               |   2 +-
+ 10 files changed, 220 insertions(+), 220 deletions(-)
+
+commit 7b2f48d78e3977a0b261af433ecdd919e38a10f9
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-07-27
+
+    Bump version number
+
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 52604e5dae6fc5bbac15d7df13a4ff03592f6498
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-07-25
+
+    Release version 3.1.4
+
+ AUTHORS         |   10 -
+ HACKING         |   99 ++---
+ MAINTAINERS     |    4 +-
+ Makefile.am     |    2 +-
+ NEWS            | 1073 +------------------------------------------------------
+ README          |   26 +-
+ configure.ac    |    2 +-
+ libcryptui.doap |   21 +-
+ 8 files changed, 47 insertions(+), 1190 deletions(-)
+
+commit 4bb25dbeed137bfd6adcd75a91acf866d73a16fb
+Author: Stef Walter <stefw@collabora.co.uk>
+Date:   2011-07-22
+
+    Split libcryptui out from seahorse.
+    
+     * This includes seahorse-daemon
+     * Part of making seahorse development more manageable and changing
+       its focused back to key management.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=655118
+
+ BUGS                                               |    2 -
+ ChangeLog.pre-0.6                                  |  359 --
+ ChangeLog.pre-1.0                                  | 5725 --------------------
+ ChangeLog.pre-auto                                 | 3216 -----------
+ INSTALL                                            |  243 +-
+ Makefile.am                                        |   66 +-
+ THANKS                                             |   27 -
+ TODO                                               |   24 -
+ autogen.sh                                         |    4 +-
+ common/.gitignore                                  |    3 -
+ common/Makefile.am                                 |   15 -
+ common/seahorse-bind.c                             |  543 --
+ common/seahorse-bind.h                             |   43 -
+ common/seahorse-cleanup.c                          |   86 -
+ common/seahorse-cleanup.h                          |   33 -
+ common/seahorse-object-list.c                      |   84 -
+ common/seahorse-object-list.h                      |   42 -
+ common/seahorse-registry.c                         |  409 --
+ common/seahorse-registry.h                         |   86 -
+ common/seahorse-secure-buffer.c                    |  196 -
+ common/seahorse-secure-buffer.h                    |   57 -
+ configure.ac                                       |  438 +-
+ daemon/Makefile.am                                 |  107 +-
+ daemon/seahorse-context.c                          | 1459 +++++
+ daemon/seahorse-context.h                          |  197 +
+ daemon/seahorse-daemon.c                           |   22 +-
+ daemon/seahorse-dbus-server.c                      |   12 +-
+ daemon/seahorse-gconf.c                            |  439 ++
+ daemon/seahorse-gconf.h                            |   80 +
+ daemon/seahorse-gpg-op.c                           |  122 +
+ daemon/seahorse-gpg-op.h                           |   37 +
+ daemon/seahorse-gpg-options.c                      |  551 ++
+ daemon/seahorse-gpg-options.h                      |   45 +
+ daemon/seahorse-gpgme-data.c                       |  415 ++
+ daemon/seahorse-gpgme-data.h                       |   50 +
+ daemon/seahorse-gpgme-generate.c                   |  406 ++
+ daemon/seahorse-gpgme-generate.h                   |   42 +
+ daemon/seahorse-gpgme-key-op.c                     |  165 +
+ daemon/seahorse-gpgme-key-op.h                     |  150 +
+ daemon/seahorse-gpgme-key.c                        |  594 ++
+ daemon/seahorse-gpgme-key.h                        |   74 +
+ daemon/seahorse-gpgme-operation.c                  |  450 ++
+ daemon/seahorse-gpgme-operation.h                  |   94 +
+ daemon/seahorse-gpgme-source.c                     |  997 ++++
+ daemon/seahorse-gpgme-source.h                     |   74 +
+ daemon/seahorse-gpgme-subkey.c                     |  244 +
+ daemon/seahorse-gpgme-subkey.h                     |   63 +
+ daemon/seahorse-gpgme-uid.c                        |  405 ++
+ daemon/seahorse-gpgme-uid.h                        |   81 +
+ daemon/seahorse-gpgme.c                            |  242 +
+ daemon/seahorse-gpgme.h                            |   60 +
+ daemon/seahorse-gtkstock.c                         |  229 +
+ daemon/seahorse-gtkstock.h                         |   48 +
+ daemon/seahorse-libdialogs.h                       |   48 +
+ daemon/seahorse-marshal.c                          |  239 +
+ daemon/seahorse-marshal.h                          |   52 +
+ daemon/seahorse-marshal.list                       |    5 +
+ daemon/seahorse-notification.c                     |  607 +++
+ daemon/seahorse-notify.xml                         |   75 +
+ daemon/seahorse-object-list.c                      |   84 +
+ daemon/seahorse-object-list.h                      |   42 +
+ daemon/seahorse-object.c                           | 1244 +++++
+ daemon/seahorse-object.h                           |  157 +
+ daemon/seahorse-operation.c                        |  951 ++++
+ daemon/seahorse-operation.h                        |  336 ++
+ daemon/seahorse-passphrase.c                       |  328 ++
+ daemon/seahorse-passphrase.h                       |   38 +
+ daemon/seahorse-pgp-generate.xml                   |  420 ++
+ daemon/seahorse-pgp-key.c                          |  618 +++
+ daemon/seahorse-pgp-key.h                          |  110 +
+ daemon/seahorse-pgp-keysets.c                      |   79 +
+ daemon/seahorse-pgp-keysets.h                      |   33 +
+ daemon/seahorse-pgp-module.c                       |   40 +
+ daemon/seahorse-pgp-module.h                       |   30 +
+ daemon/seahorse-pgp-signature.c                    |  204 +
+ daemon/seahorse-pgp-signature.h                    |   67 +
+ daemon/seahorse-pgp-subkey.c                       |  398 ++
+ daemon/seahorse-pgp-subkey.h                       |  105 +
+ daemon/seahorse-pgp-uid.c                          |  555 ++
+ daemon/seahorse-pgp-uid.h                          |   95 +
+ daemon/seahorse-pgp.c                              |   22 +
+ daemon/seahorse-pgp.h                              |   36 +
+ daemon/seahorse-progress.c                         |  449 ++
+ daemon/seahorse-progress.h                         |   49 +
+ daemon/seahorse-progress.xml                       |  127 +
+ daemon/seahorse-secure-buffer.c                    |  196 +
+ daemon/seahorse-secure-buffer.h                    |   57 +
+ daemon/seahorse-secure-memory.c                    |  179 +
+ daemon/seahorse-secure-memory.h                    |   39 +
+ daemon/seahorse-service-crypto.c                   |   12 +-
+ daemon/seahorse-service-keyset.c                   |    4 -
+ daemon/seahorse-service.c                          |  106 +-
+ daemon/seahorse-set.c                              |  378 ++
+ daemon/seahorse-set.h                              |  118 +
+ daemon/seahorse-source.c                           |  402 ++
+ daemon/seahorse-source.h                           |  166 +
+ daemon/seahorse-transfer-operation.c               |  393 ++
+ daemon/seahorse-transfer-operation.h               |   61 +
+ daemon/seahorse-types.c                            |   62 +
+ daemon/seahorse-types.h                            |   80 +
+ daemon/seahorse-unix-signal.c                      |  143 +
+ daemon/seahorse-unix-signal.h                      |   35 +
+ daemon/seahorse-unknown-source.c                   |  162 +
+ daemon/seahorse-unknown-source.h                   |   73 +
+ daemon/seahorse-unknown.c                          |   63 +
+ daemon/seahorse-unknown.h                          |   57 +
+ daemon/seahorse-util.c                             | 1616 ++++++
+ daemon/seahorse-util.h                             |  193 +
+ daemon/seahorse-validity.c                         |   57 +
+ daemon/seahorse-validity.h                         |   44 +
+ daemon/seahorse-widget.c                           |  628 +++
+ daemon/seahorse-widget.h                           |  110 +
+ data/Makefile.am                                   |    2 -
+ data/icons/.gitignore                              |    2 -
+ data/icons/Makefile.am                             |   78 -
+ .../hicolor_apps_16x16_seahorse-preferences.png    |  Bin 1005 -> 0 bytes
+ data/icons/hicolor_apps_16x16_seahorse.png         |  Bin 857 -> 0 bytes
+ .../hicolor_apps_22x22_seahorse-preferences.png    |  Bin 1288 -> 0 bytes
+ data/icons/hicolor_apps_22x22_seahorse.png         |  Bin 1349 -> 0 bytes
+ .../hicolor_apps_24x24_seahorse-preferences.png    |  Bin 1237 -> 0 bytes
+ data/icons/hicolor_apps_24x24_seahorse.png         |  Bin 1355 -> 0 bytes
+ data/icons/hicolor_apps_256x256_seahorse.png       |  Bin 35962 -> 0 bytes
+ .../hicolor_apps_32x32_seahorse-preferences.png    |  Bin 1807 -> 0 bytes
+ data/icons/hicolor_apps_32x32_seahorse.png         |  Bin 2288 -> 0 bytes
+ .../hicolor_apps_48x48_seahorse-preferences.png    |  Bin 3135 -> 0 bytes
+ data/icons/hicolor_apps_48x48_seahorse.png         |  Bin 3665 -> 0 bytes
+ data/icons/svg/seahorse-preferences.svg            |  361 --
+ data/icons/svg/seahorse.svg                        | 4856 -----------------
+ gkr/.gitignore                                     |    3 -
+ gkr/Makefile.am                                    |   48 -
+ gkr/seahorse-add-keyring.xml                       |  131 -
+ gkr/seahorse-gkr-add-item.c                        |  182 -
+ gkr/seahorse-gkr-add-item.xml                      |  190 -
+ gkr/seahorse-gkr-add-keyring.c                     |  157 -
+ gkr/seahorse-gkr-dialogs.c                         |   99 -
+ gkr/seahorse-gkr-dialogs.h                         |   45 -
+ gkr/seahorse-gkr-item-commands.c                   |  143 -
+ gkr/seahorse-gkr-item-commands.h                   |   49 -
+ gkr/seahorse-gkr-item-properties.c                 |  780 ---
+ gkr/seahorse-gkr-item-properties.xml               |  561 --
+ gkr/seahorse-gkr-item.c                            |  914 ----
+ gkr/seahorse-gkr-item.h                            |  103 -
+ gkr/seahorse-gkr-keyring-commands.c                |  457 --
+ gkr/seahorse-gkr-keyring-commands.h                |   53 -
+ gkr/seahorse-gkr-keyring-properties.c              |  108 -
+ gkr/seahorse-gkr-keyring.c                         |  600 --
+ gkr/seahorse-gkr-keyring.h                         |   67 -
+ gkr/seahorse-gkr-keyring.xml                       |  194 -
+ gkr/seahorse-gkr-module.c                          |   47 -
+ gkr/seahorse-gkr-module.h                          |   30 -
+ gkr/seahorse-gkr-operation.c                       |  328 --
+ gkr/seahorse-gkr-operation.h                       |   76 -
+ gkr/seahorse-gkr-source.c                          |  481 --
+ gkr/seahorse-gkr-source.h                          |   66 -
+ gkr/seahorse-gkr.c                                 |   23 -
+ gkr/seahorse-gkr.h                                 |   35 -
+ help/.gitignore                                    |    5 -
+ help/C/.gitignore                                  |    4 -
+ help/C/figures/seahorse-window.png                 |  Bin 41180 -> 0 bytes
+ help/C/legal.xml                                   |   76 -
+ help/C/seahorse.xml                                | 1419 -----
+ help/ChangeLog                                     |  320 --
+ help/Makefile.am                                   |   10 -
+ help/ca/.gitignore                                 |    2 -
+ help/ca/ca.po                                      | 1086 ----
+ help/ca/figures/seahorse-window.png                |  Bin 44119 -> 0 bytes
+ help/cs/.gitignore                                 |    2 -
+ help/cs/cs.po                                      | 1744 ------
+ help/cs/figures/seahorse-window.png                |  Bin 29600 -> 0 bytes
+ help/de/.gitignore                                 |    2 -
+ help/de/de.po                                      | 2256 --------
+ help/de/figures/seahorse-window.png                |  Bin 39531 -> 0 bytes
+ help/el/.gitignore                                 |    2 -
+ help/el/el.po                                      | 2091 -------
+ help/el/figures/seahorse-window.png                |  Bin 40492 -> 0 bytes
+ help/en_GB/.gitignore                              |    2 -
+ help/en_GB/en_GB.po                                | 2084 -------
+ help/es/.gitignore                                 |    2 -
+ help/es/es.po                                      | 1743 ------
+ help/es/figures/seahorse-window.png                |  Bin 29573 -> 0 bytes
+ help/eu/.gitignore                                 |    3 -
+ help/eu/eu.po                                      | 2140 --------
+ help/eu/figures/export.png                         |  Bin 19802 -> 0 bytes
+ help/eu/figures/file-manager.png                   |  Bin 10178 -> 0 bytes
+ help/eu/figures/generate.png                       |  Bin 18657 -> 0 bytes
+ help/eu/figures/import.png                         |  Bin 19393 -> 0 bytes
+ help/eu/figures/key-manager.png                    |  Bin 55532 -> 0 bytes
+ help/eu/figures/key-properties.png                 |  Bin 33840 -> 0 bytes
+ help/eu/figures/passphrase.png                     |  Bin 10166 -> 0 bytes
+ help/eu/figures/preferences.png                    |  Bin 11218 -> 0 bytes
+ help/eu/figures/recipients.png                     |  Bin 23050 -> 0 bytes
+ help/eu/figures/seahorse-window.png                |  Bin 38526 -> 0 bytes
+ help/eu/figures/signature.png                      |  Bin 11743 -> 0 bytes
+ help/eu/figures/text-editor.png                    |  Bin 11283 -> 0 bytes
+ help/fr/.gitignore                                 |    2 -
+ help/fr/figures/seahorse-window.png                |  Bin 39157 -> 0 bytes
+ help/fr/fr.po                                      | 1760 ------
+ help/it/.gitignore                                 |    2 -
+ help/it/figures/seahorse-window.png                |  Bin 39033 -> 0 bytes
+ help/it/it.po                                      | 2124 --------
+ help/ja/figures/seahorse-window.png                |  Bin 20435 -> 0 bytes
+ help/ja/ja.po                                      | 1669 ------
+ help/ko/ko.po                                      | 1635 ------
+ help/oc/.gitignore                                 |    2 -
+ help/oc/oc.po                                      | 1721 ------
+ help/ru/.gitignore                                 |    2 -
+ help/ru/ru.po                                      | 2133 --------
+ help/seahorse.omf.in                               |   18 -
+ help/sl/sl.po                                      | 1134 ----
+ help/sv/.gitignore                                 |    2 -
+ help/sv/figures/seahorse-window.png                |  Bin 40983 -> 0 bytes
+ help/sv/sv.po                                      | 1607 ------
+ help/vi/.gitignore                                 |    2 -
+ help/vi/vi.po                                      | 1860 -------
+ help/zh_CN/zh_CN.po                                | 1565 ------
+ libcryptui.doap                                    |   31 +
+ libseahorse/.gitignore                             |   18 -
+ libseahorse/Makefile.am                            |   84 -
+ libseahorse/seahorse-add-keyserver.xml             |  200 -
+ libseahorse/seahorse-check-button-control.c        |   63 -
+ libseahorse/seahorse-check-button-control.h        |   34 -
+ libseahorse/seahorse-combo-keys.c                  |  272 -
+ libseahorse/seahorse-combo-keys.h                  |   51 -
+ libseahorse/seahorse-commands.c                    |  228 -
+ libseahorse/seahorse-commands.h                    |   71 -
+ libseahorse/seahorse-context.c                     | 1632 ------
+ libseahorse/seahorse-context.h                     |  213 -
+ libseahorse/seahorse-dns-sd.c                      |  483 --
+ libseahorse/seahorse-dns-sd.h                      |   83 -
+ libseahorse/seahorse-gconf.c                       |  439 --
+ libseahorse/seahorse-gconf.h                       |   80 -
+ libseahorse/seahorse-gtkstock.c                    |  229 -
+ libseahorse/seahorse-gtkstock.h                    |   48 -
+ libseahorse/seahorse-keyserver-control.c           |  348 --
+ libseahorse/seahorse-keyserver-control.h           |   73 -
+ libseahorse/seahorse-libdialogs.h                  |   48 -
+ libseahorse/seahorse-marshal.list                  |    5 -
+ libseahorse/seahorse-notification.c                |  607 ---
+ libseahorse/seahorse-notify.xml                    |   75 -
+ libseahorse/seahorse-object-model.c                |  454 --
+ libseahorse/seahorse-object-model.h                |   87 -
+ libseahorse/seahorse-object-widget.c               |  263 -
+ libseahorse/seahorse-object-widget.h               |   55 -
+ libseahorse/seahorse-object.c                      | 1265 -----
+ libseahorse/seahorse-object.h                      |  161 -
+ libseahorse/seahorse-operation.c                   |  951 ----
+ libseahorse/seahorse-operation.h                   |  336 --
+ libseahorse/seahorse-passphrase.c                  |  332 --
+ libseahorse/seahorse-passphrase.h                  |   38 -
+ libseahorse/seahorse-prefs.c                       |  540 --
+ libseahorse/seahorse-prefs.h                       |   47 -
+ libseahorse/seahorse-prefs.xml                     |  244 -
+ libseahorse/seahorse-progress.c                    |  449 --
+ libseahorse/seahorse-progress.h                    |   49 -
+ libseahorse/seahorse-progress.xml                  |  127 -
+ libseahorse/seahorse-secure-memory.c               |  179 -
+ libseahorse/seahorse-secure-memory.h               |   39 -
+ libseahorse/seahorse-servers.c                     |  167 -
+ libseahorse/seahorse-servers.h                     |   43 -
+ libseahorse/seahorse-set-model.c                   |  842 ---
+ libseahorse/seahorse-set-model.h                   |   82 -
+ libseahorse/seahorse-set.c                         |  378 --
+ libseahorse/seahorse-set.h                         |  118 -
+ libseahorse/seahorse-source.c                      |  444 --
+ libseahorse/seahorse-source.h                      |  168 -
+ libseahorse/seahorse-transfer-operation.c          |  393 --
+ libseahorse/seahorse-transfer-operation.h          |   61 -
+ libseahorse/seahorse-types.c                       |   62 -
+ libseahorse/seahorse-types.h                       |   80 -
+ libseahorse/seahorse-unix-signal.c                 |  143 -
+ libseahorse/seahorse-unix-signal.h                 |   35 -
+ libseahorse/seahorse-unknown-source.c              |  166 -
+ libseahorse/seahorse-unknown-source.h              |   73 -
+ libseahorse/seahorse-unknown.c                     |   72 -
+ libseahorse/seahorse-unknown.h                     |   57 -
+ libseahorse/seahorse-util.c                        | 1681 ------
+ libseahorse/seahorse-util.h                        |  198 -
+ libseahorse/seahorse-validity.c                    |   57 -
+ libseahorse/seahorse-validity.h                    |   44 -
+ libseahorse/seahorse-view.c                        |  135 -
+ libseahorse/seahorse-view.h                        |  101 -
+ libseahorse/seahorse-widget.c                      |  628 ---
+ libseahorse/seahorse-widget.h                      |  110 -
+ libseahorse/seahorse-xxx.c                         |  147 -
+ libseahorse/seahorse-xxx.h                         |   55 -
+ pgp/.gitignore                                     |    6 -
+ pgp/Makefile.am                                    |   98 -
+ pgp/seahorse-add-subkey.xml                        |  219 -
+ pgp/seahorse-add-uid.xml                           |  187 -
+ pgp/seahorse-expires.xml                           |  141 -
+ pgp/seahorse-gpg-op.c                              |  122 -
+ pgp/seahorse-gpg-op.h                              |   37 -
+ pgp/seahorse-gpg-options.c                         |  553 --
+ pgp/seahorse-gpg-options.h                         |   45 -
+ pgp/seahorse-gpgme-add-subkey.c                    |  214 -
+ pgp/seahorse-gpgme-add-uid.c                       |  108 -
+ pgp/seahorse-gpgme-data.c                          |  415 --
+ pgp/seahorse-gpgme-data.h                          |   50 -
+ pgp/seahorse-gpgme-dialogs.h                       |   83 -
+ pgp/seahorse-gpgme-expires.c                       |  134 -
+ pgp/seahorse-gpgme-generate.c                      |  460 --
+ pgp/seahorse-gpgme-key-op.c                        | 2522 ---------
+ pgp/seahorse-gpgme-key-op.h                        |  207 -
+ pgp/seahorse-gpgme-key.c                           |  705 ---
+ pgp/seahorse-gpgme-key.h                           |   74 -
+ pgp/seahorse-gpgme-operation.c                     |  451 --
+ pgp/seahorse-gpgme-operation.h                     |   94 -
+ pgp/seahorse-gpgme-photo.c                         |  172 -
+ pgp/seahorse-gpgme-photo.h                         |   65 -
+ pgp/seahorse-gpgme-photos.c                        |  338 --
+ pgp/seahorse-gpgme-revoke.c                        |  174 -
+ pgp/seahorse-gpgme-sign.c                          |  242 -
+ pgp/seahorse-gpgme-source.c                        | 1015 ----
+ pgp/seahorse-gpgme-source.h                        |   74 -
+ pgp/seahorse-gpgme-subkey.c                        |  244 -
+ pgp/seahorse-gpgme-subkey.h                        |   63 -
+ pgp/seahorse-gpgme-uid.c                           |  406 --
+ pgp/seahorse-gpgme-uid.h                           |   82 -
+ pgp/seahorse-gpgme.c                               |  242 -
+ pgp/seahorse-gpgme.h                               |   60 -
+ pgp/seahorse-hkp-source.c                          | 1258 -----
+ pgp/seahorse-hkp-source.h                          |   67 -
+ pgp/seahorse-ldap-source.c                         | 1482 -----
+ pgp/seahorse-ldap-source.h                         |   65 -
+ pgp/seahorse-pgp-commands.c                        |  314 --
+ pgp/seahorse-pgp-commands.h                        |   58 -
+ pgp/seahorse-pgp-dialogs.h                         |   39 -
+ pgp/seahorse-pgp-generate.xml                      |  420 --
+ pgp/seahorse-pgp-key-properties.c                  | 1881 -------
+ pgp/seahorse-pgp-key.c                             |  674 ---
+ pgp/seahorse-pgp-key.h                             |  119 -
+ pgp/seahorse-pgp-keysets.c                         |   79 -
+ pgp/seahorse-pgp-keysets.h                         |   33 -
+ pgp/seahorse-pgp-module.c                          |   58 -
+ pgp/seahorse-pgp-module.h                          |   30 -
+ pgp/seahorse-pgp-photo.c                           |  136 -
+ pgp/seahorse-pgp-photo.h                           |   57 -
+ pgp/seahorse-pgp-private-key-properties.xml        | 1754 ------
+ pgp/seahorse-pgp-public-key-properties.xml         | 1428 -----
+ pgp/seahorse-pgp-signature.c                       |  204 -
+ pgp/seahorse-pgp-signature.h                       |   68 -
+ pgp/seahorse-pgp-subkey.c                          |  398 --
+ pgp/seahorse-pgp-subkey.h                          |  105 -
+ pgp/seahorse-pgp-uid.c                             |  556 --
+ pgp/seahorse-pgp-uid.h                             |   95 -
+ pgp/seahorse-pgp.c                                 |   22 -
+ pgp/seahorse-pgp.h                                 |   36 -
+ pgp/seahorse-revoke.xml                            |  189 -
+ pgp/seahorse-server-source.c                       |  429 --
+ pgp/seahorse-server-source.h                       |   73 -
+ pgp/seahorse-sign.xml                              |  514 --
+ pgp/seahorse-signer.c                              |  118 -
+ pgp/seahorse-signer.xml                            |  106 -
+ pgp/seahorse-xloadimage.c                          |   57 -
+ pkcs11/.gitignore                                  |    3 -
+ pkcs11/Makefile.am                                 |   41 -
+ pkcs11/seahorse-pkcs11-certificate-props.c         |  228 -
+ pkcs11/seahorse-pkcs11-certificate-props.h         |   75 -
+ pkcs11/seahorse-pkcs11-certificate.c               |  396 --
+ pkcs11/seahorse-pkcs11-certificate.h               |   69 -
+ pkcs11/seahorse-pkcs11-commands.c                  |  237 -
+ pkcs11/seahorse-pkcs11-commands.h                  |   52 -
+ pkcs11/seahorse-pkcs11-helpers.c                   |  153 -
+ pkcs11/seahorse-pkcs11-helpers.h                   |   32 -
+ pkcs11/seahorse-pkcs11-module.c                    |   71 -
+ pkcs11/seahorse-pkcs11-module.h                    |   30 -
+ pkcs11/seahorse-pkcs11-object.c                    |  425 --
+ pkcs11/seahorse-pkcs11-object.h                    |   73 -
+ pkcs11/seahorse-pkcs11-operations.c                |  442 --
+ pkcs11/seahorse-pkcs11-operations.h                |   36 -
+ pkcs11/seahorse-pkcs11-source.c                    |  224 -
+ pkcs11/seahorse-pkcs11-source.h                    |   58 -
+ pkcs11/seahorse-pkcs11.c                           |   23 -
+ pkcs11/seahorse-pkcs11.h                           |   30 -
+ po/POTFILES.in                                     |  107 +-
+ reference/Makefile.am                              |    3 +-
+ reference/libseahorse/.gitignore                   |   16 -
+ reference/libseahorse/Makefile.am                  |   61 -
+ reference/libseahorse/libseahorse-docs.sgml        |   65 -
+ reference/libseahorse/libseahorse-overrides.txt    |    0
+ reference/libseahorse/libseahorse-sections.txt     |  651 ---
+ reference/libseahorse/version.xml.in               |    1 -
+ seahorse.doap                                      |   31 -
+ seahorse.spec.in                                   |   87 -
+ src/.gitignore                                     |   16 -
+ src/Makefile.am                                    |   92 -
+ src/eggtreemultidnd.c                              |  415 --
+ src/eggtreemultidnd.h                              |   74 -
+ src/seahorse-change-passphrase.xml                 |  139 -
+ src/seahorse-generate-select.c                     |  212 -
+ src/seahorse-generate-select.h                     |   56 -
+ src/seahorse-generate-select.xml                   |  122 -
+ src/seahorse-key-manager-store.c                   | 1064 ----
+ src/seahorse-key-manager-store.h                   |   74 -
+ src/seahorse-key-manager.c                         | 1103 ----
+ src/seahorse-key-manager.h                         |   65 -
+ src/seahorse-key-manager.ui                        |   55 -
+ src/seahorse-key-manager.xml                       |  359 --
+ src/seahorse-keyserver-results.c                   |  562 --
+ src/seahorse-keyserver-results.h                   |   66 -
+ src/seahorse-keyserver-results.ui                  |   43 -
+ src/seahorse-keyserver-results.xml                 |   97 -
+ src/seahorse-keyserver-search.c                    |  497 --
+ src/seahorse-keyserver-search.xml                  |  243 -
+ src/seahorse-keyserver-sync.c                      |  250 -
+ src/seahorse-keyserver-sync.h                      |   27 -
+ src/seahorse-keyserver-sync.xml                    |  180 -
+ src/seahorse-main.c                                |  120 -
+ src/seahorse-preferences.c                         |   46 -
+ src/seahorse-preferences.h                         |   36 -
+ src/seahorse-viewer.c                              | 1033 ----
+ src/seahorse-viewer.h                              |  116 -
+ src/seahorse-windows.h                             |   37 -
+ src/seahorse.1                                     |   41 -
+ src/seahorse.desktop.in.in                         |   14 -
+ ssh/.gitignore                                     |    4 -
+ ssh/Makefile.am                                    |   55 -
+ ssh/seahorse-algo.c                                |  243 -
+ ssh/seahorse-algo.h                                |   49 -
+ ssh/seahorse-ssh-askpass.c                         |  118 -
+ ssh/seahorse-ssh-commands.c                        |  239 -
+ ssh/seahorse-ssh-commands.h                        |   58 -
+ ssh/seahorse-ssh-dialogs.h                         |   20 -
+ ssh/seahorse-ssh-generate.c                        |  238 -
+ ssh/seahorse-ssh-generate.xml                      |  405 --
+ ssh/seahorse-ssh-key-data.c                        |  455 --
+ ssh/seahorse-ssh-key-data.h                        |  105 -
+ ssh/seahorse-ssh-key-properties.c                  |  366 --
+ ssh/seahorse-ssh-key-properties.xml                |  555 --
+ ssh/seahorse-ssh-key.c                             |  428 --
+ ssh/seahorse-ssh-key.h                             |   87 -
+ ssh/seahorse-ssh-module.c                          |   45 -
+ ssh/seahorse-ssh-module.h                          |   30 -
+ ssh/seahorse-ssh-operation.c                       | 1209 -----
+ ssh/seahorse-ssh-operation.h                       |   98 -
+ ssh/seahorse-ssh-source.c                          |  834 ---
+ ssh/seahorse-ssh-source.h                          |   85 -
+ ssh/seahorse-ssh-upload.c                          |  235 -
+ ssh/seahorse-ssh-upload.xml                        |  208 -
+ ssh/seahorse-ssh.c                                 |   34 -
+ ssh/seahorse-ssh.h                                 |   34 -
+ 441 files changed, 21242 insertions(+), 112796 deletions(-)

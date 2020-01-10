@@ -1,0 +1,2514 @@
+# Slovenian translations for libcryptui.
+# Copyright (C) 2005-2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the libcryptui package.
+#
+# Andraž Tori <andraz.tori1@guest.arnes.si>, 2000.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007-2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libcryptui master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=libcryptui&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-08-26 16:16+0000\n"
+"PO-Revision-Date: 2013-09-02 22:58+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../daemon/seahorse-daemon.c:53
+msgid "Do not run seahorse-daemon as a daemon"
+msgstr "Ne zaganjaj seahorse ozadnjega programa"
+
+#: ../daemon/seahorse-daemon.c:83
+msgid "couldn't fork process"
+msgstr "ni mogoče razvejiti opravila"
+
+#: ../daemon/seahorse-daemon.c:89
+msgid "couldn't create new process group"
+msgstr "ni mogoče ustvariti nove skupine opravil"
+
+#: ../daemon/seahorse-daemon.c:237
+msgid "Encryption Daemon (Seahorse)"
+msgstr "Šifrirni ozadnji program (Seahorse)"
+
+#: ../daemon/seahorse-notification.c:576 ../daemon/seahorse-notification.c:604
+msgid "Key Imported"
+msgid_plural "Keys Imported"
+msgstr[0] "uvoženih ključev"
+msgstr[1] "uvožen ključ"
+msgstr[2] "uvožena ključa"
+msgstr[3] "uvoženi ključi"
+
+#: ../daemon/seahorse-notification.c:580 ../daemon/seahorse-notification.c:603
+#, c-format
+msgid "Imported %i key"
+msgid_plural "Imported %i keys"
+msgstr[0] "Uvoženih %i ključev"
+msgstr[1] "Uvožen %i ključ"
+msgstr[2] "Uvožena %i ključa"
+msgstr[3] "Uvoženi %i ključi"
+
+#: ../daemon/seahorse-notification.c:582
+#, c-format
+msgid "Imported a key for"
+msgid_plural "Imported keys for"
+msgstr[0] "Uvoženih ključev za"
+msgstr[1] "Uvožen ključ za"
+msgstr[2] "Uvožena ključa za"
+msgstr[3] "Uvoženi ključi za"
+
+#: ../daemon/seahorse-gpgme.c:72
+msgid "Decryption failed. You probably do not have the decryption key."
+msgstr "Odšifriranje ni uspelo. Najverjetneje manjka odšifrirni ključ."
+
+#: ../daemon/seahorse-gpgme-generate.c:62
+msgid "RSA"
+msgstr "RSA"
+
+#: ../daemon/seahorse-gpgme-generate.c:63
+msgid "DSA Elgamal"
+msgstr "DSA ElGamal"
+
+#: ../daemon/seahorse-gpgme-generate.c:64
+msgid "DSA (sign only)"
+msgstr "DSA (le podpis)"
+
+#: ../daemon/seahorse-gpgme-generate.c:65
+msgid "RSA (sign only)"
+msgstr "RSA (le podpis)"
+
+#: ../daemon/seahorse-gpgme-generate.c:81
+msgid "Couldn't generate PGP key"
+msgstr "Ni mogoče ustvariti PGP ključa"
+
+#: ../daemon/seahorse-gpgme-generate.c:141
+msgid "Passphrase for New PGP Key"
+msgstr "Šifrirno geslo za nov PGP ključ"
+
+#: ../daemon/seahorse-gpgme-generate.c:142
+msgid "Enter the passphrase for your new key twice."
+msgstr "Dvakrat vnesite šifrirno geslo za vaš novi ključ."
+
+#: ../daemon/seahorse-gpgme-generate.c:151
+msgid "Couldn't generate key"
+msgstr "Ni mogoče ustvariti ključa"
+
+#: ../daemon/seahorse-gpgme-generate.c:153
+msgid "Generating key"
+msgstr "Ustvari ključ"
+
+#: ../daemon/seahorse-gpgme-source.c:98
+#, c-format
+msgid "Wrong passphrase."
+msgstr "Napačno šifrirno geslo."
+
+#: ../daemon/seahorse-gpgme-source.c:102
+#, c-format
+msgid "Enter new passphrase for '%s'"
+msgstr "Vnesite novo šifrirno geslo za '%s'"
+
+#: ../daemon/seahorse-gpgme-source.c:104
+#, c-format
+msgid "Enter passphrase for '%s'"
+msgstr "Vnesite šifrirno geslo za '%s'"
+
+#: ../daemon/seahorse-gpgme-source.c:107
+msgid "Enter new passphrase"
+msgstr "Vnesite novo šifrirno geslo"
+
+#: ../daemon/seahorse-gpgme-source.c:109
+msgid "Enter passphrase"
+msgstr "Vnesite šifrirno geslo"
+
+#. TODO: We can use the GPGME progress to make this more accurate
+#: ../daemon/seahorse-gpgme-source.c:712
+#, c-format
+msgid "Loaded %d key"
+msgid_plural "Loaded %d keys"
+msgstr[0] "Naloženih %d ključev"
+msgstr[1] "Naložen %d ključ"
+msgstr[2] "Naložena %d ključa"
+msgstr[3] "Naloženi %d ključi"
+
+#: ../daemon/seahorse-gpgme-source.c:765
+msgid "Loading Keys..."
+msgstr "Nalaganje ključev ..."
+
+#: ../daemon/seahorse-gpgme-source.c:808
+msgid ""
+"Invalid key data (missing UIDs). This may be due to a computer with a date "
+"set in the future or a missing self-signature."
+msgstr ""
+"Neveljavni podatki ključa (manjkajoči UID). Morda je datum računalnika "
+"nastavljen nepravilno ali manjkajoče samodejno podpisovanje."
+
+#: ../daemon/seahorse-gpgme-source.c:898
+msgid "Importing Keys"
+msgstr "Uvažanje ključev"
+
+#: ../daemon/seahorse-gpgme-source.c:931
+msgid "Exporting Keys"
+msgstr "Izvažanje ključev"
+
+#: ../daemon/seahorse-gpgme-subkey.c:197 ../daemon/seahorse-validity.c:40
+msgid "Unknown"
+msgstr "Neznano"
+
+#: ../daemon/seahorse-gpgme-subkey.c:199
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: ../daemon/seahorse-notify.xml.h:1
+msgid "Notification Messages"
+msgstr "Opozorilna sporočila"
+
+#: ../daemon/seahorse-object.c:317
+msgid "Symmetric Key"
+msgstr "Simetrični ključ"
+
+#: ../daemon/seahorse-object.c:320
+msgid "Public Key"
+msgstr "Javni ključ"
+
+#: ../daemon/seahorse-object.c:323
+msgid "Private Key"
+msgstr "Osebni ključ"
+
+#: ../daemon/seahorse-object.c:326
+msgid "Credentials"
+msgstr "Omrežna poverila"
+
+#.
+#. * Translators: "This object is a means of storing items such as
+#. * name, email address, etc. that make up one's digital identity.
+#.
+#: ../daemon/seahorse-object.c:333
+msgid "Identity"
+msgstr "Istovetnost"
+
+#: ../daemon/seahorse-passphrase.c:196
+msgid "Passphrase"
+msgstr "Šifrirno geslo"
+
+#: ../daemon/seahorse-passphrase.c:199
+msgid "Password:"
+msgstr "Geslo:"
+
+#. The second and main entry
+#: ../daemon/seahorse-passphrase.c:263
+msgid "Confirm:"
+msgstr "Potrditev:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:1
+msgid "Algorithms here"
+msgstr "Algoritmi"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:2
+msgid "New PGP Key"
+msgstr "Nov PGP ključ"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:3
+msgid "A PGP key allows you to encrypt email or files to other people."
+msgstr "PGP ključ omogoča šifriranje elektronske pošte za druge uporabnike."
+
+#: ../daemon/seahorse-pgp-generate.xml.h:4
+msgid "Full _Name:"
+msgstr "Polno _Ime:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:5
+msgid "_Email Address:"
+msgstr "_Elektronski naslov:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:6
+msgid "_Comment:"
+msgstr "_Opombe:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:7
+msgid "Ne_ver Expires"
+msgstr "_Nikoli ne preteče"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:8
+msgid "Encryption _Type:"
+msgstr "_Vrsta šifriranja:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:9
+msgid "Key _Strength (bits):"
+msgstr "_Jakost ključa (biti):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:10
+msgid "E_xpiration Date:"
+msgstr "Datum _preteka:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:11
+msgid "<b>_Advanced key options</b>"
+msgstr "<b>_Napredne možnosti ključa</b>"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:12
+msgid "Generate a new key"
+msgstr "Ustvari nov ključ"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:13
+msgid "C_reate"
+msgstr "Ustva_ri"
+
+#: ../daemon/seahorse-pgp-key.c:179
+msgid "Private PGP Key"
+msgstr "Osebni PGP ključ"
+
+#: ../daemon/seahorse-pgp-key.c:182
+msgid "Public PGP Key"
+msgstr "Javni PGP ključ"
+
+#: ../daemon/seahorse-pgp-key.c:527
+msgid "Expired"
+msgstr "Pretečeno"
+
+#: ../daemon/seahorse-pgp-subkey.c:366
+msgid "Key"
+msgstr "Ključ"
+
+#: ../daemon/seahorse-pgp-subkey.c:371
+#, c-format
+msgid "Subkey %d of %s"
+msgstr "Podključ %d od %s"
+
+#: ../daemon/seahorse-progress.xml.h:1
+msgid "Progress Title"
+msgstr "Naslov napredovanja"
+
+#: ../daemon/seahorse-service.c:161 ../daemon/seahorse-service.c:267
+#, c-format
+msgid "Invalid or unrecognized key type: %s"
+msgstr "Neveljavna ali neprepoznavna vrsta ključa: %s"
+
+#: ../daemon/seahorse-service.c:229
+#, c-format
+msgid "This keytype is not supported: %s"
+msgstr "Vrsta ključa ni podprta: %s"
+
+#: ../daemon/seahorse-service.c:331 ../daemon/seahorse-service-keyset.c:180
+#: ../daemon/seahorse-service-keyset.c:223
+#, c-format
+msgid "Invalid or unrecognized key: %s"
+msgstr "Neveljaven ali neprepoznaven ključ: %s"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:204
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
+msgstr "Podpis: <i><key id='%s'/> <b>pretek</b></i> na %s."
+
+#: ../daemon/seahorse-service-crypto.c:205
+msgid "Invalid Signature"
+msgstr "Neveljaven podpis"
+
+#: ../daemon/seahorse-service-crypto.c:211
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
+msgstr "Podpis: <i><key id='%s'/></i> na %s <b>Pretečeno</b>."
+
+#: ../daemon/seahorse-service-crypto.c:212
+msgid "Expired Signature"
+msgstr "Pretečen podpis"
+
+#: ../daemon/seahorse-service-crypto.c:218
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
+msgstr "Podpis: <i><key id='%s'/> <b>Preklicano</b></i> na %s."
+
+#: ../daemon/seahorse-service-crypto.c:219
+msgid "Revoked Signature"
+msgstr "Preklican podpis"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:225
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s."
+msgstr "Podpis: <i><key id='%s'/></i> na %s."
+
+#: ../daemon/seahorse-service-crypto.c:226
+msgid "Good Signature"
+msgstr "Dober podpis"
+
+#: ../daemon/seahorse-service-crypto.c:231
+msgid "Signing key not in keyring."
+msgstr "Podpisovanje ključa, ki ni v zbirki."
+
+#: ../daemon/seahorse-service-crypto.c:232
+msgid "Unknown Signature"
+msgstr "Neznan podpis"
+
+#: ../daemon/seahorse-service-crypto.c:236
+msgid "Bad or forged signature. The signed data was modified."
+msgstr "Neveljaven ali ponarejen podpis. Podatki podpisa so bili spremenjeni."
+
+#: ../daemon/seahorse-service-crypto.c:237
+msgid "Bad Signature"
+msgstr "Slab podpis"
+
+#: ../daemon/seahorse-service-crypto.c:245
+msgid "Couldn't verify signature."
+msgstr "Ni mogoče overiti podpisa."
+
+#: ../daemon/seahorse-service-crypto.c:317
+#, c-format
+msgid "Recipients specified for symmetric encryption"
+msgstr "Prejemniki, določeni za simetrično šifriranje"
+
+#: ../daemon/seahorse-service-crypto.c:326
+#: ../daemon/seahorse-service-crypto.c:673
+#, c-format
+msgid "Invalid or unrecognized signer: %s"
+msgstr "Neveljaven ali neprepoznaven podpisnik: %s"
+
+#: ../daemon/seahorse-service-crypto.c:333
+#: ../daemon/seahorse-service-crypto.c:680
+#, c-format
+msgid "Key is not valid for signing: %s"
+msgstr "Ključ ni veljaven za podpisovanje: %s"
+
+#: ../daemon/seahorse-service-crypto.c:346
+#, c-format
+msgid "Invalid or unrecognized recipient: %s"
+msgstr "Neveljaven ali neprepoznaven prejemnik: %s"
+
+#: ../daemon/seahorse-service-crypto.c:354
+#, c-format
+msgid "Key is not a valid recipient for encryption: %s"
+msgstr "Ključ ni veljavni prejemnik za šifriranje: %s"
+
+#: ../daemon/seahorse-service-crypto.c:363
+#, c-format
+msgid "No recipients specified"
+msgstr "Ni določenih prejemnikov"
+
+#: ../daemon/seahorse-service-crypto.c:460
+#, c-format
+msgid "Invalid key type for decryption: %s"
+msgstr "Neveljavna vrsta ključa za odšifriranje: %s"
+
+#: ../daemon/seahorse-service-crypto.c:575
+#: ../daemon/seahorse-service-crypto.c:773
+#, c-format
+msgid "Please set clearuri"
+msgstr "Določite naslov čiščenja"
+
+#: ../daemon/seahorse-service-crypto.c:581
+#: ../daemon/seahorse-service-crypto.c:779
+#, c-format
+msgid "Please set crypturi"
+msgstr "Določite naslov šifriranja"
+
+#: ../daemon/seahorse-service-crypto.c:591
+#, c-format
+msgid "Error opening clearuri"
+msgstr "Napaka med odpiranjem clearuri"
+
+#: ../daemon/seahorse-service-crypto.c:668
+#, c-format
+msgid "No signer specified"
+msgstr "Ni določenega podpisnika"
+
+#: ../daemon/seahorse-service-crypto.c:857
+#, c-format
+msgid "Invalid key type for verifying: %s"
+msgstr "Neveljavna vrsta ključa za overitev: %s"
+
+#: ../daemon/seahorse-service-keyset.c:273
+#, c-format
+msgid "Invalid key id: %s"
+msgstr "Neveljaven ID ključa: %s"
+
+#: ../daemon/seahorse-unknown.c:58
+msgid "Unavailable"
+msgstr "Nedostopno"
+
+#: ../daemon/seahorse-util.c:231
+msgid "%Y-%m-%d"
+msgstr "%d.%m.%Y"
+
+#: ../daemon/seahorse-util.c:510
+msgid "Key Data"
+msgstr "Podatki ključa"
+
+#: ../daemon/seahorse-util.c:512
+msgid "Multiple Keys"
+msgstr "Več ključev"
+
+#: ../daemon/seahorse-util.c:768
+msgid "Couldn't run file-roller"
+msgstr "Ni mogoče zagnati programa file-roller"
+
+#: ../daemon/seahorse-util.c:774
+msgid "Couldn't package files"
+msgstr "Ni mogoče pakirati datotek"
+
+#: ../daemon/seahorse-util.c:775
+msgid "The file-roller process did not complete successfully"
+msgstr "Naloge programa file-roller niso bile uspešno končane"
+
+#. Filter for PGP keys. We also include *.asc, as in many
+#. cases that extension is associated with text/plain
+#: ../daemon/seahorse-util.c:944
+msgid "All key files"
+msgstr "Vse datoteke ključev"
+
+#: ../daemon/seahorse-util.c:951 ../daemon/seahorse-util.c:999
+msgid "All files"
+msgstr "Vse datoteke"
+
+#: ../daemon/seahorse-util.c:992
+msgid "Archive files"
+msgstr "Arhivske datoteke"
+
+#: ../daemon/seahorse-util.c:1062
+msgid ""
+"<b>A file already exists with this name.</b>\n"
+"\n"
+"Do you want to replace it with a new file?"
+msgstr ""
+"<b>Datoteka s tem imenom že obstaja.</b>\n"
+"\n"
+"Ali želite obstoječo datoteko prepisati?"
+
+#: ../daemon/seahorse-util.c:1065
+msgid "_Replace"
+msgstr "_Zamenjaj"
+
+#: ../daemon/seahorse-validity.c:42
+msgctxt "Validity"
+msgid "Never"
+msgstr "Nikoli"
+
+#: ../daemon/seahorse-validity.c:44
+msgid "Marginal"
+msgstr "Obrobno"
+
+#: ../daemon/seahorse-validity.c:46
+msgid "Full"
+msgstr "Polno"
+
+#: ../daemon/seahorse-validity.c:48
+msgid "Ultimate"
+msgstr "Popolno"
+
+#: ../daemon/seahorse-validity.c:50
+msgid "Disabled"
+msgstr "Onemogočeno"
+
+#: ../daemon/seahorse-validity.c:52
+msgid "Revoked"
+msgstr "Preklicano"
+
+#: ../daemon/seahorse-widget.c:433
+#, c-format
+msgid "Could not display help: %s"
+msgstr "Pomoči ni mogoče prikazati: %s"
+
+#: ../libcryptui/cryptui.c:307
+msgid ""
+"No encryption keys were found with which to perform the operation you "
+"requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+"started so that you may either create a key or import one."
+msgstr ""
+"Ni najdenih šifrirnih ključev, ki bi izvedli zahtevano nalogo. Program "
+"<b>Gesla in šifrirni ključi</b> bo zagnan zato, da boste lahko ustvarili ali "
+"naložili ustrezen ključ."
+
+#: ../libcryptui/cryptui.c:333
+msgid ""
+"No encryption keys were found. In order to perform public key encryption, "
+"the <b>Passwords and Encryption Keys</b> program can be started to create or "
+"import a public key. It is also possible to use a shared passphrase instead."
+msgstr ""
+"Ni najdenih šifrirnih ključev, ki bi izvedli zahtevano nalogo. Treba je "
+"zagnati program <b>Gesla in šifrirni ključi</b> za ustvarjanje ali uvoz "
+"javnega ključa. Mogoče je uporabiti tudi šifrirno geslo v souporabi."
+
+#: ../libcryptui/cryptui.c:336
+msgid "Use a shared passphrase"
+msgstr "Uporabite šifrirno geslo v souporabi"
+
+#: ../libcryptui/cryptui.c:337
+msgid "Create or import a key"
+msgstr "Ustvari ali uvozi ključ"
+
+#: ../libcryptui/cryptui-key-chooser.c:177
+msgid "All Keys"
+msgstr "Vsi ključi"
+
+#: ../libcryptui/cryptui-key-chooser.c:178
+msgid "Selected Recipients"
+msgstr "Izbor prejemnikov"
+
+#: ../libcryptui/cryptui-key-chooser.c:179
+msgid "Search Results"
+msgstr "Rezultati iskanja"
+
+#. Filter Label
+#: ../libcryptui/cryptui-key-chooser.c:189
+msgid "Search _for:"
+msgstr "_Poišči:"
+
+#. first of the group
+#: ../libcryptui/cryptui-key-chooser.c:235
+msgid "Use passphrase only"
+msgstr "Uporabi le šifrirno geslo"
+
+#: ../libcryptui/cryptui-key-chooser.c:244
+msgid "Choose a set of recipients:"
+msgstr "Izbor prejemnikov sporočila:"
+
+#: ../libcryptui/cryptui-key-chooser.c:290
+msgid "None (Don't Sign)"
+msgstr "Brez (ne podpiši)"
+
+#: ../libcryptui/cryptui-key-chooser.c:303
+#, c-format
+msgid "Sign this message as %s"
+msgstr "Podpiši sporočilo kot %s"
+
+#. Sign Label
+#: ../libcryptui/cryptui-key-chooser.c:330
+msgid "_Sign message as:"
+msgstr "_Podpiši sporočilo kot:"
+
+#. TODO: Icons
+#. The name column
+#: ../libcryptui/cryptui-key-list.c:140
+msgid "Name"
+msgstr "Ime"
+
+#. The keyid column
+#: ../libcryptui/cryptui-key-list.c:145
+msgid "Key ID"
+msgstr "ID ključa"
+
+#: ../libegg/egg-datetime.c:317
+msgid "Display flags"
+msgstr "Pokaži zastavice"
+
+#: ../libegg/egg-datetime.c:318
+msgid "Displayed date and/or time properties"
+msgstr "Prikazane lastnosti datuma in časa"
+
+#: ../libegg/egg-datetime.c:323
+msgid "Lazy mode"
+msgstr "Leni način"
+
+#: ../libegg/egg-datetime.c:324
+msgid "Lazy mode doesn't normalize entered date and time values"
+msgstr "Leni način ne normalizira vnesenih vrednosti datuma in časa"
+
+#: ../libegg/egg-datetime.c:329
+msgid "Year"
+msgstr "Leto"
+
+#: ../libegg/egg-datetime.c:330
+msgid "Displayed year"
+msgstr "Prikazano leto"
+
+#: ../libegg/egg-datetime.c:335
+msgid "Month"
+msgstr "Mesec"
+
+#: ../libegg/egg-datetime.c:336
+msgid "Displayed month"
+msgstr "Prikazan mesec"
+
+#: ../libegg/egg-datetime.c:341
+msgid "Day"
+msgstr "Dan"
+
+#: ../libegg/egg-datetime.c:342
+msgid "Displayed day of month"
+msgstr "Prikazan dan v mesecu"
+
+#: ../libegg/egg-datetime.c:347
+msgid "Hour"
+msgstr "Ura"
+
+#: ../libegg/egg-datetime.c:348
+msgid "Displayed hour"
+msgstr "Prikazana ura"
+
+#: ../libegg/egg-datetime.c:353
+msgid "Minute"
+msgstr "Minuta"
+
+#: ../libegg/egg-datetime.c:354
+msgid "Displayed minute"
+msgstr "Prikazana minuta"
+
+#: ../libegg/egg-datetime.c:359
+msgid "Second"
+msgstr "Sekunda"
+
+#: ../libegg/egg-datetime.c:360
+msgid "Displayed second"
+msgstr "Prikazana sekunda"
+
+#: ../libegg/egg-datetime.c:365
+msgid "Lower limit year"
+msgstr "Spodnja meja leta"
+
+#: ../libegg/egg-datetime.c:366
+msgid "Year part of the lower date limit"
+msgstr "Leto kot spodnja omejitev"
+
+#: ../libegg/egg-datetime.c:371
+msgid "Upper limit year"
+msgstr "Zgornja meja leta"
+
+#: ../libegg/egg-datetime.c:372
+msgid "Year part of the upper date limit"
+msgstr "Leto kot zgornja omejitev"
+
+#: ../libegg/egg-datetime.c:377
+msgid "Lower limit month"
+msgstr "Spodnja meja meseca"
+
+#: ../libegg/egg-datetime.c:378
+msgid "Month part of the lower date limit"
+msgstr "Mesec kot spodnja omejitev"
+
+#: ../libegg/egg-datetime.c:383
+msgid "Upper limit month"
+msgstr "Zgornja meja meseca"
+
+#: ../libegg/egg-datetime.c:384
+msgid "Month part of the upper date limit"
+msgstr "Mesec kot zgornja omejitev"
+
+#: ../libegg/egg-datetime.c:389
+msgid "Lower limit day"
+msgstr "Spodnja meja dneva"
+
+#: ../libegg/egg-datetime.c:390
+msgid "Day of month part of the lower date limit"
+msgstr "Dan meseca kot spodnja omejitev"
+
+#: ../libegg/egg-datetime.c:395
+msgid "Upper limit day"
+msgstr "Zgornja meja dneva"
+
+#: ../libegg/egg-datetime.c:396
+msgid "Day of month part of the upper date limit"
+msgstr "Dan meseca kot zgornja omejitev"
+
+#: ../libegg/egg-datetime.c:401
+msgid "Lower limit hour"
+msgstr "Spodnja meja ure"
+
+#: ../libegg/egg-datetime.c:402
+msgid "Hour part of the lower time limit"
+msgstr "Ura kot spodnja omejitev časa"
+
+#: ../libegg/egg-datetime.c:407
+msgid "Upper limit hour"
+msgstr "Zgornja meja ure"
+
+#: ../libegg/egg-datetime.c:408
+msgid "Hour part of the upper time limit"
+msgstr "Ura kot zgornja omejitev časa"
+
+#: ../libegg/egg-datetime.c:413
+msgid "Lower limit minute"
+msgstr "Spodnja meja minute"
+
+#: ../libegg/egg-datetime.c:414
+msgid "Minute part of the lower time limit"
+msgstr "Minuta kot spodnja omejitev"
+
+#: ../libegg/egg-datetime.c:419
+msgid "Upper limit minute"
+msgstr "Zgornja meja minute"
+
+#: ../libegg/egg-datetime.c:420
+msgid "Minute part of the upper time limit"
+msgstr "Minuta kot zgornja omejitev"
+
+#: ../libegg/egg-datetime.c:425
+msgid "Lower limit second"
+msgstr "Spodnja meja sekunde"
+
+#: ../libegg/egg-datetime.c:426
+msgid "Second part of the lower time limit"
+msgstr "Sekunda kot spodnja omejitev"
+
+#: ../libegg/egg-datetime.c:431
+msgid "Upper limit second"
+msgstr "Zgornja meja sekunde"
+
+#: ../libegg/egg-datetime.c:432
+msgid "Second part of the upper time limit"
+msgstr "Sekunda kot zgornja omejitev"
+
+#. Translate to calendar:week_start:1 if you want Monday to be the
+#. * first day of the week; otherwise translate to calendar:week_start:0.
+#. * Do *not* translate it to anything else, if it isn't calendar:week_start:1
+#. * or calendar:week_start:0 it will not work.
+#.
+#: ../libegg/egg-datetime.c:474
+msgid "calendar:week_start:0"
+msgstr "calendar:week_start:1"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Date"
+msgstr "Datum"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Enter the date directly"
+msgstr "Neposreden vnos datuma"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select Date"
+msgstr "Izbor datuma"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select the date from a calendar"
+msgstr "Izbor datuma iz koledarja"
+
+#: ../libegg/egg-datetime.c:521 ../libegg/egg-datetime.c:2196
+msgid "Time"
+msgstr "Čas"
+
+#: ../libegg/egg-datetime.c:521
+msgid "Enter the time directly"
+msgstr "Neposreden vnos časa"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select Time"
+msgstr "Izbor časa"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select the time from a list"
+msgstr "Izbor časa iz seznama"
+
+#. Translators: set this to anything else if you want to use a
+#. * 24 hour clock.
+#.
+#: ../libegg/egg-datetime.c:793
+msgid "24hr: no"
+msgstr "24hr: da"
+
+#: ../libegg/egg-datetime.c:797 ../libegg/egg-datetime.c:1257
+#: ../libegg/egg-datetime.c:1261
+msgid "AM"
+msgstr "dop"
+
+#: ../libegg/egg-datetime.c:799 ../libegg/egg-datetime.c:1258
+#: ../libegg/egg-datetime.c:1265
+msgid "PM"
+msgstr "pop"
+
+#. Translators: This is hh:mm:ss AM/PM.
+#: ../libegg/egg-datetime.c:807
+#, c-format
+msgid "%02d:%02d:%02d %s"
+msgstr "%02d:%02d:%02d %s"
+
+#. Translators: This is hh:mm AM/PM.
+#: ../libegg/egg-datetime.c:810
+#, c-format
+msgid "%02d:%02d %s"
+msgstr "%02d:%02d %s"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:814
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#. Translators: This is hh:mm.
+#: ../libegg/egg-datetime.c:817
+#, c-format
+msgid "%02d:%02d"
+msgstr "%02d:%02d"
+
+#. TODO: should handle other display modes as well...
+#. Translators: This is YYYY-MM-DD
+#: ../libegg/egg-datetime.c:1173
+#, c-format
+msgid "%04d-%02d-%02d"
+msgstr "%04d-%02d-%02d"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:1238
+#, c-format
+msgid "%u:%u:%u"
+msgstr "%u:%u:%u"
+
+#: ../libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Datoteka ni veljavna .desktop datoteka"
+
+#: ../libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Neznana različica datoteke namizja '%s'"
+
+#: ../libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Zaganjanje %s"
+
+#: ../libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Program ne sprejme dokumentov preko ukazne vrstice"
+
+#: ../libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Nepoznana možnost zagona: %d"
+
+#: ../libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Ni mogoče poslati naslova URI dokumenta na vnos 'Vrsta=Povezava' predmeta "
+"namizja"
+
+#: ../libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "Predmet ni izvedljiv"
+
+#: ../libegg/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Onemogoči povezavo z upravljalnikom seje"
+
+#: ../libegg/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Določitev datoteke s shranjenimi nastavitvami"
+
+#: ../libegg/eggsmclient.c:228
+msgid "FILE"
+msgstr "DATOTEKA"
+
+#: ../libegg/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Določi ID upravljanja seje"
+
+#: ../libegg/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../libegg/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Možnosti upravljanja seje:"
+
+#: ../libegg/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Pokaži možnosti upravljanja seje"
+
+#~ msgid "Support for this feature was not enabled at build time"
+#~ msgstr "Podpora tej zmožnosti ni bila omogočena med izgradnjo"
+
+#~ msgid ""
+#~ "A list of key server URIs to search for remote PGP keys. In later "
+#~ "versions a display name can be included, by appending a space and then "
+#~ "the name."
+#~ msgstr ""
+#~ "Lista naslovov strežnikov ključev za oddaljene PGP ključe. V novejših "
+#~ "različicah je mogoče določiti tudi ime z dodajanjem presledka in imena za "
+#~ "naslovom."
+
+#~ msgid "Auto Retrieve Keys"
+#~ msgstr "Samodejno prenašanje ključev"
+
+#~ msgid "Auto Sync Keys"
+#~ msgstr "Samodejno usklajevanje ključev"
+
+#~ msgid "Controls the visibility of the expires column for the key manager."
+#~ msgstr "Upravlja z vidnostjo stolpca preteka v urejevalniku ključev."
+
+#~ msgid "Controls the visibility of the trust column for the key manager."
+#~ msgstr "Upravlja z vidnostjo stolpca zaupanja v urejevalniku ključev."
+
+#~ msgid "Controls the visibility of the type column for the key manager."
+#~ msgstr "Upravlja z vidnostjo stolpca vrste v urejevalniku ključev."
+
+#~ msgid "Controls the visibility of the validity column for the key manager."
+#~ msgstr "Upravlja z vidnostjo stolpca veljavnosti v urejevalniku ključev."
+
+#~ msgid "Enable DNS-SD sharing"
+#~ msgstr "Omogoči DNS-SD souporabo"
+
+#~ msgid ""
+#~ "Enables DNS-SD (Apple Bonjour) sharing of keys. seahorse-daemon must be "
+#~ "running and must be built with HKP and DNS-SD support."
+#~ msgstr ""
+#~ "Omogoči DNS-SD (Apple Bonjour) souporabo ključev. Zagnan mora biti "
+#~ "seahorse ozadnji program, ki podpira HKP in DNS-SD."
+
+#~ msgid "ID of the default key"
+#~ msgstr "ID privzetega ključa"
+
+#~ msgid ""
+#~ "If set to true, then files encrypted with seahorse will be ASCII armor "
+#~ "encoded."
+#~ msgstr ""
+#~ "Izbrana možnost omogoči, da bo šifriranje vedno kodirano kot ASCII Armor."
+
+#~ msgid ""
+#~ "If set to true, then the default key will always be added to an "
+#~ "encryption recipients list."
+#~ msgstr ""
+#~ "Izbrana možnost omogoči, da je privzeti ključ vedno dodan na listo "
+#~ "prejemnikov šifriranja."
+
+#~ msgid "Last key server search pattern"
+#~ msgstr "Zadnji iskalni niz strežnika ključev"
+
+#~ msgid "Last key servers used"
+#~ msgstr "Zadnji uporabljeni strežnik ključev"
+
+#~ msgid "Last key used to sign a message."
+#~ msgstr "Zadnji ključ uporabljen za podpisovanje sporočila."
+
+#~ msgid "PGP Key servers"
+#~ msgstr "PGP strežniki ključev"
+
+#~ msgid "Publish keys to this key server."
+#~ msgstr "Objavi ključe na tem strežniku."
+
+#~ msgid "Show expires column in key manager"
+#~ msgstr "Pokaži stolpec preteka v urejevalniku ključev"
+
+#~ msgid "Show trust column in key manager"
+#~ msgstr "Pokaži stolpec zaupanja v urejevalniku ključev"
+
+#~ msgid "Show type column in key manager"
+#~ msgstr "Pokaži stolpec vrste v urejevalniku ključev"
+
+#~ msgid "Show validity column in key manager"
+#~ msgstr "Pokaži stolpec veljavnosti v urejevalniku ključev"
+
+#~ msgid ""
+#~ "Specify the column to sort the recipients window by. Columns are: 'name' "
+#~ "and 'id'. Put a '-' in front of the column name to sort in descending "
+#~ "order."
+#~ msgstr ""
+#~ "Določite stolpec po katerem naj bodo razvrščeni prejemniki. Imeni "
+#~ "stolpcev sta: 'ime' in 'ID'. Vnesite '-' pred ime stolpca za padajoče "
+#~ "razvrščanje."
+
+#~ msgid ""
+#~ "Specify the column to sort the seahorse key manager main window by. "
+#~ "Columns are: 'name', 'id', 'validity', 'expires', 'trust', and 'type'. "
+#~ "Put a '-' in front of the column name to sort in descending order."
+#~ msgstr ""
+#~ "Določite stolpec po katerem naj bodo razvrščeni ključi v upravljalniku. "
+#~ "Imena stolpcev so: 'ime' in 'ID', 'veljavnost', 'pretek', 'zaupanje' in "
+#~ "'vrsta'. Vnesite '-' pred ime stolpca za padajoče razvrščanje."
+
+#~ msgid "The ID of the last secret key used to sign a message."
+#~ msgstr ""
+#~ "ID zadnjega uporabljenega skrivnega ključa za podpisovanje sporočila."
+
+#~ msgid "The column to sort the recipients by"
+#~ msgstr "Stolpec za razvrščanje prejemnikov"
+
+#~ msgid "The column to sort the seahorse keys by"
+#~ msgstr "Stolpec za razvrščanje seahorse ključev"
+
+#~ msgid ""
+#~ "The key server to publish PGP keys to. Or empty to suppress publishing of "
+#~ "PGP keys."
+#~ msgstr ""
+#~ "Strežnik ključev za objavo PGP ključev. Spraznjena lista onemogoči "
+#~ "objavljanje PGP ključev."
+
+#~ msgid ""
+#~ "The last key server a search was performed against or empty for all key "
+#~ "servers."
+#~ msgstr ""
+#~ "Zadnje iskanje preko strežnikov ključev je bilo izvedeno na prazni listi "
+#~ "strežnikov."
+
+#~ msgid "The last search pattern searched for against a key server."
+#~ msgstr "Zadnji vzorec iskanja izveden na strežniku ključev."
+
+#~ msgid ""
+#~ "This specifies the default key to use for certain operations, mainly "
+#~ "signing."
+#~ msgstr ""
+#~ "Možnost določa izbiro privzetega ključa za določene naloge, pretežno "
+#~ "podpisovanje."
+
+#~ msgid ""
+#~ "Whether or not keys should be automatically retrieved from key servers."
+#~ msgstr ""
+#~ "Ali naj se spremenjeni ključi samodejno uskladijo s privzetim strežnikom "
+#~ "ključev."
+
+#~ msgid ""
+#~ "Whether or not modified keys should be automatically synced with the "
+#~ "default key server."
+#~ msgstr ""
+#~ "Ali naj se spremenjeni ključi samodejno uskladijo s privzetim strežnikom "
+#~ "ključev."
+
+#~ msgid "Whether to always encrypt to default key"
+#~ msgstr "Nastavitev, ali naj šifriranje poteka vedno po privzetem ključu."
+
+#~ msgid "Whether to use ASCII Armor"
+#~ msgstr "Naj bo uporabljen ASCII Armor"
+
+#~ msgid "Add Password Keyring"
+#~ msgstr "Dodaj zbirko ključev gesel"
+
+#~ msgid "New Keyring Name:"
+#~ msgstr "Novo ime zbirke ključev:"
+
+#~ msgid ""
+#~ "Please choose a name for the new keyring. You will be prompted for an "
+#~ "unlock password."
+#~ msgstr ""
+#~ "Izberite ime za novo zbirko ključev. Vpisati boste morali geslo za "
+#~ "odklepanje."
+
+#~ msgid "The host name or address of the server."
+#~ msgstr "Ime gostitelja ali naslov strežnika."
+
+#~ msgid "Couldn't add keyring"
+#~ msgstr "Ni mogoče dodati zbirke ključev"
+
+#~ msgid "Add Password"
+#~ msgstr "Dodaj geslo"
+
+#~ msgid "_Description:"
+#~ msgstr "_Opis:"
+
+#~ msgid "_Keyring:"
+#~ msgstr "_Zbirka ključev:"
+
+#~ msgid "_Password:"
+#~ msgstr "_Geslo:"
+
+#~ msgid "_Show Password"
+#~ msgstr "Pokaži _geslo"
+
+#~ msgid "Web Password"
+#~ msgstr "Spletno geslo"
+
+#~ msgid "Network Password"
+#~ msgstr "Omrežno geslo"
+
+#~ msgid "Password"
+#~ msgstr "Geslo"
+
+#~ msgid "Are you sure you want to delete the password '%s'?"
+#~ msgstr "Ali ste prepričani, da želite izbrisati geslo '%s'?"
+
+#~ msgid "Are you sure you want to delete %d password?"
+#~ msgid_plural "Are you sure you want to delete %d passwords?"
+#~ msgstr[0] "Ali ste prepričani, da želite izbrisati %d gesel?"
+#~ msgstr[1] "Ali ste prepričani, da želite izbrisati %d geslo?"
+#~ msgstr[2] "Ali ste prepričani, da želite izbrisati %d gesli?"
+#~ msgstr[3] "Ali ste prepričani, da želite izbrisati %d gesla?"
+
+#~ msgid "Access a network share or resource"
+#~ msgstr "Dostop do skupnega omrežja ali vira"
+
+#~ msgid "Access a website"
+#~ msgstr "Dostop do spletne strani"
+
+#~ msgid "Unlocks a PGP key"
+#~ msgstr "Odklene PGP ključ"
+
+#~ msgid "Unlocks a Secure Shell key"
+#~ msgstr "Odklene ključ varne lupine"
+
+#~ msgid "Saved password or login"
+#~ msgstr "Shranjeno geslo ali prijava"
+
+#~ msgid "Network Credentials"
+#~ msgstr "Omrežna poverila"
+
+#~ msgid "Couldn't change password."
+#~ msgstr "Ni mogoče spremeniti gesla."
+
+#~ msgid "Couldn't set description."
+#~ msgstr "Ni mogoče določiti opisa."
+
+#~ msgid "Couldn't set application access."
+#~ msgstr "Ni mogoče določiti dostopa programa."
+
+#~ msgid "<b>Password:</b>"
+#~ msgstr "<b>Geslo:</b>"
+
+#~ msgid "<b>Path:</b>"
+#~ msgstr "<b>Pot:</b>"
+
+#~ msgid "<b>Permissions:</b>"
+#~ msgstr "<b>Dovoljenja:</b>"
+
+#~ msgid "<b>Technical Details:</b>"
+#~ msgstr "<b>Tehnične podrobnosti:</b>"
+
+#~ msgid "Applications"
+#~ msgstr "Programi"
+
+#~ msgid "Details"
+#~ msgstr "Podrobnosti"
+
+#~ msgid "Key Properties"
+#~ msgstr "Lastnosti ključa"
+
+#~ msgid "Login:"
+#~ msgstr "Prijava:"
+
+#~ msgid "Server:"
+#~ msgstr "Strežnik:"
+
+#~ msgid "Show pass_word"
+#~ msgstr "Pokaži _geslo"
+
+#~ msgid "Type:"
+#~ msgstr "Vrsta:"
+
+#~ msgid "Use:"
+#~ msgstr "Uporabi:"
+
+#~ msgid "_Read"
+#~ msgstr "_Preberi"
+
+#~ msgid "_Write"
+#~ msgstr "_Zapiši"
+
+#~ msgctxt "infinitive"
+#~ msgid "_Delete"
+#~ msgstr "_Izbriši"
+
+#~ msgid "Listing passwords"
+#~ msgstr "Izpis gesel"
+
+#~ msgid "Passwords: %s"
+#~ msgstr "Gesla: %s"
+
+#~ msgid "<b>Passwords:</b> %s"
+#~ msgstr "<b>Gesla:</b> %s"
+
+#~ msgid "Password Keyring"
+#~ msgstr "Geslo zbirke ključev"
+
+#~ msgid "Used to store application and network passwords"
+#~ msgstr "Uporabno za hranjenje programskih in omrežnih gesel"
+
+#~ msgid "Stored Password"
+#~ msgstr "Shranjeno geslo"
+
+#~ msgid "Safely store a password or secret."
+#~ msgstr "Varno shranjevanje gesla in drugih podatkov."
+
+#~ msgid "Couldn't unlock keyring"
+#~ msgstr "Ni mogoče odkleniti zbirke ključev"
+
+#~ msgid "Couldn't lock keyring"
+#~ msgstr "Ni mogoče zakleniti zbirke ključev"
+
+#~ msgid "Couldn't set default keyring"
+#~ msgstr "Ni mogoče določiti privzete zbirke ključev"
+
+#~ msgid "Couldn't change keyring password"
+#~ msgstr "Ni mogoče spremeniti gesla zbirke ključev"
+
+#~ msgid "_Lock"
+#~ msgstr "_Zakleni"
+
+#~ msgid ""
+#~ "Lock the password storage keyring so a master password is required to "
+#~ "unlock it."
+#~ msgstr "Zakleni zbirko ključev za gesla z glavnim geslom"
+
+#~ msgid "_Unlock"
+#~ msgstr "_Odkleni"
+
+#~ msgid ""
+#~ "Unlock the password storage keyring with a master password so it is "
+#~ "available for use."
+#~ msgstr ""
+#~ "Odkleni zbirko ključev za gesla z glavnim geslom za hitrejšo uporabo."
+
+#~ msgid "_Set as default"
+#~ msgstr "_Nastavi kot privzeto"
+
+#~ msgid "Applications usually store new passwords in the default keyring."
+#~ msgstr "Programi običajno shranijo nova gesla v privzeti zbirki ključev."
+
+#~ msgid "Change _Password"
+#~ msgstr "_Spremeni geslo"
+
+#~ msgid "Change the unlock password of the password storage keyring"
+#~ msgstr "Spremeni geslo za odklepanje zbirke ključev za gesla"
+
+#~ msgid "Are you sure you want to delete the password keyring '%s'?"
+#~ msgstr "Ali zares želite trajno izbrisati zbirko ključev '%s'?"
+
+#~ msgid "Created:"
+#~ msgstr "Ustvarjeno:"
+
+#~ msgid "Keyring"
+#~ msgstr "Zbirka ključev"
+
+#~ msgid "Keyring Properties"
+#~ msgstr "Lastnosti zbirke ključev"
+
+#~ msgid "_Name:"
+#~ msgstr "_Ime:"
+
+#~ msgid "Access to the key ring was denied"
+#~ msgstr "Dostop do zbirke ključev je zavrnjen"
+
+#~ msgid "The gnome-keyring daemon is not running"
+#~ msgstr "GNOME ozadnji program zbirke ključev ni zagnan"
+
+#~ msgid "The key ring has already been unlocked"
+#~ msgstr "Zbirka ključev je že odklenjena"
+
+#~ msgid "No such key ring exists"
+#~ msgstr "Taka zbirka ključev ne obstaja"
+
+#~ msgid "Couldn't communicate with key ring daemon"
+#~ msgstr "Ni mogoča povezava z ozadnjim programom zbirke ključev"
+
+#~ msgid "The item already exists"
+#~ msgstr "Predmet že obstaja"
+
+#~ msgid "Internal error accessing gnome-keyring"
+#~ msgstr "Napaka med dostopu do GNOME zbirke ključev"
+
+#~ msgid "Saving item..."
+#~ msgstr "Shranjevanje predmeta ..."
+
+#~ msgid "Deleting item..."
+#~ msgstr "Brisanje predmeta ..."
+
+#~ msgid "Deleting keyring..."
+#~ msgstr "Brisanje zbirke ključev ..."
+
+#~ msgid "Listing password keyrings"
+#~ msgstr "Seznam zbirk ključev"
+
+#~ msgid ":"
+#~ msgstr ":"
+
+#~ msgid "Add Key Server"
+#~ msgstr "Dodajanje strežnika ključev"
+
+#~ msgid "Host:"
+#~ msgstr "Gostitelj:"
+
+#~ msgid "Key Server Type:"
+#~ msgstr "Vrsta strežnika ključev:"
+
+#~ msgid "The port to access the server on."
+#~ msgstr "Vrata preko katerih je mogoč dostop do strežnika."
+
+#~ msgid "initial temporary item"
+#~ msgstr "začetni začasni predmet"
+
+#~ msgid "Not a valid Key Server address."
+#~ msgstr "Neveljaven naslov strežnika ključev."
+
+#~ msgid ""
+#~ "For help contact your system adminstrator or the administrator of the key "
+#~ "server."
+#~ msgstr ""
+#~ "Za pomoč se obrnite na skrbnika sistema ali skrbnika strežnika ključev."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Custom"
+#~ msgstr "Po meri"
+
+#~ msgid "None: Don't publish keys"
+#~ msgstr "Brez: Ne objavi ključev"
+
+#~ msgid "Automatically retrieve keys from _key servers"
+#~ msgstr "Samodejno prenesi ključe s strežnika _ključev."
+
+#~ msgid "Automatically synchronize _modified keys with key servers"
+#~ msgstr "Samodejno uskladi spremenjene _ključe s strežnikom ključev."
+
+#~ msgid "Key Servers"
+#~ msgstr "Strežniki ključev"
+
+#~ msgid "Preferences"
+#~ msgstr "Možnosti"
+
+#~ msgid "_Find keys via:"
+#~ msgstr "_Poišči ključe preko:"
+
+#~ msgid "_Publish keys to:"
+#~ msgstr "_Objava ključev na:"
+
+#~ msgid "Expiration Date:"
+#~ msgstr "Datum preteka:"
+
+#~ msgid "Generate a new subkey"
+#~ msgstr "Ustvari novi podključ"
+
+#~ msgid "If key never expires"
+#~ msgstr "V kolikor ključ nikoli ne poteče"
+
+#~ msgid "Key _Length:"
+#~ msgstr "_Dolžina ključa:"
+
+#~ msgid "Key _Type:"
+#~ msgstr "_Vrsta ključa:"
+
+#~ msgid "Length of Key"
+#~ msgstr "Dolžina ključa"
+
+#~ msgid "Never E_xpires"
+#~ msgstr "Nikoli _ne preteče"
+
+#~ msgid "Add User ID"
+#~ msgstr "Dodaj ID uporabnika"
+
+#~ msgid "Create the new user ID"
+#~ msgstr "Ustvari nov ID uporabnika"
+
+#~ msgid "Key Co_mment:"
+#~ msgstr "_Opomba ključa:"
+
+#~ msgid "Must be at least 5 characters long"
+#~ msgstr "Najmanjša dolžina je 5 znakov."
+
+#~ msgid "Optional comment describing key"
+#~ msgstr "Izbirna opomba z opisom ključa"
+
+#~ msgid "Optional email address"
+#~ msgstr "Dodatni elektronski naslov"
+
+#~ msgid "C_hange"
+#~ msgstr "S_premeni"
+
+#~ msgid "Revoke key"
+#~ msgstr "Prekliči ključ"
+
+#~ msgid "_Never expires"
+#~ msgstr "_Nikoli ne preteče"
+
+#~ msgid "Couldn't add subkey"
+#~ msgstr "Ni mogoče dodati podključa"
+
+#~ msgid "Add subkey to %s"
+#~ msgstr "Dodaj podključ v %s"
+
+#~ msgid "ElGamal (encrypt only)"
+#~ msgstr "ElGamal (le šifriranje)"
+
+#~ msgid "RSA (encrypt only)"
+#~ msgstr "RSA (le šifriranje)"
+
+#~ msgid "Couldn't add user id"
+#~ msgstr "Ni mogoče dodati ID uporabnika"
+
+#~ msgid "Add user ID to %s"
+#~ msgstr "Dodaj ID uporabnika v %s"
+
+#~ msgid "Invalid expiry date"
+#~ msgstr "Neveljavna vrednost datuma"
+
+#~ msgid "The expiry date must be in the future"
+#~ msgstr "Datum preteka mora biti v prihodnosti"
+
+#~ msgid "Couldn't change expiry date"
+#~ msgstr "Ni mogoče spremeniti datum preteka"
+
+#~ msgid "Expiry: %s"
+#~ msgstr "Poteče: %s"
+
+#~ msgid "PGP Key"
+#~ msgstr "PGP ključ"
+
+#~ msgid "Used to encrypt email and files"
+#~ msgstr "Uporablja se za šifriranje sporočil in datotek"
+
+#~ msgid "Wrong password"
+#~ msgstr "Napačno geslo"
+
+#~ msgid ""
+#~ "This was the third time you entered a wrong password. Please try again."
+#~ msgstr "To je bil tretji poskus prijave z napačnim geslom. Poskusite znova."
+
+#~ msgid ""
+#~ "<big><b>The photo is too large</b></big>\n"
+#~ "The recommended size for a photo on your key is %d x %d pixels."
+#~ msgstr ""
+#~ "<big><b>Slika je prevelika</b></big>\n"
+#~ "Priporočljiva velikost slike za vaš ključ je %d x %d točk."
+
+#~ msgid "_Don't Resize"
+#~ msgstr "_Ne spremeni velikosti"
+
+#~ msgid "_Resize"
+#~ msgstr "_Spremeni velikost"
+
+#~ msgid ""
+#~ "This is not a image file, or an unrecognized kind of image file. Try to "
+#~ "use a JPEG image."
+#~ msgstr ""
+#~ "Ta datoteka ni slika ali pa je neprepoznavna oblika slike. Poskusite "
+#~ "uporabiti JPEG sliko."
+
+#~ msgid "All image files"
+#~ msgstr "Vse slikovne datoteke"
+
+#~ msgid "All JPEG files"
+#~ msgstr "Vse JPEG datoteke"
+
+#~ msgid "Choose Photo to Add to Key"
+#~ msgstr "Izbor slike kot del ključa"
+
+#~ msgid "Couldn't add photo"
+#~ msgstr "Ni mogoče dodati slike"
+
+#~ msgid "The file could not be loaded. It may be in an invalid format"
+#~ msgstr "Datoteke ni mogoče naložiti. Najverjetneje je neveljavna oblika."
+
+#~ msgid "Are you sure you want to remove the current photo from your key?"
+#~ msgstr "Ali zares želite odstraniti trenutno sliko iz vašega ključa?"
+
+#~ msgid "Couldn't delete photo"
+#~ msgstr "Ni mogoče izbrisati slike"
+
+#~ msgid "Couldn't revoke subkey"
+#~ msgstr "Ni mogoče preklicati podključa"
+
+#~ msgid "Revoke: %s"
+#~ msgstr "Preklic: %s"
+
+#~ msgid "No reason"
+#~ msgstr "Brez razloga"
+
+#~ msgid "No reason for revoking key"
+#~ msgstr "Ni razloga za preklic ključa"
+
+#~ msgid "Compromised"
+#~ msgstr "Ogroženo"
+
+#~ msgid "Key has been compromised"
+#~ msgstr "Ključ je bil ogrožen"
+
+#~ msgid "Superseded"
+#~ msgstr "Zamenjano"
+
+#~ msgid "Key has been superseded"
+#~ msgstr "Ključ je bil zamenjan"
+
+#~ msgid "Not Used"
+#~ msgstr "Ni uporabljeno"
+
+#~ msgid "Key is no longer used"
+#~ msgstr "Ključ ni več v uporabi"
+
+#~ msgid ""
+#~ "You are about to add %s as a revoker for %s. This operation cannot be "
+#~ "undone! Are you sure you want to continue?"
+#~ msgstr ""
+#~ "Dodali boste %s kot preklicnika %s. Postopka ni mogoče povrniti. Ali "
+#~ "zares želite nadaljevati?"
+
+#~ msgid "Couldn't add revoker"
+#~ msgstr "Ni mogoče dodati preklicnika"
+
+#~ msgid ""
+#~ "This key was already signed by\n"
+#~ "\"%s\""
+#~ msgstr ""
+#~ "Ključ je že podpisan s podpisom\n"
+#~ "\"%s\""
+
+#~ msgid "Couldn't sign key"
+#~ msgstr "Ni mogoče podpisati ključa"
+
+#~ msgid "No keys usable for signing"
+#~ msgstr "Za podpisovanje ni uporabnih ključev"
+
+#~ msgid ""
+#~ "You have no personal PGP keys that can be used to indicate your trust of "
+#~ "this key."
+#~ msgstr ""
+#~ "Ni določenih vašega osebnega PGP ključa s katerim bi lahko potrdili "
+#~ "zaupanje."
+
+#~ msgid "Search was not specific enough. Server '%s' found too many keys."
+#~ msgstr ""
+#~ "Iskanje ni bilo dovolj podrobno. Strežnik '%s' je našel preveč ključev."
+
+#~ msgid "Couldn't communicate with server '%s': %s"
+#~ msgstr "Ni mogoča povezava s strežnikom  '%s': %s"
+
+#~ msgid "Searching for keys..."
+#~ msgstr "Iskanje ključev ..."
+
+#~ msgid "Uploading keys..."
+#~ msgstr "Pošiljanje ključev ..."
+
+#~ msgid "Retrieving keys..."
+#~ msgstr "Pridobivanje ključev ..."
+
+#~ msgid "Searching for keys on: %s"
+#~ msgstr "Iskanje ključev na: %s"
+
+#~ msgid "Connecting to: %s"
+#~ msgstr "Povezovanje z: %s"
+
+#~ msgid "HTTP Key Server"
+#~ msgstr "HTTP strežnik ključev"
+
+#~ msgid "Couldn't communicate with '%s': %s"
+#~ msgstr "Ni mogoča povezava z  '%s': %s"
+
+#~ msgid "Couldn't resolve address: %s"
+#~ msgstr "Ni mogoče razrešiti naslova: %s"
+
+#~ msgid "Resolving server address: %s"
+#~ msgstr "Razreševanje naslova strežnika: %s"
+
+#~ msgid "Searching for keys containing '%s'..."
+#~ msgstr "Iskanje ključev, ki vsebujejo '%s' ..."
+
+#~ msgid "Searching for key id '%s'..."
+#~ msgstr "Iskanje ID ključa  '%s' ..."
+
+#~ msgid "Retrieving remote keys..."
+#~ msgstr "Prenašanje oddaljenih ključev ..."
+
+#~ msgid "Sending keys to key server..."
+#~ msgstr "Pošiljanje ključev na strežnik ..."
+
+#~ msgid "LDAP Key Server"
+#~ msgstr "LDAP strežnik ključev"
+
+#~ msgid "_Sign Key..."
+#~ msgstr "_Podpis ključa ..."
+
+#~ msgid "Sign public key"
+#~ msgstr "Podpiši javni ključ"
+
+#~ msgid "Are you sure you want to permanently delete %s?"
+#~ msgstr "Ali zares želite trajno izbrisati %s?"
+
+#~ msgid "Are you sure you want to permanently delete %d keys and identities?"
+#~ msgstr "Ali zares želite trajno izbrisati %d ključev z osebnimi podatki?"
+
+#~ msgid "Are you sure you want to permanently delete %d keys?"
+#~ msgstr "Ali zares želite trajno izbrisati %d ključev?"
+
+#~ msgid "Are you sure you want to permanently delete %d identities?"
+#~ msgstr "Ali zares želite trajno izbrisati %d osebnih podatkov?"
+
+#~ msgid "Couldn't change primary user ID"
+#~ msgstr "Ni mogoče zamenjati ID osnovnega uporabnika"
+
+#~ msgid "Are you sure you want to permanently delete the '%s' user ID?"
+#~ msgstr "Ali zares želite trajno izbrisati '%s' ID uporabnika?"
+
+#~ msgid "Couldn't delete user ID"
+#~ msgstr "Ni mogoče izbrisati ID uporabnika."
+
+#~ msgid "[Unknown]"
+#~ msgstr "[neznano]"
+
+#~ msgid "Name/Email"
+#~ msgstr "Ime/Elektronski naslov"
+
+#~ msgid "Signature ID"
+#~ msgstr "ID podpisa"
+
+#~ msgid "Couldn't change primary photo"
+#~ msgstr "Ni mogoče zamenjati osnovne slike"
+
+#~ msgid "(unknown)"
+#~ msgstr "(neznano)"
+
+#~ msgid "This key expired on: %s"
+#~ msgstr "Ključ je pretekel na: %s"
+
+#~ msgid "Are you sure you want to permanently delete subkey %d of %s?"
+#~ msgstr "Ali zares želite trajno izbrisati podključ %d ključa %s?"
+
+#~ msgid "Couldn't delete subkey"
+#~ msgstr "Ni mogoče izbrisati podključa"
+
+#~ msgid "Unable to change trust"
+#~ msgstr "Ni mogoče zamenjati zaupanja"
+
+#~ msgid "Couldn't export key to \"%s\""
+#~ msgstr "Ni mogoče izvoziti ključa v \"%s\""
+
+#~ msgid "Export Complete Key"
+#~ msgstr "Izvozi celotni ključ"
+
+#~ msgid "Couldn't export key."
+#~ msgstr "Ni mogoče izvoziti ključa."
+
+#~ msgctxt "Expires"
+#~ msgid "Never"
+#~ msgstr "Nikoli"
+
+#~ msgid "Type"
+#~ msgstr "Vrsta"
+
+#~ msgid "Created"
+#~ msgstr "Ustvarjeno"
+
+#~ msgid "Expires"
+#~ msgstr "Preteče"
+
+#~ msgid "Status"
+#~ msgstr "Stanje"
+
+#~ msgid "Strength"
+#~ msgstr "Jakost"
+
+#~ msgid "Good"
+#~ msgstr "Dobro"
+
+#~ msgid "<b>Actions</b>"
+#~ msgstr "<b>Dejanja</b>"
+
+#~ msgid "<b>Comment:</b>"
+#~ msgstr "<b>Opomba:</b>"
+
+#~ msgid "<b>Dates</b>"
+#~ msgstr "<b>Datumi</b>"
+
+#~ msgid "<b>Email:</b>"
+#~ msgstr "<b>Elektronski naslov</b>"
+
+#~ msgid "<b>Fingerprint</b>"
+#~ msgstr "<b>Prstni odtis</b>"
+
+#~ msgid "<b>Key ID:</b>"
+#~ msgstr "<b>ID Ključa:</b>"
+
+#~ msgid "<b>Key Names and Signatures</b>"
+#~ msgstr "<b>Imena ključev in podpisi</b>"
+
+#~ msgid "<b>Photo </b>"
+#~ msgstr "<b>Fotografija</b>"
+
+#~ msgid "<b>Technical Details</b>"
+#~ msgstr "<b>Tehnične podrobnosti</b>"
+
+#~ msgid "<b>This key has been revoked</b>"
+#~ msgstr "<b>Ta ključ je bil preklican</b>"
+
+#~ msgid "<b>This key has expired</b>"
+#~ msgstr "<b>Ključ je pretekel</b>"
+
+#~ msgid "<b>Type:</b>"
+#~ msgstr "<b>Vrsta:</b>"
+
+#~ msgid "<b>Use:</b>"
+#~ msgstr "<b>Uporabi:</b>"
+
+#~ msgid "<b>_Subkeys</b>"
+#~ msgstr "<b>_Podključi</b>"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "Add a photo to this key"
+#~ msgstr "Dodaj ključu sliko"
+
+#~ msgid "Change _Passphrase"
+#~ msgstr "Spremeni _šifrirno geslo"
+
+#~ msgid "Decrypt files and email sent to you."
+#~ msgstr "Odšifriranje datotek in elektronske pošte."
+
+#~ msgid "Delete"
+#~ msgstr "Izbriši"
+
+#~ msgid "Expire"
+#~ msgstr "Pretečen"
+
+#~ msgid "Expires:"
+#~ msgstr "Preteče dne:"
+
+#~ msgid "Export"
+#~ msgstr "Izvoz"
+
+#~ msgid "Go to next photo"
+#~ msgstr "Pojdi na naslednjo sliko"
+
+#~ msgid "Go to previous photo"
+#~ msgstr "Pojdi na predhodno sliko"
+
+#~ msgid "Key ID:"
+#~ msgstr "ID ključa:"
+
+#~ msgid "Make this photo the primary photo"
+#~ msgstr "Naj bo ta slika osnovna slika."
+
+#~ msgid "Names and Signatures"
+#~ msgstr "Imena in podpisi"
+
+#~ msgid "Never"
+#~ msgstr "Nikoli"
+
+#~ msgid "Override Owner _Trust:"
+#~ msgstr "Prepis _zaupanja lastniku:"
+
+#~ msgid "Owner"
+#~ msgstr "Lastnik"
+
+#~ msgid "Primary"
+#~ msgstr "Osnovni"
+
+#~ msgid "Remove this photo from this key"
+#~ msgstr "Odstrani sliko iz ključa"
+
+#~ msgid "Revoke"
+#~ msgstr "Prekliči"
+
+#~ msgid "Sign"
+#~ msgstr "Podpiši"
+
+#~ msgid "Strength:"
+#~ msgstr "Jakost:"
+
+#~ msgid "The owner of the key revoked the key. It can no longer be used."
+#~ msgstr "Lastnik ključa je ključ preklical. Ključ ni več uporaben."
+
+#~ msgid "_Add Name"
+#~ msgstr "_Dodaj ime"
+
+#~ msgid "_Export Complete Key:"
+#~ msgstr "_Izvozi celoten ključ:"
+
+#~ msgctxt "name-of-key"
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>Ime:</b>"
+
+#~ msgid "<b>Dates:</b>"
+#~ msgstr "<b>Datumi:</b>"
+
+#~ msgid "<b>Fingerprint:</b>"
+#~ msgstr "<b>Prstni odtis:</b>"
+
+#~ msgid "<b>Indicate Trust:</b>"
+#~ msgstr "<b>Določitev zaupanja:</b>"
+
+#~ msgid "<b>Your trust of this key</b>"
+#~ msgstr "<b>Zaupanje v ključ</b>"
+
+#~ msgid "<b>_Other Names:</b>"
+#~ msgstr "<b>_Ostala imena:</b>"
+
+#~ msgid "<b>_People who have signed this key:</b>"
+#~ msgstr "<b>_Podpisniki tega ključa:</b>"
+
+#~ msgid "Encrypt files and email to the key's owner "
+#~ msgstr "Šifrira datoteke in sporočila za lastnika ključa"
+
+#~ msgid "Fully"
+#~ msgstr "Polno"
+
+#~ msgid "I trust signatures from '%s' on other keys"
+#~ msgstr "Zaupam podpisom '%s' tudi pri drugih ključih"
+
+#~ msgid ""
+#~ "If you believe that the person that owns this key is '%s', <i>sign</i> "
+#~ "this key:"
+#~ msgstr ""
+#~ "V kolikor verjamete, da je '%s' lastnik ključa, <i>podpišite</i> ključ:"
+
+#~ msgid ""
+#~ "If you no longer trust that '%s' owns this key, <i>revoke</i> your "
+#~ "signature:"
+#~ msgstr ""
+#~ "V kolikor ne verjamete, da je '%s' lastnik ključa, <i>prekličite</i> vaš "
+#~ "podpis:"
+
+#~ msgid "Marginally"
+#~ msgstr "Obrobno"
+
+#~ msgid "Trust"
+#~ msgstr "Zaupanje"
+
+#~ msgid "Ultimately"
+#~ msgstr "Popolno"
+
+#~ msgid "You _Trust the Owner:"
+#~ msgstr "_Zaupate lastniku:"
+
+#~ msgid "Your trust is manually specified on the <i>Details</i> tab."
+#~ msgstr "Zaupanje je posamično določena med <i>Podrobnostmi</i>."
+
+#~ msgid "_Only display the signatures of people I trust"
+#~ msgstr "_Pokaži le podpise uporabnikov, ki jim zaupam"
+
+#~ msgid "_Revoke Signature"
+#~ msgstr "_Preklic podpisa"
+
+#~ msgid "_Sign this Key"
+#~ msgstr "_Podpis ključa"
+
+#~ msgid "Optional description of revocation"
+#~ msgstr "Opombe o razlogih za preklic"
+
+#~ msgid "Re_voke"
+#~ msgstr "Pre_kliči"
+
+#~ msgid "Reason for revoking the key"
+#~ msgstr "Razlog za preklic ključa"
+
+#~ msgid "_Reason:"
+#~ msgstr "_Vzrok:"
+
+#~ msgid ""
+#~ "You have no personal PGP keys that can be used to sign a document or "
+#~ "message."
+#~ msgstr ""
+#~ "Ni določenega osebnega PGP ključa za podpisovanje dokumentov in sporočil."
+
+#~ msgid "<b>How carefully have you checked this key?</b>"
+#~ msgstr "<b>Kako podrobno je ključ preverjen?</b>"
+
+#~ msgid "<b>How others will see this signature:</b>"
+#~ msgstr "<b>Kako drugi vidijo podpis:</b>"
+
+#~ msgid "<b>Sign key as:</b>"
+#~ msgstr "<b>Podpiši ključ kot:</b>"
+
+#~ msgid ""
+#~ "<i>Casually:</i> means you have done a casual verification that the key "
+#~ "is owned by the person who claims to own it. For example, you could read "
+#~ "the key fingerprint to the owner over the phone. "
+#~ msgstr ""
+#~ "<i>Ravnodušno:</i> je način, ki predstavlja ravnodušen način overitve "
+#~ "ključa in njegovega lastnika. Primer, prstni odtis ste preverili preko "
+#~ "telefona, zato ne morete biti prepričani, kdo je na drugi strani. "
+
+#~ msgid "<i>Key Name</i>"
+#~ msgstr "<i>Ime ključa</i>"
+
+#~ msgid ""
+#~ "<i>Not at all:</i> means you believe the key is owned by the person who "
+#~ "claims to own it, but you could not or did not verify this to be a fact."
+#~ msgstr ""
+#~ "<i>Sploh ne:</i> pomeni, da sploh niste preverili, kdo je lastnik ključa "
+#~ "ali pa tega niste uspeli storiti."
+
+#~ msgid ""
+#~ "<i>Very Carefully:</i> Select this only if you are absolutely sure that "
+#~ "this key is genuine."
+#~ msgstr ""
+#~ "<i>Zelo previdno:</i> izberite izključno, če ste popolnoma prepričani, da "
+#~ "je ključ pristen."
+
+#~ msgid "By signing you indicate your trust that this key belongs to:"
+#~ msgstr "S podpisom potrdite, da ta ključ pripada:"
+
+#~ msgid "I can _revoke this signature at a later date."
+#~ msgstr "Podpis je lahko _preklican kasneje."
+
+#~ msgid "Sign Key"
+#~ msgstr "Podpis ključa"
+
+#~ msgid ""
+#~ "You could use a hard to forge photo identification (such as a passport) "
+#~ "to personally check that the name on the key is correct. You should have "
+#~ "also used email to check that the email address belongs to the owner."
+#~ msgstr ""
+#~ "Lahko uporabite overitev, ki jo je težko ponarediti (kot potni list) za "
+#~ "osebno preverjanje imena in lastnika ključa. Preveriti bi morali tudi "
+#~ "elektronski naslov lastnika in njegovo istovetnost."
+
+#~ msgid "_Casually"
+#~ msgstr "_Ravnodušno"
+
+#~ msgid "_Not at all"
+#~ msgstr "Sploh _ne"
+
+#~ msgid "_Others may not see this signature"
+#~ msgstr "_Drugi ne smejo videti podpisa"
+
+#~ msgid "_Sign"
+#~ msgstr "_Podpiši"
+
+#~ msgid "_Signer:"
+#~ msgstr "_Podpisnik:"
+
+#~ msgid "_Very Carefully"
+#~ msgstr "_Zelo previdno"
+
+#~ msgid "_Sign message with key:"
+#~ msgstr "_Podpis sporočila s ključem:"
+
+#~ msgid "Certificate"
+#~ msgstr "Potrdilo"
+
+#~ msgid "Are you sure you want to delete the certificate '%s'?"
+#~ msgstr "Ali ste prepričani, da želite izbrisati potrdilo '%s'?"
+
+#~ msgid "Are you sure you want to delete %d certificate?"
+#~ msgid_plural "Are you sure you want to delete %d certificates?"
+#~ msgstr[0] "Ali ste prepričani, da želite izbrisati %d potrdil?"
+#~ msgstr[1] "Ali ste prepričani, da želite izbrisati %d potrdilo?"
+#~ msgstr[2] "Ali ste prepričani, da želite izbrisati %d potrdiil?"
+#~ msgstr[3] "Ali ste prepričani, da želite izbrisati %d potrdila?"
+
+#~ msgid "Change Passphrase"
+#~ msgstr "Spremeni šifrirno geslo"
+
+#~ msgid "Con_firm Passphrase:"
+#~ msgstr "_Potrdi šifrirno geslo:"
+
+#~ msgid "Confirm new passphrase"
+#~ msgstr "Potrdi novo šifrirno geslo"
+
+#~ msgid "New _Passphrase:"
+#~ msgstr "Novo šifrirno _geslo:"
+
+#~ msgid "Manage your passwords and encryption keys"
+#~ msgstr "Upravljanje z gesli in šifrirnimi ključi"
+
+#~ msgid "Passwords and Encryption Keys"
+#~ msgstr "Gesla in šifrirni ključi"
+
+#~ msgid "<b>_Select the type of item to create:</b>"
+#~ msgstr "<b>_Izbor vrste predmeta:</b>"
+
+#~ msgid "C_ontinue"
+#~ msgstr "_Nadaljuj"
+
+#~ msgid "Create New ..."
+#~ msgstr "Ustvari novo ..."
+
+#~ msgid "Selected %d key"
+#~ msgid_plural "Selected %d keys"
+#~ msgstr[0] "Izbranih %d ključev"
+#~ msgstr[1] "Izbran %d ključ"
+#~ msgstr[2] "Izbrana %d ključa"
+#~ msgstr[3] "Izbrani %d ključi"
+
+#~ msgid "Imported keys"
+#~ msgstr "Uvoženi ključi"
+
+#~ msgid "Importing keys"
+#~ msgstr "Uvažanje ključev"
+
+#~ msgid "Import Key"
+#~ msgstr "Uvozi ključ"
+
+#~ msgid "Unrecognized key type, or invalid data format"
+#~ msgstr "Neznana vrsta ključa ali neveljavna oblika podatkov"
+
+#~ msgid "_Remote"
+#~ msgstr "_Oddaljeno"
+
+#~ msgid "Close this program"
+#~ msgstr "Izhod iz programa"
+
+#~ msgid "_New..."
+#~ msgstr "_Novo ..."
+
+#~ msgid "Create a new key or item"
+#~ msgstr "Ustvari nov ključ ali predmet"
+
+#~ msgid "_Import..."
+#~ msgstr "_Uvozi ..."
+
+#~ msgid "Import from a file"
+#~ msgstr "Uvozi iz datoteke"
+
+#~ msgid "Import from the clipboard"
+#~ msgstr "Uvozi iz odložišča"
+
+#~ msgid "_Find Remote Keys..."
+#~ msgstr "_Poišči oddaljene ključe ..."
+
+#~ msgid "Search for keys on a key server"
+#~ msgstr "Poišči ključe na strežniku ključev"
+
+#~ msgid "_Sync and Publish Keys..."
+#~ msgstr "_Uskladi in objavi ključe ..."
+
+#~ msgid "Publish and/or synchronize your keys with those online."
+#~ msgstr "Objavljanje in usklajevanje ključev s ključi v omrežju."
+
+#~ msgid "T_ypes"
+#~ msgstr "_Vrste"
+
+#~ msgid "Show type column"
+#~ msgstr "Pokaži stolpec vrste ključa"
+
+#~ msgid "_Expiry"
+#~ msgstr "_Datum preteka ključa"
+
+#~ msgid "Show expiry column"
+#~ msgstr "Pokaži stolpec preteka ključa"
+
+#~ msgid "_Trust"
+#~ msgstr "_Zaupanje"
+
+#~ msgid "Show owner trust column"
+#~ msgstr "Pokaži stolpec zaupanja lastniku"
+
+#~ msgid "_Validity"
+#~ msgstr "_Veljavnost"
+
+#~ msgid "Show validity column"
+#~ msgstr "Pokaži stolpec veljavnosti"
+
+#~ msgid "Filter:"
+#~ msgstr "Filter:"
+
+#~ msgid "<big><b>First time options:</b></big>"
+#~ msgstr "<big><b>Možnosti ob prvem zagonu:</b></big>"
+
+#~ msgid "Generate a new key of your own: "
+#~ msgstr "Ustvari nov lastni ključ :"
+
+#~ msgid "Import existing keys from a file:"
+#~ msgstr "Uvozi obstoječe ključe iz datoteke:"
+
+#~ msgid "My _Personal Keys"
+#~ msgstr "_Osebni ključi"
+
+#~ msgid "Other _Keys"
+#~ msgstr "_Drugi ključi"
+
+#~ msgid "To get started with encryption you will need keys."
+#~ msgstr "Za šifriranje je treba imeti ustrezne šifrirne ključe."
+
+#~ msgid "_Import"
+#~ msgstr "_Uvozi"
+
+#~ msgid "_Passwords"
+#~ msgstr "_Gesla"
+
+#~ msgid "Couldn't export keys"
+#~ msgstr "Ni mogoče izvoziti ključev"
+
+#~ msgid "Validity"
+#~ msgstr "Veljavnost"
+
+#~ msgid "Expiration Date"
+#~ msgstr "Datum preteka"
+
+#~ msgid "Close this window"
+#~ msgstr "Zapri to okno"
+
+#~ msgid "_Expand All"
+#~ msgstr "_Razširi vse"
+
+#~ msgid "Expand all listings"
+#~ msgstr "Razširi izpise"
+
+#~ msgid "_Collapse All"
+#~ msgstr "_Zloži vse"
+
+#~ msgid "Collapse all listings"
+#~ msgstr "Zloži izpise"
+
+#~ msgid "Remote Keys"
+#~ msgstr "Oddaljeni ključi"
+
+#~ msgid "Remote Keys Containing '%s'"
+#~ msgstr "Oddaljeni ključi ki vsebujejo '%s'"
+
+#~ msgid "<b>Key Servers:</b>"
+#~ msgstr "<b>Strežniki ključev:</b>"
+
+#~ msgid "<b>Shared Keys Near Me:</b>"
+#~ msgstr "<b>Dostopni ključi:</b>"
+
+#~ msgid "Find Remote Keys"
+#~ msgstr "Poišči oddaljene ključe"
+
+#~ msgid ""
+#~ "This will find keys for others on the Internet. These keys can then be "
+#~ "imported into your local key ring."
+#~ msgstr ""
+#~ "Program poišče ključe drugih oseb na spletu. Ključe lahko po tem uvozite "
+#~ "v lastno zbirko ključev."
+
+#~ msgid "Where to search:"
+#~ msgstr "Kje iskati:"
+
+#~ msgid "_Search"
+#~ msgstr "I_skanje"
+
+#~ msgid "_Search for keys containing: "
+#~ msgstr "_Iskanje ključa, ki vsebuje: "
+
+#~ msgid "Couldn't publish keys to server"
+#~ msgstr "Ni mogoče objaviti ključev na strežniku"
+
+#~ msgid "Couldn't retrieve keys from server: %s"
+#~ msgstr "Ni mogoče pridobiti ključa s strežnika: %s"
+
+#~ msgid "<b>%d key is selected for synchronizing</b>"
+#~ msgid_plural "<b>%d keys are selected for synchronizing</b>"
+#~ msgstr[0] "<b>%d ključev je izbranih za usklajevanje</b>"
+#~ msgstr[1] "<b>%d ključ je izbran za usklajevanje</b>"
+#~ msgstr[2] "<b>%d ključa sta izbrana za usklajevanje</b>"
+#~ msgstr[3] "<b>%d ključi so izbrani za usklajevanje</b>"
+
+#~ msgid "Synchronizing keys"
+#~ msgstr "Usklajevanje ključev"
+
+#~ msgid "Synchronizing keys..."
+#~ msgstr "Usklajevanje ključev ..."
+
+#~ msgid "Sync Keys"
+#~ msgstr "Uskladi ključe"
+
+#~ msgid ""
+#~ "This will publish the keys in your key ring so they're available for "
+#~ "others to use. You'll also get any changes others have made since you "
+#~ "received their keys."
+#~ msgstr ""
+#~ "Možnost objavi ključe v zbirki ključev in omogoči drugim njihovo uporabo. "
+#~ "Sprejeli boste tudi spremembe, ki so jih drugi naredili po tem, ko ste "
+#~ "prejeli njihove ključe."
+
+#~ msgid ""
+#~ "This will retrieve any changes others have made since you received their "
+#~ "keys. No key server has been chosen for publishing, so your keys will not "
+#~ "be made available to others."
+#~ msgstr ""
+#~ "Možnost posodobi spremembe, ki so jih drugi uporabniki naredili za svoje "
+#~ "ključe. Ni izbranega strežnika za objavljanje, zato vaši ključi ne bodo "
+#~ "na voljo drugim."
+
+#~ msgid "_Key Servers"
+#~ msgstr "_Strežniki ključev"
+
+#~ msgid "_Sync"
+#~ msgstr "_Usklajevanje"
+
+#~ msgid "Version of this application"
+#~ msgstr "Različica programa"
+
+#~ msgid "Encryption Key Manager"
+#~ msgstr "Upravljalnik s šifrirnimi ključi"
+
+#~ msgid "Contributions:"
+#~ msgstr "Podpora:"
+
+#~ msgid "translator-credits"
+#~ msgstr "Matej Urbančič <mateju@svn.gnome.org>"
+
+#~ msgid "Seahorse Project Homepage"
+#~ msgstr "Spletna stran projekta Seahorse"
+
+#~ msgid "_File"
+#~ msgstr "_Datoteka"
+
+#~ msgid "_Edit"
+#~ msgstr "_Uredi"
+
+#~ msgid "_View"
+#~ msgstr "_Pogled"
+
+#~ msgid "_Help"
+#~ msgstr "Pomo_č"
+
+#~ msgid "Prefere_nces"
+#~ msgstr "_Lastnosti"
+
+#~ msgid "Change preferences for this program"
+#~ msgstr "Spremeni možnosti programa"
+
+#~ msgid "About this program"
+#~ msgstr "O programu"
+
+#~ msgid "_Contents"
+#~ msgstr "_Vsebina"
+
+#~ msgid "Show Seahorse help"
+#~ msgstr "Pokaži pomoč programa"
+
+#~ msgid "Export public key"
+#~ msgstr "Izvozi javni ključ"
+
+#~ msgid "Exporting keys"
+#~ msgstr "Izvažanje ključev"
+
+#~ msgid "Couldn't retrieve data from key server"
+#~ msgstr "Ni mogoče prebrati podatkov s strežnika"
+
+#~ msgid "Copied keys"
+#~ msgstr "Kopirani ključi"
+
+#~ msgid "Retrieving keys"
+#~ msgstr "Pridobivanje ključev"
+
+#~ msgid "Couldn't delete."
+#~ msgstr "Ni mogoče izbrisati."
+
+#~ msgid "Deleting..."
+#~ msgstr "Brisanje ..."
+
+#~ msgid "%s is a private key. Are you sure you want to proceed?"
+#~ msgstr "%s je osebni ključ. Ali zares želite ključ izbrisati?"
+
+#~ msgid "Importing keys from key servers"
+#~ msgstr "Uvoz ključev s strežnikov"
+
+#~ msgid "Show properties"
+#~ msgstr "Pokaži lastnosti"
+
+#~ msgctxt ""
+#~ "This text refers to deleting an item from its type's backing store."
+#~ msgid "_Delete"
+#~ msgstr "_Izbriši"
+
+#~ msgid "Delete selected items"
+#~ msgstr "Izbriši izbrane predmete"
+
+#~ msgid "E_xport..."
+#~ msgstr "_Izvozi ..."
+
+#~ msgid "Export to a file"
+#~ msgstr "Izvozi v datoteko"
+
+#~ msgid "Copy to the clipboard"
+#~ msgstr "Kopiraj v odložišče"
+
+#~ msgid "Import selected keys to local key ring"
+#~ msgstr "Uvozi izbrane ključe v osebno zbirko ključev"
+
+#~ msgid "Enter your Secure Shell passphrase:"
+#~ msgstr "Vnesite šifrirno geslo varne lupine:"
+
+#~ msgid "Configure Key for _Secure Shell..."
+#~ msgstr "Nastavitev ključa za novo _varno lupino ..."
+
+#~ msgid ""
+#~ "Send public Secure Shell key to another machine, and enable logins using "
+#~ "that key."
+#~ msgstr ""
+#~ "Pošljite javne ključe varne lupine na drugi računalnik in omogočite "
+#~ "prijavo z uporabo ključev."
+
+#~ msgid "Are you sure you want to delete the secure shell key '%s'?"
+#~ msgstr "Ali zares želite trajno izbrisati ključ seje varne lupine '%s'?"
+
+#~ msgid "Are you sure you want to delete %d secure shell keys?"
+#~ msgstr "Ali zares želite trajno izbrisati %d ključev seje varne lupine?"
+
+#~ msgid "Secure Shell Key"
+#~ msgstr "Ključ varne lupine"
+
+#~ msgid "Used to access other computers (eg: via a terminal)"
+#~ msgstr "Uporabno pri dostopu do drugih računalnikov (npr.: preko terminala)"
+
+#~ msgid "Couldn't generate Secure Shell key"
+#~ msgstr "Ni mogoče ustvariti ključa varne lupine"
+
+#~ msgid "Creating Secure Shell Key"
+#~ msgstr "Ustvarjanje ključa varne lupine"
+
+#~ msgid ""
+#~ "<i>Use your email address, and any other reminder you need about what "
+#~ "this key is for.</i>"
+#~ msgstr ""
+#~ "<i>Uporabite svoj elektronski naslov in druge opomnike za izbrani ključ "
+#~ "in njegov namen.</i>"
+
+#~ msgid ""
+#~ "A Secure Shell (SSH) key lets you connect securely to trusted computers "
+#~ "using SSH, without entering a different password for each of them."
+#~ msgstr ""
+#~ "Uporaba varne lupine (SSH) omogoča varno povezovanje z drugimi "
+#~ "računalniki preko SSH sistema, brez vnašanja različnih gesel za posamezen "
+#~ "sistem."
+
+#~ msgid "DSA"
+#~ msgstr "DSA"
+
+#~ msgid ""
+#~ "If there is already a computer you want to use this key with, you can set "
+#~ "up that computer to recognize your key now. "
+#~ msgstr ""
+#~ "V kolikor računalnik, s katerim želite uporabiti ta ključ, že obstaja, je "
+#~ "mogoče nastaviti računalnik, da ključ prepozna ."
+
+#~ msgid "New Secure Shell Key"
+#~ msgstr "Nov ključ varne lupine"
+
+#~ msgid "_Create and Set Up"
+#~ msgstr "_Ustvarjanje in nastavitve"
+
+#~ msgid "_Just Create Key"
+#~ msgstr "_Ustvari ključ"
+
+#~ msgid "_Key Description:"
+#~ msgstr "Opis _ključa:"
+
+#~ msgid "(Unreadable Secure Shell Key)"
+#~ msgstr "(Neprepoznaven ključ varne lupine)"
+
+#~ msgid "Invalid"
+#~ msgstr "Neveljavno"
+
+#~ msgid "Private Secure Shell Key"
+#~ msgstr "Osebni ključ varne lupine"
+
+#~ msgid "Public Secure Shell Key"
+#~ msgstr "Javni ključ varne lupine"
+
+#~ msgid "Couldn't rename key."
+#~ msgstr "Ni mogoče preimenovati ključa."
+
+#~ msgid "Couldn't change authorization for key."
+#~ msgstr "Ni mogoče spremeniti pooblastila ključa."
+
+#~ msgid "Couldn't change passphrase for key."
+#~ msgstr "Ni mogoče spremeniti gesla za ključ."
+
+#~ msgid "<b>Algorithm:</b>"
+#~ msgstr "<b>Algoritem:</b>"
+
+#~ msgid "<b>Identifier:</b>"
+#~ msgstr "<b>Določilo:</b>"
+
+#~ msgid "<b>Location:</b>"
+#~ msgstr "<b>Mesto:</b>"
+
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>Ime:</b>"
+
+#~ msgid "<b>Strength:</b>"
+#~ msgstr "<b>Moč:</b>"
+
+#~ msgid "<b>Trust</b>"
+#~ msgstr "<b>Zaupanje</b>"
+
+#~ msgid "<i>This only applies to the '%s'</i> account."
+#~ msgstr "<i>To je v povezavi le z računom '%s'</i>."
+
+#~ msgid "E_xport Complete Key"
+#~ msgstr "I_zvozi celotni ključ"
+
+#~ msgid "The owner of this key is _authorized to connect to this computer"
+#~ msgstr "Lastnik tega ključa je _pooblaščen za povezavo s tem računalnikom"
+
+#~ msgid "Used to connect to other computers."
+#~ msgstr "Uporaba pri povezovanju z drugimi računalniki."
+
+#~ msgid "The SSH command was terminated unexpectedly."
+#~ msgstr "Ukaz ssh je bil nepričakovano zaključen."
+
+#~ msgid "The SSH command failed."
+#~ msgstr "Ukaz ssh je spodletel."
+
+#~ msgid "Secure Shell key"
+#~ msgstr "Ključ varne lupine"
+
+#~ msgid "Passphrase:"
+#~ msgstr "Šifrirno geslo:"
+
+#~ msgid "Remote Host Password"
+#~ msgstr "Geslo oddaljenega gostitelja"
+
+#~ msgid "Old Key Passphrase"
+#~ msgstr "Staro šifrirno geslo ključa"
+
+#~ msgid "Enter the old passphrase for: %s"
+#~ msgstr "Vnesite staro šifrirno geslo za: %s"
+
+#~ msgid "New Key Passphrase"
+#~ msgstr "Novo šifrirno geslo ključa"
+
+#~ msgid "Enter the new passphrase for: %s"
+#~ msgstr "Vnesite novo šifrirno geslo za: %s"
+
+#~ msgid "Enter Key Passphrase"
+#~ msgstr "Vnesite šifrirno geslo ključa"
+
+#~ msgid "Passphrase for New Secure Shell Key"
+#~ msgstr "Šifrirno geslo za ključ nove varne lupine"
+
+#~ msgid "Enter a passphrase for your new Secure Shell key."
+#~ msgstr "Vnesite šifrirno geslo za nov ključ varne lupine."
+
+#~ msgid "Importing key: %s"
+#~ msgstr "Uvažanje ključa: %s"
+
+#~ msgid "Importing key. Enter passphrase"
+#~ msgstr "Uvažanje ključa. Vnesite šifrirno geslo"
+
+#~ msgid "No private key file is available for this key."
+#~ msgstr "Za ta ključ ni na voljo osebnega ključa."
+
+#~ msgid "Couldn't configure Secure Shell keys on remote computer."
+#~ msgstr "Ni mogoče pripraviti ključa varne lupine na oddaljenem računalniku."
+
+#~ msgid "Configuring Secure Shell Keys..."
+#~ msgstr "Prilagajanje ključev varne lupine ..."
+
+#~ msgid "<i>eg: fileserver.example.com:port</i>"
+#~ msgstr "<i>primer: strežnik.primer.si:vrata</i>"
+
+#~ msgid "Set Up Computer for SSH Connection"
+#~ msgstr "Priprava računalnika na SSH povezavo"
+
+#~ msgid ""
+#~ "To use your Secure Shell key with another computer that uses SSH, you "
+#~ "must already have a login account on that computer."
+#~ msgstr ""
+#~ "Za uporabo ključa varne lupine pri povezavi z drugim računalnikom, ki "
+#~ "uporablja SSH, je treba imeti že ustvarjen račun za prijavo na oddaljenem "
+#~ "računalniku."
+
+#~ msgid "_Computer Name:"
+#~ msgstr "Ime _računalnika:"
+
+#~ msgid "_Login Name:"
+#~ msgstr "_Uporabniško ime:"
+
+#~ msgid "_Set Up"
+#~ msgstr "_Nastavitev"
+
+#~ msgid "Couldn't share keys"
+#~ msgstr "Ni mogoča souporaba ključev"
+
+#~ msgid "Can't publish discovery information on the network."
+#~ msgstr "Ni mogoče objaviti zaznanih podrobnosti na omrežju."
+
+#~ msgid "%s's encryption keys"
+#~ msgstr "Uporabnik %s: šifrirni ključi"
+
+#~ msgid "Key Sharing"
+#~ msgstr "Souporaba ključev"
+
+#~ msgid ""
+#~ "Sharing your keys allows other people on your network to use the keys "
+#~ "you've collected. This means they can automatically encrypt things for "
+#~ "you or those you know, without you having to send them your key.\n"
+#~ "\n"
+#~ "<b>Note:</b> Your personal keys will not be compromised."
+#~ msgstr ""
+#~ "Souporaba ključev omogoča drugim uporabnikom v omrežju uporabljanje "
+#~ "ključev, ki ste jih zbrali. To pomeni, da lahko šifrirajo sporočila za "
+#~ "tiste, ki jih poznate vi, s tem, da jim ključa ni treba poslati.\n"
+#~ "\n"
+#~ "<b>Opomba:</b> vaši osebni ključi ostanejo varni."
+
+#~ msgid "_Share my keys with others on my network"
+#~ msgstr "_Souporaba ključev z drugimi v omrežju"

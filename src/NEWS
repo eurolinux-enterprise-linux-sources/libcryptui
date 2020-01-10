@@ -1,0 +1,62 @@
+libcryptui 3.12.2:
+ * Updated translations
+ * Build fix on FreeBSD [#727196]
+ 
+libcryptui 3.10.1:
+ * Updated translations
+
+libcryptui 3.10.0:
+ * Updated translations
+ * Build fix
+
+libcryptui 3.9.90:
+ * Add symmetric encryption as a choice in "choose recipients" dialog [#325803]
+ * Add support for symmetric encryption [#699161]
+ * Add cryptui_need_to_get_keys_or_symmetric() [#325803]
+ * Avoid repeating the self encryption key in cryptui_key_chooser_ge [#701987]
+ * Fix warning on startup about missing seahorse-daemon.desktop file
+ * Set the source on UID objects
+ * Build fixes
+ * Updated translations
+
+libcryptui 3.8.0:
+ (no changes from previous release)
+
+libcryptui 3.7.5:
+ * Updated translations
+
+libcryptui 3.6.0:
+ (no changes from previous release)
+
+libcryptui 3.5.92:
+ * Updated translations
+
+libcryptui 3.5.4:
+ * Make the default key chooser window size bigger
+ * Bump dependency versions, and fix deprecetions
+ * Documentation fixes
+
+libcryptui 3.4.1:
+ * Build fixes
+
+libcryptui 3.4.0:
+ (no changes from previous release)
+
+libcryptui 3.3.91:
+ * Add dependency on libSM and libICE, needed for XSMP client
+
+libcryptui 3.3.5:
+ * Updated translations
+
+libcryptui 3.2.2:
+ * Fix GSettings conversion
+
+libcryptui 3.2.0:
+ * Initial stable release
+
+libcryptui 3.1.91:
+ * Port to GSettings instead of GConf
+ * Build fixes
+
+libcryptui 3.1.4:
+ * Initial release of libcryptui as a separate module

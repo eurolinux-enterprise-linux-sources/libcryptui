@@ -1,0 +1,14 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+sysconfdir=@sysconfdir@
+
+Name: cryptui
+Description: UI library for DBUS functions exported by Seahorse
+Version: @VERSION@
+Requires: gtk+-3.0 gio-2.0 dbus-glib-1
+Libs: -L${libdir} -lcryptui
+Cflags: -I${includedir}/libcryptui

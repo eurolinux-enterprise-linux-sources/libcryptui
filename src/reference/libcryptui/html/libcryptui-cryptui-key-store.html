@@ -1,0 +1,905 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>libcryptui Reference Manual: CryptUIKeyStore</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libcryptui Reference Manual">
+<link rel="up" href="ch01.html" title="libcryptui Objects and Functions">
+<link rel="prev" href="libcryptui-cryptui-key-chooser.html" title="CryptUIKeyChooser">
+<link rel="next" href="libcryptui-cryptui.html" title="cryptui">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#libcryptui-cryptui-key-store.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#libcryptui-cryptui-key-store.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libcryptui-cryptui-key-chooser.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libcryptui-cryptui.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libcryptui-cryptui-key-store"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libcryptui-cryptui-key-store.top_of_page"></a>CryptUIKeyStore</span></h2>
+<p>CryptUIKeyStore</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libcryptui-cryptui-key-store.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStoreFilterFunc" title="CryptUIKeyStoreFilterFunc ()">*CryptUIKeyStoreFilterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="returnvalue">CryptUIKeyStore</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-new" title="cryptui_key_store_new ()">cryptui_key_store_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libcryptui-cryptui-keyset.html#CryptUIKeyset" title="struct CryptUIKeyset"><span class="returnvalue">CryptUIKeyset</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-keyset" title="cryptui_key_store_get_keyset ()">cryptui_key_store_get_keyset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-set-sortable" title="cryptui_key_store_set_sortable ()">cryptui_key_store_set_sortable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-sortable" title="cryptui_key_store_get_sortable ()">cryptui_key_store_get_sortable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-check-toggled" title="cryptui_key_store_check_toggled ()">cryptui_key_store_check_toggled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-iter-from-key" title="cryptui_key_store_get_iter_from_key ()">cryptui_key_store_get_iter_from_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-key-from-iter" title="cryptui_key_store_get_key_from_iter ()">cryptui_key_store_get_key_from_iter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-key-from-path" title="cryptui_key_store_get_key_from_path ()">cryptui_key_store_get_key_from_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-all-keys" title="cryptui_key_store_get_all_keys ()">cryptui_key_store_get_all_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-count" title="cryptui_key_store_get_count ()">cryptui_key_store_get_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-have-selected-keys" title="cryptui_key_store_have_selected_keys ()">cryptui_key_store_have_selected_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-selected-keys" title="cryptui_key_store_get_selected_keys ()">cryptui_key_store_get_selected_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-set-selected-keys" title="cryptui_key_store_set_selected_keys ()">cryptui_key_store_set_selected_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-get-selected-key" title="cryptui_key_store_get_selected_key ()">cryptui_key_store_get_selected_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-set-selected-key" title="cryptui_key_store_set_selected_key ()">cryptui_key_store_set_selected_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-set-search-mode" title="cryptui_key_store_set_search_mode ()">cryptui_key_store_set_search_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-set-search-text" title="cryptui_key_store_set_search_text ()">cryptui_key_store_set_search_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libcryptui-cryptui-key-store.html#cryptui-key-store-set-filter" title="cryptui_key_store_set_filter ()">cryptui_key_store_set_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libcryptui-cryptui-key-store.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStorePriv" title="CryptUIKeyStorePriv">CryptUIKeyStorePriv</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore">CryptUIKeyStore</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStoreMode" title="enum CryptUIKeyStoreMode">CryptUIKeyStoreMode</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libcryptui-cryptui-key-store.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="libcryptui-cryptui-key-store.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libcryptui-cryptui-key-store.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="CryptUIKeyStoreFilterFunc"></a><h3>CryptUIKeyStoreFilterFunc ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*CryptUIKeyStoreFilterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-keyset.html#CryptUIKeyset" title="struct CryptUIKeyset"><span class="type">CryptUIKeyset</span></a> *ckset</code></em>,
+                              <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>,
+                              <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-new"></a><h3>cryptui_key_store_new ()</h3>
+<pre class="programlisting"><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="returnvalue">CryptUIKeyStore</span></a> *
+cryptui_key_store_new (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-keyset.html#CryptUIKeyset" title="struct CryptUIKeyset"><span class="type">CryptUIKeyset</span></a> *keyset</code></em>,
+                       <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_checks</code></em>,
+                       <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *none_option</code></em>);</pre>
+<p>Creates a new libcryptui key store setting the keystore, use-checks and none-option
+properties</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>keyset</p></td>
+<td class="parameter_description"><p>a libcryptui keyset</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>use_checks</p></td>
+<td class="parameter_description"><p>a gboolean</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>none_option</p></td>
+<td class="parameter_description"><p>a const gchar string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.3.6"></a><h4>Returns</h4>
+<p> the new libcryptui key store</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-keyset"></a><h3>cryptui_key_store_get_keyset ()</h3>
+<pre class="programlisting"><a class="link" href="libcryptui-cryptui-keyset.html#CryptUIKeyset" title="struct CryptUIKeyset"><span class="returnvalue">CryptUIKeyset</span></a> *
+cryptui_key_store_get_keyset (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>);</pre>
+<p>Gets ckstore's internal keyset</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.4.6"></a><h4>Returns</h4>
+<p> the internal libcryptui keyset</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-set-sortable"></a><h3>cryptui_key_store_set_sortable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_set_sortable (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sortable</code></em>);</pre>
+<p>Sets whether ckstore is sortable or not</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sortable</p></td>
+<td class="parameter_description"><p>a gboolean</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-sortable"></a><h3>cryptui_key_store_get_sortable ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+cryptui_key_store_get_sortable (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>);</pre>
+<p>Gets whether ckstore is sortable or not</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.6.6"></a><h4>Returns</h4>
+<p> TRUE if ckstore is sortable, FALSE otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-check-toggled"></a><h3>cryptui_key_store_check_toggled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_check_toggled (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *view</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Gets whether the check at iter is toggled</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a GtkTreeView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a GtkTreeIter</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-iter-from-key"></a><h3>cryptui_key_store_get_iter_from_key ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+cryptui_key_store_get_iter_from_key (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                     <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>,
+                                     <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Get the iter that the key is stored at in ckstore</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>a libcryptui key</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a GtkTreeIter</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.8.6"></a><h4>Returns</h4>
+<p> TRUE if the key is present in the ckstore and the value of iter
+has been modified to point to it, FALSE otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-key-from-iter"></a><h3>cryptui_key_store_get_key_from_iter ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+cryptui_key_store_get_key_from_iter (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                     <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Gets the key stored at iter in ckstore</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a GtkTreeIter</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.9.6"></a><h4>Returns</h4>
+<p> a libcryptui key</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-key-from-path"></a><h3>cryptui_key_store_get_key_from_path ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+cryptui_key_store_get_key_from_path (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                     <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
+<p>Get the key at path in ckstore</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>a GtkTreePath</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.10.6"></a><h4>Returns</h4>
+<p> a libcryptui key</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-all-keys"></a><h3>cryptui_key_store_get_all_keys ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+cryptui_key_store_get_all_keys (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>);</pre>
+<p>Get a list of all keys in ckstore</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.11.6"></a><h4>Returns</h4>
+<p> a list of libcryptui keys</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-count"></a><h3>cryptui_key_store_get_count ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+cryptui_key_store_get_count (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>);</pre>
+<p>Get the number of keys stored in ckstore</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.12.6"></a><h4>Returns</h4>
+<p> the number of keys</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-have-selected-keys"></a><h3>cryptui_key_store_have_selected_keys ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+cryptui_key_store_have_selected_keys (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *view</code></em>);</pre>
+<p>Determines whether keys are selected or not.</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a GtkTreeView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.13.6"></a><h4>Returns</h4>
+<p> TRUE if keys have been selected, FALSE otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-selected-keys"></a><h3>cryptui_key_store_get_selected_keys ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+cryptui_key_store_get_selected_keys (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                     <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *view</code></em>);</pre>
+<p>Get the currently selected keys</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a GtkTreeView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.14.6"></a><h4>Returns</h4>
+<p> a list of libcryptui keys</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-set-selected-keys"></a><h3>cryptui_key_store_set_selected_keys ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_set_selected_keys (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                     <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *view</code></em>,
+                                     <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *keys</code></em>);</pre>
+<p>Set the current selection to be the list of keys</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a GtkTreeView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keys</p></td>
+<td class="parameter_description"><p>a list of libcryptui keys</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-get-selected-key"></a><h3>cryptui_key_store_get_selected_key ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+cryptui_key_store_get_selected_key (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *view</code></em>);</pre>
+<p>Get the currently selected key</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a GtkTreeView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.16.6"></a><h4>Returns</h4>
+<p> a libcryptui key</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-set-selected-key"></a><h3>cryptui_key_store_set_selected_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_set_selected_key (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTreeView.html"><span class="type">GtkTreeView</span></a> *view</code></em>,
+                                    <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *selkey</code></em>);</pre>
+<p>Marks the given key as selected</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a GtkTreeView</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>selkey</p></td>
+<td class="parameter_description"><p>a libcryptui key</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-set-search-mode"></a><h3>cryptui_key_store_set_search_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_set_search_mode (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStoreMode" title="enum CryptUIKeyStoreMode"><span class="type">CryptUIKeyStoreMode</span></a> mode</code></em>);</pre>
+<p>Sets whether the keys returned will be all, just those searched for, or
+those selected.</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>search mode</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-set-search-text"></a><h3>cryptui_key_store_set_search_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_set_search_text (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *search_text</code></em>);</pre>
+<p>Filters the keys in the store by the text in search_text.</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>search_text</p></td>
+<td class="parameter_description"><p>a string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cryptui-key-store-set-filter"></a><h3>cryptui_key_store_set_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+cryptui_key_store_set_filter (<em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStore" title="struct CryptUIKeyStore"><span class="type">CryptUIKeyStore</span></a> *ckstore</code></em>,
+                              <em class="parameter"><code><a class="link" href="libcryptui-cryptui-key-store.html#CryptUIKeyStoreFilterFunc" title="CryptUIKeyStoreFilterFunc ()"><span class="type">CryptUIKeyStoreFilterFunc</span></a> func</code></em>,
+                              <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Filters the key store's keys with the given filter function.</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ckstore</p></td>
+<td class="parameter_description"><p>a libcryptui key store</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>a filter function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>a generic pointer</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libcryptui-cryptui-key-store.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="CryptUIKeyStorePriv"></a><h3>CryptUIKeyStorePriv</h3>
+<pre class="programlisting">typedef struct _CryptUIKeyStorePriv CryptUIKeyStorePriv;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CryptUIKeyStore"></a><h3>struct CryptUIKeyStore</h3>
+<pre class="programlisting">struct CryptUIKeyStore {
+    GtkTreeModelSort       parent;
+ 
+    CryptUIKeyset          *ckset;
+};
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CryptUIKeyStoreMode"></a><h3>enum CryptUIKeyStoreMode</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="CRYPTUI-KEY-STORE-MODE-ALL:CAPS"></a>CRYPTUI_KEY_STORE_MODE_ALL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="CRYPTUI-KEY-STORE-MODE-SELECTED:CAPS"></a>CRYPTUI_KEY_STORE_MODE_SELECTED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="CRYPTUI-KEY-STORE-MODE-RESULTS:CAPS"></a>CRYPTUI_KEY_STORE_MODE_RESULTS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

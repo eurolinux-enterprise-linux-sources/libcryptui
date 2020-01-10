@@ -1,0 +1,33 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+daemon/seahorse-context.c
+daemon/seahorse-daemon.c
+daemon/seahorse-notification.c
+daemon/seahorse-gpgme.c
+daemon/seahorse-gpgme-generate.c
+daemon/seahorse-gpgme-key.c
+daemon/seahorse-gpgme-key-op.c
+daemon/seahorse-gpgme-source.c
+daemon/seahorse-gpgme-subkey.c
+daemon/seahorse-gpg-options.c
+[type: gettext/glade]daemon/seahorse-notify.xml
+daemon/seahorse-object.c
+daemon/seahorse-passphrase.c
+[type: gettext/glade]daemon/seahorse-pgp-generate.xml
+daemon/seahorse-pgp-key.c
+daemon/seahorse-pgp-subkey.c
+[type: gettext/glade]daemon/seahorse-progress.xml
+daemon/seahorse-service.c
+daemon/seahorse-service-crypto.c
+daemon/seahorse-service-keyset.c
+daemon/seahorse-unknown.c
+daemon/seahorse-unknown-source.c
+daemon/seahorse-util.c
+daemon/seahorse-validity.c
+daemon/seahorse-widget.c
+libcryptui/cryptui.c
+libcryptui/cryptui-key-chooser.c
+libcryptui/cryptui-key-list.c
+libegg/egg-datetime.c
+libegg/eggdesktopfile.c
+libegg/eggsmclient.c

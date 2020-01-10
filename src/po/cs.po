@@ -1,0 +1,914 @@
+# Czech translation of seahorse.
+# Copyright (C) 1996, 2003, 2008 the author(s) of seahorse.
+# This file is distributed under the same license as the seahorse package.
+#
+# Petr Domansky <doman@atlas.cz>, 2000.
+# Michal Bukovjan <bukm@centrum.cz>, 2003.
+# Miloslav Trmac <mitr@volny.cz>, 2003 – 2005.
+# Petr Kovar <pknbe@volny.cz>, 2008.
+# Lucas Lommer <llommer@svn.gnome.org>, 2008.
+# Vitezslav Kotrla <vitezslav.kotrla@gmail.com>, 2007 – 2009.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libcryptui\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=libcryptui&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-07-09 08:26+0000\n"
+"PO-Revision-Date: 2013-07-09 18:53+0200\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../daemon/seahorse-daemon.c:53
+msgid "Do not run seahorse-daemon as a daemon"
+msgstr "Nespouštět seahorse-daemon jako démona"
+
+#: ../daemon/seahorse-daemon.c:83
+msgid "couldn't fork process"
+msgstr "nelze provést fork procesu"
+
+#: ../daemon/seahorse-daemon.c:89
+msgid "couldn't create new process group"
+msgstr "nebylo možno vytvořit novou skupinu procesů"
+
+#: ../daemon/seahorse-daemon.c:237
+msgid "Encryption Daemon (Seahorse)"
+msgstr "Šifrovací démon (Seahorse)"
+
+#: ../daemon/seahorse-notification.c:576 ../daemon/seahorse-notification.c:604
+msgid "Key Imported"
+msgid_plural "Keys Imported"
+msgstr[0] "Importovaný klíč"
+msgstr[1] "Importované klíče"
+msgstr[2] "Importovat"
+
+#: ../daemon/seahorse-notification.c:580 ../daemon/seahorse-notification.c:603
+#, c-format
+msgid "Imported %i key"
+msgid_plural "Imported %i keys"
+msgstr[0] "Importován %i klíč"
+msgstr[1] "Importováno %i klíčů"
+msgstr[2] "Importováno %i klíčů"
+
+#: ../daemon/seahorse-notification.c:582
+#, c-format
+msgid "Imported a key for"
+msgid_plural "Imported keys for"
+msgstr[0] "Importován klíč pro"
+msgstr[1] "Importovány klíče pro"
+msgstr[2] "Importován klíč"
+
+#: ../daemon/seahorse-gpgme.c:72
+msgid "Decryption failed. You probably do not have the decryption key."
+msgstr "Dešifrování selhalo. Pravděpodobně nemáte dešifrovací klíč."
+
+#: ../daemon/seahorse-gpgme-generate.c:62
+msgid "RSA"
+msgstr "RSA"
+
+#: ../daemon/seahorse-gpgme-generate.c:63
+msgid "DSA Elgamal"
+msgstr "DSA/ElGamal"
+
+#: ../daemon/seahorse-gpgme-generate.c:64
+msgid "DSA (sign only)"
+msgstr "DSA (jen pro podpis)"
+
+#: ../daemon/seahorse-gpgme-generate.c:65
+msgid "RSA (sign only)"
+msgstr "RSA (jen pro podpis)"
+
+#: ../daemon/seahorse-gpgme-generate.c:81
+msgid "Couldn't generate PGP key"
+msgstr "Nebylo možno vygenerovat PGP klíč"
+
+#: ../daemon/seahorse-gpgme-generate.c:141
+msgid "Passphrase for New PGP Key"
+msgstr "Heslo pro nový PGP klíč"
+
+#: ../daemon/seahorse-gpgme-generate.c:142
+msgid "Enter the passphrase for your new key twice."
+msgstr "Zadejte dvakrát heslo ke svému novému klíči."
+
+#: ../daemon/seahorse-gpgme-generate.c:151
+msgid "Couldn't generate key"
+msgstr "Nebylo možno vygenerovat klíč"
+
+#: ../daemon/seahorse-gpgme-generate.c:153
+msgid "Generating key"
+msgstr "Vytváření klíče"
+
+#: ../daemon/seahorse-gpgme-source.c:98
+#, c-format
+msgid "Wrong passphrase."
+msgstr "Špatné heslo."
+
+#: ../daemon/seahorse-gpgme-source.c:102
+#, c-format
+msgid "Enter new passphrase for '%s'"
+msgstr "Zadejte nové heslo pro „%s“"
+
+#: ../daemon/seahorse-gpgme-source.c:104
+#, c-format
+msgid "Enter passphrase for '%s'"
+msgstr "Zadejte heslo pro „%s“"
+
+#: ../daemon/seahorse-gpgme-source.c:107
+msgid "Enter new passphrase"
+msgstr "Zadejte nové heslo"
+
+#: ../daemon/seahorse-gpgme-source.c:109
+msgid "Enter passphrase"
+msgstr "Zadejte heslo"
+
+#. TODO: We can use the GPGME progress to make this more accurate
+#: ../daemon/seahorse-gpgme-source.c:712
+#, c-format
+msgid "Loaded %d key"
+msgid_plural "Loaded %d keys"
+msgstr[0] "Načten %d klíč"
+msgstr[1] "Načteny %d klíče"
+msgstr[2] "Načteno %d klíčů"
+
+#: ../daemon/seahorse-gpgme-source.c:765
+msgid "Loading Keys..."
+msgstr "Načítají se klíče…"
+
+#: ../daemon/seahorse-gpgme-source.c:808
+msgid ""
+"Invalid key data (missing UIDs). This may be due to a computer with a date "
+"set in the future or a missing self-signature."
+msgstr ""
+"Neplatná data klíče (chybějí UID). Může to být tím, že chybí vlastní podpis, "
+"nebo je datum v počítači nastaveno do budoucnosti."
+
+#: ../daemon/seahorse-gpgme-source.c:898
+msgid "Importing Keys"
+msgstr "Import klíčů"
+
+#: ../daemon/seahorse-gpgme-source.c:931
+msgid "Exporting Keys"
+msgstr "Export klíčů"
+
+#: ../daemon/seahorse-gpgme-subkey.c:197 ../daemon/seahorse-validity.c:40
+msgid "Unknown"
+msgstr "Neznámo"
+
+#: ../daemon/seahorse-gpgme-subkey.c:199
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: ../daemon/seahorse-notify.xml.h:1
+msgid "Notification Messages"
+msgstr "Upozornění"
+
+#: ../daemon/seahorse-object.c:317
+msgid "Symmetric Key"
+msgstr "Symetrický klíč"
+
+#: ../daemon/seahorse-object.c:320
+msgid "Public Key"
+msgstr "Veřejný klíč"
+
+#: ../daemon/seahorse-object.c:323
+msgid "Private Key"
+msgstr "Soukromý klíč"
+
+#: ../daemon/seahorse-object.c:326
+msgid "Credentials"
+msgstr "Přihlašovací údaje"
+
+#.
+#. * Translators: "This object is a means of storing items such as
+#. * name, email address, etc. that make up one's digital identity.
+#.
+#: ../daemon/seahorse-object.c:333
+msgid "Identity"
+msgstr "Indentita"
+
+#: ../daemon/seahorse-passphrase.c:196
+msgid "Passphrase"
+msgstr "Heslo"
+
+#: ../daemon/seahorse-passphrase.c:199
+msgid "Password:"
+msgstr "Heslo:"
+
+#. The second and main entry
+#: ../daemon/seahorse-passphrase.c:263
+msgid "Confirm:"
+msgstr "Potvrďte:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:1
+msgid "Algorithms here"
+msgstr "Algoritmy"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:2
+msgid "New PGP Key"
+msgstr "Nový PGP klíč"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:3
+msgid "A PGP key allows you to encrypt email or files to other people."
+msgstr ""
+"PGP klíč umožňuje zašifrovat soubory nebo elektronickou poštu (vždy pro "
+"konkrétního příjemce)."
+
+#: ../daemon/seahorse-pgp-generate.xml.h:4
+msgid "Full _Name:"
+msgstr "Celé jmé_no:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:5
+msgid "_Email Address:"
+msgstr "_E-mail:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:6
+msgid "_Comment:"
+msgstr "_Poznámka:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:7
+msgid "Ne_ver Expires"
+msgstr "Nikdy ne_vyprší"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:8
+msgid "Encryption _Type:"
+msgstr "_Typ šifrování:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:9
+msgid "Key _Strength (bits):"
+msgstr "_Délka klíče (v bitech):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:10
+msgid "E_xpiration Date:"
+msgstr "Datum _vypršení platnosti:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:11
+msgid "<b>_Advanced key options</b>"
+msgstr "<b>_Pokročilé možnosti</b>"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:12
+msgid "Generate a new key"
+msgstr "Vygenerovat nový klíč"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:13
+msgid "C_reate"
+msgstr "_Vytvořit"
+
+#: ../daemon/seahorse-pgp-key.c:179
+msgid "Private PGP Key"
+msgstr "Soukromý PGP klíč"
+
+#: ../daemon/seahorse-pgp-key.c:182
+msgid "Public PGP Key"
+msgstr "Veřejný PGP klíč"
+
+#: ../daemon/seahorse-pgp-key.c:527
+msgid "Expired"
+msgstr "Vypršel"
+
+#: ../daemon/seahorse-pgp-subkey.c:366
+msgid "Key"
+msgstr "Klíč"
+
+#: ../daemon/seahorse-pgp-subkey.c:371
+#, c-format
+msgid "Subkey %d of %s"
+msgstr "Podklíč %d z %s"
+
+#: ../daemon/seahorse-progress.xml.h:1
+msgid "Progress Title"
+msgstr "Nadpis průběhu"
+
+#: ../daemon/seahorse-service.c:161 ../daemon/seahorse-service.c:267
+#, c-format
+msgid "Invalid or unrecognized key type: %s"
+msgstr "Neplatný nebo nerozpoznaný typ klíče: %s"
+
+#: ../daemon/seahorse-service.c:229
+#, c-format
+msgid "This keytype is not supported: %s"
+msgstr "Tento typ klíče není podporován: %s"
+
+#: ../daemon/seahorse-service.c:331 ../daemon/seahorse-service-keyset.c:180
+#: ../daemon/seahorse-service-keyset.c:223
+#, c-format
+msgid "Invalid or unrecognized key: %s"
+msgstr "Neplatný nebo nerozpoznaný klíč: %s"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:204
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
+msgstr "Podepsáno: <i><key id='%s'/> <b>vypršel</b></i> dne %s."
+
+#: ../daemon/seahorse-service-crypto.c:205
+msgid "Invalid Signature"
+msgstr "Neplatný podpis"
+
+#: ../daemon/seahorse-service-crypto.c:211
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
+msgstr ""
+"Podepsáno klíčem <i><key id='%s'/></i> dne %s <b>Platnost klíče vypršela</b>."
+
+#: ../daemon/seahorse-service-crypto.c:212
+msgid "Expired Signature"
+msgstr "Podpis s vypršenou platností"
+
+#: ../daemon/seahorse-service-crypto.c:218
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
+msgstr "Podepsáno klíčem <i><key id='%s'/> <b>Klíč odvolán</b></i> dne %s."
+
+#: ../daemon/seahorse-service-crypto.c:219
+msgid "Revoked Signature"
+msgstr "Odvolaný podpis"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:225
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s."
+msgstr "Podepsáno klíčem <i><key id='%s'/></i> dne %s."
+
+#: ../daemon/seahorse-service-crypto.c:226
+msgid "Good Signature"
+msgstr "Správný podpis"
+
+#: ../daemon/seahorse-service-crypto.c:231
+msgid "Signing key not in keyring."
+msgstr "Podpisový klíč v klíčence chybí."
+
+#: ../daemon/seahorse-service-crypto.c:232
+msgid "Unknown Signature"
+msgstr "Neznámý podpis"
+
+#: ../daemon/seahorse-service-crypto.c:236
+msgid "Bad or forged signature. The signed data was modified."
+msgstr "Špatný nebo padělaný podpis. Podepsaná data byla změněna."
+
+#: ../daemon/seahorse-service-crypto.c:237
+msgid "Bad Signature"
+msgstr "Špatný podpis"
+
+#: ../daemon/seahorse-service-crypto.c:245
+msgid "Couldn't verify signature."
+msgstr "Nebylo možno ověřit podpis."
+
+#: ../daemon/seahorse-service-crypto.c:317
+#, c-format
+msgid "Recipients specified for symmetric encryption"
+msgstr "Příjemci určení pro symetrické šifrování"
+
+#: ../daemon/seahorse-service-crypto.c:326
+#: ../daemon/seahorse-service-crypto.c:673
+#, c-format
+msgid "Invalid or unrecognized signer: %s"
+msgstr "Neplatný nebo nerozpoznaný autor podpisu: %s"
+
+#: ../daemon/seahorse-service-crypto.c:333
+#: ../daemon/seahorse-service-crypto.c:680
+#, c-format
+msgid "Key is not valid for signing: %s"
+msgstr "Klíč je pro podepisování neplatný: %s"
+
+#: ../daemon/seahorse-service-crypto.c:346
+#, c-format
+msgid "Invalid or unrecognized recipient: %s"
+msgstr "Neplatný nebo nerozpoznaný příjemce: %s"
+
+#: ../daemon/seahorse-service-crypto.c:354
+#, c-format
+msgid "Key is not a valid recipient for encryption: %s"
+msgstr "Klíč příjemce není platný pro šifrování: %s"
+
+#: ../daemon/seahorse-service-crypto.c:363
+#, c-format
+msgid "No recipients specified"
+msgstr "Žádný příjemce nebyl zadán"
+
+#: ../daemon/seahorse-service-crypto.c:460
+#, c-format
+msgid "Invalid key type for decryption: %s"
+msgstr "Neplatný typ klíče pro dešifrování: %s"
+
+#: ../daemon/seahorse-service-crypto.c:575
+#: ../daemon/seahorse-service-crypto.c:773
+#, c-format
+msgid "Please set clearuri"
+msgstr "Nastavte prosím URI originálního souboru (clearuri)"
+
+#: ../daemon/seahorse-service-crypto.c:581
+#: ../daemon/seahorse-service-crypto.c:779
+#, c-format
+msgid "Please set crypturi"
+msgstr "Nastavte prosím URI šifrovaného souboru (crypturi)"
+
+#: ../daemon/seahorse-service-crypto.c:591
+#, c-format
+msgid "Error opening clearuri"
+msgstr "Chyba otevírání URI originálního souboru (clearuri)"
+
+#: ../daemon/seahorse-service-crypto.c:668
+#, c-format
+msgid "No signer specified"
+msgstr "Žádný podpis nebyl zadán"
+
+#: ../daemon/seahorse-service-crypto.c:857
+#, c-format
+msgid "Invalid key type for verifying: %s"
+msgstr "Neplatný typ klíče pro ověření: %s"
+
+#: ../daemon/seahorse-service-keyset.c:273
+#, c-format
+msgid "Invalid key id: %s"
+msgstr "Neplatné ID klíče: %s"
+
+#: ../daemon/seahorse-unknown.c:58
+msgid "Unavailable"
+msgstr "Není k dispozici"
+
+#: ../daemon/seahorse-util.c:231
+msgid "%Y-%m-%d"
+msgstr "%d.%m.%Y"
+
+#: ../daemon/seahorse-util.c:510
+msgid "Key Data"
+msgstr "Data klíče"
+
+#: ../daemon/seahorse-util.c:512
+msgid "Multiple Keys"
+msgstr "Více klíčů"
+
+#: ../daemon/seahorse-util.c:768
+msgid "Couldn't run file-roller"
+msgstr "Nebylo možno spustit file-roller"
+
+#: ../daemon/seahorse-util.c:774
+msgid "Couldn't package files"
+msgstr "Nebylo možno zabalit soubory"
+
+#: ../daemon/seahorse-util.c:775
+msgid "The file-roller process did not complete successfully"
+msgstr "Proces file-roller neskončil úspěšně"
+
+#. Filter for PGP keys. We also include *.asc, as in many
+#. cases that extension is associated with text/plain
+#: ../daemon/seahorse-util.c:944
+msgid "All key files"
+msgstr "Všechny soubory klíčů"
+
+#: ../daemon/seahorse-util.c:951 ../daemon/seahorse-util.c:999
+msgid "All files"
+msgstr "Všechny soubory"
+
+#: ../daemon/seahorse-util.c:992
+msgid "Archive files"
+msgstr "Soubory archivů"
+
+#: ../daemon/seahorse-util.c:1062
+msgid ""
+"<b>A file already exists with this name.</b>\n"
+"\n"
+"Do you want to replace it with a new file?"
+msgstr ""
+"<b>Již existuje soubor s tímto názvem.</b>\n"
+"\n"
+"Chcete jej nahradit novým souborem?"
+
+#: ../daemon/seahorse-util.c:1065
+msgid "_Replace"
+msgstr "Na_hradit"
+
+#: ../daemon/seahorse-validity.c:42
+msgctxt "Validity"
+msgid "Never"
+msgstr "Nikdy"
+
+#: ../daemon/seahorse-validity.c:44
+msgid "Marginal"
+msgstr "Částečná důvěra"
+
+#: ../daemon/seahorse-validity.c:46
+msgid "Full"
+msgstr "Plná důvěra"
+
+#: ../daemon/seahorse-validity.c:48
+msgid "Ultimate"
+msgstr "Bezmezná důvěra"
+
+#: ../daemon/seahorse-validity.c:50
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#: ../daemon/seahorse-validity.c:52
+msgid "Revoked"
+msgstr "Odvolaný"
+
+#: ../daemon/seahorse-widget.c:433
+#, c-format
+msgid "Could not display help: %s"
+msgstr "Nebylo možno zobrazit nápovědu: %s"
+
+#: ../libcryptui/cryptui.c:307
+msgid ""
+"No encryption keys were found with which to perform the operation you "
+"requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+"started so that you may either create a key or import one."
+msgstr ""
+"Nebyly nalezeny žádné šifrovací klíče umožňující provedení požadované "
+"operace. Bude spuštěn program <b>Hesla a šifrovací klíče</b>, ve kterém "
+"můžete klíč buď vytvořit nebo importovat."
+
+#: ../libcryptui/cryptui.c:333
+msgid ""
+"No encryption keys were found. In order to perform public key encryption, "
+"the <b>Passwords and Encryption Keys</b> program can be started to create or "
+"import a public key. It is also possible to use a shared passphrase instead."
+msgstr ""
+"Nebyly nalezeny žádné šifrovací klíče. Abyste mohli provádět šifrování "
+"pomocí veřejného klíče, může být být spuštěn program <b>Hesla a šifrovací "
+"klíče</b>, který veřejný klíč vytvoří nebo naimportuje. Jinou možností je "
+"použít sdílenou heslovou frázi."
+
+#: ../libcryptui/cryptui.c:336
+msgid "Use a shared passphrase"
+msgstr "Použít sdílenou heslovou frázi"
+
+#: ../libcryptui/cryptui.c:337
+msgid "Create or import a key"
+msgstr "Vytvořit nebo importovat klíč"
+
+#: ../libcryptui/cryptui-key-chooser.c:177
+msgid "All Keys"
+msgstr "Všechny klíče"
+
+#: ../libcryptui/cryptui-key-chooser.c:178
+msgid "Selected Recipients"
+msgstr "Zvolení příjemci"
+
+#: ../libcryptui/cryptui-key-chooser.c:179
+msgid "Search Results"
+msgstr "Výsledky hledání"
+
+#. Filter Label
+#: ../libcryptui/cryptui-key-chooser.c:189
+msgid "Search _for:"
+msgstr "_Hledat:"
+
+#. first of the group
+#: ../libcryptui/cryptui-key-chooser.c:235
+msgid "Use passphrase only"
+msgstr "Použít jen heslovou frázi"
+
+#: ../libcryptui/cryptui-key-chooser.c:244
+msgid "Choose a set of recipients:"
+msgstr "Zvolte sadu příjemců:"
+
+#: ../libcryptui/cryptui-key-chooser.c:290
+msgid "None (Don't Sign)"
+msgstr "Žádný (nepodepisovat)"
+
+#: ../libcryptui/cryptui-key-chooser.c:303
+#, c-format
+msgid "Sign this message as %s"
+msgstr "Podepsat zprávu jako %s"
+
+#. Sign Label
+#: ../libcryptui/cryptui-key-chooser.c:330
+msgid "_Sign message as:"
+msgstr "Podep_sat zprávu jako:"
+
+#. TODO: Icons
+#. The name column
+#: ../libcryptui/cryptui-key-list.c:140
+msgid "Name"
+msgstr "Jméno"
+
+#. The keyid column
+#: ../libcryptui/cryptui-key-list.c:145
+msgid "Key ID"
+msgstr "ID klíče"
+
+#: ../libegg/egg-datetime.c:317
+msgid "Display flags"
+msgstr "Zobrazení částí"
+
+#: ../libegg/egg-datetime.c:318
+msgid "Displayed date and/or time properties"
+msgstr "Vlastnosti zobrazení data a času"
+
+#: ../libegg/egg-datetime.c:323
+msgid "Lazy mode"
+msgstr "„Líný“ režim"
+
+#: ../libegg/egg-datetime.c:324
+msgid "Lazy mode doesn't normalize entered date and time values"
+msgstr "„Líný“ režim nenormalizuje zadané hodnoty data a času"
+
+#: ../libegg/egg-datetime.c:329
+msgid "Year"
+msgstr "Rok"
+
+#: ../libegg/egg-datetime.c:330
+msgid "Displayed year"
+msgstr "Zobrazení roku"
+
+#: ../libegg/egg-datetime.c:335
+msgid "Month"
+msgstr "Měsíc"
+
+#: ../libegg/egg-datetime.c:336
+msgid "Displayed month"
+msgstr "Zobrazení měsíce"
+
+#: ../libegg/egg-datetime.c:341
+msgid "Day"
+msgstr "Den"
+
+#: ../libegg/egg-datetime.c:342
+msgid "Displayed day of month"
+msgstr "Zobrazení dne v měsíci"
+
+#: ../libegg/egg-datetime.c:347
+msgid "Hour"
+msgstr "Hodina"
+
+#: ../libegg/egg-datetime.c:348
+msgid "Displayed hour"
+msgstr "Zobrazení hodiny"
+
+#: ../libegg/egg-datetime.c:353
+msgid "Minute"
+msgstr "Minuta"
+
+#: ../libegg/egg-datetime.c:354
+msgid "Displayed minute"
+msgstr "Zobrazení minuty"
+
+#: ../libegg/egg-datetime.c:359
+msgid "Second"
+msgstr "Sekunda"
+
+#: ../libegg/egg-datetime.c:360
+msgid "Displayed second"
+msgstr "Zobrazení sekundy"
+
+#: ../libegg/egg-datetime.c:365
+msgid "Lower limit year"
+msgstr "Dolní limit (rok)"
+
+#: ../libegg/egg-datetime.c:366
+msgid "Year part of the lower date limit"
+msgstr "Dolní limit pro roky"
+
+#: ../libegg/egg-datetime.c:371
+msgid "Upper limit year"
+msgstr "Horní limit (rok)"
+
+#: ../libegg/egg-datetime.c:372
+msgid "Year part of the upper date limit"
+msgstr "Horní limit pro roky"
+
+#: ../libegg/egg-datetime.c:377
+msgid "Lower limit month"
+msgstr "Dolní limit (měsíc)"
+
+#: ../libegg/egg-datetime.c:378
+msgid "Month part of the lower date limit"
+msgstr "Dolní limit pro měsíce"
+
+#: ../libegg/egg-datetime.c:383
+msgid "Upper limit month"
+msgstr "Horní limit (měsíc)"
+
+#: ../libegg/egg-datetime.c:384
+msgid "Month part of the upper date limit"
+msgstr "Horní limit pro měsíce"
+
+#: ../libegg/egg-datetime.c:389
+msgid "Lower limit day"
+msgstr "Dolní limit (den)"
+
+#: ../libegg/egg-datetime.c:390
+msgid "Day of month part of the lower date limit"
+msgstr "Dolní limit pro dny"
+
+#: ../libegg/egg-datetime.c:395
+msgid "Upper limit day"
+msgstr "Horní limit (den)"
+
+#: ../libegg/egg-datetime.c:396
+msgid "Day of month part of the upper date limit"
+msgstr "Horní limit pro dny"
+
+#: ../libegg/egg-datetime.c:401
+msgid "Lower limit hour"
+msgstr "Dolní limit (hodina)"
+
+#: ../libegg/egg-datetime.c:402
+msgid "Hour part of the lower time limit"
+msgstr "Dolní limit pro hodiny"
+
+#: ../libegg/egg-datetime.c:407
+msgid "Upper limit hour"
+msgstr "Horní limit (hodina)"
+
+#: ../libegg/egg-datetime.c:408
+msgid "Hour part of the upper time limit"
+msgstr "Horní limit pro hodiny"
+
+#: ../libegg/egg-datetime.c:413
+msgid "Lower limit minute"
+msgstr "Dolní limit (minuta)"
+
+#: ../libegg/egg-datetime.c:414
+msgid "Minute part of the lower time limit"
+msgstr "Dolní limit pro minuty"
+
+#: ../libegg/egg-datetime.c:419
+msgid "Upper limit minute"
+msgstr "Horní limit (minuta)"
+
+#: ../libegg/egg-datetime.c:420
+msgid "Minute part of the upper time limit"
+msgstr "Horní limit pro minuty"
+
+#: ../libegg/egg-datetime.c:425
+msgid "Lower limit second"
+msgstr "Dolní limit (sekunda)"
+
+#: ../libegg/egg-datetime.c:426
+msgid "Second part of the lower time limit"
+msgstr "Dolní limit pro sekundy"
+
+#: ../libegg/egg-datetime.c:431
+msgid "Upper limit second"
+msgstr "Horní limit (sekunda)"
+
+#: ../libegg/egg-datetime.c:432
+msgid "Second part of the upper time limit"
+msgstr "Horní limit pro sekundy"
+
+#. Translate to calendar:week_start:1 if you want Monday to be the
+#. * first day of the week; otherwise translate to calendar:week_start:0.
+#. * Do *not* translate it to anything else, if it isn't calendar:week_start:1
+#. * or calendar:week_start:0 it will not work.
+#.
+#: ../libegg/egg-datetime.c:474
+msgid "calendar:week_start:0"
+msgstr "calendar:week_start:1"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Date"
+msgstr "Datum"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Enter the date directly"
+msgstr "Zadejte datum ručně"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select Date"
+msgstr "Vybrat datum"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select the date from a calendar"
+msgstr "Vyberte datum z kalendáře"
+
+#: ../libegg/egg-datetime.c:521 ../libegg/egg-datetime.c:2196
+msgid "Time"
+msgstr "Čas"
+
+#: ../libegg/egg-datetime.c:521
+msgid "Enter the time directly"
+msgstr "Zadejte čas ručně"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select Time"
+msgstr "Vybrat čas"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select the time from a list"
+msgstr "Vyberte čas ze seznamu"
+
+#. Translators: set this to anything else if you want to use a
+#. * 24 hour clock.
+#.
+#: ../libegg/egg-datetime.c:793
+msgid "24hr: no"
+msgstr "24hr: yes"
+
+#: ../libegg/egg-datetime.c:797 ../libegg/egg-datetime.c:1257
+#: ../libegg/egg-datetime.c:1261
+msgid "AM"
+msgstr "dop"
+
+#: ../libegg/egg-datetime.c:799 ../libegg/egg-datetime.c:1258
+#: ../libegg/egg-datetime.c:1265
+msgid "PM"
+msgstr "odp"
+
+#. Translators: This is hh:mm:ss AM/PM.
+#: ../libegg/egg-datetime.c:807
+#, c-format
+msgid "%02d:%02d:%02d %s"
+msgstr "%02d:%02d:%02d %s"
+
+#. Translators: This is hh:mm AM/PM.
+#: ../libegg/egg-datetime.c:810
+#, c-format
+msgid "%02d:%02d %s"
+msgstr "%02d:%02d %s"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:814
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#. Translators: This is hh:mm.
+#: ../libegg/egg-datetime.c:817
+#, c-format
+msgid "%02d:%02d"
+msgstr "%02d:%02d"
+
+#. TODO: should handle other display modes as well...
+#. Translators: This is YYYY-MM-DD
+#: ../libegg/egg-datetime.c:1173
+#, c-format
+msgid "%04d-%02d-%02d"
+msgstr "%04d-%02d-%02d"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:1238
+#, c-format
+msgid "%u:%u:%u"
+msgstr "%u:%u:%u"
+
+#: ../libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Soubor není platný soubor typu .desktop"
+
+#: ../libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Nerozpoznaný soubor plochy verze „%s“"
+
+#: ../libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Spouští se %s"
+
+#: ../libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Aplikace nepřijímá dokumenty na příkazové řádce"
+
+#: ../libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Neznámá spouštěcí volba: %d"
+
+#: ../libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Nebylo možné předat URI dokumentu do položky plochy druhu „Type=Link“"
+
+#: ../libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "Toto není spustitelná položka"
+
+#: ../libegg/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Zakázat spojení se správcem sezení"
+
+#: ../libegg/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Zadat soubor obsahující uložené nastavení"
+
+#: ../libegg/eggsmclient.c:228
+msgid "FILE"
+msgstr "FILE"
+
+#: ../libegg/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Zadat ID správy sezení"
+
+#: ../libegg/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../libegg/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Volby pro správu sezení:"
+
+#: ../libegg/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Ukázat volby správy sezení"

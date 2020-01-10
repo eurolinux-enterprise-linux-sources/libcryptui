@@ -1,0 +1,2535 @@
+# Latvian translation for seahorse
+# Copyright (C) 2009 Peteris Krisjanis
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Pēteris Krišjānis <pecisk@gmail.com>, 2009.
+# Peteris Krisjanis <pecisk@gmail.com>, 2010.
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=libcryptui&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-07-24 15:50+0000\n"
+"PO-Revision-Date: 2013-10-05 13:53+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../daemon/seahorse-daemon.c:53
+msgid "Do not run seahorse-daemon as a daemon"
+msgstr "Nepalaist seahorse-daemon kā dēmonu"
+
+#: ../daemon/seahorse-daemon.c:83
+msgid "couldn't fork process"
+msgstr "neizdevās atdalīt procesu"
+
+#: ../daemon/seahorse-daemon.c:89
+msgid "couldn't create new process group"
+msgstr "neizdevās izveidot jaunu procesu grupu"
+
+#: ../daemon/seahorse-daemon.c:237
+msgid "Encryption Daemon (Seahorse)"
+msgstr "Šifrēšanas dēmons (Seahorse)"
+
+#: ../daemon/seahorse-notification.c:576 ../daemon/seahorse-notification.c:604
+msgid "Key Imported"
+msgid_plural "Keys Imported"
+msgstr[0] "Atslēga importēta"
+msgstr[1] "Atslēgas importētas"
+msgstr[2] "Atslēgas importētas"
+
+#: ../daemon/seahorse-notification.c:580 ../daemon/seahorse-notification.c:603
+#, c-format
+msgid "Imported %i key"
+msgid_plural "Imported %i keys"
+msgstr[0] "Importēta %i atslēga"
+msgstr[1] "Importētas %i atslēgas"
+msgstr[2] "Importētas %i atslēgas"
+
+#: ../daemon/seahorse-notification.c:582
+#, c-format
+msgid "Imported a key for"
+msgid_plural "Imported keys for"
+msgstr[0] "Importēta atslēga"
+msgstr[1] "Importētas atslēgas"
+msgstr[2] "Importētas atslēgas"
+
+#: ../daemon/seahorse-gpgme.c:72
+msgid "Decryption failed. You probably do not have the decryption key."
+msgstr "Atšifrēšana nesekmīga. Jums, visticamāk, nav atšifrēšanas atslēgas."
+
+#: ../daemon/seahorse-gpgme-generate.c:62
+msgid "RSA"
+msgstr "RSA"
+
+#: ../daemon/seahorse-gpgme-generate.c:63
+msgid "DSA Elgamal"
+msgstr "DSA Elgamal"
+
+#: ../daemon/seahorse-gpgme-generate.c:64
+msgid "DSA (sign only)"
+msgstr "DSA (tikai parakstīšanai)"
+
+#: ../daemon/seahorse-gpgme-generate.c:65
+msgid "RSA (sign only)"
+msgstr "RSA (tikai parakstīšanai)"
+
+#: ../daemon/seahorse-gpgme-generate.c:81
+msgid "Couldn't generate PGP key"
+msgstr "Neizdevās ģenerēt PGP atslēgu"
+
+#: ../daemon/seahorse-gpgme-generate.c:141
+msgid "Passphrase for New PGP Key"
+msgstr "Parole jaunajai PGP atslēgai"
+
+#: ../daemon/seahorse-gpgme-generate.c:142
+msgid "Enter the passphrase for your new key twice."
+msgstr "Ievadiet paroli divreiz savai jaunajai atslēgai."
+
+#: ../daemon/seahorse-gpgme-generate.c:151
+msgid "Couldn't generate key"
+msgstr "Neizdevās ģenerēt atslēgu"
+
+#: ../daemon/seahorse-gpgme-generate.c:153
+msgid "Generating key"
+msgstr "Ģenerē atslēgu"
+
+#: ../daemon/seahorse-gpgme-source.c:98
+#, c-format
+msgid "Wrong passphrase."
+msgstr "Nepareiza parole."
+
+#: ../daemon/seahorse-gpgme-source.c:102
+#, c-format
+msgid "Enter new passphrase for '%s'"
+msgstr "Ievadiet jaunu '%s' paroli"
+
+#: ../daemon/seahorse-gpgme-source.c:104
+#, c-format
+msgid "Enter passphrase for '%s'"
+msgstr "Ievadiet '%s' paroli"
+
+#: ../daemon/seahorse-gpgme-source.c:107
+msgid "Enter new passphrase"
+msgstr "Ievadiet jaunu paroli"
+
+#: ../daemon/seahorse-gpgme-source.c:109
+msgid "Enter passphrase"
+msgstr "Ievadiet paroli"
+
+#. TODO: We can use the GPGME progress to make this more accurate
+#: ../daemon/seahorse-gpgme-source.c:712
+#, c-format
+msgid "Loaded %d key"
+msgid_plural "Loaded %d keys"
+msgstr[0] "Ielādēta %d atslēga"
+msgstr[1] "Ielādētas %d atslēgas"
+msgstr[2] "Ielādētas %d atslēgas"
+
+#: ../daemon/seahorse-gpgme-source.c:765
+msgid "Loading Keys..."
+msgstr "Ielādē atslēgas..."
+
+#: ../daemon/seahorse-gpgme-source.c:808
+msgid ""
+"Invalid key data (missing UIDs). This may be due to a computer with a date "
+"set in the future or a missing self-signature."
+msgstr ""
+"Nederīgi atslēgas dati (trūkst UID). Tas, iespējams, ir tādēļ, ka dators ir "
+"ar iestatītu datumu nākotnē, vai arī atslēga nav pašparakstīta."
+
+#: ../daemon/seahorse-gpgme-source.c:898
+msgid "Importing Keys"
+msgstr "Importē atslēgas"
+
+#: ../daemon/seahorse-gpgme-source.c:931
+msgid "Exporting Keys"
+msgstr "Eksportē atslēgas"
+
+#: ../daemon/seahorse-gpgme-subkey.c:197 ../daemon/seahorse-validity.c:40
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: ../daemon/seahorse-gpgme-subkey.c:199
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: ../daemon/seahorse-notify.xml.h:1
+msgid "Notification Messages"
+msgstr "Paziņojumi"
+
+#: ../daemon/seahorse-object.c:317
+msgid "Symmetric Key"
+msgstr "Simetriskā atslēga"
+
+#: ../daemon/seahorse-object.c:320
+msgid "Public Key"
+msgstr "Publiskā atslēga"
+
+#: ../daemon/seahorse-object.c:323
+msgid "Private Key"
+msgstr "Privātā atslēga"
+
+#: ../daemon/seahorse-object.c:326
+msgid "Credentials"
+msgstr "Akreditācijas dati"
+
+#.
+#. * Translators: "This object is a means of storing items such as
+#. * name, email address, etc. that make up one's digital identity.
+#.
+#: ../daemon/seahorse-object.c:333
+msgid "Identity"
+msgstr "Identitāte"
+
+#: ../daemon/seahorse-passphrase.c:196
+msgid "Passphrase"
+msgstr "Parole"
+
+#: ../daemon/seahorse-passphrase.c:199
+msgid "Password:"
+msgstr "Parole:"
+
+#. The second and main entry
+#: ../daemon/seahorse-passphrase.c:263
+msgid "Confirm:"
+msgstr "Apstipriniet:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:1
+msgid "Algorithms here"
+msgstr "Algoritmi šeit"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:2
+msgid "New PGP Key"
+msgstr "Jauna PGP atslēga"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:3
+msgid "A PGP key allows you to encrypt email or files to other people."
+msgstr "PGP atslēga ļauj jums šifrēt e-pastu vai failus citiem cilvēkiem."
+
+#: ../daemon/seahorse-pgp-generate.xml.h:4
+msgid "Full _Name:"
+msgstr "Pilns _vārds:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:5
+msgid "_Email Address:"
+msgstr "_E-pasta adrese:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:6
+msgid "_Comment:"
+msgstr "_Komentārs:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:7
+msgid "Ne_ver Expires"
+msgstr "Derīguma termiņš nekad nebeidzas"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:8
+msgid "Encryption _Type:"
+msgstr "Šifrēšanas _tips:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:9
+msgid "Key _Strength (bits):"
+msgstr "Atslēgas _stiprums (bitos):"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:10
+msgid "E_xpiration Date:"
+msgstr "Derīguma _termiņš:"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:11
+msgid "<b>_Advanced key options</b>"
+msgstr "<b>_Paplašinātas atslēgas opcijas</b>"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:12
+msgid "Generate a new key"
+msgstr "Ģenerēt jaunu atslēgu"
+
+#: ../daemon/seahorse-pgp-generate.xml.h:13
+msgid "C_reate"
+msgstr "Iz_veidot"
+
+#: ../daemon/seahorse-pgp-key.c:179
+msgid "Private PGP Key"
+msgstr "Privātā PGP atslēga"
+
+#: ../daemon/seahorse-pgp-key.c:182
+msgid "Public PGP Key"
+msgstr "Publiskā PGP atslēga"
+
+#: ../daemon/seahorse-pgp-key.c:527
+msgid "Expired"
+msgstr "Beidzies derīguma termiņš"
+
+#: ../daemon/seahorse-pgp-subkey.c:366
+msgid "Key"
+msgstr "Atslēga"
+
+#: ../daemon/seahorse-pgp-subkey.c:371
+#, c-format
+msgid "Subkey %d of %s"
+msgstr "Apakšatslēga %d no %s"
+
+#: ../daemon/seahorse-progress.xml.h:1
+msgid "Progress Title"
+msgstr "Progresa virsraksts"
+
+#: ../daemon/seahorse-service.c:161 ../daemon/seahorse-service.c:267
+#, c-format
+msgid "Invalid or unrecognized key type: %s"
+msgstr "Nederīgs vai neatpazīts atslēgas tips: %s"
+
+#: ../daemon/seahorse-service.c:229
+#, c-format
+msgid "This keytype is not supported: %s"
+msgstr "Šis atslēgas tips nav atbalstīts: %s"
+
+#: ../daemon/seahorse-service.c:331 ../daemon/seahorse-service-keyset.c:180
+#: ../daemon/seahorse-service-keyset.c:223
+#, c-format
+msgid "Invalid or unrecognized key: %s"
+msgstr "Nederīga vai neatpazīta atslēga: %s"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:204
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>expired</b></i> on %s."
+msgstr "Parakstījis <i><key id='%s'/> <b>derīgums beidzies</b></i> %s."
+
+#: ../daemon/seahorse-service-crypto.c:205
+msgid "Invalid Signature"
+msgstr "Nederīgs paraksts"
+
+#: ../daemon/seahorse-service-crypto.c:211
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s <b>Expired</b>."
+msgstr "Parakstījis <i><key id='%s'/></i> <b>derīgums beidzies</b> %s."
+
+#: ../daemon/seahorse-service-crypto.c:212
+msgid "Expired Signature"
+msgstr "Paraksts ar iztecējušu derīguma termiņu"
+
+#: ../daemon/seahorse-service-crypto.c:218
+#, c-format
+msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
+msgstr "Parakstījis <i><key id='%s'/> <b>atsaukts</b></i> %s."
+
+#: ../daemon/seahorse-service-crypto.c:219
+msgid "Revoked Signature"
+msgstr "Atsaukts paraksts"
+
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../daemon/seahorse-service-crypto.c:225
+#, c-format
+msgid "Signed by <i><key id='%s'/></i> on %s."
+msgstr "Parakstījis <i><key id='%s'/></i> %s."
+
+#: ../daemon/seahorse-service-crypto.c:226
+msgid "Good Signature"
+msgstr "Labs paraksts"
+
+#: ../daemon/seahorse-service-crypto.c:231
+msgid "Signing key not in keyring."
+msgstr "Paraksta atslēga neatrodas saišķī."
+
+#: ../daemon/seahorse-service-crypto.c:232
+msgid "Unknown Signature"
+msgstr "Nezināms paraksts"
+
+#: ../daemon/seahorse-service-crypto.c:236
+msgid "Bad or forged signature. The signed data was modified."
+msgstr "Slikts vai viltots paraksts. Parakstītie dati tika modificēti."
+
+#: ../daemon/seahorse-service-crypto.c:237
+msgid "Bad Signature"
+msgstr "Slikts paraksts"
+
+#: ../daemon/seahorse-service-crypto.c:245
+msgid "Couldn't verify signature."
+msgstr "Neizdevās apstiprināt parakstu."
+
+#: ../daemon/seahorse-service-crypto.c:317
+#, c-format
+msgid "Recipients specified for symmetric encryption"
+msgstr "Saņēmējs norādīja simetrisku šifrēšanu"
+
+#: ../daemon/seahorse-service-crypto.c:326
+#: ../daemon/seahorse-service-crypto.c:673
+#, c-format
+msgid "Invalid or unrecognized signer: %s"
+msgstr "Nederīgs vai neatpazīts parakstītājs: %s"
+
+#: ../daemon/seahorse-service-crypto.c:333
+#: ../daemon/seahorse-service-crypto.c:680
+#, c-format
+msgid "Key is not valid for signing: %s"
+msgstr "Atslēga nav derīga parakstīšanai: %s"
+
+#: ../daemon/seahorse-service-crypto.c:346
+#, c-format
+msgid "Invalid or unrecognized recipient: %s"
+msgstr "Nederīgs vai neatpazīts saņēmējs: %s"
+
+#: ../daemon/seahorse-service-crypto.c:354
+#, c-format
+msgid "Key is not a valid recipient for encryption: %s"
+msgstr "Atslēga nav derīga kā saņēmēja, lai veiktu šifrēšanu: %s"
+
+#: ../daemon/seahorse-service-crypto.c:363
+#, c-format
+msgid "No recipients specified"
+msgstr "Saņēmēji nav norādīts"
+
+#: ../daemon/seahorse-service-crypto.c:460
+#, c-format
+msgid "Invalid key type for decryption: %s"
+msgstr "Nederīgs atslēgas tips atšifrēšanai: %s"
+
+#: ../daemon/seahorse-service-crypto.c:575
+#: ../daemon/seahorse-service-crypto.c:773
+#, c-format
+msgid "Please set clearuri"
+msgstr "Lūdzu, iestatiet clearuri"
+
+#: ../daemon/seahorse-service-crypto.c:581
+#: ../daemon/seahorse-service-crypto.c:779
+#, c-format
+msgid "Please set crypturi"
+msgstr "Lūdzu, iestatiet crypturi"
+
+#: ../daemon/seahorse-service-crypto.c:591
+#, c-format
+msgid "Error opening clearuri"
+msgstr "Kļūda atverot clearuri"
+
+#: ../daemon/seahorse-service-crypto.c:668
+#, c-format
+msgid "No signer specified"
+msgstr "Parakstītājs nav norādīts"
+
+#: ../daemon/seahorse-service-crypto.c:857
+#, c-format
+msgid "Invalid key type for verifying: %s"
+msgstr "Nederīgs atslēgas tips pārbaudei: %s"
+
+#: ../daemon/seahorse-service-keyset.c:273
+#, c-format
+msgid "Invalid key id: %s"
+msgstr "Nederīgs atslēgas id: %s"
+
+#: ../daemon/seahorse-unknown.c:58
+msgid "Unavailable"
+msgstr "Nav pieejams"
+
+#: ../daemon/seahorse-util.c:231
+msgid "%Y-%m-%d"
+msgstr "%d.%m.%Y"
+
+#: ../daemon/seahorse-util.c:510
+msgid "Key Data"
+msgstr "Atslēgas dati"
+
+#: ../daemon/seahorse-util.c:512
+msgid "Multiple Keys"
+msgstr "Vairākas atslēgas"
+
+#: ../daemon/seahorse-util.c:768
+msgid "Couldn't run file-roller"
+msgstr "Neizdevās palaist 'file-roller'"
+
+#: ../daemon/seahorse-util.c:774
+msgid "Couldn't package files"
+msgstr "Neizdevās sapakot failus"
+
+#: ../daemon/seahorse-util.c:775
+msgid "The file-roller process did not complete successfully"
+msgstr "'file-roller' process nebeidzās veiksmīgi"
+
+#. Filter for PGP keys. We also include *.asc, as in many
+#. cases that extension is associated with text/plain
+#: ../daemon/seahorse-util.c:944
+msgid "All key files"
+msgstr "Visi atslēgu faili"
+
+#: ../daemon/seahorse-util.c:951 ../daemon/seahorse-util.c:999
+msgid "All files"
+msgstr "Visi faili"
+
+#: ../daemon/seahorse-util.c:992
+msgid "Archive files"
+msgstr "Arhīva faili"
+
+#: ../daemon/seahorse-util.c:1062
+msgid ""
+"<b>A file already exists with this name.</b>\n"
+"\n"
+"Do you want to replace it with a new file?"
+msgstr ""
+"<b>Fails ar šādu nosaukumu jau pastāv</b>\n"
+"\n"
+"Vai vēlaties aizstāt to ar jauno failu?"
+
+#: ../daemon/seahorse-util.c:1065
+msgid "_Replace"
+msgstr "_Aizvietot"
+
+#: ../daemon/seahorse-validity.c:42
+msgctxt "Validity"
+msgid "Never"
+msgstr "Nekad"
+
+#: ../daemon/seahorse-validity.c:44
+msgid "Marginal"
+msgstr "Daļēji"
+
+#: ../daemon/seahorse-validity.c:46
+msgid "Full"
+msgstr "Pilnībā"
+
+#: ../daemon/seahorse-validity.c:48
+msgid "Ultimate"
+msgstr "Gandrīz"
+
+#: ../daemon/seahorse-validity.c:50
+msgid "Disabled"
+msgstr "Deaktivizēta"
+
+#: ../daemon/seahorse-validity.c:52
+msgid "Revoked"
+msgstr "Atsaukta"
+
+#: ../daemon/seahorse-widget.c:433
+#, c-format
+msgid "Could not display help: %s"
+msgstr "Neizdevās parādīt palīdzību: %s"
+
+#: ../libcryptui/cryptui.c:307
+msgid ""
+"No encryption keys were found with which to perform the operation you "
+"requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+"started so that you may either create a key or import one."
+msgstr ""
+"Netika atrasta neviena šifrēšanas atslēga, ar ko veikt jūsu pieprasīto "
+"operāciju. Lietotne <b>Paroles un šifrēšanas atslēgas\" tagad tiks palaista, "
+"lai jūs varētu izveidot jaunu atslēgu vai importēt jau eksistējošu."
+
+#: ../libcryptui/cryptui.c:333
+#| msgid ""
+#| "No encryption keys were found with which to perform the operation you "
+#| "requested.  The program <b>Passwords and Encryption Keys</b> will now be "
+#| "started so that you may either create a key or import one."
+msgid ""
+"No encryption keys were found. In order to perform public key encryption, "
+"the <b>Passwords and Encryption Keys</b> program can be started to create or "
+"import a public key. It is also possible to use a shared passphrase instead."
+msgstr ""
+"Netika atrasta neviena šifrēšanas atslēga. Lai varētu veikt publiskās "
+"atslēgas šifrēšanu, var palaist lietotni <b>Paroles un šifrēšanas atslēgas\", "
+"lai izveidotu vai importēt publisko atslēgu. Tā vietā varat arī izmatot "
+"kopīgu paroli."
+
+#: ../libcryptui/cryptui.c:336
+#| msgid "Enter passphrase"
+msgid "Use a shared passphrase"
+msgstr "Izmantot kopīgu paroli"
+
+#: ../libcryptui/cryptui.c:337
+#| msgid "Couldn't import keys"
+msgid "Create or import a key"
+msgstr "Izveidot vai importēt atslēgu"
+
+#: ../libcryptui/cryptui-key-chooser.c:177
+msgid "All Keys"
+msgstr "Visas atslēgas"
+
+#: ../libcryptui/cryptui-key-chooser.c:178
+msgid "Selected Recipients"
+msgstr "Izvēlētie adresāti"
+
+#: ../libcryptui/cryptui-key-chooser.c:179
+msgid "Search Results"
+msgstr "Meklēšanas rezultāti"
+
+#. Filter Label
+#: ../libcryptui/cryptui-key-chooser.c:189
+msgid "Search _for:"
+msgstr "_Meklēt:"
+
+#. first of the group
+#: ../libcryptui/cryptui-key-chooser.c:235
+#| msgid "Enter passphrase"
+msgid "Use passphrase only"
+msgstr "Izmantot tikai paroli"
+
+#: ../libcryptui/cryptui-key-chooser.c:244
+msgid "Choose a set of recipients:"
+msgstr "Izvēlieties saņēmēju kopu:"
+
+#: ../libcryptui/cryptui-key-chooser.c:290
+msgid "None (Don't Sign)"
+msgstr "Neparakstīt"
+
+#: ../libcryptui/cryptui-key-chooser.c:303
+#, c-format
+msgid "Sign this message as %s"
+msgstr "Parakstīt šo ziņu kā %s"
+
+#. Sign Label
+#: ../libcryptui/cryptui-key-chooser.c:330
+msgid "_Sign message as:"
+msgstr "_Parakstīt ziņu kā:"
+
+#. TODO: Icons
+#. The name column
+#: ../libcryptui/cryptui-key-list.c:140
+msgid "Name"
+msgstr "Nosaukums"
+
+#. The keyid column
+#: ../libcryptui/cryptui-key-list.c:145
+msgid "Key ID"
+msgstr "Atslēgas ID"
+
+#: ../libegg/egg-datetime.c:317
+msgid "Display flags"
+msgstr "Parādīšanas karogi"
+
+#: ../libegg/egg-datetime.c:318
+msgid "Displayed date and/or time properties"
+msgstr "Parādītā datuma un/vai laika parametri"
+
+#: ../libegg/egg-datetime.c:323
+msgid "Lazy mode"
+msgstr "Slinkais režīms"
+
+#: ../libegg/egg-datetime.c:324
+msgid "Lazy mode doesn't normalize entered date and time values"
+msgstr "Slinkais režīms nenormalizē ievadītā datuma un laika vērtības"
+
+#: ../libegg/egg-datetime.c:329
+msgid "Year"
+msgstr "Gads"
+
+#: ../libegg/egg-datetime.c:330
+msgid "Displayed year"
+msgstr "Parādītais gads"
+
+#: ../libegg/egg-datetime.c:335
+msgid "Month"
+msgstr "Mēnesis"
+
+#: ../libegg/egg-datetime.c:336
+msgid "Displayed month"
+msgstr "Parādītais mēnesis"
+
+#: ../libegg/egg-datetime.c:341
+msgid "Day"
+msgstr "Diena"
+
+#: ../libegg/egg-datetime.c:342
+msgid "Displayed day of month"
+msgstr "Parādītā mēneša diena"
+
+#: ../libegg/egg-datetime.c:347
+msgid "Hour"
+msgstr "Stunda"
+
+#: ../libegg/egg-datetime.c:348
+msgid "Displayed hour"
+msgstr "Parādītā stunda"
+
+#: ../libegg/egg-datetime.c:353
+msgid "Minute"
+msgstr "Minūte"
+
+#: ../libegg/egg-datetime.c:354
+msgid "Displayed minute"
+msgstr "Parādītā minūte"
+
+#: ../libegg/egg-datetime.c:359
+msgid "Second"
+msgstr "Sekunde"
+
+#: ../libegg/egg-datetime.c:360
+msgid "Displayed second"
+msgstr "Parādītā sekunde"
+
+#: ../libegg/egg-datetime.c:365
+msgid "Lower limit year"
+msgstr "Zemākā līmeņa gads"
+
+#: ../libegg/egg-datetime.c:366
+msgid "Year part of the lower date limit"
+msgstr "Gada daļa zemākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:371
+msgid "Upper limit year"
+msgstr "Augstākā līmeņa gads"
+
+#: ../libegg/egg-datetime.c:372
+msgid "Year part of the upper date limit"
+msgstr "Gada daļa augstākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:377
+msgid "Lower limit month"
+msgstr "Zemākā līmeņa mēnesis"
+
+#: ../libegg/egg-datetime.c:378
+msgid "Month part of the lower date limit"
+msgstr "Mēneša daļa zemākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:383
+msgid "Upper limit month"
+msgstr "Augstākā līmeņa mēnesis"
+
+#: ../libegg/egg-datetime.c:384
+msgid "Month part of the upper date limit"
+msgstr "Mēneša daļa augstākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:389
+msgid "Lower limit day"
+msgstr "Zemākā līmeņa diena"
+
+#: ../libegg/egg-datetime.c:390
+msgid "Day of month part of the lower date limit"
+msgstr "Mēneša dienas daļa zemākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:395
+msgid "Upper limit day"
+msgstr "Augstākā līmeņa diena"
+
+#: ../libegg/egg-datetime.c:396
+msgid "Day of month part of the upper date limit"
+msgstr "Mēneša dienas daļa augstākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:401
+msgid "Lower limit hour"
+msgstr "Zemākā līmeņa stunda"
+
+#: ../libegg/egg-datetime.c:402
+msgid "Hour part of the lower time limit"
+msgstr "Stundas daļa zemākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:407
+msgid "Upper limit hour"
+msgstr "Augstākā līmeņa stunda"
+
+#: ../libegg/egg-datetime.c:408
+msgid "Hour part of the upper time limit"
+msgstr "Stundas daļa augstākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:413
+msgid "Lower limit minute"
+msgstr "Zemākā līmeņa minūte"
+
+#: ../libegg/egg-datetime.c:414
+msgid "Minute part of the lower time limit"
+msgstr "Minūtes daļa zemākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:419
+msgid "Upper limit minute"
+msgstr "Augstākā līmeņa minūte"
+
+#: ../libegg/egg-datetime.c:420
+msgid "Minute part of the upper time limit"
+msgstr "Minūtes daļa augstākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:425
+msgid "Lower limit second"
+msgstr "Zemākā līmeņa sekunde"
+
+#: ../libegg/egg-datetime.c:426
+msgid "Second part of the lower time limit"
+msgstr "Sekundes daļa zemākajam datuma limitam"
+
+#: ../libegg/egg-datetime.c:431
+msgid "Upper limit second"
+msgstr "Augstākā līmeņa sekunde"
+
+#: ../libegg/egg-datetime.c:432
+msgid "Second part of the upper time limit"
+msgstr "Sekundes daļa augstākajam datuma limitam"
+
+#. Translate to calendar:week_start:1 if you want Monday to be the
+#. * first day of the week; otherwise translate to calendar:week_start:0.
+#. * Do *not* translate it to anything else, if it isn't calendar:week_start:1
+#. * or calendar:week_start:0 it will not work.
+#.
+#: ../libegg/egg-datetime.c:474
+msgid "calendar:week_start:0"
+msgstr "calendar:week_start:1"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Date"
+msgstr "Datums"
+
+#: ../libegg/egg-datetime.c:496
+msgid "Enter the date directly"
+msgstr "Ievadiet tiešu datumu"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select Date"
+msgstr "Izvēlieties datumu"
+
+#: ../libegg/egg-datetime.c:503
+msgid "Select the date from a calendar"
+msgstr "Izvēlieties datumu no kalendāra"
+
+#: ../libegg/egg-datetime.c:521 ../libegg/egg-datetime.c:2196
+msgid "Time"
+msgstr "Laiks"
+
+#: ../libegg/egg-datetime.c:521
+msgid "Enter the time directly"
+msgstr "Ievadiet tiešu laiku"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select Time"
+msgstr "Izvēlieties laiku"
+
+#: ../libegg/egg-datetime.c:528
+msgid "Select the time from a list"
+msgstr "Izvēlieties laiku no saraksta"
+
+#. Translators: set this to anything else if you want to use a
+#. * 24 hour clock.
+#.
+#: ../libegg/egg-datetime.c:793
+msgid "24hr: no"
+msgstr "24hr: yes"
+
+#: ../libegg/egg-datetime.c:797 ../libegg/egg-datetime.c:1257
+#: ../libegg/egg-datetime.c:1261
+msgid "AM"
+msgstr "AM"
+
+#: ../libegg/egg-datetime.c:799 ../libegg/egg-datetime.c:1258
+#: ../libegg/egg-datetime.c:1265
+msgid "PM"
+msgstr "PM"
+
+#. Translators: This is hh:mm:ss AM/PM.
+#: ../libegg/egg-datetime.c:807
+#, c-format
+msgid "%02d:%02d:%02d %s"
+msgstr "%02d:%02d:%02d %s"
+
+#. Translators: This is hh:mm AM/PM.
+#: ../libegg/egg-datetime.c:810
+#, c-format
+msgid "%02d:%02d %s"
+msgstr "%02d:%02d %s"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:814
+#, c-format
+msgid "%02d:%02d:%02d"
+msgstr "%02d:%02d:%02d"
+
+#. Translators: This is hh:mm.
+#: ../libegg/egg-datetime.c:817
+#, c-format
+msgid "%02d:%02d"
+msgstr "%02d:%02d"
+
+#. TODO: should handle other display modes as well...
+#. Translators: This is YYYY-MM-DD
+#: ../libegg/egg-datetime.c:1173
+#, c-format
+msgid "%04d-%02d-%02d"
+msgstr "%04d-%02d-%02d"
+
+#. Translators: This is hh:mm:ss.
+#: ../libegg/egg-datetime.c:1238
+#, c-format
+msgid "%u:%u:%u"
+msgstr "%u:%u:%u"
+
+#: ../libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Fails nav derīgs .desktop fails"
+
+#: ../libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Neatpazīta darbvirsmas faila versija '%s'"
+
+#: ../libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Startē %s"
+
+#: ../libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Lietotne nepieņem norādes uz dokumentiem no komandrindas"
+
+#: ../libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Neatpazīta palaišanas opcija: %d"
+
+#: ../libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Nevar padot dokumentu URI uz 'Type=Link' darbvirsmas ierakstu"
+
+#: ../libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "Nepalaižama vienība"
+
+#: ../libegg/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Atvienoties no sesiju pārvaldnieka"
+
+#: ../libegg/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Norādīt failu, kurš satur saglabāto konfigurāciju"
+
+#: ../libegg/eggsmclient.c:228
+msgid "FILE"
+msgstr "FAILS"
+
+#: ../libegg/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Norādīt sesijas pārvaldnieka ID"
+
+#: ../libegg/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../libegg/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Sesijas pārvaldības opcijas:"
+
+#: ../libegg/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Parādīt sesijas pārvaldības opcijas"
+
+#~ msgid "Support for this feature was not enabled at build time"
+#~ msgstr "Būvēšanas laikā atbalsts šai iespējai nebija ieslēgts"
+
+#~ msgid ""
+#~ "A list of key server URIs to search for remote PGP keys. In later "
+#~ "versions a display name can be included, by appending a space and then "
+#~ "the name."
+#~ msgstr ""
+#~ "Atslēgas serveru URI saraksts, lai meklētu attālinātās PGP atslēgas. "
+#~ "Vēlākās versijās redzamo vārdu var iekļaut, pievienojot atstarpi un tad "
+#~ "vārdu."
+
+#~ msgid "Auto Retrieve Keys"
+#~ msgstr "Automātiski iegūt atslēgas"
+
+#~ msgid "Auto Sync Keys"
+#~ msgstr "Automātiski sinhronizēt atslēgas"
+
+#~ msgid "Controls the visibility of the expires column for the key manager."
+#~ msgstr "Kontrolē atslēgu pārvaldnieka 'derīga līdz' kolonas attēlojumu."
+
+#~ msgid "Controls the visibility of the trust column for the key manager."
+#~ msgstr "Kontrolē atslēgu pārvaldnieka 'uzticēšanās' kolonas attēlojumu."
+
+#~ msgid "Controls the visibility of the type column for the key manager."
+#~ msgstr "Kontrolē atslēgu pārvaldnieka 'tips' kolonas attēlojumu."
+
+#~ msgid "Controls the visibility of the validity column for the key manager."
+#~ msgstr "Kontrolē atslēgu pārvaldnieka 'derīgums' kolonas attēlojumu."
+
+#~ msgid "Enable DNS-SD sharing"
+#~ msgstr "Aktivizēt DNS-SD koplietošanu"
+
+#~ msgid ""
+#~ "Enables DNS-SD (Apple Bonjour) sharing of keys. seahorse-daemon must be "
+#~ "running and must be built with HKP and DNS-SD support."
+#~ msgstr ""
+#~ "Aktivizē DNS-SD (Apple Bonjour) atslēgu koplietošanu. Seahorse-daemon ir "
+#~ "jābūt palaistam un kompilētam ar HKP un DNS-SD atbalstu."
+
+#~ msgid "ID of the default key"
+#~ msgstr "Noklusētās atslēgas ID"
+
+#~ msgid ""
+#~ "If set to true, then files encrypted with seahorse will be ASCII armor "
+#~ "encoded."
+#~ msgstr ""
+#~ "Ja iestatīts uz 'patiess', tad faili, kas šifrēti ar seahorse, tiks "
+#~ "kodēti ar ASCII bruņojumu."
+
+#~ msgid ""
+#~ "If set to true, then the default key will always be added to an "
+#~ "encryption recipients list."
+#~ msgstr ""
+#~ "Ja iestatīts uz 'patiess', tad noklusētā atslēga vienmēr tiks pievienota "
+#~ "šifrēšanas saņēmēju sarakstam."
+
+#~ msgid "Last key server search pattern"
+#~ msgstr "Pēdējā atslēgas serveru meklēšanas struktūra"
+
+#~ msgid "Last key servers used"
+#~ msgstr "Pēdējie izmantotie atslēgu serveri"
+
+#~ msgid "Last key used to sign a message."
+#~ msgstr "Pēdējā atslēga, kas izmantota ziņojuma parakstīšanai."
+
+#~ msgid "PGP Key servers"
+#~ msgstr "PGP atslēgu serveri"
+
+#~ msgid "Publish keys to this key server."
+#~ msgstr "Publicēt atslēgas šajā atslēgu serverī."
+
+#~ msgid "Show expires column in key manager"
+#~ msgstr "Parādīt 'derīga līdz' kolonnu atslēgu pārvaldniekā"
+
+#~ msgid "Show trust column in key manager"
+#~ msgstr "Parādīt 'uzticēšanās' kolonnu atslēgu pārvaldniekā"
+
+#~ msgid "Show type column in key manager"
+#~ msgstr "Parādīt 'tips' kolonnu atslēgu pārvaldniekā"
+
+#~ msgid "Show validity column in key manager"
+#~ msgstr "Parādīt 'derīgums' kolonnu atslēgu pārvaldniekā"
+
+#~ msgid ""
+#~ "Specify the column to sort the recipients window by. Columns are: 'name' "
+#~ "and 'id'. Put a '-' in front of the column name to sort in descending "
+#~ "order."
+#~ msgstr ""
+#~ "Norādiet kolonnu, pēc kuras sakārtot saņēmēju logu. Kolonnas ir: "
+#~ "'nosaukums' un 'id'. Lieciet '-' pirms kolonnas nosaukuma, lai sakārtotu "
+#~ "to dilstošā secībā."
+
+#~ msgid ""
+#~ "Specify the column to sort the seahorse key manager main window by. "
+#~ "Columns are: 'name', 'id', 'validity', 'expires', 'trust', and 'type'. "
+#~ "Put a '-' in front of the column name to sort in descending order."
+#~ msgstr ""
+#~ "Norādiet kolonnu, pēc kuras sakārtot seahorse atslēgu pārvaldnieka "
+#~ "galveno logu. Kolonnas ir: 'name', 'id', 'validity', 'expires', 'trust' "
+#~ "un 'type'. Lieciet '-' pirms kolonnas nosaukuma, lai sakārtotu to "
+#~ "dilstošā secībā."
+
+#~ msgid "The ID of the last secret key used to sign a message."
+#~ msgstr ""
+#~ "ID pēdējai slepenajai atslēgai, kura izmantota ziņojumu parakstīšanai."
+
+#~ msgid "The column to sort the recipients by"
+#~ msgstr "Kolonna, pēc kuras šķirot saņēmējus"
+
+#~ msgid "The column to sort the seahorse keys by"
+#~ msgstr "Kolonna, pēc kuras kārtot seahorse atslēgas"
+
+#~ msgid ""
+#~ "The key server to publish PGP keys to. Or empty to suppress publishing of "
+#~ "PGP keys."
+#~ msgstr ""
+#~ "Atslēgu serveris, uz kura publicēt PGP atslēgas. Vai atstāt tukšu, lai "
+#~ "neatļautu PGP atslēgu publicēšanu."
+
+#~ msgid ""
+#~ "The last key server a search was performed against or empty for all key "
+#~ "servers."
+#~ msgstr ""
+#~ "Pēdējais atslēgu serveris, kurā tika meklēts, vai atstāt tukšu, lai "
+#~ "redzētu visus atslēgu serverus."
+
+#~ msgid "The last search pattern searched for against a key server."
+#~ msgstr "Pēdējā meklēšanas struktūra, kas meklēta atslēgas serverī."
+
+#~ msgid ""
+#~ "This specifies the default key to use for certain operations, mainly "
+#~ "signing."
+#~ msgstr ""
+#~ "Šis norāda noklusēto atslēgu, ko izmantot noteiktām operācijām, "
+#~ "galvenokārt parakstīšanai."
+
+#~ msgid ""
+#~ "Whether or not keys should be automatically retrieved from key servers."
+#~ msgstr "Iegūt vai neiegūt atslēgas automātiski no atslēgu serveriem."
+
+#~ msgid ""
+#~ "Whether or not modified keys should be automatically synced with the "
+#~ "default key server."
+#~ msgstr ""
+#~ "Automātiski sinhronizēt vai nesinhronizēt modificētas atslēgas ar "
+#~ "noklusēto atslēgu serveri."
+
+#~ msgid "Whether to always encrypt to default key"
+#~ msgstr "Vai vienmēr šifrēt ar noklusēto atslēgu"
+
+#~ msgid "Whether to use ASCII Armor"
+#~ msgstr "Vai lietot ASCII bruņojumu"
+
+#~ msgid "Add Password Keyring"
+#~ msgstr "Pievienot paroļu saišķi"
+
+#~ msgid "New Keyring Name:"
+#~ msgstr "Jaunā saišķa nosaukums:"
+
+#~ msgid ""
+#~ "Please choose a name for the new keyring. You will be prompted for an "
+#~ "unlock password."
+#~ msgstr ""
+#~ "Lūdzu izvēlieties nosaukumu jaunajam saišķim. Jums tiks dots ievadīt "
+#~ "atslēgšanas paroli."
+
+#~ msgid "The host name or address of the server."
+#~ msgstr "Servera nosaukums vai adrese."
+
+#~ msgid "Couldn't add keyring"
+#~ msgstr "Neizdevās pievienot saišķi"
+
+#~ msgid "Add Password"
+#~ msgstr "Pievienot paroli"
+
+#~ msgid "_Description:"
+#~ msgstr "_Apraksts:"
+
+#~ msgid "_Keyring:"
+#~ msgstr "_Saišķis:"
+
+#~ msgid "_Password:"
+#~ msgstr "_Parole:"
+
+#~ msgid "_Show Password"
+#~ msgstr "_Parādīt paroli"
+
+#~ msgid "Web Password"
+#~ msgstr "Tīmekļa parole"
+
+#~ msgid "Network Password"
+#~ msgstr "Tīkla parole"
+
+#~ msgid "Password"
+#~ msgstr "Parole"
+
+#~ msgid "Are you sure you want to delete the password '%s'?"
+#~ msgstr "Vai tiešām vēlaties dzēst paroli '%s'?"
+
+#~ msgid "Are you sure you want to delete %d password?"
+#~ msgid_plural "Are you sure you want to delete %d passwords?"
+#~ msgstr[0] "Vai tiešām vēlaties dzēst %d paroli?"
+#~ msgstr[1] "Vai tiešām vēlaties dzēst %d paroles?"
+#~ msgstr[2] "Vai tiešām vēlaties dzēst %d paroles?"
+
+#~ msgid "Access a network share or resource"
+#~ msgstr "Piekļūt tīkla koplietojumam vai resursam"
+
+#~ msgid "Access a website"
+#~ msgstr "Piekļūt tīmekļa vietnei"
+
+#~ msgid "Unlocks a PGP key"
+#~ msgstr "Atslēdz PGP atslēgu"
+
+#~ msgid "Unlocks a Secure Shell key"
+#~ msgstr "Atslēdz drošās čaulas atslēgu"
+
+#~ msgid "Saved password or login"
+#~ msgstr "Saglabāta parole vai pieteikšanās"
+
+#~ msgid "Network Credentials"
+#~ msgstr "Tīkla akreditācijas dati"
+
+#~ msgid "Couldn't change password."
+#~ msgstr "Neizdevās mainīt paroli."
+
+#~ msgid "Couldn't set description."
+#~ msgstr "Neizdevās iestatīt aprakstu."
+
+#~ msgid "Couldn't set application access."
+#~ msgstr "Neizdevās iestatīt lietotnes pieeju."
+
+#~ msgid "<b>Password:</b>"
+#~ msgstr "<b>Parole</b>"
+
+#~ msgid "<b>Path:</b>"
+#~ msgstr "<b>Ceļš:</ b>"
+
+#~ msgid "<b>Permissions:</b>"
+#~ msgstr "<b>Atļaujas:</b>"
+
+#~ msgid "<b>Technical Details:</b>"
+#~ msgstr "<b>Tehniskās detaļas</b>"
+
+#~ msgid "Applications"
+#~ msgstr "Lietotnes"
+
+#~ msgid "Details"
+#~ msgstr "Detaļas"
+
+#~ msgid "Key Properties"
+#~ msgstr "Atslēgas parametri"
+
+#~ msgid "Login:"
+#~ msgstr "Pieteikšanās vārds:"
+
+#~ msgid "Server:"
+#~ msgstr "Serveris:"
+
+#~ msgid "Show pass_word"
+#~ msgstr "Parādīt pa_roli"
+
+#~ msgid "Type:"
+#~ msgstr "Tips:"
+
+#~ msgid "Use:"
+#~ msgstr "Lietojums:"
+
+#~ msgid "_Read"
+#~ msgstr "_Lasīt"
+
+#~ msgid "_Write"
+#~ msgstr "_Rakstīt"
+
+#~| msgid "_Delete"
+#~ msgctxt "infinitive"
+#~ msgid "_Delete"
+#~ msgstr "_Dzēst"
+
+#~ msgid "Listing passwords"
+#~ msgstr "Uzskaita paroles"
+
+#~ msgid "Passwords: %s"
+#~ msgstr "Paroles: %s"
+
+#~ msgid "<b>Passwords:</b> %s"
+#~ msgstr "<b>Paroles:</b> %s"
+
+#~ msgid "Password Keyring"
+#~ msgstr "Paroļu saišķis"
+
+#~ msgid "Used to store application and network passwords"
+#~ msgstr "Tiek izmantots lietotņu un tīkla paroļu glabāšanai"
+
+#~ msgid "Stored Password"
+#~ msgstr "Saglabāta parole"
+
+#~ msgid "Safely store a password or secret."
+#~ msgstr "Droši glabā paroli vai noslēpumu."
+
+#~ msgid "Couldn't unlock keyring"
+#~ msgstr "Neizdevās atslēgt saišķi"
+
+#~ msgid "Couldn't lock keyring"
+#~ msgstr "Neizdevās aizslēgt saišķi"
+
+#~ msgid "Couldn't set default keyring"
+#~ msgstr "Neizdevās iestatīt noklusēto saišķi"
+
+#~ msgid "Couldn't change keyring password"
+#~ msgstr "Neizdevās nomainīt saišķa paroli"
+
+#~ msgid "_Lock"
+#~ msgstr "Aiz_slēgt"
+
+#~ msgid ""
+#~ "Lock the password storage keyring so a master password is required to "
+#~ "unlock it."
+#~ msgstr ""
+#~ "Slēgt paroļu saišķi; tādējādi galvenā parole tiks pieprasīta, lai to "
+#~ "atslēgtu."
+
+#~ msgid "_Unlock"
+#~ msgstr "_Atslēgt"
+
+#~ msgid ""
+#~ "Unlock the password storage keyring with a master password so it is "
+#~ "available for use."
+#~ msgstr ""
+#~ "Atslēgt paroļu saišķi ar galveno paroli, lai tas būtu pieejams lietošanai."
+
+#~ msgid "_Set as default"
+#~ msgstr "_Iestatīt kā noklusēto"
+
+#~ msgid "Applications usually store new passwords in the default keyring."
+#~ msgstr "Lietotnes parasti glabā jaunas paroles noklusētajā saišķī."
+
+#~ msgid "Change _Password"
+#~ msgstr "Nomainīt _paroli"
+
+#~ msgid "Change the unlock password of the password storage keyring"
+#~ msgstr "Izmainīt atslēgšanas paroli paroļu saišķim"
+
+#~ msgid "Are you sure you want to delete the password keyring '%s'?"
+#~ msgstr "Vai tiešām vēlaties dzēst paroļu saišķi '%s'?"
+
+#~ msgid "Created:"
+#~ msgstr "Izveidots:"
+
+#~ msgid "Keyring"
+#~ msgstr "Saišķis"
+
+#~ msgid "Keyring Properties"
+#~ msgstr "Saišķa parametri"
+
+#~ msgid "_Name:"
+#~ msgstr "_Nosaukums:"
+
+#~ msgid "Access to the key ring was denied"
+#~ msgstr "Piekļuve atslēgu saišķim tika liegta"
+
+#~ msgid "The gnome-keyring daemon is not running"
+#~ msgstr "Gnome-keyring dēmons nav palaists"
+
+#~ msgid "The key ring has already been unlocked"
+#~ msgstr "Atslēgu saišķim jau ir atslēgts"
+
+#~ msgid "No such key ring exists"
+#~ msgstr "Tāds atslēgu saišķis neeksistē"
+
+#~ msgid "Couldn't communicate with key ring daemon"
+#~ msgstr "Neizdevās sazināties ar atslēgu saišķa dēmonu"
+
+#~ msgid "The item already exists"
+#~ msgstr "Vienība jau eksistē"
+
+#~ msgid "Internal error accessing gnome-keyring"
+#~ msgstr "Iekšēja kļūda piekļūstot gnome-keyring"
+
+#~ msgid "Saving item..."
+#~ msgstr "Saglabā vienību..."
+
+#~ msgid "Deleting item..."
+#~ msgstr "Dzēš vienību..."
+
+#~ msgid "Deleting keyring..."
+#~ msgstr "Dzēš saišķi..."
+
+#~ msgid "Listing password keyrings"
+#~ msgstr "Rāda sarakstu ar paroļu saišķiem"
+
+#~ msgid ":"
+#~ msgstr ":"
+
+#~ msgid "Add Key Server"
+#~ msgstr "Pievienot atslēgas serveri"
+
+#~ msgid "Host:"
+#~ msgstr "Hosts:"
+
+#~ msgid "Key Server Type:"
+#~ msgstr "Atslēgas servera tips:"
+
+#~ msgid "The port to access the server on."
+#~ msgstr "Pieslēgvieta, pie kuras piekļūt serverim."
+
+#~ msgid "initial temporary item"
+#~ msgstr "sākuma pagaidu vienība"
+
+#~ msgid "Not a valid Key Server address."
+#~ msgstr "Nederīga atslēgu servera adrese."
+
+#~ msgid ""
+#~ "For help contact your system adminstrator or the administrator of the key "
+#~ "server."
+#~ msgstr ""
+#~ "Lai saņemtu palīdzību, sazinieties ar savu sistēmas administratoru, vai "
+#~ "arī atslēgas servera administratoru."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Custom"
+#~ msgstr "Pielāgots"
+
+#~ msgid "None: Don't publish keys"
+#~ msgstr "Nepublicēt atslēgas"
+
+#~ msgid "Automatically retrieve keys from _key servers"
+#~ msgstr "Automātiski iegūt atslēgas no _atslēgu serveriem"
+
+#~ msgid "Automatically synchronize _modified keys with key servers"
+#~ msgstr "Automātiski sinhronizēt _izmainītās atslēgas ar atslēgu serveriem"
+
+#~ msgid "Key Servers"
+#~ msgstr "Atslēgu serveri"
+
+#~ msgid "Preferences"
+#~ msgstr "Iestatījumi"
+
+#~ msgid "_Find keys via:"
+#~ msgstr "_Meklēt atslēgas, izmantojot:"
+
+#~ msgid "_Publish keys to:"
+#~ msgstr "_Publicēt atslēgas uz:"
+
+#~ msgid "Expiration Date:"
+#~ msgstr "Derīguma beigu datums:"
+
+#~ msgid "Generate a new subkey"
+#~ msgstr "Ģenerēt jaunu apakšatslēgu"
+
+#~ msgid "If key never expires"
+#~ msgstr "Ja atslēgai nekad neizbeidzas"
+
+#~ msgid "Key _Length:"
+#~ msgstr "Atslēgas _garums:"
+
+#~ msgid "Key _Type:"
+#~ msgstr "Atslēgas _tips:"
+
+#~ msgid "Length of Key"
+#~ msgstr "Atslēgas garums"
+
+#~ msgid "Never E_xpires"
+#~ msgstr "Nekad neiz_beidzas"
+
+#~ msgid "Add User ID"
+#~ msgstr "Pievienot lietotāja ID"
+
+#~ msgid "Create the new user ID"
+#~ msgstr "Izveidot jaunu lietotāja ID"
+
+#~ msgid "Key Co_mment:"
+#~ msgstr "Atslēgas ko_mentārs:"
+
+#~ msgid "Must be at least 5 characters long"
+#~ msgstr "Jābūt minimums 5 simbolus garam"
+
+#~ msgid "Optional comment describing key"
+#~ msgstr "Neobligāts atslēgu paskaidrojošs komentārs"
+
+#~ msgid "Optional email address"
+#~ msgstr "Neobligāta epasta adrese"
+
+#~ msgid "C_hange"
+#~ msgstr "_Mainīt"
+
+#~ msgid "Revoke key"
+#~ msgstr "Atsaukt atslēgu"
+
+#~ msgid "_Never expires"
+#~ msgstr "_Nekad neizbeidzas"
+
+#~ msgid "Couldn't add subkey"
+#~ msgstr "Neizdevās pievienot apakšatslēgu"
+
+#~ msgid "Add subkey to %s"
+#~ msgstr "Pievienot apakšatslēgu %s"
+
+#~ msgid "ElGamal (encrypt only)"
+#~ msgstr "ElGamal (tikai šifrēšanai)"
+
+#~ msgid "RSA (encrypt only)"
+#~ msgstr "RSA (tikai šifrēšanai)"
+
+#~ msgid "Couldn't add user id"
+#~ msgstr "Neizdevās pievienot lietotāja id"
+
+#~ msgid "Add user ID to %s"
+#~ msgstr "Pievienot lietotāja ID %s"
+
+#~ msgid "Invalid expiry date"
+#~ msgstr "Nederīgs derīguma beigu datums"
+
+#~ msgid "The expiry date must be in the future"
+#~ msgstr "Derīguma termiņam ir jābeidzas nākotnē"
+
+#~ msgid "Couldn't change expiry date"
+#~ msgstr "Neizdevās mainīt derīguma beigu datumu"
+
+#~ msgid "Expiry: %s"
+#~ msgstr "Derīga līdz: %s"
+
+#~ msgid "PGP Key"
+#~ msgstr "PGP atslēga"
+
+#~ msgid "Used to encrypt email and files"
+#~ msgstr "Izmanto, lai šifrētu e-pastu un failus"
+
+#~ msgid "Wrong password"
+#~ msgstr "Nepareiza parole"
+
+#~ msgid ""
+#~ "This was the third time you entered a wrong password. Please try again."
+#~ msgstr ""
+#~ "Šī bija trešā reize, kad ievadījāt nepareizu paroli. Lūdzu, mēģiniet "
+#~ "vēlreiz."
+
+#~ msgid ""
+#~ "<big><b>The photo is too large</b></big>\n"
+#~ "The recommended size for a photo on your key is %d x %d pixels."
+#~ msgstr ""
+#~ "<big><b> Attēls ir pārāk liels</b></big> \n"
+#~ "Ieteicamais attēla izmērs atslēgai ir %d x %d pikseļi."
+
+#~ msgid "_Don't Resize"
+#~ msgstr "_Nemainīt izmēru"
+
+#~ msgid "_Resize"
+#~ msgstr "_Mainīt izmēru"
+
+#~ msgid ""
+#~ "This is not a image file, or an unrecognized kind of image file. Try to "
+#~ "use a JPEG image."
+#~ msgstr ""
+#~ "Šis nav attēla fails, vai arī tas ir nepazīstamā formātā. Mēģiniet "
+#~ "izmantot JPEG attēlu."
+
+#~ msgid "All image files"
+#~ msgstr "Visi attēlu faili"
+
+#~ msgid "All JPEG files"
+#~ msgstr "Visi JPEG faili"
+
+#~ msgid "Choose Photo to Add to Key"
+#~ msgstr "Izvēlieties fotogrāfiju, kuru pievienot atslēgai"
+
+#~ msgid "Couldn't add photo"
+#~ msgstr "Neizdevās pievienot fotogrāfiju"
+
+#~ msgid "The file could not be loaded. It may be in an invalid format"
+#~ msgstr "Neizdevās ielādēt failu. Iespējams tam ir nederīgs formāts"
+
+#~ msgid "Are you sure you want to remove the current photo from your key?"
+#~ msgstr "Vai tiešām vēlaties izņemt aktuālo fotogrāfiju no atslēgas?"
+
+#~ msgid "Couldn't delete photo"
+#~ msgstr "Neizdevās izdzēst fotogrāfiju"
+
+#~ msgid "Couldn't revoke subkey"
+#~ msgstr "Neizdevās atsaukt apakšatslēgu"
+
+#~ msgid "Revoke: %s"
+#~ msgstr "Atsaukt: %s"
+
+#~ msgid "No reason"
+#~ msgstr "Nav iemesla"
+
+#~ msgid "No reason for revoking key"
+#~ msgstr "Nav iemesla atslēgas atsaukšanai"
+
+#~ msgid "Compromised"
+#~ msgstr "Kompromitēta"
+
+#~ msgid "Key has been compromised"
+#~ msgstr "Atslēga ir kompromitēta"
+
+#~ msgid "Superseded"
+#~ msgstr "Aizturēta"
+
+#~ msgid "Key has been superseded"
+#~ msgstr "Atslēga ir aizturēta"
+
+#~ msgid "Not Used"
+#~ msgstr "Netiek izmantota"
+
+#~ msgid "Key is no longer used"
+#~ msgstr "Atslēga netiek vairāk izmantota"
+
+#~ msgid ""
+#~ "You are about to add %s as a revoker for %s. This operation cannot be "
+#~ "undone! Are you sure you want to continue?"
+#~ msgstr ""
+#~ "Jūs taisāties pievienot %s kā atsaucēju %s. Šī operācija ir "
+#~ "neatgriezeniska! Vai esat pārliecināts?"
+
+#~ msgid "Couldn't add revoker"
+#~ msgstr "Neizdevās pievienot atsaucēju"
+
+#~ msgid ""
+#~ "This key was already signed by\n"
+#~ "\"%s\""
+#~ msgstr ""
+#~ "Šo atslēgu jau ir parakstījis\n"
+#~ "\"%s\""
+
+#~ msgid "Couldn't sign key"
+#~ msgstr "Neizdevās parakstīt atslēgu"
+
+#~ msgid "No keys usable for signing"
+#~ msgstr "Nav parakstīšanai lietojamu atslēgu"
+
+#~ msgid ""
+#~ "You have no personal PGP keys that can be used to indicate your trust of "
+#~ "this key."
+#~ msgstr ""
+#~ "Jums nav pieejama neviena personīgā PGP atslēga, kuru varētu izmantot, "
+#~ "lai apstiprinātu jūsu uzticēšanās līmeni šai atslēgai."
+
+#~ msgid "Search was not specific enough. Server '%s' found too many keys."
+#~ msgstr ""
+#~ "Meklējums nebija pietiekami konkrēts. Serveris '%s' atrada pārāk daudz "
+#~ "atslēgas."
+
+#~ msgid "Couldn't communicate with server '%s': %s"
+#~ msgstr "Neizdevās sazināties ar serveri '%s': %s"
+
+#~ msgid "Searching for keys..."
+#~ msgstr "Meklē atslēgas..."
+
+#~ msgid "Uploading keys..."
+#~ msgstr "Augšupielādē atslēgas..."
+
+#~ msgid "Retrieving keys..."
+#~ msgstr "Iegūst atslēgas..."
+
+#~ msgid "Searching for keys on: %s"
+#~ msgstr "Meklē atslēgas uz: %s"
+
+#~ msgid "Connecting to: %s"
+#~ msgstr "Pieslēdzas pie: %s"
+
+#~ msgid "HTTP Key Server"
+#~ msgstr "HTTP atslēgu serveris"
+
+#~ msgid "Couldn't communicate with '%s': %s"
+#~ msgstr "Neizdevās sazināties ar '%s': %s"
+
+#~ msgid "Couldn't resolve address: %s"
+#~ msgstr "Neizdevās sameklēt adresi: %s"
+
+#~ msgid "Resolving server address: %s"
+#~ msgstr "Meklē servera adresi: %s"
+
+#~ msgid "Searching for keys containing '%s'..."
+#~ msgstr "Meklē atslēgas, kuras satur '%s'..."
+
+#~ msgid "Searching for key id '%s'..."
+#~ msgstr "Meklē atslēgu ar ID '%s'..."
+
+#~ msgid "Retrieving remote keys..."
+#~ msgstr "Iegūst attālinātās atslēgas..."
+
+#~ msgid "Sending keys to key server..."
+#~ msgstr "Sūta atslēgas uz atslēgu serveri..."
+
+#~ msgid "LDAP Key Server"
+#~ msgstr "LDAP atslēgu serveris"
+
+#~ msgid "_Sign Key..."
+#~ msgstr "_Parakstīt atslēgu..."
+
+#~ msgid "Sign public key"
+#~ msgstr "Parakstīt publisko atslēgu"
+
+#~ msgid "Are you sure you want to permanently delete %s?"
+#~ msgstr "Vai jūs esat pārliecināti, ka vēlaties neatgriezeniski dzēst %s?"
+
+#~ msgid "Are you sure you want to permanently delete %d keys and identities?"
+#~ msgstr ""
+#~ "Vai jūs esat pārliecināti, ka vēlaties dzēst %d atslēgas un identitātes?"
+
+#~ msgid "Are you sure you want to permanently delete %d keys?"
+#~ msgstr "Vai jūs esat pārliecināti, ka vēlaties dzēst %d atslēgas?"
+
+#~ msgid "Are you sure you want to permanently delete %d identities?"
+#~ msgstr "Vai jūs esat pārliecināti, ka vēlaties dzēst %d identitātes?"
+
+#~ msgid "Couldn't change primary user ID"
+#~ msgstr "Neizdevās izmainīt primāro lietotāja ID"
+
+#~ msgid "Are you sure you want to permanently delete the '%s' user ID?"
+#~ msgstr ""
+#~ "Vai esat pārliecināti, ka vēlaties neatgriezeniski dzēst '%s' lietotāja "
+#~ "ID?"
+
+#~ msgid "Couldn't delete user ID"
+#~ msgstr "Neizdevās izdzēst lietotāja ID"
+
+#~ msgid "[Unknown]"
+#~ msgstr "[Nezināms]"
+
+#~ msgid "Name/Email"
+#~ msgstr "Vārds/e-pasts"
+
+#~ msgid "Signature ID"
+#~ msgstr "Paraksta ID"
+
+#~ msgid "Couldn't change primary photo"
+#~ msgstr "Neizdevās nomainīt primāro fotogrāfiju"
+
+#~ msgid "(unknown)"
+#~ msgstr "(nezināms)"
+
+#~ msgid "This key expired on: %s"
+#~ msgstr "Šīs atslēgas derīguma termiņš bija līdz %s"
+
+#~ msgid "Are you sure you want to permanently delete subkey %d of %s?"
+#~ msgstr "Vai tiešām vēlaties neatgriezeniski dzēst apakšatslēgu %d no %s?"
+
+#~ msgid "Couldn't delete subkey"
+#~ msgstr "Neizdevās izdzēst apakšatslēgu"
+
+#~ msgid "Unable to change trust"
+#~ msgstr "Neizdevās nomainīt uzticamību"
+
+#~ msgid "Couldn't export key to \"%s\""
+#~ msgstr "Neizdevās eksportēt atslēgu uz \"%s\""
+
+#~ msgid "Export Complete Key"
+#~ msgstr "Eksportēt pilnu atslēgu"
+
+#~ msgid "Couldn't export key."
+#~ msgstr "Neizdevās eksportēt atslēgu."
+
+#~ msgctxt "Expires"
+#~ msgid "Never"
+#~ msgstr "Nekad"
+
+#~ msgid "Type"
+#~ msgstr "Tips"
+
+#~ msgid "Created"
+#~ msgstr "Izveidota"
+
+#~ msgid "Expires"
+#~ msgstr "Derīga līdz"
+
+#~ msgid "Status"
+#~ msgstr "Statuss"
+
+#~ msgid "Strength"
+#~ msgstr "Stiprums"
+
+#~ msgid "Good"
+#~ msgstr "Labi"
+
+#~ msgid "<b>Actions</b>"
+#~ msgstr "<b>Darbības</b>"
+
+#~ msgid "<b>Comment:</b>"
+#~ msgstr "<b>Komentāri:</b>"
+
+#~ msgid "<b>Dates</b>"
+#~ msgstr "<b>Datumi</b>"
+
+#~ msgid "<b>Email:</b>"
+#~ msgstr "<b>E-pasts:</b>"
+
+#~ msgid "<b>Fingerprint</b>"
+#~ msgstr "<b>Nospiedums</b>"
+
+#~ msgid "<b>Key ID:</b>"
+#~ msgstr "<b>Atslēgas ID:</b>"
+
+#~ msgid "<b>Key Names and Signatures</b>"
+#~ msgstr "<b>Atslēgu nosaukumi un paraksti</b>"
+
+#~ msgid "<b>Photo </b>"
+#~ msgstr "<b>Fotogrāfija</b>"
+
+#~ msgid "<b>Technical Details</b>"
+#~ msgstr "<b>Tehniskās detaļas</b>"
+
+#~ msgid "<b>This key has been revoked</b>"
+#~ msgstr "<b>Atslēga ir atsaukta</b>"
+
+#~ msgid "<b>This key has expired</b>"
+#~ msgstr "<b>Atslēgai ir beidzies derīguma termiņš</b>"
+
+#~ msgid "<b>Type:</b>"
+#~ msgstr "<b>Tips:</b>"
+
+#~ msgid "<b>Use:</b>"
+#~ msgstr "<b>Izmantošana:</b>"
+
+#~ msgid "<b>_Subkeys</b>"
+#~ msgstr "<b>_Apakšatslēgas</b>"
+
+#~ msgid "Add"
+#~ msgstr "Pievienot"
+
+#~ msgid "Add a photo to this key"
+#~ msgstr "Pievienot fotogrāfiju šai atslēgai"
+
+#~ msgid "Change _Passphrase"
+#~ msgstr "Mainīt _paroli"
+
+#~ msgid "Decrypt files and email sent to you."
+#~ msgstr "Atkodēt failus un aizsūtīt sev."
+
+#~ msgid "Delete"
+#~ msgstr "Dzēst"
+
+#~ msgid "Expire"
+#~ msgstr "Derīgums"
+
+#~ msgid "Expires:"
+#~ msgstr "Derīga līdz:"
+
+#~ msgid "Export"
+#~ msgstr "Eksportēt"
+
+#~ msgid "Go to next photo"
+#~ msgstr "Iet uz nākamo fotogrāfiju"
+
+#~ msgid "Go to previous photo"
+#~ msgstr "Iet uz iepriekšējo fotogrāfiju"
+
+#~ msgid "Key ID:"
+#~ msgstr "Atslēgas ID:"
+
+#~ msgid "Make this photo the primary photo"
+#~ msgstr "Padarīt šo fotogrāfiju par primāro"
+
+#~ msgid "Names and Signatures"
+#~ msgstr "Nosaukumi un paraksti"
+
+#~ msgid "Never"
+#~ msgstr "Nekad"
+
+#~ msgid "Override Owner _Trust:"
+#~ msgstr "Aizstāt īpašnieka _uzticamību:"
+
+#~ msgid "Owner"
+#~ msgstr "Īpašnieks"
+
+#~ msgid "Primary"
+#~ msgstr "Primārais"
+
+#~ msgid "Remove this photo from this key"
+#~ msgstr "Aizvākt šo fotogrāfiju no šīs atslēgas"
+
+#~ msgid "Revoke"
+#~ msgstr "Atsaukt"
+
+#~ msgid "Sign"
+#~ msgstr "Parakstīt"
+
+#~ msgid "Strength:"
+#~ msgstr "Stiprums:"
+
+#~ msgid "The owner of the key revoked the key. It can no longer be used."
+#~ msgstr ""
+#~ "Atslēgas īpašnieks ir atsaucis šo atslēgu. Tā vairs nav izmantojama."
+
+#~ msgid "_Add Name"
+#~ msgstr "_Pievienot nosaukumu"
+
+#~ msgid "_Export Complete Key:"
+#~ msgstr "_Eksportēt visu atslēgu:"
+
+#~| msgid "<b>Name:</b>"
+#~ msgctxt "name-of-key"
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>Nosaukums:</b>"
+
+#~ msgid "<b>Dates:</b>"
+#~ msgstr "<b>Datumi:</b>"
+
+#~ msgid "<b>Fingerprint:</b>"
+#~ msgstr "<b>Nospiedumi:</b>"
+
+#~ msgid "<b>Indicate Trust:</b>"
+#~ msgstr "Norādītdit uzticamību:</b>"
+
+#~ msgid "<b>Your trust of this key</b>"
+#~ msgstr "<b>Jūsu uzticība šai atslēgai</b>"
+
+#~ msgid "<b>_Other Names:</b>"
+#~ msgstr "<b>_Citi vārdi:</b>"
+
+#~ msgid "<b>_People who have signed this key:</b>"
+#~ msgstr "<b>Cil_vēki, kas parakstījuši šai atslēgu:</b>"
+
+#~ msgid "Encrypt files and email to the key's owner "
+#~ msgstr "Šifrēt failus un nosūtīt atslēgas īpašniekam "
+
+#~ msgid "Fully"
+#~ msgstr "Pilnībā"
+
+#~ msgid "I trust signatures from '%s' on other keys"
+#~ msgstr "Es uzticos '%s' parakstiem par citām atslēgām"
+
+#~ msgid ""
+#~ "If you believe that the person that owns this key is '%s', <i>sign</i> "
+#~ "this key:"
+#~ msgstr ""
+#~ "Ja jūs ticat, ka persona, kurai pieder šī atslēga, ir '%s', "
+#~ "<i>parakstiet</i> šo atslēgu:"
+
+#~ msgid ""
+#~ "If you no longer trust that '%s' owns this key, <i>revoke</i> your "
+#~ "signature:"
+#~ msgstr ""
+#~ "Ja jūs vairāk neuzticaties tam, ka '%s' pieder šī atslēga, <i>atsauciet</"
+#~ "i> jūsu parakstu:"
+
+#~ msgid "Marginally"
+#~ msgstr "Daļēji"
+
+#~ msgid "Trust"
+#~ msgstr "Uzticamība"
+
+#~ msgid "Ultimately"
+#~ msgstr "Gandrīz"
+
+#~ msgid "You _Trust the Owner:"
+#~ msgstr "Jūs _uzticaties īpašniekam:"
+
+#~ msgid "Your trust is manually specified on the <i>Details</i> tab."
+#~ msgstr "Jūsu uzticība tiek pašrocīgi norādīta <i>Detaļas</i> cilnē."
+
+#~ msgid "_Only display the signatures of people I trust"
+#~ msgstr "_Rādīt šo parakstu tikai man uzticamiem cilvēkiem"
+
+#~ msgid "_Revoke Signature"
+#~ msgstr "_Atsaukt parakstu"
+
+#~ msgid "_Sign this Key"
+#~ msgstr "_Parakstīt šo atslēgu"
+
+#~ msgid "Optional description of revocation"
+#~ msgstr "Atsaukšanas iemesls (neobligāts)"
+
+#~ msgid "Re_voke"
+#~ msgstr "At_saukt"
+
+#~ msgid "Reason for revoking the key"
+#~ msgstr "Iemesls atslēgas atsaukšanai"
+
+#~ msgid "_Reason:"
+#~ msgstr "_Iemesls:"
+
+#~ msgid ""
+#~ "You have no personal PGP keys that can be used to sign a document or "
+#~ "message."
+#~ msgstr ""
+#~ "Jums nav personisku PGP atslēgu kas varētu tikt izmantotas, lai "
+#~ "parakstītu dokumentu vai ziņojumu."
+
+#~ msgid "<b>How carefully have you checked this key?</b>"
+#~ msgstr "<b>Cik piesardzīgi jūs pārbaudījāt šo atslēgu?</b>"
+
+#~ msgid "<b>How others will see this signature:</b>"
+#~ msgstr "<b>Kā citi redzēs šo parakstu:</b>"
+
+#~ msgid "<b>Sign key as:</b>"
+#~ msgstr "<b>Parakstīt atslēgu kā:</b>"
+
+#~ msgid ""
+#~ "<i>Casually:</i> means you have done a casual verification that the key "
+#~ "is owned by the person who claims to own it. For example, you could read "
+#~ "the key fingerprint to the owner over the phone. "
+#~ msgstr ""
+#~ "<i>Vispārīgi:</i> nozīmē jūs esat veikuši parasto pārbaudi un "
+#~ "noskaidrojuši atslēgas piederību dotajai personai. Piemēram, jūs varētu "
+#~ "nolasīt atslēgas nospiedumu īpašniekam pa telefonu salīdzināšanai."
+
+#~ msgid "<i>Key Name</i>"
+#~ msgstr "<i> Atslēgas nosaukums</i>"
+
+#~ msgid ""
+#~ "<i>Not at all:</i> means you believe the key is owned by the person who "
+#~ "claims to own it, but you could not or did not verify this to be a fact."
+#~ msgstr ""
+#~ "<i>Nemaz:</i> nozīmē ka jūs ticat, ka atslēga pieder dotajai personai, "
+#~ "bet jūs nevarējāt pārbaudīt vai nepārbaudījāt šo faktu."
+
+#~ msgid ""
+#~ "<i>Very Carefully:</i> Select this only if you are absolutely sure that "
+#~ "this key is genuine."
+#~ msgstr ""
+#~ "<i>Ļoti rūpīgi:</i> Izvēlieties šo tikai tad, kad esat absolūti "
+#~ "pārliecināti, ka atslēga ir īsta."
+
+#~ msgid "By signing you indicate your trust that this key belongs to:"
+#~ msgstr ""
+#~ "Parakstoties, jūs aplieciniet, ka uzticaties tam, kam šī atslēga pieder:"
+
+#~ msgid "I can _revoke this signature at a later date."
+#~ msgstr "Varu _atsaukt šo parakstu vēlāk."
+
+#~ msgid "Sign Key"
+#~ msgstr "Parakstīt atslēgu"
+
+#~ msgid ""
+#~ "You could use a hard to forge photo identification (such as a passport) "
+#~ "to personally check that the name on the key is correct. You should have "
+#~ "also used email to check that the email address belongs to the owner."
+#~ msgstr ""
+#~ "Jūs varētu izmantot grūti viltojamu foto identifikāciju (kā pasi), lai "
+#~ "personīgi pārbaudītu vai atslēgā minētais personas vārds ir korekts. Jums "
+#~ "arī vajadzētu izmantot e-pastu, lai pārbaudītu, vai e-pasta adrese pieder "
+#~ "īpašniekam."
+
+#~ msgid "_Casually"
+#~ msgstr "_Vispārīgi"
+
+#~ msgid "_Not at all"
+#~ msgstr "_Nemaz"
+
+#~ msgid "_Others may not see this signature"
+#~ msgstr "_Citi varētu neredzēt šo parakstu"
+
+#~ msgid "_Sign"
+#~ msgstr "_Paraksts"
+
+#~ msgid "_Signer:"
+#~ msgstr "_Parakstītājs:"
+
+#~ msgid "_Very Carefully"
+#~ msgstr "_Ļoti rūpīgi"
+
+#~ msgid "_Sign message with key:"
+#~ msgstr "Parak_stīt vēstuli ar atslēgu:"
+
+#~ msgid "Certificate"
+#~ msgstr "Sertifikāts"
+
+#~ msgid "Are you sure you want to delete the certificate '%s'?"
+#~ msgstr "Vai esat pārliecināts, ka vēlaties dzēst sertifikātu '%s'?"
+
+#~ msgid "Are you sure you want to delete %d certificate?"
+#~ msgid_plural "Are you sure you want to delete %d certificates?"
+#~ msgstr[0] "Vai esat pārliecināts, ka vēlaties dzēst %d sertifikātu?"
+#~ msgstr[1] "Vai esat pārliecināts, ka vēlaties dzēst %d sertifikātus?"
+#~ msgstr[2] "Vai esat pārliecināts, ka vēlaties dzēst %d sertifikātus?"
+
+#~ msgid "Change Passphrase"
+#~ msgstr "Mainīt paroli"
+
+#~ msgid "Con_firm Passphrase:"
+#~ msgstr "Ap_stiprināt paroli:"
+
+#~ msgid "Confirm new passphrase"
+#~ msgstr "Apstiprināt jauno paroli"
+
+#~ msgid "New _Passphrase:"
+#~ msgstr "Jauna _parole:"
+
+#~ msgid "Manage your passwords and encryption keys"
+#~ msgstr "Pārvaldīt paroles un šifrēšanas atslēgas"
+
+#~ msgid "Passwords and Encryption Keys"
+#~ msgstr "Paroles un šifrēšanas atslēgas"
+
+#~ msgid "<b>_Select the type of item to create:</b>"
+#~ msgstr "<b>_Izvēlieties izveidojamās vienības tipu:</b>"
+
+#~ msgid "C_ontinue"
+#~ msgstr "T_urpināt"
+
+#~ msgid "Create New ..."
+#~ msgstr "Izveidot jaunu ..."
+
+#~ msgid "Selected %d key"
+#~ msgid_plural "Selected %d keys"
+#~ msgstr[0] "Izvēlēta %d atslēga"
+#~ msgstr[1] "Izvēlētas %d atslēgas"
+#~ msgstr[2] "Izvēlētas %d atslēgas"
+
+#~ msgid "Imported keys"
+#~ msgstr "Importētās atslēgas"
+
+#~ msgid "Importing keys"
+#~ msgstr "Importē atslēgas"
+
+#~ msgid "Import Key"
+#~ msgstr "Importēt atslēgu"
+
+#~ msgid "Unrecognized key type, or invalid data format"
+#~ msgstr "Neatpazīstams atslēgas tips, vai nederīgs datu formāts"
+
+#~ msgid "_Remote"
+#~ msgstr "_Attālināta"
+
+#~ msgid "Close this program"
+#~ msgstr "Aizvērt šo programmu"
+
+#~ msgid "_New..."
+#~ msgstr "_Jauna..."
+
+#~ msgid "Create a new key or item"
+#~ msgstr "Izveidot jaunu atslēgu vai vienību"
+
+#~ msgid "_Import..."
+#~ msgstr "_Importēt..."
+
+#~ msgid "Import from a file"
+#~ msgstr "Importēt no faila"
+
+#~ msgid "Import from the clipboard"
+#~ msgstr "Importēt no starpliktuves"
+
+#~ msgid "_Find Remote Keys..."
+#~ msgstr "_Meklēt attālinātās atslēgas..."
+
+#~ msgid "Search for keys on a key server"
+#~ msgstr "Meklēt priekš atslēgas uz atslēgas servera"
+
+#~ msgid "_Sync and Publish Keys..."
+#~ msgstr "_Sinhronizēt un publicēt atslēgas..."
+
+#~ msgid "Publish and/or synchronize your keys with those online."
+#~ msgstr "Publicēt un/vai sinhronizēt tavas atslēgas ar tiešsaistē esošajām."
+
+#~ msgid "T_ypes"
+#~ msgstr "T_ipi"
+
+#~ msgid "Show type column"
+#~ msgstr "Parādīt tipa kolonnu"
+
+#~ msgid "_Expiry"
+#~ msgstr "_Derīguma termiņš"
+
+#~ msgid "Show expiry column"
+#~ msgstr "Parādīt derīguma termiņa kolonnu"
+
+#~ msgid "_Trust"
+#~ msgstr "_Uzticamība"
+
+#~ msgid "Show owner trust column"
+#~ msgstr "Parādīt īpašnieka uzticamības kolonnu"
+
+#~ msgid "_Validity"
+#~ msgstr "_Derīgums"
+
+#~ msgid "Show validity column"
+#~ msgstr "Parādīt derīguma kolonnu"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtrs:"
+
+#~ msgid "<big><b>First time options:</b></big>"
+#~ msgstr "<big><b>Pirmās reizes opcijas</b></big>"
+
+#~ msgid "Generate a new key of your own: "
+#~ msgstr "Izveidot sev jaunu atslēgu: "
+
+#~ msgid "Import existing keys from a file:"
+#~ msgstr "Importēt eksistējošas atslēgas no faila:"
+
+#~ msgid "My _Personal Keys"
+#~ msgstr "Manas _personīgās atslēgas"
+
+#~ msgid "Other _Keys"
+#~ msgstr "Citas _atslēgas"
+
+#~ msgid "To get started with encryption you will need keys."
+#~ msgstr "Lai sāktu ar šifrēšanu, jums būs nepieciešamas atslēgas."
+
+#~ msgid "_Import"
+#~ msgstr "_Importēt"
+
+#~ msgid "_Passwords"
+#~ msgstr "_Paroles"
+
+#~ msgid "Couldn't export keys"
+#~ msgstr "Neizdevās eksportēt atslēgas"
+
+#~ msgid "Validity"
+#~ msgstr "Derīgums"
+
+#~ msgid "Expiration Date"
+#~ msgstr "Derīgs līdz"
+
+#~ msgid "Close this window"
+#~ msgstr "Aizvērt šo logu"
+
+#~ msgid "_Expand All"
+#~ msgstr "_Izplest visus"
+
+#~ msgid "Expand all listings"
+#~ msgstr "Izvērst visus sarakstus"
+
+#~ msgid "_Collapse All"
+#~ msgstr "_Sakļaut visus"
+
+#~ msgid "Collapse all listings"
+#~ msgstr "Sakļaut visus sarakstus"
+
+#~ msgid "Remote Keys"
+#~ msgstr "Attālinātās atslēgas"
+
+#~ msgid "Remote Keys Containing '%s'"
+#~ msgstr "Attālinātās atslēgas, kuras satur '%s'"
+
+#~ msgid "<b>Key Servers:</b>"
+#~ msgstr "<b>Atslēgu serveri:</b>"
+
+#~ msgid "<b>Shared Keys Near Me:</b>"
+#~ msgstr "<b>Tuvu man koplietotās atslēgas:</b>"
+
+#~ msgid "Find Remote Keys"
+#~ msgstr "Meklēt attālinātās atslēgas"
+
+#~ msgid ""
+#~ "This will find keys for others on the Internet. These keys can then be "
+#~ "imported into your local key ring."
+#~ msgstr ""
+#~ "Internetā tiks atrastas citu lietotāju atslēgas. Šīs atslēgas varēsiet "
+#~ "importēt jūsu atslēgu saišķī."
+
+#~ msgid "Where to search:"
+#~ msgstr "Kur meklēt:"
+
+#~ msgid "_Search"
+#~ msgstr "_Meklēt"
+
+#~ msgid "_Search for keys containing: "
+#~ msgstr "_Meklēt atslēgas, kuras satur: "
+
+#~ msgid "Couldn't publish keys to server"
+#~ msgstr "Neizdevās publicēt atslēgas serverī"
+
+#~ msgid "Couldn't retrieve keys from server: %s"
+#~ msgstr "Neizdevās dabūt atslēgas no servera: %s"
+
+#~ msgid "<b>%d key is selected for synchronizing</b>"
+#~ msgid_plural "<b>%d keys are selected for synchronizing</b>"
+#~ msgstr[0] "<b> %d atslēga ir izvēlēta sinhronizēšanai</b>"
+#~ msgstr[1] "<b>%d atslēgas ir izvēlētas sinhronizēšanai</b>"
+#~ msgstr[2] "<b>%d atslēgas ir izvēlētas sinhronizēšanai</b>"
+
+#~ msgid "Synchronizing keys"
+#~ msgstr "Sinhronizē atslēgas"
+
+#~ msgid "Synchronizing keys..."
+#~ msgstr "Sinhronizē atslēgas..."
+
+#~ msgid "Sync Keys"
+#~ msgstr "Sinhronizēt atslēgas"
+
+#~ msgid ""
+#~ "This will publish the keys in your key ring so they're available for "
+#~ "others to use. You'll also get any changes others have made since you "
+#~ "received their keys."
+#~ msgstr ""
+#~ "Publicēs atslēgas no jūsu atslēgu saišķa, lai tās būtu pieejamas citiem "
+#~ "lietošanai. Tiks arī atjauninātas jebkuras izmaiņas, ko citi būs veikuši, "
+#~ "kopš jūs saņēmāt viņu atslēgas."
+
+#~ msgid ""
+#~ "This will retrieve any changes others have made since you received their "
+#~ "keys. No key server has been chosen for publishing, so your keys will not "
+#~ "be made available to others."
+#~ msgstr ""
+#~ "Atjauninās jebkuras izmaiņas, ko citi būs veikuši, kopš jūs saņēmāt viņu "
+#~ "atslēgas. Neviens atslēgas serveris nav izvēlēts publicēšanai, tādējādi "
+#~ "jūsu atslēgas nebūs pieejamas citiem."
+
+#~ msgid "_Key Servers"
+#~ msgstr "_Atslēgu serveri"
+
+#~ msgid "_Sync"
+#~ msgstr "_Sinhronizēt"
+
+#~ msgid "Version of this application"
+#~ msgstr "Šīs lietotnes versija"
+
+#~ msgid "Encryption Key Manager"
+#~ msgstr "Šifrēšanas atslēgu pārvaldnieks"
+
+#~ msgid "Contributions:"
+#~ msgstr "Palīdzējuši:"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Nauris Kanasnieks <getnrs@inbox.lv>\n"
+#~ "Jānis Laimiņš <janis.laimins@gmail.com>\n"
+#~ "Pēteris Krišjānis <pecisk@gmail.com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Mārtiņš Bruņenieks https://launchpad.net/~papuass\n"
+#~ "  Pēteris Krišjānis https://launchpad.net/~pecisk-gmail\n"
+#~ "  Raivis Dejus https://launchpad.net/~orvils"
+
+#~ msgid "Seahorse Project Homepage"
+#~ msgstr "Seahorse projekta mājas lapa"
+
+#~ msgid "_File"
+#~ msgstr "_Fails"
+
+#~ msgid "_Edit"
+#~ msgstr "_Rediģēt"
+
+#~ msgid "_View"
+#~ msgstr "_Skats"
+
+#~ msgid "_Help"
+#~ msgstr "_Palīdzība"
+
+#~ msgid "Prefere_nces"
+#~ msgstr "Ies_tatījumi"
+
+#~ msgid "Change preferences for this program"
+#~ msgstr "Mainīt šīs programmas iestatījumus"
+
+#~ msgid "About this program"
+#~ msgstr "Par programmu"
+
+#~ msgid "_Contents"
+#~ msgstr "_Saturs"
+
+#~ msgid "Show Seahorse help"
+#~ msgstr "Parādīt Seahorse palīdzību"
+
+#~ msgid "Export public key"
+#~ msgstr "Eksportē publisko atslēgu"
+
+#~ msgid "Exporting keys"
+#~ msgstr "Eksportē atslēgas"
+
+#~ msgid "Couldn't retrieve data from key server"
+#~ msgstr "Neizdevās iegūt datus no atslēgu servera"
+
+#~ msgid "Copied keys"
+#~ msgstr "Nokopēja atslēgas"
+
+#~ msgid "Retrieving keys"
+#~ msgstr "Iegūst atslēgas"
+
+#~ msgid "Couldn't delete."
+#~ msgstr "Neizdevās izdzēst."
+
+#~ msgid "Deleting..."
+#~ msgstr "Dzēš..."
+
+#~ msgid "%s is a private key. Are you sure you want to proceed?"
+#~ msgstr "%s ir privātā atslēga. Vai esat pārliecināts, ka vēlaties turpināt?"
+
+#~ msgid "Importing keys from key servers"
+#~ msgstr "Importē atslēgas no atslēgu serveriem"
+
+#~ msgid "Show properties"
+#~ msgstr "Rādīt rekvizītus"
+
+#~ msgctxt ""
+#~ "This text refers to deleting an item from its type's backing store."
+#~ msgid "_Delete"
+#~ msgstr "_Dzēst"
+
+#~ msgid "Delete selected items"
+#~ msgstr "Dzēst izvēlētās vienības"
+
+#~ msgid "E_xport..."
+#~ msgstr "E_ksportēt..."
+
+#~ msgid "Export to a file"
+#~ msgstr "Eksportēt uz failu"
+
+#~ msgid "Copy to the clipboard"
+#~ msgstr "Kopēt uz starpliktuvi"
+
+#~ msgid "Import selected keys to local key ring"
+#~ msgstr "Importēt izvēlētās atslēgas lokālajā atslēgu riņķī"
+
+#~ msgid "Enter your Secure Shell passphrase:"
+#~ msgstr "Ievadiet drošās čaulas paroli:"
+
+#~ msgid "Configure Key for _Secure Shell..."
+#~ msgstr "Konfigurēt atslēgu _drošajai čaulai..."
+
+#~ msgid ""
+#~ "Send public Secure Shell key to another machine, and enable logins using "
+#~ "that key."
+#~ msgstr ""
+#~ "Nosūtīt publisko drošās čaulas atslēgu uz citu datoru un aktivizēt "
+#~ "kontus, kuri izmantos šo atslēgu."
+
+#~ msgid "Are you sure you want to delete the secure shell key '%s'?"
+#~ msgstr "Vai tiešām vēlaties dzēst drošās čaulas atslēgu '%s'?"
+
+#~ msgid "Are you sure you want to delete %d secure shell keys?"
+#~ msgstr "Vai esat pārliecināts, ka vēlaties dzēst %d drošās čaulas atslēgas?"
+
+#~ msgid "Secure Shell Key"
+#~ msgstr "Drošās čaulas atslēga"
+
+#~ msgid "Used to access other computers (eg: via a terminal)"
+#~ msgstr "Izmanto, lai piekļūtu citiem datoriem (piem.: caur termināli)"
+
+#~ msgid "Couldn't generate Secure Shell key"
+#~ msgstr "Neizdevās izveidot drošās čaulas atslēgu"
+
+#~ msgid "Creating Secure Shell Key"
+#~ msgstr "Izveido drošās čaulas atslēgu"
+
+#~ msgid ""
+#~ "<i>Use your email address, and any other reminder you need about what "
+#~ "this key is for.</i>"
+#~ msgstr ""
+#~ "<i>Izmantojiet jūsu e-pasta adresi, un jebkuru citu jums nepieciešamu "
+#~ "atgādinājumu par šīs atslēgas mērķi.</i>"
+
+#~ msgid ""
+#~ "A Secure Shell (SSH) key lets you connect securely to trusted computers "
+#~ "using SSH, without entering a different password for each of them."
+#~ msgstr ""
+#~ "Drošās čaulas (Secure Shell jeb SSH) atslēga ļauj jums droši savienoties "
+#~ "ar uzticamiem datoriem izmantojot SSH, neizmantojot paroles."
+
+#~ msgid "DSA"
+#~ msgstr "DSA"
+
+#~ msgid ""
+#~ "If there is already a computer you want to use this key with, you can set "
+#~ "up that computer to recognize your key now. "
+#~ msgstr ""
+#~ "Ja ir jau kāds dators, ar kuru jūs vēlaties šo atslēgu izmantot, jūs "
+#~ "tagad varat iestatīt to, lai tas atpazītu jūsu atslēgu."
+
+#~ msgid "New Secure Shell Key"
+#~ msgstr "Jauna drošās čaulas atslēga"
+
+#~ msgid "_Create and Set Up"
+#~ msgstr "_Izveidot un iestatīt"
+
+#~ msgid "_Just Create Key"
+#~ msgstr "Izveidot _tikai atslēgu"
+
+#~ msgid "_Key Description:"
+#~ msgstr "_Atslēgas apraksts:"
+
+#~ msgid "(Unreadable Secure Shell Key)"
+#~ msgstr "(Nenolasāma drošās čaulas atslēga)"
+
+#~ msgid "Invalid"
+#~ msgstr "Nederīga"
+
+#~ msgid "Private Secure Shell Key"
+#~ msgstr "Privātā drošās čaulas atslēga"
+
+#~ msgid "Public Secure Shell Key"
+#~ msgstr "Publiskā drošās čaulas atslēga"
+
+#~ msgid "Couldn't rename key."
+#~ msgstr "Neizdevās pārsaukt atslēgu."
+
+#~ msgid "Couldn't change authorization for key."
+#~ msgstr "Neizdevās nomainīt atslēgas autorizāciju."
+
+#~ msgid "Couldn't change passphrase for key."
+#~ msgstr "Neizdevās nomainīt atslēgas paroli."
+
+#~ msgid "<b>Algorithm:</b>"
+#~ msgstr "<b>Algoritms:</b>"
+
+#~ msgid "<b>Identifier:</b>"
+#~ msgstr "<b>Identifikators:</b>"
+
+#~ msgid "<b>Location:</b>"
+#~ msgstr "<b>Atrašanās vieta:</b>"
+
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>Nosaukums:</b>"
+
+#~ msgid "<b>Strength:</b>"
+#~ msgstr "<b>Stiprums:</b>"
+
+#~ msgid "<b>Trust</b>"
+#~ msgstr "<b>Uzticamība</b>"
+
+#~ msgid "<i>This only applies to the '%s'</i> account."
+#~ msgstr "<i>Attiecas tikai uz '%s'</i> kontu."
+
+#~ msgid "E_xport Complete Key"
+#~ msgstr "E_ksportēt pilnu atslēgu"
+
+#~ msgid "The owner of this key is _authorized to connect to this computer"
+#~ msgstr "Šīs atslēgas īpašnieks ir _autorizēts, lai pieslēgtos šim datoram"
+
+#~ msgid "Used to connect to other computers."
+#~ msgstr "Izmanto, lai pieslēgtos citiem datoriem."
+
+#~ msgid "The SSH command was terminated unexpectedly."
+#~ msgstr "SSH komanda tika negaidīti pārtraukta."
+
+#~ msgid "The SSH command failed."
+#~ msgstr "SSH komanda neizdevās."
+
+#~ msgid "Secure Shell key"
+#~ msgstr "Drošās čaulas atslēga"
+
+#~ msgid "Passphrase:"
+#~ msgstr "Parole:"
+
+#~ msgid "Remote Host Password"
+#~ msgstr "Attālinātā saimniekdatora parole"
+
+#~ msgid "Old Key Passphrase"
+#~ msgstr "Vecā atslēgas parole"
+
+#~ msgid "Enter the old passphrase for: %s"
+#~ msgstr "Ievadiet veco paroli %s"
+
+#~ msgid "New Key Passphrase"
+#~ msgstr "Jaunā atslēgas parole"
+
+#~ msgid "Enter the new passphrase for: %s"
+#~ msgstr "Ievadiet jauno paroli %s"
+
+#~ msgid "Enter Key Passphrase"
+#~ msgstr "Ievadiet atslēgas paroli"
+
+#~ msgid "Passphrase for New Secure Shell Key"
+#~ msgstr "Parole jaunajai drošās čaulas atslēgai"
+
+#~ msgid "Enter a passphrase for your new Secure Shell key."
+#~ msgstr "Ievadiet paroli jaunajai drošās čaulas atslēgai."
+
+#~ msgid "Importing key: %s"
+#~ msgstr "Importē atslēgu: %s"
+
+#~ msgid "Importing key. Enter passphrase"
+#~ msgstr "Importē atslēgu. Ievadiet paroli"
+
+#~ msgid "No private key file is available for this key."
+#~ msgstr "Šai atslēgai nav pieejams privātās atslēgas fails."
+
+#~ msgid "Couldn't configure Secure Shell keys on remote computer."
+#~ msgstr "Neizdevās nokonfigurēt attālinātā datora drošās čaulas atslēgas."
+
+#~ msgid "Configuring Secure Shell Keys..."
+#~ msgstr "Konfigurē drošās čaulas atslēgas..."
+
+#~ msgid "<i>eg: fileserver.example.com:port</i>"
+#~ msgstr "<i>piem..: failuserveris.piemers.lv:ports</i>"
+
+#~ msgid "Set Up Computer for SSH Connection"
+#~ msgstr "Iestatīt datoru SSH savienojumam"
+
+#~ msgid ""
+#~ "To use your Secure Shell key with another computer that uses SSH, you "
+#~ "must already have a login account on that computer."
+#~ msgstr ""
+#~ "Lai izmantotu jūsu drošās čaulas atslēgu ar citu datoru kas izmanto SSH, "
+#~ "jums jābūt jau izveidotam kontam uz tā."
+
+#~ msgid "_Computer Name:"
+#~ msgstr "_Datora nosaukums:"
+
+#~ msgid "_Login Name:"
+#~ msgstr "_Pieteikumvārds:"
+
+#~ msgid "_Set Up"
+#~ msgstr "_Iestatīt"
+
+#~ msgid "Couldn't share keys"
+#~ msgstr "Neizdevās koplietot atslēgas"
+
+#~ msgid "Can't publish discovery information on the network."
+#~ msgstr "Nevar publicēt atklājuma informāciju tīklā."
+
+#~ msgid "%s's encryption keys"
+#~ msgstr "%s šifrēšanas atslēgas"
+
+#~ msgid "Key Sharing"
+#~ msgstr "Atslēgu koplietošana"
+
+#~ msgid ""
+#~ "Sharing your keys allows other people on your network to use the keys "
+#~ "you've collected. This means they can automatically encrypt things for "
+#~ "you or those you know, without you having to send them your key.\n"
+#~ "\n"
+#~ "<b>Note:</b> Your personal keys will not be compromised."
+#~ msgstr ""
+#~ "Jūsu atslēgu koplietošana atļauj citiem cilvēkiem jūsu tīklā lietot "
+#~ "atslēgas, kuras esat savācis. Tas nozīmē, ka viņi var automātiski šifrēt "
+#~ "jūsu un jūsu paziņu lietas, bez jūsu atslēgas nosūtīšanas viņiem.\n"
+#~ "\n"
+#~ "<b>Piezīme:</b> Jūsu personīgās atslēgas netiks kompromitētas."
+
+#~ msgid "_Share my keys with others on my network"
+#~ msgstr "Koplietot mana_s atslēgas ar citiem manā tīklā"
+
+#~ msgid "Seahorse Daemon"
+#~ msgstr "Seahorse dēmons"

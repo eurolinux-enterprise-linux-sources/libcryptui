@@ -1,0 +1,69 @@
+If you want to hack or commit something to libcryptui, please first send patches to 
+seahorse-list@gnome.org or submitted on bugzilla.gnome.org if possible.
+
+For a todo list, first check bugzilla, then look at TODO. Bugzilla is also updated 
+with possible enhancements and any current bugs.
+
+Here is a description of the parts:
+
+ o daemon: A daemon which supports the library
+
+ o libcryptui: The library itself
+
+DEBUGGING LIBCRYPTUI
+
+There are a couple of configure switches that you can enable which add
+debugging helpers etc...
+
+--enable-debug 
+    - Disables optimization
+    - Debug info
+    - Enables various checks and logging in the code.
+    - Makes all Gtk|Glib etc... runtime warnings fatal.
+    - Makes all compilation warnings fatal.
+    
+--enable-fatal-messages
+    When used with --enable-debug turns on fatal compile and runtime warnings.
+
+INDENTATION STYLE
+
+  * No gratituous reformatting of code. If you're rewriting much of a function 
+    or file it's okay to reformat it, but reformatting for the sake of it isn't 
+    a good idea.
+
+	static int 
+	function (int x, const char *y) 
+	{
+		if (func (arg, arg2 + 1, lots, of, very, lengthy, arguments, for 
+		    this, function)) {
+
+			switch (val) {
+			case XXX:
+				break;
+			case YYY:
+				break;
+			default:
+				break;
+			}
+		} else {
+			y = y * x + 1;
+		}
+
+		return func2 (x, y);
+	}
+
+  * We use tabs for indentation, and spacing to align multi-line statements.
+  * Break long lines where possible.
+  * Spaces between functions and arguments, or macros and arguments.
+  * Spaces before and after most binary operators. 
+  * Spaces after most unary operators (including a comma).
+  * Brace on same line as block statement. 
+  * Single lined block statements don't need braces unless it makes things 
+    significantly clearer. 
+  * Return value on line before function definition.
+  * Brace on line after function definition.
+  * '*' goes with variable not type, when declaring a pointer.
+  * Function arguments follow the function call on the same line, and if 
+    lengthy are (where possible) wrapped to the column of the first brace.
+ 
+last updated 2011-07-25
